@@ -35,7 +35,7 @@
 	- Possui apenas a cardinalidades
 		- I para N
 	- Chave primária e estrangeiras
-#MER
+# MER
 - Exemplo:
 	- Banco de dados de cadastro de produtos e histórico de preços:
 	- Produtos (id[inteiro,4 dígitos, não nulo, autoincrementado], nome[40 caracteres, não nulo], volume[real,6.2 dígitos], peso[real, 6.2 dígitos]);
