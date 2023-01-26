@@ -1,2 +1,13 @@
 Implantar um aplicativo Web Node.js + MongoDB no Azure
 https://learn.microsoft.com/pt-br/azure/app-service/tutorial-nodejs-mongodb-app
+
+
+msdocs-expressjs-mongodb-wel-server
+
+DATABASE_NAME
+msdocs-expressjs-mongodb-wel-database
+
+String de conexão MONGODB_URI
+mongodb://msdocs-expressjs-mongodb-wel-server:gpZugdxsWfNUxy1jnnkZX6b16Syua6tXNrhzOl7smDXvrO5q5DWGFXasnl5kf1bNMgzMlDTOvWkUACDbRyaIbg==@msdocs-expressjs-mongodb-wel-server.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@msdocs-expressjs-mongodb-wel-server
+
+Parei Etapa 3.
