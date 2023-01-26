@@ -21,7 +21,7 @@
 	- Campo único que identifica o registro (A linha inteira de dados)
 	- Chave Primária (Não se repete na tabela)
 	- Chave Estrangeira (Se repete na tabela e sempre faz referência a uma chave primária em outra tabela)
-- Conceitual
+- <b>Conceitual</b>
 	- Mais próximo do problema,
 	- descreve as concistências dos dados através dos relacionamentos
 	- Não tem a necessidade de apresentar as chaves estrangeiras
@@ -30,7 +30,7 @@
 		- 1 para N
 		- N para N
 		- Min x Max
-- Lógico
+- <b>Lógico</b>
 	- Mais próximo da solução
 	- Possui apenas a cardinalidades
 		- I para N
@@ -49,3 +49,8 @@
 
 # Exercícios
 - <img src="exercicios.jpg">
+- Criar os diagramas utilizando <b>um dos</b> meios a seguir
+	- brModelo.jar (Neste repositório)
+	- http://draw.io
+	- mspaint
+	- Papel e caneta
