@@ -9,7 +9,7 @@
     - Marcação HTML, CSS
     - Framework (React),(JQuery),(BootStrap)
 # BCD - Bancos de dados
-  - Linguagens
+- Linguagens
 	- SQL
 		- DDL
 		- DML
@@ -17,15 +17,15 @@
 		- DQL
 		- DTL
 	- Importação x exportação de dados
-        - CSV
-        - XML
-        - JSON
+		- CSV
+		- XML
+		- JSON
 	- Banco de dados não Relacional (NoSQL)
 # INDMO - Interfaces para Dispositivos Móveis
-	- Linguagens
-		- JavaScript
-	- Framework (React Native, Expo)
-	- Programação em Bloco MIT AppInventor (NoCode)
+- Linguagens
+	- JavaScript
+- Framework (React Native, Expo)
+- Programação em Bloco MIT AppInventor (NoCode)
 
 # Componentes específicos - Carga horária
 - PWFE (Programação Web FrontEnd) 75 horas 1Dia/Semana

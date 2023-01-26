@@ -39,7 +39,7 @@
 - Exemplo:
 	- Banco de dados de cadastro de produtos e histórico de preços:
 	- Produtos (id[inteiro,4 dígitos, não nulo, autoincrementado], nome[40 caracteres, não nulo], volume[real,6.2 dígitos], peso[real, 6.2 dígitos]);
-	- Preços (produto[inteiro,4 dígitos, não nulo] referencia produto(id), data[data, não nulo], preço[real, 8.2 dígitos, não nulo]);
+	- Preços (produto[inteiro,4 dígitos, não nulo] referencia produto(id), data[data, não nulo], preço[real, 8.2 dígitos, não nulo	]);
 # DER
 - <img src="mer_der.png">
 
