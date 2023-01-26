@@ -48,4 +48,4 @@
 - <img src="exemplo_1_n.png">
 
 # Exercícios
-- <img src="exercicios.png">
+- <img src="exercicios.jpg">
