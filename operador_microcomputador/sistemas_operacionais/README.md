@@ -1,5 +1,5 @@
 # Sistemas Operacionais - 40 horas
-- Capacidades Técnicas3
+- Capacidades Técnicas
 	- Identificar tipos de programas
 	- Administrar o Sistema Operacional
 	- Utilizar os aplicativos báscios do Windows
