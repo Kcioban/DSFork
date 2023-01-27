@@ -8,11 +8,13 @@
   - XML
   - JSON
 - Estruturado
-  - CSV
-  - Não SQL (Ex: MongoDB, FireBase ...)
-    - Não Relacional
-  - SQL (Ex: Mysql, Oracle, SQL Server, Postgres, FireBird ...)
-    - Relacionais
+	- SGBD (Sistema Gerenciador de Banco de Dados)
+	- Sem SGBD = CSV
+	- Com SGBD
+		- Não SQL (Ex: MongoDB, FireBase ...)
+			- Não Relacional
+		- SQL (Ex: Mysql, Oracle, SQL Server, Postgres, FireBird ...)
+			- Relacionais
 
 # MER x DER
 - MER (Modelo Entidade Relacionamento)
