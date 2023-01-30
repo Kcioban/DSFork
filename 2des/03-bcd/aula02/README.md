@@ -51,7 +51,8 @@
 					- drop database nome_bd; (Exclui um banco de dados)
 					- alter table nome tabela ... ; (Altera uma tabela)
 					- create table noem tabela (campos, campos); (Cria tabelas)
-		- 6. Caso utilize pelo (Shell) você pode configurar via <a href="./var_ambiente.md">variável de ambiente</a>
+		- 6. Caso utilize pelo (Shell) configurar Variável de Ambiente:
+		- https://github.com/wellifabio/senai2023/blob/main/2des/03-bcd/aula02/var_ambiente.md
 	- Via interface gráfica de usuário (GUI)
 		- 1. Abrir o XAMPP Control Panel
 		- 2. Start no serviço/servidor MySQL
