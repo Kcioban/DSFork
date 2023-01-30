@@ -56,6 +56,10 @@
 		- 2. Start no serviço/servidor MySQL
 		- 3. Start no serviço/servidor Apache
 		- 4. Clicar em <b>"Admin"</b> que está a frente do MySQL
-		- 4. Isso abrirá o <b>PHPMyAdmin</b> onde podemos administrar o banco de dados visualmente.
+			- 4.1. Isso abrirá o <b>PHPMyAdmin</b> onde podemos administrar o banco de dados visualmente.
+		- 4. Se preferir podemos utilizar outros ambientes gráficos para acessar o SGBD como:
+			- MySQL WorkBench
+			- HeidiSQL
+			- Ou outro que preferir
 # PHPMyAdmin Web (demonstração)
 - https://demo.phpmyadmin.net/master-config/
