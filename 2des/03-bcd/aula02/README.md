@@ -51,6 +51,7 @@
 					- drop database nome_bd; (Exclui um banco de dados)
 					- alter table nome tabela ... ; (Altera uma tabela)
 					- create table noem tabela (campos, campos); (Cria tabelas)
+		- 6. Caso utilize pelo (Shell) você pode configurar via variável de ambiente
 	- Via interface gráfica de usuário (GUI)
 		- 1. Abrir o XAMPP Control Panel
 		- 2. Start no serviço/servidor MySQL
