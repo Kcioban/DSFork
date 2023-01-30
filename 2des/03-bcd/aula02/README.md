@@ -14,7 +14,7 @@
 	- 3. Modelo Lógico
 	- 2. Script SQL
 	
-# SQL (Standard Query Language) tradução (Linguágem padrão de Consultas)
+# SQL (Standard Query Language) tradução (Linguagem padrão de Consultas)
 - DDL (Linguagem de Definição de Dados)
 	- Create
 	- Describe
