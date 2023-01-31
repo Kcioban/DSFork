@@ -1,0 +1,18 @@
+. CONHECIMENTOS - Levantamento, Análise e Registros
+-------------
+- 2. Levantamento de Requisitos
+	- 2.1.Definição
+	- 2.2.Técnicas
+		- 2.2.1.Levantamento orientado a pontos de vista
+		- 2.2.2.Etnografia (observação)
+		- 2.2.3.Método Analítico
+		- 2.2.4.Workshops
+		- 2.2.5.Prototipagem
+		- 2.2.6.Entrevistas
+		- 2.2.7.Questionários
+		- 2.2.8.Brainstorming
+		- 2.2.9.Métodos Sistêmicos (JAD - Joint Application Design)
+	- 2.3.Fases
+		- 2.3.1.Coleta
+		- 2.3.2.Análise
+		- 2.3.3.Registros
