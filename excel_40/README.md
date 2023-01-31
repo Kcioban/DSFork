@@ -1,4 +1,4 @@
-# Excel 
+# Excel Básico
 - Objetivo: Prover conhecimentos básicos para a utilização do software Excel na criação de planilhas 
 eletrônicas com a utilização de diversas fórmulas, formatação de planilhas e a criação de 
 gráficos.
