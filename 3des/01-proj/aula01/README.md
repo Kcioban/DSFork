@@ -53,4 +53,7 @@
 			- Listar todos
 			- Criar um dashboard de pedidos com excel
 			- Criar um dashboard de pedidos com JavaScript
-		
+# Correções
+	- ./docs (DER, script.sql, Arquivo de testes Insomnia)
+	- ./api (BackEnd)
+	- ../../02-ppdmo/proj-pedidos (App Cozinha e App Entregador)
