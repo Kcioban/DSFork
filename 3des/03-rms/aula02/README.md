@@ -31,20 +31,20 @@
 - Desafio: Crie um bloco de anotações detalhando as regras de negócio e numerando cada requisito funcional e não funcional que deseja que o sistema atenda.
 
 Empreendimento	Orçamento	Nome
-- [Empreendimento],[Orçamento],[Empreendedores]
-- Academia,	R$ 2200,00	(Andreina Costa Moura, Gleidson Pereira Da Silva)
-- Agência de viagens,	R$	1600,00	(Rodolfo Dos Santos Aura, Leticia Amaral Lopes)
-- Farmácia,	R$	2000,00	(Ana Clara Oliveira Santos, Carlos Eduardo Silva Miranda)
-- Hotel ou Pousada,	R$	2000,00	(Guilherme Melro, Hotel ou Pousada		Carlos Daniel De Abreu)
-- Livraria,	R$	1900,00	(Eduardo Venosi De Campos, Victória Helóise Cunha Duó)
-- Locação de Carros,	R$	1800,00	(Guilherme Henrique Dos Santos, Santiago Conti Zapparoli)
-- Loja Cookies,	R$	1500,00	(Beatriz Gabriela Godoi De Souza, Vinicius Campos Ferreira)
-- Loja de Roupas,	R$	1900,00	(Gabriel Alves Sousa Silva, Felipe Augusto Ribeiro Serra, Felipe Dos Santos Canizela)
-- Lojinha ChingLing,	R$	2100,00	(Bruno Favaro, João Augusto Rocha Carloto)
-- Padaria,	R$	1900,00	(Alice Michelle da Silva, Luiz Fernando De Souza)
-- Pet Shop,	R$	1500,00	(Breno Jorge De Lima Silva, Natã Batista Fernandes)
-- Posto de Gasolina,	R$	1500,00	(Rodrigo Caetano Silva, Julia Marra Pastorelli)
-- Salão de Beleza,	R$	1700,00	(Cyro Brandão Alvares, Luana Silva Brandão Lopes)
+- [Nº],[Empreendimento],[Orçamento],[Empreendedores],[executores]
+- 1, Academia,	R$ 2200,00	(Andreina Costa Moura, Gleidson Pereira Da Silva), 12
+- 2, Agência de viagens,	R$	1600,00	(Rodolfo Dos Santos Aura, Leticia Amaral Lopes), 13
+- 3, Farmácia,	R$	2000,00	(Ana Clara Oliveira Santos, Carlos Eduardo Silva Miranda), 11
+- 4, Hotel ou Pousada,	R$	2000,00	(Guilherme Melro, Carlos Daniel De Abreu), 10
+- 5, Livraria,	R$	1900,00	(Eduardo Venosi De Campos, Victória Helóise Cunha Duó), 1
+- 6, Locação de Carros,	R$	1800,00	(Guilherme Henrique Dos Santos, Santiago Conti Zapparoli), 8
+- 7, Loja Cookies,	R$	1500,00	(Beatriz Gabriela Godoi De Souza, Vinicius Campos Ferreira), 5
+- 8, Loja de Roupas,	R$	1900,00	(Gabriel Alves Sousa Silva, Felipe Augusto Ribeiro Serra, Felipe Dos Santos Canizela), 2
+- 9, Lojinha ChingLing,	R$	2100,00	(Bruno Favaro, João Augusto Rocha Carloto), 9
+- 10, Padaria,	R$	1900,00	(Alice Michelle da Silva, Luiz Fernando De Souza), 3
+- 11, Pet Shop,	R$	1500,00	(Breno Jorge De Lima Silva, Natã Batista Fernandes), 7
+- 12, Posto de Gasolina,	R$	1500,00	(Rodrigo Caetano Silva, Julia Marra Pastorelli), 6
+- 13, Salão de Beleza,	R$	1700,00	(Cyro Brandão Alvares, Luana Silva Brandão Lopes), 4
 
 # Atividade 2:
 - Contextualização: Você faz parte de uma equipe de desenvolvimento de software vai visitar um cliente com o objetivo de elencar os requisitos de um sistema de informação.
