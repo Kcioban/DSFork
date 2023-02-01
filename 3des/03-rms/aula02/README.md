@@ -31,6 +31,7 @@
 - Desafio: Crie um bloco de anotações detalhando as regras de negócio e numerando cada requisito funcional e não funcional que deseja que o sistema atenda.
 
 Empreendimento	Orçamento	Nome
+- [Empreendimento],[Orçamento],[Empreendedores]
 - Academia,	R$ 2200,00	(Andreina Costa Moura, Gleidson Pereira Da Silva)
 - Agência de viagens,	R$	1600,00	(Rodolfo Dos Santos Aura, Leticia Amaral Lopes)
 - Farmácia,	R$	2000,00	(Ana Clara Oliveira Santos, Carlos Eduardo Silva Miranda)
