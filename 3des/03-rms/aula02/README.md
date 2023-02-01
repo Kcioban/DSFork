@@ -30,6 +30,21 @@
 - Contextualização: Você é um pequeno empresário dono de um dos negócios elencados pelo instrutor, precisa de um sistema de informação e contratou um terceiro para desenvolver o seu projeto, para isso voê possui um limite de orçamento.
 - Desafio: Crie um bloco de anotações detalhando as regras de negócio e numerando cada requisito funcional e não funcional que deseja que o sistema atenda.
 
+Empreendimento	Orçamento	Nome
+- Academia	2200	Andreina Costa Moura, Gleidson Pereira Da Silva
+- Agência de viagens	1600	Rodolfo Dos Santos Aura, Leticia Amaral Lopes
+- Farmácia	2000	Ana Clara Oliveira Santos, Carlos Eduardo Silva Miranda
+- Hotel ou Pousada	2000	Guilherme Melro, Hotel ou Pousada		Carlos Daniel De Abreu
+- Livraria	1900	Eduardo Venosi De Campos, Victória Helóise Cunha Duó
+- Locação de Carros	1800	Guilherme Henrique Dos Santos, Santiago Conti Zapparoli
+- Loja Cookies	1500	Beatriz Gabriela Godoi De Souza, Vinicius Campos Ferreira
+- Loja de Roupas	1900	Gabriel Alves Sousa Silva, Felipe Augusto Ribeiro Serra, Felipe Dos Santos Canizela
+- Lojinha ChingLing	2100	Bruno Favaro, João Augusto Rocha Carloto
+- Padaria	1900	Alice Michelle da Silva, Luiz Fernando De Souza
+- Pet Shop	1500	Breno Jorge De Lima Silva, Natã Batista Fernandes
+- Posto de Gasolina	1500	Rodrigo Caetano Silva, Julia Marra Pastorelli
+- Salão de Beleza	1700	Cyro Brandão Alvares, Luana Silva Brandão Lopes
+
 # Atividade 2:
 - Contextualização: Você faz parte de uma equipe de desenvolvimento de software vai visitar um cliente com o objetivo de elencar os requisitos de um sistema de informação.
 - Desafio: Criar um documento de requisitos utilizando UML:
