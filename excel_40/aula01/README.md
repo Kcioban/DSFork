@@ -6,6 +6,6 @@
 - Planilha simples de orçamento
 - Cálculos básicos com porcentagem
 - Planilha de notas e cálculos de médias
-- <img src="lousa1.png">
+- <img src="lousa1.jpg">
 - <img src="pemdas.png">
 	
