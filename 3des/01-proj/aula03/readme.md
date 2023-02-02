@@ -17,3 +17,5 @@
 
 
 ## Gerar a migrate para criar a base de dados
+
+- prisma migrate dev --name "descricao"
