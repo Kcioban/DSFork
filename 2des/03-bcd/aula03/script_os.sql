@@ -48,3 +48,16 @@ CREATE TABLE os(
 SHOW TABLES;
 DESCRIBE os;
 DESCRIBE funcionarios;
+
+USE ordens_servico_1;
+insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura, data_fim, hora_fim)
+values
+("Reenye", "Levi", "2023-02-01", "11:00", "2023-02-01", "12:00"),
+("Paraguassu", "Levi", "2023-02-01", "13:00", "2023-02-02","13:00"),
+("Tati", "Levi", "2023-02-02", "10:00", "2023-02-02","13:00"),
+("Ivo", "Levi", "2023-02-02", "12:00", "2023-02-02","16:00"),
+insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura)
+values
+("Reenye", "Levi", "2023-02-02", "16:00"),
+("Wellington", "Levi", "2023-02-03", "08:00"),
+("Paraguassu", "Levi", "2023-02-03", "09:00");

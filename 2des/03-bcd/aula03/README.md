@@ -17,10 +17,16 @@
 		- CURTIME() <- Retorna a hora atual
 	- 2.8.2. Matemáticas
 		- RAND() <- Retorna um número aleatório entre 0 e 1
-# Demonstração
+# Demonstração CRUD(Cadastro, Consulta, Alteração e Exclusão)
 - <img src="mer_der_estoque.png">
 - Dados para inserir no Banco de Dados de Estoque
 - <img src="dados_estoque.png">
+- Script de criação DDL e manipulação dos dados DML
+- <img src="script_estoque.png">
 # Atividade
-- Durante a aula construimos o script de criação DDL e inserimos os dados no banco de dados de estoque conforme MER e DER.
-- <dialog src="script_estoque.sql">
+- Durante esta aula, construimos o script de criação DDL e inserimos os dados no banco de dados de estoque conforme MER e DER.
+- Desafio: Popule o banco de dados de Ordens de Serviço com os dados a seguir:
+	- <img src="mer_der_os.png">
+	- Segue o script de DDL de Criação dos dois bancos de dados ordens_serviço_1 e ordens_servico_2.
+	- <img src="script_os.png">
+
