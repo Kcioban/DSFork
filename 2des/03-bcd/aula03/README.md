@@ -17,6 +17,10 @@
 		- CURTIME() <- Retorna a hora atual
 	- 2.8.2. Matemáticas
 		- RAND() <- Retorna um número aleatório entre 0 e 1
-
+# Demonstração
+- <img src="mer_der_estoque.png">
+- Dados para inserir no Banco de Dados de Estoque
+- <img src="dados_estoque.png">
 # Atividade
 - Durante a aula construimos o script de criação DDL e inserimos os dados no banco de dados de estoque conforme MER e DER.
+- <dialog src="script_estoque.sql">
