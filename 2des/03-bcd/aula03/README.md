@@ -29,4 +29,8 @@
 	- <img src="mer_der_os.png">
 	- Segue o script de DDL de Criação dos dois bancos de dados ordens_serviço_1 e ordens_servico_2.
 	- <img src="script_os.png">
-
+	- Dados ordens_serviço_1:
+	- <img src="dados_os_1.png">
+	- Dados ordens_serviço_2:
+	- <img src="dados_os_2.png">
+	
