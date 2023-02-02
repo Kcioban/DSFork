@@ -48,29 +48,3 @@ CREATE TABLE os(
 SHOW TABLES;
 DESCRIBE os;
 DESCRIBE funcionarios;
-
-USE ordens_servico_1;
-insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura, data_fim, hora_fim)
-values
-("Reenye", "Levi", "Torneira da pia da cozinha pingando", "2023-02-01", "11:00", "2023-02-01", "12:00"),
-("Paraguassu", "Levi", "Torneira da pia do banheiro pingando", "2023-02-01", "13:00", "2023-02-02","13:00"),
-("Tati", "Levi", "Limpar a caixa d'água", "2023-02-02", "10:00", "2023-02-02","13:00"),
-("Ivo", "Levi", "Trocar a tomada da secretaria para padrão novo", "2023-02-02", "12:00", "2023-02-02","16:00");
-insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura)
-values
-("Reenye", "Levi", "Trocar a tomada da sala dos professores para padrão novo","2023-02-02", "16:00"),
-("Wellington", "Levi", "Instalar duas tomadas na oficina mecânica", "2023-02-03", "08:00"),
-("Paraguassu", "Levi", "Instalar duas tomadas no labortório 5", "2023-02-03", "09:00");
-
-USE ordens_servico_2;
-insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura, data_fim, hora_fim)
-values
-("Reenye", "Levi", "Torneira da pia da cozinha pingando", "2023-02-01", "11:00", "2023-02-01", "12:00"),
-("Paraguassu", "Levi", "Torneira da pia do banheiro pingando", "2023-02-01", "13:00", "2023-02-02","13:00"),
-("Tati", "Levi", "Limpar a caixa d'água", "2023-02-02", "10:00", "2023-02-02","13:00"),
-("Ivo", "Levi", "Trocar a tomada da secretaria para padrão novo", "2023-02-02", "12:00", "2023-02-02","16:00");
-insert into os (func_abre, func_executa, descricao, data_abertura, hora_abertura)
-values
-("Reenye", "Levi", "Trocar a tomada da sala dos professores para padrão novo","2023-02-02", "16:00"),
-("Wellington", "Levi", "Instalar duas tomadas na oficina mecânica", "2023-02-03", "08:00"),
-("Paraguassu", "Levi", "Instalar duas tomadas no labortório 5", "2023-02-03", "09:00");
