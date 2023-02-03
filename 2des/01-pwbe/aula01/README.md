@@ -20,7 +20,8 @@
 	- Programador (Front-End)
 	- Programador (Mobile)
 	- Programador Ágil Scrum Master
-
+- Lousa
+	- <img src="lousa.jpg">
 - O que é Back-End
 	- Uma API (Application Programming Interface)
 	- O intermediário entre as bases de dados e a interface com o usuário.
