@@ -40,11 +40,11 @@ Empreendimento	Orçamento	Nome
 - 6, Locação de Carros,	R$	1800,00	(Guilherme Henrique Dos Santos, Santiago Conti Zapparoli), 8
 - 7, Loja Cookies,	R$	1500,00	(Beatriz Gabriela Godoi De Souza, Vinicius Campos Ferreira), 5
 - 8, Loja de Roupas,	R$	1900,00	(Gabriel Alves Sousa Silva, Felipe Augusto Ribeiro Serra, Felipe Dos Santos Canizela), 2
-- 9, Lojinha ChingLing,	R$	2100,00	(Bruno Favaro, João Augusto Rocha Carloto), 9
+- 9, Lojinha ChingLing,	R$	2100,00	(Bruno Favaro, João Augusto Rocha Carloto), 4
 - 10, Padaria,	R$	1900,00	(Alice Michelle da Silva, Luiz Fernando De Souza), 3
 - 11, Pet Shop,	R$	1500,00	(Breno Jorge De Lima Silva, Natã Batista Fernandes), 7
 - 12, Posto de Gasolina,	R$	1500,00	(Rodrigo Caetano Silva, Julia Marra Pastorelli), 6
-- 13, Salão de Beleza,	R$	1700,00	(Cyro Brandão Alvares, Luana Silva Brandão Lopes), 4
+- 13, Salão de Beleza,	R$	1700,00	(Cyro Brandão Alvares, Luana Silva Brandão Lopes), 9
 
 # Atividade 2:
 - Contextualização: Você faz parte de uma equipe de desenvolvimento de software vai visitar um cliente com o objetivo de elencar os requisitos de um sistema de informação.
