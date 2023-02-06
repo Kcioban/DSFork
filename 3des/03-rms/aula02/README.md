@@ -53,3 +53,6 @@ Empreendimento	Orçamento	Nome
 	- Diagrama de Casos de Uso (DCU) (Requisitos Funcionais)
 	- Categorizar as prioridades.
 	- Detalhar os requisitos não funcionais.
+	
+# Entregas:
+- Ao concluir as atividades postar os 3 PDFs neste Forms: https://forms.gle/V2ktgTsSoVfsaLND7
