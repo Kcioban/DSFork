@@ -41,10 +41,6 @@ button {
     cursor: pointer;
 }
 
-.model {
-    display: none;
-}
-
 .listas {
     width: 100%;
     display: flex;
@@ -72,4 +68,8 @@ button {
 .card-body {
     display: flex;
     flex-direction: column;
+}
+
+.model {
+    display: none;
 }
