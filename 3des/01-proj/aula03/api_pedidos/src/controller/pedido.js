@@ -24,8 +24,36 @@ const read = async (req, res) => {
     res.json(pedido).end();
 }
 
+const toEntrega = async (req, res) => {
+    let info = {
+        horaEntrega: new Date()
+    }
+    const pedido = await prisma.pedido.update({
+        data: info,
+        where: {
+            id: Number(req.params.id)
+        }
+    })
+    res.status(202).end();
+}
+
+const toEnd = async (req, res) => {
+    let info = {
+        horaFim: new Date()
+    }
+    const pedido = await prisma.pedido.update({
+        data: info,
+        where: {
+            id: Number(req.params.id)
+        }
+    })
+    res.status(202).end();
+}
+
 module.exports = {
     create,
     readAll,
-    read
+    read,
+    toEntrega,
+    toEnd
 }

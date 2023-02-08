@@ -43,10 +43,31 @@ const login = async (req, res) => {
         res.status(404).end();
 }
 
+const update = async (req, res) => {
+    const entregador = await prisma.entregador.update({
+        where: {
+            id: Number(req.params.id)
+        },
+        data: req.body
+    })
+    res.status(202).json(entregador).end();
+}
+
+const del = async (req, res) => {
+    const entregador = await prisma.entregador.delete({
+        where: {
+            id: Number(req.params.id)
+        }
+    })
+    res.status(204).end();
+}
+
 module.exports = {
     test,
     create,
     readAll,
     read,
-    login
+    login,
+    update,
+    del
 }
