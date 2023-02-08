@@ -1,39 +1,12 @@
 const express = require("express");
 
+const router = require("./src/routes/routes");
+
 const app = express();
 
-app.get("/", (req, res) => {
-    let i = 2;
-    if(i == 0) {
-        res.status(200).send("Funcionando").end();
-    }else{
-        res.status(404).end();
-    }
-})
-
-app.get("/listar", (req, res) => {
-    // let nome = req.query.nome;
-    // let matricula = req.query.matricula;
-
-    let { nome, matricula } = req.query;
-
-    console.log(nome, matricula);
-
-    res.status(200).send("LISTANDO").end();
-});
-
-app.get("/info/:marca/:modelo", (req, res) => {
-    let { marca, modelo } = req.params;
-
-    console.log(marca, modelo);
-
-    res.status(200).end();
-})
-
-app.post("/criar", (req, res) => {
-    res.status(200).end();
-})
+app.use(express.json());
+app.use(router);
 
 app.listen(3000, () => {
-    console.log("Rodando na 3000");
+    console.log("Rodando");
 });
