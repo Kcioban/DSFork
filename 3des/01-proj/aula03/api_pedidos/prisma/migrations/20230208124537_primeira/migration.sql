@@ -6,6 +6,7 @@ CREATE TABLE `Entregador` (
     `senha` VARCHAR(191) NOT NULL,
     `veiculo` VARCHAR(191) NOT NULL,
 
+    UNIQUE INDEX `Entregador_email_key`(`email`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -15,7 +16,6 @@ CREATE TABLE `Pedido` (
     `cliente` VARCHAR(191) NOT NULL,
     `endereco` VARCHAR(191) NOT NULL,
     `produto` VARCHAR(191) NOT NULL,
-    `data` DATETIME(3) NOT NULL,
     `horaPedido` DATETIME(3) NOT NULL,
     `horaEntrega` DATETIME(3) NULL,
     `horaFim` DATETIME(3) NULL,
