@@ -32,3 +32,8 @@
 - PWBE (Programação Web BackEnd) 150 horas 2Dia/Semana
 - INDMO (Interface para Dispositivos Móveis) 75 horas 1Dia/Semana
 - BCD (Bancos de dados) 75 horas 1Dia/Semana
+
+
+
+# Link Reuniao:
+	- https://teams.live.com/meet/9377241247999
