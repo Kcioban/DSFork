@@ -20,3 +20,8 @@
 		- é diferente de
 		- ...
 - <img src="notas.png">
+# Lousa
+- <img src="lousa.jpg">
+- <img src="juros.png">
+# Atividade 02
+- <img src="atividade02.png">
