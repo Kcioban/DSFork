@@ -1,4 +1,4 @@
-# Excel - Aula05
+# Excel - Aula06
 - Função SE()
 - SE(Comparação > maior, Menor, igual...; se sim; senão)
 	<table>
