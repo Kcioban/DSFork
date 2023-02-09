@@ -12,3 +12,10 @@
 - Função ALEATORIOENTRE(menor;maior)
 	- Gera um número pseudo aleatório entre os números indicados
 	- O computador verifica os milisegundos do relógio para escolher o número
+- Formatação Condicional
+	- A formatação condicional altera as cores das células utilizando os mesmos critérios
+		- é maior do que
+		- é menor do que
+		- é igual a
+		- é diferente de
+		- ...
