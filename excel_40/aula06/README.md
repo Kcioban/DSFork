@@ -19,3 +19,4 @@
 		- é igual a
 		- é diferente de
 		- ...
+- <img src="notas.png">
