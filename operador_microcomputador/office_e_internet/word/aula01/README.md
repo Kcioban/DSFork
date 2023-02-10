@@ -17,3 +17,7 @@
 - Abra o Word e digite o texto a seguir:
 - <img src="memorando.png">
 - Ao concluir a digitação, salve em "Documentos" com o nome de Memorando
+
+# Currículo
+- Exemplo de currículo de jovem iniciante no mercado de trabalho.
+- <img src="curriculo.png">
