@@ -1,13 +1,30 @@
-const Aluno = require('../models/aluno')
+const Aluno = require('../models/aluno');
+const Turmas = require('./turmas');
 
 var alunos = []
 
 const teste = (req,res)=>{
-    res.json('API Respondendo.').end()
+    res.json(Turmas.turmas).end()
 }
 
 const criar = (req, res) => {
-    let { nome, nascto } = req.body;
+    let { nome, nascto, id_turma } = req.body;
+
+    loc = false;
+    let arr = Turmas.turmas;
+
+    if(arr.length > 0) {
+        arr.forEach((turma, index) => {
+            if(turma.id == id_turma) {
+                loc = true;
+            }
+        })
+    }
+
+    if(!loc) { 
+        res.status(404).json({message : "Turma não encontrada"}).end();
+        return;
+    }
     
     let ra = 1;
 
@@ -16,7 +33,7 @@ const criar = (req, res) => {
     }
 
     //const aluno = new Aluno(ra, req.body.nome, req.body.nascto)
-    const aluno = new Aluno(ra, nome, nascto);
+    const aluno = new Aluno(ra, nome, nascto, id_turma);
 
     alunos.push(aluno);
 
@@ -107,5 +124,6 @@ module.exports={
     buscar,
     atualizar,
     deletar,
-    criarVarios
+    criarVarios,
+    alunos
 }

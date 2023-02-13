@@ -1,9 +1,10 @@
 class Aluno {
 
-    constructor(ra, nome, nascto) {
+    constructor(ra, nome, nascto, idTurma) {
         this.ra = ra
         this.nome = nome
         this.nascto = nascto
+        this.idTurma = idTurma
         this.idade = this.calcIdade()
     }
 
