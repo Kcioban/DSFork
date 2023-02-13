@@ -10,6 +10,8 @@ const load = () => {
 }
 
 const compromissos = (vetor) => {
+    let now = new Date()
+    create.quando.value = new Date().toISOString().substring(0,16)
     vetor.forEach(e => {
         const card = document.createElement('form')
         const quando = document.createElement('input')
@@ -25,26 +27,26 @@ const compromissos = (vetor) => {
         up.innerHTML = "*"
         del.type = 'button'
         del.addEventListener('click', (ev) => {
-            if (confirm('Confirma a exclusão do compromisso: ' + e._id + '?')) {
-                fetch(uri + '/delete/' + e._id, { method: 'DELETE' })
-                    .then(resp => resp.status)
-                    .then(resp => {
-                        if (resp == 204)
-                            window.location.reload();
-                    })
-                    .catch(err => console.error(err));
-            }
+            fetch(uri + '/delete/' + e._id, { method: 'DELETE' })
+                .then(resp => resp.status)
+                .then(resp => {
+                    if (resp == 204)
+                        window.location.reload();
+                })
+                .catch(err => console.error(err));
         })
         del.innerHTML = "-"
         card.appendChild(quando)
         card.appendChild(onde)
         card.appendChild(descricao)
-        card.appendChild(up)
         card.appendChild(del)
+        card.appendChild(up)
         card.addEventListener('submit', (ev) => {
             ev.preventDefault()
+            let qd = new Date(quando.value)
+            qd.setHours(qd.getHours() - 3);
             const compromisso = {
-                quando: new Date(quando.value),
+                quando: qd,
                 onde: onde.value || 'Branco',
                 descricao: descricao.value || 'Branco'
             }
@@ -69,8 +71,10 @@ const compromissos = (vetor) => {
 
 create.addEventListener('submit', (e) => {
     e.preventDefault()
+    let qd = new Date(create.quando.value)
+    qd.setHours(qd.getHours() - 3);
     const compromisso = {
-        quando: new Date(create.quando.value),
+        quando: qd,
         onde: create.onde.value || 'Branco',
         descricao: create.descricao.value || 'Branco'
     }
@@ -89,16 +93,3 @@ create.addEventListener('submit', (e) => {
         })
         .catch(err => console.error(err));
 });
-
-const del = (id) => {
-    if (confirm('Confirma a exclusão do compromisso: ' + id + '?')) {
-        const options = { method: 'DELETE' };
-        fetch(uri + '/delete/' + id, options)
-            .then(resp => resp.status)
-            .then(resp => {
-                if (resp == 204)
-                    window.location.reload();
-            })
-            .catch(err => console.error(err));
-    }
-}

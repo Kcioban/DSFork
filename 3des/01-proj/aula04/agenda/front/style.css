@@ -32,8 +32,8 @@ main {
     height: 100%;
     overflow: auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: top;
+    flex-flow: wrap;
+    float: right;
 }
 
 footer {
@@ -71,8 +71,10 @@ button {
 }
 
 main form {
+    position: relative;
     width: 320px;
-    height: 130px;
+    height: 140px;
+    border-radius: 15px 0 15px 0;
     background-color: #fec279;
     box-shadow: 1px 1px 5px #000;
     margin: 10px;
@@ -88,7 +90,9 @@ main form button{
 main form input, main form textarea{
     width: 250px;
     background: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(196, 136, 51);
+    resize: none;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 600px){
