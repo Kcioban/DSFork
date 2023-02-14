@@ -11,7 +11,7 @@ const load = () => {
 
 const compromissos = (vetor) => {
     let now = new Date()
-    create.quando.value = new Date().toISOString().substring(0,16)
+    create.quando.value = new Date().toISOString().substring(0, 16)
     vetor.forEach(e => {
         const card = document.createElement('form')
         const quando = document.createElement('input')
