@@ -32,5 +32,5 @@
 
 10. Faça um gráfico selecionando as colunas **Modelo** e **Preço** dos automóveis, escolha um dos gráficos recomendados pelo Excel.
 
-###Ao concluir chame o professor para corrigir
+### Ao concluir chame o professor para corrigir
 
