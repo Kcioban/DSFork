@@ -7,5 +7,5 @@ app.use(express.json())
 app.use('/',router)
 
 app.listen(3000,()=>{
-    console.log("BackEnd Ativo.")
+    console.log("Respondendo na porta 3000")
 })
