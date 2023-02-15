@@ -12,3 +12,5 @@
         - controllers (controllers/controles)
 - Desenvolver a programação das feactures/funcionalidades CRUD (Create, Read, Update, Delete) conforme Diagrama de classes:
 - <img src="./escola/docs/dc_escola.png">
+# Continuação do projeto, adicionando mais uma classe "Turma"
+- <img src="./escola/docs/dc_escola_2.0.png">
