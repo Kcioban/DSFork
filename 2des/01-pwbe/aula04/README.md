@@ -8,5 +8,5 @@
 	- Estrutura
 	- Comportamento
 # Continuação projeto Escola (Exemplo)
-- <img src="lousa.png">
-- <img src="../projetos/escola/dosc/der_escola.png">
+- <img src="lousa.jpg">
+- <img src="der_escola.png">
