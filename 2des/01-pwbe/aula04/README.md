@@ -10,3 +10,4 @@
 # Continuação projeto Escola (Exemplo)
 - <img src="lousa.jpg">
 - <img src="der_escola.png">
+- Criando Script de criação e população do banco de dados com dados de teste
