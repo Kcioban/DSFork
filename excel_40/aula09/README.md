@@ -9,13 +9,13 @@
 1. Abra o Excel e copie esta planilha
 2. Salve em Documentos com o nome de "Agência de automóveis"
 3. Preencha a coluna **I** (Nome Vendedor) com os nomes respectivos aos códigos dos vendedores
-   - Para isso utilize a função PROCV(**Cod. Vendedor;Vendedores;2**)
+   - Para isso utilize a função PROCV(**Cod. Vendedor;Vendedores;2;VERDADEIRO**)
 4. Preencha a coluna **J** (Marca) com a marca de cada carro vendido
-   - Utilize a função PROCV(**Placa;Tabela de automoveis;2**)
+   - Utilize a função PROCV(**Placa;Tabela de automoveis;2;VERDADEIRO**)
 5. Preencha a coluna **K** (Modelo) com o modelo de cada carro vendido
-   - Utilize a função PROCV(**Placa;Tabela de automoveis;3**)
+   - Utilize a função PROCV(**Placa;Tabela de automoveis;3;VERDADEIRO**)
 6. Preencha a coluna **L** (Preço) com o preço de cada carro vendido
-   - Utilize a função PROCV(**Placa;Tabela de automoveis;5**)
+   - Utilize a função PROCV(**Placa;Tabela de automoveis;5;VERDADEIRO**)
 7. Preencha a coluna **M** (Comissão) multiplicando o **Preço** pela **porcentagem** de comissão:
    - Sabendo que se o vendedor for **Classe A** a comissão é 5%
    - Se o vendedor for **Classe B** a comissão é 3%
