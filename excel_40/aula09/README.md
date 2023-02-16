@@ -47,3 +47,25 @@
    * A: O **Subtotal**
    * B: O **Total**
    * C: E o **Troco**
+6. Agora para testar, vamos apagar os dados da primeira coluna **A** e os da coluna das quantidades **D** e preecher com os seguintes valores:
+
+|id do prato|quantidade|
+|-|:-:|
+|3|1|
+|9|1|
+|14|2|
+
+* Quanto deu este almoço?
+* O Cliente pagou com uma nota de R$100,00
+* Quanto recebeu de troco?
+
+7. Novamente vamos apagar os dados da primeira coluna **A** e os da coluna das quantidades **D** e preecher com os seguintes valores:
+
+|id do prato|quantidade|
+|-|:-:|
+|4|1|
+|17|1|
+
+* Quanto deu este almoço?
+* O Cliente pagou com uma nota de R$100,00
+* Quanto recebeu de troco?
