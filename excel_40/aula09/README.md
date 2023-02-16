@@ -31,6 +31,19 @@
    * Destaque as estatísticas
 
 10. Faça um gráfico selecionando as colunas **Modelo** e **Preço** dos automóveis, escolha um dos gráficos recomendados pelo Excel.
-
 ### Ao concluir chame o professor para corrigir
 
+## Atividade 2
+* Restaurante do Chiquinho
+![](atividade2_formativa.png)
+1. Abra uma planilha nova no Excel e copie a planilha conforme imagem acima:
+2. Formate os preços em R$ Reais
+3. Tratase de um cardápio e uma comanda
+   * Seu Francisco precisa calcular rapidamente as contas de seus fregueses.
+   * Para isso utilize a função **PROCV()** e preencha a coluna **B** com os nomes dos pratos, procure pelo **id do prato**
+4. Preencha a coluna **C** com o preço dos pratos:
+   * Utilize a função **PROCV()** também, procurando pelo **id do prato**
+5. Calcule:
+   * A: O **Subtotal**
+   * B: O **Total**
+   * C: E o **Troco**
