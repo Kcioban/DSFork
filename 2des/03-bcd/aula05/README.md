@@ -3,4 +3,4 @@
 	- csv (Estruturado)
 	- xml (Semi-estruturado)
 	- json (Não estruturado)
-<img src="SQL_x_JSON.png">
+![](SQL_x_JSON.png)
