@@ -2,7 +2,7 @@ const dados = document.querySelector('#dados')
 
 const options = { method: 'GET' };
 
-fetch('http://localhost:3000/alunos', options)
+fetch('http://localhost:3000/aluno/listar', options)
   .then(response => response.json())
   .then(response => {
     response.forEach(element => {
