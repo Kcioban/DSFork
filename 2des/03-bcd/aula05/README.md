@@ -14,7 +14,7 @@
 ![](./04.projeto_duplicatas/der_duplicatas.1.0.png)
 5. **./05.projeto_pedidos**
 ![](./05.projeto_pedidos/normalizacao.png)
-![](./05.projeto_pedidos/der_pedidos1.0.png)
+![](./05.projeto_pedidos/der_pedidos.1.0.png)
 
 # Exercícios
 * Para cada um dos 5 projetos, elabore o script de SQL/DDL:
