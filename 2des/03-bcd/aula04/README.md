@@ -18,8 +18,8 @@
 	- Seis pedidos
 # Exercícios:
 - Baseado no exemplo "./exercicios/exemplo_compras.xlsx":
-	- 1. Normalize a planilha ./exercicios/exercicio1_clientes.xlsx
-	- 2. Normalize a planilha ./exercicios/exercicio2_academia.xlsx
-	- 3. Normalize a planilha ./exercicios/exercicio3_onibus.xlsx
-	- 4. Normalize a planilha ./exercicios/exercicio4_parcelas.xlsx
-	- 5. Normalize a planilha ./exercicios/exercicio5_pedidos.xlsx
+	- 1. Normalize os dados da planilha ./exercicios/exercicio1_clientes.xlsx
+	- 2. Normalize os dados da planilha ./exercicios/exercicio2_academia.xlsx
+	- 3. Normalize os dados da planilha ./exercicios/exercicio3_onibus.xlsx
+	- 4. Normalize os dados da planilha ./exercicios/exercicio4_parcelas.xlsx
+	- 5. Normalize os dados da planilha ./exercicios/exercicio5_pedidos.xlsx
