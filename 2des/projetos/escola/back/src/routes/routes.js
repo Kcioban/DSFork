@@ -5,5 +5,6 @@ const Alunos = require('../controllers/alunos');
 
 router.get('/', Alunos.teste);
 router.get('/alunos', Alunos.listar);
+router.get('/create', Alunos.cadastrar);
 
 module.exports = router
