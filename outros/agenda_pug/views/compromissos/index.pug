@@ -1,0 +1,18 @@
+h1 Lista de Compomissos
+
+table
+  thead
+    tr
+      th Onde
+      th Quando
+      th Descrição
+      th Ação
+  tbody
+    each compromisso in compromissos
+      tr
+        td= compromisso.onde
+        td= new Intl.DateTimeFormat('pt-BR',{ dateStyle: 'short', timeStyle: 'short' }).format(compromisso.quando)
+        td= compromisso.descricao
+        td
+          form(action=`/delete/${compromisso._id}?_method=DELETE`, method='POST')
+            button(type='submit') Excluir
