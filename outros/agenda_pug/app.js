@@ -5,6 +5,7 @@ const compromisso = require('./src/routes/compromisso');
 
 const app = express();
 app.set('view engine', 'pug');
+app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 app.use('/', compromisso);
