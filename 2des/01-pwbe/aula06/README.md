@@ -209,6 +209,9 @@ function excluirItem(i){
 }
 
 ```
+# O HTML e CSS cria a seguinte interface
+![](front)
+
 # Criando o Banco de dados
 - Criar uma subpasta chamada "docs"
 - Criar um arquivo chamado "inventario.sql" e criar o script de criação e população do banco de dados SQL(DDL, DML)
