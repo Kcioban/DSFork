@@ -1,13 +1,13 @@
 # Conhecimentos
-2.3. Design patterns
-3. Frameworks
-3.1. Definição
-3.2. Modelos e tipos
-3.3. Instalação e configuração
-3.4. Criação de projetos utilizando framework
-4. Persistência de dados
-4.1. Conexão com base de dados
-4.2. CRUD
+* 2.3. Design patterns
+* 3. Frameworks
+* 3.1. Definição
+* 3.2. Modelos e tipos
+* 3.3. Instalação e configuração
+* 3.4. Criação de projetos utilizando framework
+* 4. Persistência de dados
+* 4.1. Conexão com base de dados
+* 4.2. CRUD
 
 # CRUD com apenas uma tabela (Continuação)
 - Ainda com o mesmo front da aula anterior
@@ -153,16 +153,16 @@ app.listen(3000, () => {
 ```
 # Realize os testes com o aplicativo insomnia
 - Rota de teste: http://localhost:3000
-![](teste1.png)
+<br>![](teste1.png)
 - Rota POST Criar: http://localhost:3000/item/criar
-![](teste2.png)
+<br>![](teste2.png)
 - Rota GET Listar todos: http://localhost:3000/item/listar
-![](teste3.png)
+<br>![](teste3.png)
 - Rota GET Listar 1 item específico: http://localhost:3000/item/listar/i007
-![](teste4.png)
+<br>![](teste4.png)
 - Rota PUT Alterar: http://localhost:3000/item/alterar
-![](teste5.png)
+<br>![](teste5.png)
 - Rota DELETE Excluir 1 item específico: http://localhost:3000/item/excluir/i007
-![](teste6.png)
+<br>![](teste6.png)
 - Excluir o mesmo item novamete e ver se responde com código 404 não encontrado
-![](teste7.png)
+<br>![](teste7.png)
