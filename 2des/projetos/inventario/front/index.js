@@ -24,6 +24,6 @@ cadastro.addEventListener('submit', e => {
     linha.appendChild(col4)
     linha.appendChild(col5)
     corpo.appendChild(linha)
-    valTotal += parseInt(cadastro.valor.value)
+    valTotal += parseFloat(cadastro.valor.value)
     total.value = valTotal 
 })

@@ -71,9 +71,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 header {
+    height: 14vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,13 +115,16 @@ input {
 }
 
 main {
+    height: 75vh;
     max-width: 800px;
     border: 1px solid #ff7e05;
     border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: none;
 }
 
 main table {
-    width: 800px;
+    width: 780px;
 }
 
 main table tr:nth-child(even) {
@@ -155,6 +160,7 @@ input[type=submit]{
 }
 
 footer{
+    height: 6vh;
     width: 800px;
     border: 1px solid #ff7e05;
     border-radius: 5px;
@@ -193,7 +199,7 @@ cadastro.addEventListener('submit', e => {
     linha.appendChild(col4)
     linha.appendChild(col5)
     corpo.appendChild(linha)
-    valTotal += parseInt(cadastro.valor.value)
+    valTotal += parseFloat(cadastro.valor.value)
     total.value = valTotal 
 })
 
