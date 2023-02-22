@@ -210,7 +210,7 @@ function excluirItem(i){
 
 ```
 # Criando o Banco de dados
-- Criar uma pasta chamada "docs"
+- Criar uma subpasta chamada "docs"
 - Criar um arquivo chamado "inventario.sql" e criar o script de criação e população do banco de dados SQL(DDL, DML)
 
 inventario.sql
@@ -236,3 +236,11 @@ INSERT INTO item VALUES
 ('i006','Prateleira','Prateleira de Madeira',1600.00);
 ```
 
+# Desenvolver o BackEnd (Em NodeJS)
+- Criar uma subpasta chamada "back"
+- Abrir o Terminal do VsCode "CTRL + Aspas"
+- Acessar a pasta "back" -> cd back
+- Iniciar o projeto e instalar as dependências
+    - npm init
+    - npm i express cors mysql
+- Criar o arquivo "server.js"
