@@ -75,7 +75,8 @@ body {
 }
 
 header {
-    height: 14vh;
+    height: 10vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +84,7 @@ header {
     border-radius: 5px;
     max-width: 800px;
     margin: 5px;
+    padding: 5px;
 }
 
 .rotulos {
@@ -92,12 +94,11 @@ header {
     justify-content: space-around;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-header form {
-    width: 800px;
+form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -115,16 +116,31 @@ input {
 }
 
 main {
-    height: 75vh;
-    max-width: 800px;
+    height: 50vh;
+    max-width: 50vw;
     border: 1px solid #ff7e05;
     border-radius: 5px;
     overflow-y: auto;
-    overflow-x: none;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgb(255, 225, 192);
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #ff9a3b;
+    border-radius: 10px;
+    border: 1px solid #ff7e05;
 }
 
 main table {
-    width: 780px;
+    width: 50vw;
 }
 
 main table tr:nth-child(even) {
@@ -135,7 +151,7 @@ main table tr td {
     text-align: center;
 }
 
-button{
+button {
     border: none;
     background-color: #ff7e05;
     border-radius: 5px;
@@ -147,7 +163,7 @@ button{
     cursor: pointer;
 }
 
-input[type=submit]{
+input[type=submit] {
     border: none;
     background-color: #ff7e05;
     border-radius: 5px;
@@ -159,15 +175,16 @@ input[type=submit]{
     cursor: pointer;
 }
 
-footer{
-    height: 6vh;
-    width: 800px;
+footer {
+    height: 5vh;
+    width: 50vw;
     border: 1px solid #ff7e05;
     border-radius: 5px;
-    margin: 5px;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    margin: 5px;
+    padding: 5px;
 }
 ```
 - Em JavaScript criar o código que pega os dados do formulário e adiciona a tabela
@@ -210,7 +227,7 @@ function excluirItem(i){
 
 ```
 # O HTML e CSS cria a seguinte interface
-![](front)
+![](front.png)
 
 # Criando o Banco de dados
 - Criar uma subpasta chamada "docs"
@@ -341,3 +358,7 @@ module.exports = {
     excluir
 }
 ```
+
+# Conclusão do MVC e Integração (Proxima aula07)
+- Concluir a estrutura do Back-End criando a classe Model
+- Alterar o Front-End para consumir os dados do BackEnd e integrar a aplicação
