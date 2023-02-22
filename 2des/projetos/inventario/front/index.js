@@ -13,6 +13,7 @@ cadastro.addEventListener('submit', e => {
     let col5 = document.createElement('td')
     let del = document.createElement('button')
     del.innerHTML = '[-]'
+    del.setAttribute('onclick','excluirItem(this)')
     col1.innerHTML = cadastro.id.value
     col2.innerHTML = cadastro.nome.value
     col3.innerHTML = cadastro.descricao.value
@@ -27,3 +28,7 @@ cadastro.addEventListener('submit', e => {
     valTotal += parseFloat(cadastro.valor.value)
     total.value = valTotal 
 })
+
+function excluirItem(i){
+    i.parentNode.parentNode.remove()
+}
