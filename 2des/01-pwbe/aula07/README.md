@@ -151,7 +151,7 @@ app.listen(3000, () => {
     console.log("Respondendo na porta 3000")
 })
 ```
-# Realize os testes com o aplicativo insomnia
+# Realize os testes unitários com o aplicativo insomnia
 - Rota de teste: http://localhost:3000
 <br>![](teste1.png)
 - Rota POST Criar: http://localhost:3000/item/criar
@@ -166,3 +166,5 @@ app.listen(3000, () => {
 <br>![](teste6.png)
 - Excluir o mesmo item novamete e ver se responde com código 404 não encontrado
 <br>![](teste7.png)
+
+# Altere o arquivo index.js no Front-End para fazer a integração:
