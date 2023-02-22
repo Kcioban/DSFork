@@ -27,11 +27,11 @@
             <label for="acao">Ação</label>
         </div>
         <form id="cadastro">
-            <input type="text" name="id" id="id"/>
-            <input type="text" name="nome" id="nome"/>
-            <input type="text" name="descricao" id="descricao"/>
-            <input type="number" name="valor" id="valor"/>
-            <input type="submit" value="Cadastrar"/>
+            <input type="text" name="id" id="id" required />
+            <input type="text" name="nome" id="nome" required />
+            <input type="text" name="descricao" id="descricao" />
+            <input type="number" step="any" name="valor" id="valor" required />
+            <input type="submit" value="Cadastrar" />
         </form>
     </header>
     <main>
@@ -50,5 +50,6 @@
     </main>
 </body>
 <script src="index.js"></script>
+
 </html>
 ```
