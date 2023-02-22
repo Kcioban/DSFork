@@ -243,4 +243,29 @@ INSERT INTO item VALUES
 - Iniciar o projeto e instalar as dependências
     - npm init
     - npm i express cors mysql
+- Será criada a pasta node_modules e o arquivo package.json
+- Altere a primeira linha do package.json, campo "name":"back" para "name":"inventario"
+- Altere a linha "main": "index.js", para "main": "server.js",
 - Criar o arquivo "server.js"
+```javascript
+const express = require('express')
+const app = express()
+app.listen(3000,()=>{
+    console.log("Respondendo na porta 3000")
+})
+```
+- Crie a estrutura MVC
+![](pastas.png)
+- E os arquivos conforme a seguir
+src/dao/connect.js
+```javascript
+const mysql = require('mysql')
+
+const con = mysql.createConnection({
+    user: 'root',
+    host: 'localhost',
+    database: 'inventario'
+});
+
+module.exports = con;
+```
