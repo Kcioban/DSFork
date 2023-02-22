@@ -255,8 +255,11 @@ app.listen(3000,()=>{
 })
 ```
 - Crie a estrutura MVC
+
 ![](pastas.png)
+
 - E os arquivos conforme a seguir
+
 src/dao/connect.js
 ```javascript
 const mysql = require('mysql')
@@ -268,4 +271,18 @@ const con = mysql.createConnection({
 });
 
 module.exports = con;
+```
+src/routes/item.js
+```javascript
+const express = require("express");
+const router = express.Router();
+
+const Item = require('../controllers/item');
+
+router.get('/', Item.teste);
+router.get('/item/listar', Item.listar);
+router.post('/item/criar', Item.criar);
+router.delete('/item/excluir', Item.excluir);
+
+module.exports = router
 ```
