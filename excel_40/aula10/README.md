@@ -21,3 +21,4 @@
 - Selecione as colunas "B" e "D", vendedor e comissão e crie um gráfico recomendado.
 - Calcule o Total, Maior e Menor comissão nas células (D13, D14, D15)
 - Chame o professor para avaliar.
+- Clique no link a seguir e responda o questionário: https://forms.gle/N3io1HFogznzxPh57
