@@ -270,6 +270,14 @@ SELECT * FROM telefone;
 SELECT * FROM exercicio;
 SELECT * FROM ficha;
 ```
+## Exportação de dados no formato universal CSV
+```SQL
+-- Exportar para CSV
+SELECT * FROM vw_exercicios_praticados
+INTO OUTFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/rel_exercicio.csv'
+FIELDS TERMINATED BY ';'
+LINES TERMINATED BY '\r\n';
+```
 # Atividades
 - Assim como foi feito em aula os exemplos do 01.projeto_clientes e 02.projeto_academia, faça a importação dos dados por arquivos CSV dos outros três projetos:
 	- 03.projeto_onibus
