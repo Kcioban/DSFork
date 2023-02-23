@@ -1,3 +1,28 @@
+# SQL (structured query language)
+- 2.7. Operadores
+    - 2.7.1. Aritméticos
+    - 2.7.2. Relacionais
+    - 2.7.3. Lógicos
+    - 2.7.4. Auxiliares
+- 2.8. Funções
+    - 2.8.1. Data e hora
+    - 2.8.2. Matemáticas
+    - 2.8.3. String
+    - 2.8.4. De agregação
+- 2.9. Agrupamento de dados (GROUP BY)
+- 2.10. União de dados (UNION)
+- 2.11. Associação de tabelas
+    - 2.11.1. WHERE
+    - 2.11.2. CROSS JOIN
+    - 2.11.3. INNER JOIN
+    - 2.11.4. OUTER JOIN
+    - 2.11.5. LEFT
+    - 2.11.6. RIGTH
+## Views (Visões, Relatórios)
+- São consultas salvas que trazem "informações" do banco de dados
+
+## Banco de dados de uma Academia
+```SQL
 DROP DATABASE IF EXISTS academia;
 CREATE DATABASE academia CHARSET=UTF8 COLLATE utf8_general_ci;
 USE academia;
@@ -32,43 +57,37 @@ CREATE TABLE ficha (
     FOREIGN KEY (id_aluno) REFERENCES aluno(id),
     FOREIGN KEY (id_exercicio) REFERENCES exercicio(id)
 );
-
-SHOW TABLES;
-
 -- DML (Importação dos dados)
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/aluno.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/aluno.csv'
 INTO TABLE aluno
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/telefone.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/telefone.csv'
 INTO TABLE telefone
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/exercicio.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/exercicio.csv'
 INTO TABLE exercicio
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/ficha.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/ficha.csv'
 INTO TABLE ficha
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
-
-SELECT * FROM aluno;
-SELECT * FROM telefone;
-SELECT * FROM exercicio;
-SELECT * FROM ficha;
-
+```
+Visão (Consulta salva, Relatório)
+```SQL
 -- Missão, ver uma tabela com os exercícios mais praticados (Relatório)
 CREATE VIEW vw_exercicios_praticados AS
 SELECT f.id_aluno, e.id, e.descricao, e.aparelho, COUNT(e.id) AS Qtdade
@@ -77,9 +96,4 @@ ON e.id = f.id_exercicio
 GROUP BY e.id;
 
 SELECT * FROM vw_exercicios_praticados;
-
--- Exportar para CSV
-SELECT * FROM vw_exercicios_praticados
-INTO OUTFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/rel_exercicio.csv'
-FIELDS TERMINATED BY ';'
-LINES TERMINATED BY '\r\n';
+```

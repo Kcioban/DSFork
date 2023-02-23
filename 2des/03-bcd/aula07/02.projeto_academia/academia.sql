@@ -36,28 +36,28 @@ CREATE TABLE ficha (
 SHOW TABLES;
 
 -- DML (Importação dos dados)
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/aluno.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/aluno.csv'
 INTO TABLE aluno
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/telefone.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/telefone.csv'
 INTO TABLE telefone
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/exercicio.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/exercicio.csv'
 INTO TABLE exercicio
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/ficha.csv'
+LOAD DATA INFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/ficha.csv'
 INTO TABLE ficha
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -69,7 +69,7 @@ SELECT * FROM telefone;
 SELECT * FROM exercicio;
 SELECT * FROM ficha;
 
--- Missão, ver uma tabela com os exercícios mais praticados (Relatório)
+-- Missão Ver uma tabela com os exercícios mais praticados
 CREATE VIEW vw_exercicios_praticados AS
 SELECT f.id_aluno, e.id, e.descricao, e.aparelho, COUNT(e.id) AS Qtdade
 FROM exercicio e JOIN ficha f
@@ -79,7 +79,9 @@ GROUP BY e.id;
 SELECT * FROM vw_exercicios_praticados;
 
 -- Exportar para CSV
-SELECT * FROM vw_exercicios_praticados
-INTO OUTFILE 'D:/senai2023/2des/03-bcd/aula06/02.projeto_academia/rel_exercicio.csv'
-FIELDS TERMINATED BY ';'
-LINES TERMINATED BY '\r\n';
+SELECT *
+INTO OUTFILE 'E:/senai2023/2des/03-bcd/aula06/02.projeto_academia/rel_exercicio.csv'
+FIELDS ESCAPED BY '""' TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\n'
+FROM vw_exercicios_praticados;
+
+
