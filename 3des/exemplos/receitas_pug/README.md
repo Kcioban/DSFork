@@ -1,4 +1,4 @@
-# Agenda exemplo BackEnd (Node + Mongo + Pug)
+# Livro de Receitas exemplo BackEnd (Node + Mongo + Pug)
 * Necessário ter NodeJS e MongoDB instalados
 1. Clonar este reposiório:
     - git clone
