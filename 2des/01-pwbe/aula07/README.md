@@ -1,4 +1,6 @@
-# Conhecimentos
+# Aula07 - Projeto Fullstak 
+# CRUD com apenas uma tabela (Continuação - Inventário)
+## Conhecimentos
 * 2.3. Design patterns
 * 3. Frameworks
 * 3.1. Definição
@@ -8,15 +10,36 @@
 * 4. Persistência de dados
 * 4.1. Conexão com base de dados
 * 4.2. CRUD
-
-# CRUD com apenas uma tabela (Continuação)
-- Ainda com o mesmo front da aula anterior
+![](../lousa1.jpg)
+# Ainda com o mesmo front da aula anterior
 ![](../aula06/front.png)
 
 - Mesmo banco de dados
+<br/>docs/inventario.sql
+```sql
+-- SQL do banco de dados de Inventários com apenas uma tabela
+DROP DATABASE IF EXISTS inventario;
+CREATE DATABASE inventario CHARSET=UTF8 COLLATE utf8_general_ci;
+USE inventario;
+-- DDL Criação da estrutura da tabela
+CREATE TABLE item(
+    id varchar(5) not null primary key,
+    nome varchar(50) not null,
+    descricao text,
+    valor decimal(10,2) not null
+);
+-- DML Popular a tabela com dados de teste
+INSERT INTO item VALUES
+('i001','Mesa','Mesa de escritório',100.00),
+('i002','Computador','Desktop DEL i5, 8GB RAM, SSD 500GB',2200.00),
+('i003','Cadeira','Cadeira giratória de escritório',500.00),
+('i004','Longarina','Longarina de três cadeiras',450.00),
+('i005','Prateleira','Prateleira de vidro',2500.00),
+('i006','Prateleira','Prateleira de Madeira',1600.00);
+```
 
-# Alterar o BackEnd (NodeJS) Acrescentando a Classe Model
-## E alterando os arquivos conforme a seguir
+## Alterar o BackEnd (NodeJS) Acrescentando a Classe Model
+### E alterando os arquivos conforme a seguir
 - src/models/item.js
 ```javascript
 class Item {
@@ -483,4 +506,59 @@ footer {
         display: none;
     }
 }
+```
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Inventário Papelaria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inventário - Papelaria PapelTudo</h1>
+        <div class="rotulos">
+            <label for="id">Id</label>
+            <label for="nome">Nome</label>
+            <label for="descricao">Descrição</label>
+            <label for="valor">Valor</label>
+            <label for="acao">Ação</label>
+        </div>
+        <form id="cadastro">
+            <input type="text" name="id" id="id" required />
+            <input type="text" name="nome" id="nome" required />
+            <input type="text" name="descricao" id="descricao" />
+            <input type="number" step="any" name="valor" id="valor" required />
+            <input type="submit" value="Cadastrar" />
+        </form>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpo"></tbody>
+        </table>
+    </main>
+    <footer>
+        <label for="total">Patrimônio Total:</label>
+        <input type="text" name="total" id="total" style="text-align: right;" readonly />
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
 ```
