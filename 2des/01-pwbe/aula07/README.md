@@ -10,7 +10,7 @@
 * 4. Persistência de dados
 * 4.1. Conexão com base de dados
 * 4.2. CRUD
-![](../lousa1.jpg)
+![](lousa1.jpg)
 # Ainda com o mesmo front da aula anterior
 ![](../aula06/front.png)
 
