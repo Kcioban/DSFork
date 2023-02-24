@@ -51,7 +51,7 @@ index.html
     </main>
     <footer>
         <label for="total">Total:</label>
-        <input type="number" name="total" id="total" readonly/>
+        <input type="text" name="total" id="total" readonly/>
     </footer>
 </body>
 <script src="index.js"></script>
