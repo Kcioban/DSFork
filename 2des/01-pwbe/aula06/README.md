@@ -188,7 +188,7 @@ footer {
 }
 ```
 - Em JavaScript criar o código que pega os dados do formulário e adiciona a tabela
-
+index.js
 ```javascript
 const cadastro = document.querySelector('#cadastro')
 const corpo = document.querySelector('#corpo')
@@ -315,7 +315,7 @@ router.delete('/item/excluir', Item.excluir);
 module.exports = router
 ```
 
-scr/controllers/item.js
+src/controllers/item.js
 ```javascript
 const con = require('../dao/connect')
 
