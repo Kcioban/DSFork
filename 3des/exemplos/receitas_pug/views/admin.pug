@@ -1,0 +1,92 @@
+head
+  meta(charset='utf-8')
+  title Livro de Receitas
+  link(rel='stylesheet', href='style.css')
+  link(rel="shortcut icon" href="./assets/ico.png")
+  script(src="script.js")
+header
+  h1 Minhas Receitas
+  div
+    button(onclick="modalCreate.classList.remove('oculto');") Adicionar
+    button(onclick="window.location.href = '/'") Sair
+
+main
+  section(id="cards")
+    each receita in receitas
+      if receita.foto
+        -var foto='data:image/png;base64,'+receita.foto
+      else
+        -var foto="./assets/default.png"
+      div(class="card" id=receita._id)
+        div
+          div
+            b Id:
+            label=receita._id
+            form(action=`/delete/${receita._id}?_method=DELETE`, method='POST')
+              button(type='reset', onclick=`update('${receita._id}')`) *
+              button(type='submit') -
+        div
+          b Nome:
+          label=receita.nome
+        div
+          b Tipo:
+          label=receita.tipo
+        div
+          b Ingredientes:
+          label=receita.ingredientes
+        div
+          b Modo de Fazer:
+          label=receita.modoPreparo
+        img(class="img" src=foto)
+
+  section(id="modalCreate" class="modal oculto")
+    form(action="/create", method="POST", class="form")
+      h2 Adicionar Receita
+      div(style="justify-content: space-around;")
+        h3 Tipo:
+        select(name="tipo" placeholder="Tipo")
+          option(value="salgado") Salgada
+          option(value="doce") Doce
+      div
+        label Nome:
+        input(type="text" name="nome" placeholder="Nome da receita" required)
+      div
+        label Ingredientes:
+        textarea(name="ingredientes" placeholder="Ingredientes" required)
+      div
+        label Modo de Preparo:
+        textarea(name="modoPreparo" placeholder="Modo de Preparo" required)
+      div
+        label Imagem:
+        input(type="file" id="imgCad" onchange="prevImgCreate()" accept="image/jpeg, image/png")
+        img(id="previewCad" src="./assets/default.png" alt="Imagem")
+        input(type="hidden" name="foto" id="fotoCad")
+      div(class="botoes")
+        button(type="submit") Adicionar
+        button(type="reset" onclick="modalCreate.classList.add('oculto');") Cancelar
+
+  section(id="modalUpdate" class="modal oculto")
+    form(id="update", method="POST", class="form")
+      h2 Adicionar Receita
+      div(style="justify-content: space-around;")
+        h3 Tipo:
+        select(name="tipo" placeholder="Tipo")
+          option(value="salgado") Salgada
+          option(value="doce") Doce
+      div
+        label Nome:
+        input(type="text" name="nome" placeholder="Nome da receita" required)
+      div
+        label Ingredientes:
+        textarea(name="ingredientes" placeholder="Ingredientes" required)
+      div
+        label Modo de Preparo:
+        textarea(name="modoPreparo" placeholder="Modo de Preparo" required)
+      div
+        label Imagem:
+        input(type="file" id="imgUpd" onchange="prevImgCreate()" accept="image/jpeg, image/png")
+        img(id="previewUpd" src="./assets/default.png" alt="Imagem")
+        input(type="hidden" name="foto" id="fotoUpd")
+      div(class="botoes")
+        button(type="submit") Alterar
+        button(type="reset" onclick="modalCreate.classList.add('oculto');") Cancelar

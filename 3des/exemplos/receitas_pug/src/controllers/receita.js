@@ -1,18 +1,37 @@
+require('dotenv').config();
+const USER = process.env.USER || 'admin'
+const USER_PASSWD = process.env.USER_PASSWD || '1234'
 const Receita = require('../models/receita');
 
+const login = (req, res) => {
+    if (req.body.email == USER && req.body.senha == USER_PASSWD) {
+        res.redirect('/'+USER)
+    } else {
+        res.redirect('/?erro=Email ou senha invalidos')
+    }
+}
+
 const create = (req, res) => {
-    const newReceita = new Receita(req.body)
+    let newReceita = new Receita(req.body)
     newReceita.save(err => {
         if (err) {
             res.status(500).send("Erro = " + err)
         } else {
-            res.redirect('/')
+            res.redirect('/admin')
         }
     });
 }
 
+const admin = async (req, res) => {
+    if (req.params.user == USER) {
+        let receitas = await Receita.find()
+        res.render('admin', { receitas })
+    } else
+        res.redirect('/')
+}
+
 const read = async (req, res) => {
-    const receitas = await Receita.find()
+    let receitas = await Receita.find()
     res.render('index', { receitas })
 }
 
@@ -29,6 +48,8 @@ const del = (req, res) => {
 }
 
 module.exports = {
+    login,
+    admin,
     create,
     read,
     update,
