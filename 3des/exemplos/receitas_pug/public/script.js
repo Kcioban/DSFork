@@ -4,8 +4,8 @@ const prevImg = (img, e) => {
         let fr = new FileReader();
         fr.onload = function () {
             let fotoBase64 = fr.result.replace("data:", "").replace(/^.+,/, "");
-            document.querySelector("#"+img).src = isImgBase64(fotoBase64);
-            document.querySelector("#file"+img).value = fotoBase64;
+            document.querySelector("#" + img).src = isImgBase64(fotoBase64);
+            document.querySelector("#file" + img).value = fotoBase64;
         }
         fr.readAsDataURL(file);
     } else {
@@ -21,6 +21,20 @@ function isImgBase64(img) {
         return `./assets/default.png`;
 }
 
-function confirma(){ 
+function confirma() {
     return confirm('Tem certeza desta ação?');
- }
+}
+
+function getURL() {
+    //Verificar se há mensagem de erro via Query HTTP
+    if (location.search.length > 0) {
+        //Formatar e mostrar a mensagem
+        alert(location.search.split("=")[1].replace(/%20/g, " "))
+        // Obter a URL atual
+        const urlAtual = new URL(window.location.href);
+        // Remover a query
+        urlAtual.search = '';
+        // Atualizar a URL no navegador
+        window.history.replaceState(null, null, urlAtual.href);
+    }
+}
