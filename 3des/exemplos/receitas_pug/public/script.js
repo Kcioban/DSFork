@@ -1,11 +1,11 @@
-const prevImgCreate = () => {
-    let file = document.querySelector("#imgCad")['files'][0];
+const prevImg = (img, e) => {
+    let file = e['files'][0];
     if (file.size < 1048576) {
         let fr = new FileReader();
         fr.onload = function () {
             let fotoBase64 = fr.result.replace("data:", "").replace(/^.+,/, "");
-            document.querySelector("#previewCad").src = isImgBase64(fotoBase64);
-            document.querySelector("#fotoCad").value = fotoBase64;
+            document.querySelector("#"+img).src = isImgBase64(fotoBase64);
+            document.querySelector("#file"+img).value = fotoBase64;
         }
         fr.readAsDataURL(file);
     } else {
@@ -21,7 +21,6 @@ function isImgBase64(img) {
         return `./assets/default.png`;
 }
 
-function update(e){
-    const card = document.getElementById(e)
-    alert(card.childNodes[0])
-}
+function confirma(){ 
+    return confirm('Tem certeza desta ação?');
+ }

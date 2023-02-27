@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 0 10px #133;
 }
 
 h1 {
@@ -55,6 +56,20 @@ main {
     overflow: auto;
 }
 
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgb(231, 255, 192);
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color:  #133;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 255, 192);
+}
+
 #cards {
     width: 100%;
     display: flex;
@@ -62,9 +77,14 @@ main {
     justify-content: center;
 }
 
+#btUpdate{
+    position: relative;
+    left: 250px;
+    top: -43px;
+}
+
 .card {
     max-width: 350px;
-    background-color: #eee;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -73,6 +93,14 @@ main {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 0 10px #133;
+}
+
+.doce{
+    background-color: #ffe;
+}
+
+.salgado{
+    background-color: #ffec96;
 }
 
 .card_header {
@@ -90,7 +118,24 @@ main {
     align-items: center;
 }
 
-.card div button {
+.card input, select, textarea{
+    border:none;
+    box-shadow: 0 0 10px #133;
+    background:transparent;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card input, textarea{
+    width: 100%;
+}
+
+.card textarea{
+    height: 60px;
+}
+
+
+.btUpDel {
     background-color: rgb(110, 16, 16);
     color: #eee;
     padding: 10px;
@@ -103,8 +148,7 @@ main {
     width: 40px;
     cursor: pointer;
 }
-
-.card div button:hover {
+.btUpDel:hover {
     background-color: #eee;
     box-shadow: 0 0 10px rgb(110, 16, 16);
     color: rgb(110, 16, 16);
@@ -210,10 +254,10 @@ main {
 }
 
 .botoes {
-    width: 100%;
+    max-width: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .oculto {

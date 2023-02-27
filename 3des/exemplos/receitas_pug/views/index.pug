@@ -16,7 +16,7 @@ main
         -var foto='data:image/png;base64,'+receita.foto
       else
         -var foto="./assets/default.png"
-      div(class="card")
+      div(class=`card ${receita.tipo}`)
         div
           div(class="card_header")
             b Id:
