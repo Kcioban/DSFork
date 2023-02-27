@@ -1,4 +1,4 @@
-# Planejemanto do Projeto
+# Planejemento do Projeto
 ## Conhecimentos
 - 1. Qualidade de software
 	- 1.1. Definição
