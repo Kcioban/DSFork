@@ -45,4 +45,10 @@ O código Pug é mais conciso e fácil de ler do que o HTML correspondente. O Pu
 <br>
 O Pug é frequentemente usado com o Node.js para gerar páginas HTML dinamicamente em aplicativos da web. O Pug é instalado através do npm (Node Package Manager) e é facilmente integrado com outros pacotes do Node.js, como o Express.js, um framework popular para criação de aplicativos da web em Node.js.
 
-#Fonte ChatGPT 27/02/2023
+### Fonte: ChatGPT 27/02/2023
+
+## Protótipo
+![](./public/assets/print1.png)
+![](./public/assets/print2.png)
+![](./public/assets/print3.png)
+![](./public/assets/print4.png)
