@@ -6,4 +6,10 @@
 	- 1.3. Processos de trabalho
 - Qualidade = Padrão => Norma
 - NBR, ABNT, ISO
-![](qualiade.png) 
+![](qualidade.png)
+- Modelos
+![](modelos.png)
+- Métrica
+	- Atributos internos e externos
+	- Métricas internas e externas
+![](metricas.png)
