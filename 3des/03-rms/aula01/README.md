@@ -8,3 +8,18 @@
 	- 1.5.Tipos
 		- 1.5.1.Funcionais
 		- 1.5.2.Não funcionais
+## Regras de negócio RN00..
+![](regras_negocio.png)
+
+## Requisitos Funcionais RF00..
+![](req_funcional.png)
+
+## Requisitos Não Funcionais NF00..
+
+- Simbologia
+
+![](nf_simbologia.png)
+
+- Organograma
+
+![](nf_organograma.png)
