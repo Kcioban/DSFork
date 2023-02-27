@@ -1,4 +1,7 @@
-# Avaliação das entregas
+# Atividades (Correção)
+- Regras de negócio
+- Técnicas de Levantamento de Requisitos
+- Documento EAP (Estrutura Analítica de Projeto)
 ## Exemplos de entregas que cumprem o que foi solicitado
 ### Regras de negócio RN00..
 - regras_negocio_adreina_gleidson_academia
