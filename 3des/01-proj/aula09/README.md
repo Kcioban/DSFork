@@ -1,0 +1,11 @@
+# Metodologia de gerenciamento de projeto
+- 3.1. Escopo
+- 3.2. Revisão dos objetivos
+- 3.3. Análise de riscos
+- 3.4. Cronograma
+- 3.5. Recursos
+- 3.6. Custos
+- 3.7. Documentação
+- 3.8. Avaliação do projeto
+	- 3.8.1. Análise do projeto
+	- 3.8.2. Documentação de avaliação
