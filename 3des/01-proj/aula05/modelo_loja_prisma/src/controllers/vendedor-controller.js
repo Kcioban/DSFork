@@ -12,7 +12,6 @@ const create = async (req, res) => {
 
 const read = async (req, res) => {
     let vendedores = await prisma.vendedores.findMany();
-
     res.status(200).json(vendedores).end();
 }
 
