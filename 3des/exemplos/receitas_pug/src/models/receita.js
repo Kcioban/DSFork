@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 let ReceitaSchema = new Schema({
     nome: { type: String, required: true, max: 100 },
@@ -7,6 +7,6 @@ let ReceitaSchema = new Schema({
     ingredientes: { type: String, required: true, max: 500 },
     modoPreparo: { type: String, required: true, max: 500 },
     foto: { type: String, required: false, max: 20240 }
-});
+})
 
-module.exports = mongoose.model('Receita', ReceitaSchema);
+module.exports = mongoose.model('Receita', ReceitaSchema)

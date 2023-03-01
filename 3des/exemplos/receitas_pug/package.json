@@ -4,6 +4,7 @@
   "description": "* Necessário ter NodeJS e MongoDB instalados\r 1. Clonar este reposiório:\r     - git clone\r 2. Instalar as dependência\r     - npm install\r 3. Iniciar a aplicação\r     - npm start\r     - ou node app.js\r     - ou nodemon\r 4. Executar no caminho: http://localhost:3000",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

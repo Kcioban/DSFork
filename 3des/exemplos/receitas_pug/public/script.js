@@ -1,28 +1,28 @@
 const prevImg = (img, e) => {
-    let file = e['files'][0];
+    let file = e['files'][0]
     if (file.size < 1048576) {
-        let fr = new FileReader();
+        let fr = new FileReader()
         fr.onload = function () {
-            let fotoBase64 = fr.result.replace("data:", "").replace(/^.+,/, "");
-            document.querySelector("#" + img).src = isImgBase64(fotoBase64);
+            let fotoBase64 = fr.result.replace("data:", "").replace(/^.+,/, "")
+            document.querySelector("#" + img).src = isImgBase64(fotoBase64)
             document.querySelector("#file" + img).value = fotoBase64;
         }
-        fr.readAsDataURL(file);
+        fr.readAsDataURL(file)
     } else {
-        alert("O arquivo deve ser menor que que 1MB");
-        document.querySelector("#file").value = null;
+        alert("O arquivo deve ser menor que que 1MB")
+        document.querySelector("#file").value = null
     }
 }
 
 function isImgBase64(img) {
     if (img != null) {
-        return `data:image/png;base64,${img}`;
+        return `data:image/png;base64,${img}`
     } else
-        return `./assets/default.png`;
+        return `./assets/default.png`
 }
 
 function confirma() {
-    return confirm('Tem certeza desta ação?');
+    return confirm('Tem certeza desta ação?')
 }
 
 function getURL() {
@@ -33,8 +33,10 @@ function getURL() {
         // Obter a URL atual
         const urlAtual = new URL(window.location.href);
         // Remover a query
-        urlAtual.search = '';
+        urlAtual.search = ''
         // Atualizar a URL no navegador
-        window.history.replaceState(null, null, urlAtual.href);
+        window.history.replaceState(null, null, urlAtual.href)
     }
 }
+
+

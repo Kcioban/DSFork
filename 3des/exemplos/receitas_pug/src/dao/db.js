@@ -1,5 +1,5 @@
 require('dotenv').config();
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/receitas'
+const MONGODB_URI = process.env.MONGO_URL || 'mongodb://localhost/receitas'
 const mongoose = require('mongoose');
 
 mongoose.set('strictQuery', false);
