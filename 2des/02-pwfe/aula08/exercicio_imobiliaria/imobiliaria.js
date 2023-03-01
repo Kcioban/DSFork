@@ -1,7 +1,10 @@
 const body = document.querySelector("body");
 const imoveis = JSON.parse(localStorage.getItem("imoveis"));
+const pComissao = document.querySelector("#comissao");
 
-imoveis.array.forEach(imovel => {
+var comissao = 0;
+
+imoveis.forEach(imovel => {
     createCard(imovel);
 });
 
@@ -15,11 +18,22 @@ function createCard(imovel) {
 
     button.innerHTML = "Vender";
     button.addEventListener("click", () => {
-        
+        button.disabled = true;
+        button.innerHTML = "Vendido";
+        comissao += Number(valor) * 0.15;
+        pComissao.innerHTML = `Comissão : ${formatarMoeda(comissao)}`;
     })
+
+    pEnd.innerHTML = endereco;
+    pValor.innerHTML = formatarMoeda(valor);
 
     card.appendChild(pEnd);
     card.appendChild(pValor);
+    card.appendChild(button);
 
     body.appendChild(card);
+}
+
+function formatarMoeda(valor) {
+    return new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(Number(valor))
 }

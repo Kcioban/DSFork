@@ -36,4 +36,4 @@
 
 
 # Link Reuniao:
-	- https://teams.microsoft.com/l/meetup-join/19:rBmTaFtSQZL7YpJXyQ7hsnBjoWAJba5-XS2op3iyews1@thread.tacv2/1677495288695?context=%7B%22Tid%22:%22b1051c4b-3b94-41ab-9441-e73a72342fdd%22,%22Oid%22:%22dc26ff41-2b4d-4a9d-b6bf-2c69671a594f%22%7D
+	- https://teams.microsoft.com/l/meetup-join/19:fbUBhSgAJuB2kL-9eeVf6rg9jmQC_c6sBVTwsRpGpLs1@thread.tacv2/1677674456475?context=%7B%22Tid%22:%22b1051c4b-3b94-41ab-9441-e73a72342fdd%22,%22Oid%22:%22dc26ff41-2b4d-4a9d-b6bf-2c69671a594f%22%7D
