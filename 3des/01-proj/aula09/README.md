@@ -9,7 +9,7 @@
 - 3.8. Avaliação do projeto
 	- 3.8.1. Análise do projeto
 	- 3.8.2. Documentação de avaliação
-[Lousa da aula](lousa.jpg)
+<br>![Lousa da aula](lousa.jpg)
 ## Gerente do projeto: (Você)
 
 ## Termo de abertura do projeto:
