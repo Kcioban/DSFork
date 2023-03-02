@@ -73,11 +73,13 @@ IGNORE 1 ROWS;
 -- ./queries.sql
 -- Geradas as conultas necessárias, salva como VISÕES
 
+-- Motoristas com seus telefones
 CREATE VIEW vw_motorista AS
 	SELECT m.cpf, m.nome, t.numero AS telefone FROM motorista m
 		LEFT JOIN telefone t
 		ON m.cpf = t.cpf_motorista;
 
+-- Nomes dos motoristas e linhas que dirige
 CREATE VIEW vw_moto_x_linha AS
 	SELECT m.nome, d.id_linha FROM motorista m
 		LEFT JOIN dirige d

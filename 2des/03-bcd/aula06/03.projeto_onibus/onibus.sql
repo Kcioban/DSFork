@@ -69,8 +69,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
--- Trabalhar nas consultas/query para recuperação de dados
--- 3. Geradas as conultas necessárias, podemos salvá-las como VISÕES
+-- VISÕES
 
 CREATE VIEW vw_motorista AS
 	SELECT m.cpf, m.nome, t.numero AS telefone FROM motorista m
@@ -92,9 +91,4 @@ CREATE VIEW vw_moto_x_linha AS
 SELECT * FROM vw_motorista;
 SELECT * FROM vw_moto_x_linha;
 
-	
-	
-	
-	
-	
 	
