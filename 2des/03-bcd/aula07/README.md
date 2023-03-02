@@ -21,7 +21,7 @@
 ## Views (Visões, Relatórios)
 - São consultas salvas que trazem "informações" do banco de dados
 
-## Banco de dados de uma Academia
+## Banco de dados: Academia
 ```SQL
 DROP DATABASE IF EXISTS academia;
 CREATE DATABASE academia CHARSET=UTF8 COLLATE utf8_general_ci;
@@ -86,7 +86,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 ```
-Visão (Consulta salva, Relatório)
+## View ou Visão (Consulta salva, Relatório)
 ```SQL
 -- Missão, ver uma tabela com os exercícios mais praticados (Relatório)
 CREATE VIEW vw_exercicios_praticados AS
@@ -98,8 +98,11 @@ GROUP BY e.id;
 SELECT * FROM vw_exercicios_praticados;
 ```
 
-#Lousa da aula 02/03/2023
+## Lousa da aula 02/03/2023
 ![](./lousa.jpg)
+
+## Queries, Recursos avançados de consultas
+### JOIN (Associação de tabelas) INNER, LEFT, RIGHT
 ```sql
 -- Query
 -- Inserir um motorista novo, que ainda não possui telefone
@@ -140,12 +143,13 @@ SELECT m.nome, d.id_linha FROM motorista m
 INSERT INTO dirige VALUE ('111.111.111-11','linha6');
 -- Podemos colocar o Jair em outra linha também
 INSERT INTO dirige VALUE ('111.111.111-11','linha1');
-
--- DESAFIOS (Crie consultas que:)
--- A: Mostre o nome, os telefone e id_linha do motorista ou motoristas da linha1
--- B: Mostre os horários da linha1
--- C: Mostre o id_linha das linhas que tenham horário  as 11:00hs.
--- D: Mostre os nomes, telefones, id_linha, descricao e horários orenado por id_linha
--- E: Mostre uma consulta que mostre os nomes dos motoristas e quantas linhas este dirige
--- F: Mostre o id_linha, a descrição e quantos motoristas esta possui
 ```
+
+# Atividades
+- DESAFIO: Ainda com o Banco de Dados de linhas de ônibus (Crie consultas que:)
+    - A: Mostre o nome, os telefone e id_linha do motorista ou motoristas da linha1
+    - B: Mostre os horários da linha1
+    - C: Mostre o id_linha das linhas que tenham horário  as 11:00hs.
+    - D: Mostre os nomes, telefones, id_linha, descricao e horários orenado por id_linha
+    - E: Mostre uma consulta que mostre os nomes dos motoristas e quantas linhas este dirige
+    - F: Mostre o id_linha, a descrição e quantos motoristas esta possui
