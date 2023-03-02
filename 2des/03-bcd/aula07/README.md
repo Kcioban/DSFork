@@ -103,7 +103,7 @@ SELECT * FROM vw_exercicios_praticados;
 
 ## Queries, Recursos avançados de consultas
 ### JOIN (Associação de tabelas) INNER, LEFT, RIGHT
-- Banco de dados: **Onibus**
+- Banco de dados: **./03.projeto_onibus**
 ```sql
 -- Query
 -- Inserir um motorista novo, que ainda não possui telefone
