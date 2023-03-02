@@ -144,7 +144,32 @@ INSERT INTO dirige VALUE ('111.111.111-11','linha6');
 -- Podemos colocar o Jair em outra linha também
 INSERT INTO dirige VALUE ('111.111.111-11','linha1');
 ```
+## Salvar as consultas (VIEW/RELATORIOS)
+```sql
+-- Geradas as conultas necessárias, salva como VISÕES
 
+-- Motoristas com seus telefones
+CREATE VIEW vw_motorista AS
+	SELECT m.cpf, m.nome, t.numero AS telefone FROM motorista m
+		LEFT JOIN telefone t
+		ON m.cpf = t.cpf_motorista;
+
+-- Nomes dos motoristas e linhas que dirige
+CREATE VIEW vw_moto_x_linha AS
+	SELECT m.nome, d.id_linha FROM motorista m
+		LEFT JOIN dirige d
+		ON m.cpf = d.cpf_motorista
+		UNION
+		SELECT m.nome, l.id FROM motorista m
+			JOIN dirige d
+			ON m.cpf = d.cpf_motorista
+			RIGHT JOIN linha l
+			ON d.id_linha = l.id;
+		
+-- testar as visões
+SELECT * FROM vw_motorista;
+SELECT * FROM vw_moto_x_linha;
+```
 # Atividades
 - DESAFIO: Ainda com o Banco de Dados de linhas de ônibus (Crie consultas que:)
     - A: Mostre o nome, os telefone e id_linha do motorista ou motoristas da linha1
