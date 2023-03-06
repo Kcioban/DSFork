@@ -1,6 +1,5 @@
 # Exemplos de Funcionalidades com pequenos projetos
 
-<<<<<<< HEAD
 ---
 Stacks: Full
 Back-End:
@@ -16,5 +15,3 @@ Full-Stack:
 |**Full-Stack**|./receitas_fullstack| NodeJS + MongoDB + Front(HTML, CSS, JS)|
 |**Back-End**|./receitas_pug|NodeJS + MongoDB + Pug|
 
-
->>>>>>> a185ddc7a8caa2550c882e9705bfa4c35c1cf0f0
