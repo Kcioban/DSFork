@@ -8,4 +8,3 @@ Back-End:
 Full-Stack:
     - receitas_fullstack
 ---
-
