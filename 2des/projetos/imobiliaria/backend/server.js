@@ -12,4 +12,4 @@ app.use(corretorRoutes);
 
 app.listen(3000, () => {
     console.log("rodando");
-})
+});
