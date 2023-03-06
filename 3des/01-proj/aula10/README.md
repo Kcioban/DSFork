@@ -11,7 +11,7 @@
 ![](./quadro_canvas.png)
 ### Como construir seu modelo de negócio?
 
-- Link: https://digital.sebraers.com.br/blog/business-model-canvas-como-construir-seu-modelo-de-negocio/
+- Link: https://canvas-apps.pr.sebrae.com.br/
 - Autora: Carolina Niederauer (Consultado em 02/03/2023)
 
 ### Atividade
