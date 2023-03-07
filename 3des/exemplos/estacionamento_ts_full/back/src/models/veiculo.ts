@@ -9,11 +9,11 @@ export interface IVeiculo extends Document {
 }
 
 const VeiculoSchema: Schema = new Schema({
-  placa: { type: String, required: true },
+  placa: { type: String, required: true, unique: true },
   tipo: { type: String, required: true },
   modelo: { type: String, required: true },
   marca: { type: String, required: false },
-  cor: { type: String, required: true },
+  cor: { type: String },
 });
 
 export default mongoose.model<IVeiculo>("Veiculo", VeiculoSchema);
