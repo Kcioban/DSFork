@@ -61,9 +61,28 @@ const alterarStatus = (req, res) => {
     })
 }
 
+const imoveisPorCorretor = (req, res) => {
+    const { id } = req.params;
+
+    let query = `SELECT i.codigo, i.endereco, i.valor_venda as venda, i.valor_aluguel as aluguel, s.nome
+                FROM imoveis i
+                INNER JOIN status s
+                ON i.status_id = s.id
+                WHERE i.corretor_id = ${id}`;
+
+    con.query(query, (err, response) => {
+        if(err == undefined) {
+            res.status(200).json(response).end();
+        }else {
+            res.status(400).json(err).end();
+        }
+    })
+}
+
 module.exports = {
     listar,
     buscar,
     adicionar,
-    alterarStatus
+    alterarStatus,
+    imoveisPorCorretor
 }
