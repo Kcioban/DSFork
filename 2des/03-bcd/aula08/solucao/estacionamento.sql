@@ -39,13 +39,60 @@ CREATE TABLE vaga(
 CREATE TABLE estacionamento(
     id INT NOT NULL AUTO_INCREMENT,
     placa VARCHAR(8) NOT NULL,
-    cpf VARCHAR(14) NOT NULL,
-    id_vaga INT NOT NULL,
+    cpf VARCHAR(14),
+    id_vaga INT,
     entrada DATETIME NOT NULL,
     saida DATETIME,
-    valor valor DECIMAL(10,2),
+    valor DECIMAL(10,2),
     PRIMARY KEY(id),
-    FOREIGN KEY (placa) REFERENCES veiculo(placa),
-    FOREIGN KEY (cpf) REFERENCES cliente(cpf),
-    FOREIGN KEY (id_vaga) REFERENCES vaga(id),
+    FOREIGN KEY (placa) REFERENCES veiculo(placa) ON UPDATE CASCADE,
+    FOREIGN KEY (cpf) REFERENCES cliente(cpf) ON DELETE SET NULL ON UPDATE CASCADE,
+    FOREIGN KEY (id_vaga) REFERENCES vaga(id) ON DELETE SET NULL ON UPDATE CASCADE
 );
+
+LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula08/solucao/cliente.csv'
+INTO TABLE cliente
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula08/solucao/telefone.csv'
+INTO TABLE telefone
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula08/solucao/veiculo.csv'
+INTO TABLE veiculo
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula08/solucao/vaga.csv'
+INTO TABLE vaga
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/senai2023/2des/03-bcd/aula08/solucao/estacionamento.csv'
+INTO TABLE estacionamento
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+UPDATE cliente SET numero = NULL WHERE numero = '';
+
+CREATE VIEW vw_cliente AS
+SELECT c.cpf, c.nome, c.logradouro, c.numero, c.bairro, c.cidade, c.uf, c.cep, t.numero as telefone
+FROM cliente c LEFT JOIN telefone t ON c.cpf = t.cpf; 
+
+SELECT * FROM vw_cliente;
+SELECT * FROM veiculo;
+SELECT * FROM vaga;
+SELECT * FROM estacionamento;
+
