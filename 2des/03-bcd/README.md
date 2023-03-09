@@ -1,10 +1,23 @@
-# BANCO DE DADOS: 75 horas
-- Objetivo Geral: Banco de Dados tem como objetivo proporcionar a aquisição de capacidades técnicas relativas a criação da estrutura para armazenamento, manipulação e persistência de dados, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
+# BANCO DE DADOS:
+|Objetivo Geral:|
+|-|
+|Banco de Dados tem como objetivo proporcionar a aquisição de capacidades técnicas relativas a criação da estrutura para armazenamento, manipulação e persistência de dados, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.|
 
+- Carga Horária (**Mínimo 75%** de Frequência)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|75 horas|
+
+- Notas (**Mínimo 50** de 0 a 100)
+
+|Avaliação|Peso|Nota|
+|-|:-:|:-:|
+|VPS01|40|0 a 100|
+|VPS02|40|0 a 100|
+|Trabalhos|20|0 a 100|
 ## Competências Específicas e de Gestão
-
-## Capacidades Técnicas
-
+### Capacidades Técnicas
 1. Identificar as características de banco de dados relacionais e não-relacionais
 2. Configurar o ambiente para utilização de banco de dados relacional
 3. Utilizar tipos de dados para definição dos atributos do banco de dados
@@ -18,9 +31,7 @@
 11. Utilizar funções nativas do banco de dados
 12. Aplicar programação em banco de dados utilizando functions, stored procedures, triggers e eventos
 13. Executar importação e exportação da base de dados
-
-## Capacidades Sociais, Organizativas e Metodológicas
-
+### Capacidades Sociais, Organizativas e Metodológicas
 1. Demonstrar atenção a detalhes (27)
 2. Demonstrar capacidade de organização (4)
 3. Demonstrar raciocínio lógico na organização das informações (14)
@@ -28,7 +39,6 @@
 5. Seguir método de trabalho (15)
 
 ## Conhecimentos
-
 - 1. Sistema Gerenciador de Banco de Dados (SGBD)
 	- 1.1. Definição
 	- 1.2. Tipos
@@ -101,10 +111,10 @@
 	- 2.17. TRIGGERS
 	- 2.18. EVENT
 
-# Referências básicas
+## Referências básicas
 - ALVES, William Pereira. Banco de Dados: Teoria e Desenvolvimento. São Paulo: Érica, 2009.
 - MANZANO, José Augusto N. G. MySQL 5.5 Interativo: Guia Essencial de Orientação e Desenvolvimento. São Paulo: Saraiva, 2011.  
-# Referências complementares
+## Referências complementares
 - KORTH, Henry F.; SILBERSCHATZ, Abraham. Sistema de Banco de Dados. São Paulo: Makron Books, 1995.
 - BAPTISTA, Luciana Ferreira. Linguagem SQL: Guia Prático de Aprendizagem. São Paulo: Érica, 2013.
 - MANZANO, José Augusto N. G. Microsoft SQL Server 2008 Express: Interativo: Guia Prático. São Paulo: Érica,2009. 
