@@ -8,12 +8,14 @@
 - Cálculos básicos com porcentagem
 ## Exemplos práticos
 - Planilha de um orçamento simples, conta de multiplicação
-![Exemplo 1](exemplo1.png)
+- ![Exemplo 1](exemplo1.png)
 - Resultados
-![Exemplo 1](resultado1.png)
+- ![Exemplo 1](resultado1.png)
 - Planilha de Notas (boletim escolar) Funções estatísticas
-![Exemplo 2](exemplo2.png)
+- ![Exemplo 2](exemplo2.png)
 - Resultados
-![Exemplo 1](resultado2.png)
+- ![Exemplo 1](resultado2.png)
+- Arquivo Imprimir
+- ![Exemplo 1](imprimir.png)
 - Calculando o FGTS (Porcentagem)
 ![Exemplo 2](exemplo3.png)
