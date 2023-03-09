@@ -6,3 +6,10 @@
 - Planilha simples de orçamento
 - Planilha de notas e cálculos de médias
 - Cálculos básicos com porcentagem
+## Exemplos práticos
+- Planilha de um orçamento simples, conta de multiplicação
+![Exemplo 1](exemplo1.png)
+- Resultados
+![Exemplo 1](resultado1.png)
+- Planilha de Notas (boletim escolar) Funções estatísticas
+![Exemplo 2](exemplo2.png)
