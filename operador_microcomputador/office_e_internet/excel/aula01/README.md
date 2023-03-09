@@ -18,4 +18,4 @@
 - Arquivo Imprimir
 - ![Exemplo 1](imprimir.png)
 - Calculando o FGTS (Porcentagem)
-- ![Exemplo 2](exemplo3.png)
+- ![Exemplo 3](exemplo3.png)
