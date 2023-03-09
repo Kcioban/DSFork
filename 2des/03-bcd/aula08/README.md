@@ -1,10 +1,4 @@
-# Avaliação
-## Formas de avaliação
-|Formas|Peso|Notas|
-|-|:-:|:-:|
-|VPS01|40|0 a 100|
-|VPS02|40|0 a 100|
-|Trabalhos|20|Soma dos pontos|
+# Avaliações
 ## Formativa VOF01 (Verificação objetiva formativa 01)
 - https://forms.gle/3CYphjj9ZANoXiLz7
 ## Somativa VPS01 (Verificação objetiva somativa 01)
