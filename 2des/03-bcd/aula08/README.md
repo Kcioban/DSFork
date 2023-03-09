@@ -2,7 +2,7 @@
 ## Formativa VOF01 (Verificação objetiva formativa 01)
 - https://forms.gle/3CYphjj9ZANoXiLz7
 - Questão sobre consultas no banco de dados vendas:
-![Questão Vendas](questao_vendas.png)
+- ![Questão Vendas](questao_vendas.png)
 - Solução
 ```sql
 create database teste;

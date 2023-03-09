@@ -13,3 +13,7 @@
 ![Exemplo 1](resultado1.png)
 - Planilha de Notas (boletim escolar) Funções estatísticas
 ![Exemplo 2](exemplo2.png)
+- Resultados
+![Exemplo 1](resultado2.png)
+- Calculando o FGTS (Porcentagem)
+![Exemplo 2](exemplo3.png)
