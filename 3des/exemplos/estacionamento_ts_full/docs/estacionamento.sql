@@ -310,3 +310,12 @@ select * from vaga;
 select * from veiculo;
 select * from cliente;
 select * from estacionamento;
+
+select *
+from cliente c
+inner join estacionamento e on c.cpf = e.cpf
+inner join veiculo v on e.placa = v.placa
+inner join vaga va on e.vaga = va.id
+into OUTFILE 'D:/estacionamento.csv'
+FIELDS TERMINATED BY ';'
+LINES TERMINATED BY '\r\n';
