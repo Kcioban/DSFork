@@ -16,10 +16,12 @@ UPDATE estacionamento SET
 -- Este exemplo é um query com subconsultas.
 
 -- 4. Crie uma query que mostre todos os dados da view vw_estacionamento em ordem de saída decrescente
--- também acrescente as colunas nome do cliente, modelo do veículo e tipo da vaga
+-- também acrescente as colunas nome do cliente, modelo e cor do veículo e tipo da vaga
 -- Salve esta consulta como vw_estacionamento_full
-SELECT v.id, v.placa, v.cpf, c.nome, v.id_vaga, v.entrada, v.saida, v.valor, v.tempo_total
+SELECT v.id, v.placa, ve.modelo, ve.cor, v.cpf, c.nome, v.id_vaga, va.tipo, v.entrada, v.saida, v.valor, v.tempo_total
 FROM vw_estacionamento v
 INNER JOIN cliente c ON v.cpf = c.cpf
-order by v.saida desc
+INNER JOIN veiculo ve ON v.placa = ve.placa
+INNER JOIN vaga va ON v.id_vaga = va.id
+ORDER BY v.saida DESC
 limit 10;
