@@ -95,4 +95,3 @@ SELECT * FROM vw_cliente;
 SELECT * FROM veiculo;
 SELECT * FROM vaga;
 SELECT * FROM estacionamento;
-
