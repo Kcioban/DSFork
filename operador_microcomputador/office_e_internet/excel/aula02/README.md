@@ -6,7 +6,7 @@
 ![Resultado](resultado1.png)
 
 # Atividade 2
-![Folha de ponto](exempl2.png)
+![Folha de ponto](exemplo2.png)
 
 ## Instruções
 - Filtro 1: Somente adulos podem doar sangue, por isso o primeiro filtro é a idade
