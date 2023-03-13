@@ -25,7 +25,10 @@
 	- 4.2.Casos de Uso
 		- 4.2.1.Diagrama
 		- 4.2.2.Narrativa
-
+## Exemplos de UML - DCU (Diagramas de Casos de Uso)
+![Uber - Cadastro 1](./exemplos_dcu/exemplo-dcu-uber-1.png)
+![Uber - Cadastro 2](./exemplos_dcu/exemplo-dcu-uber-2.png)
+![Uber Eats- CRUD](./exemplos_dcu/exemplo-dcu-uber-eats.png)
 # Atividade 1:
 - Contextualização: Você é um pequeno empresário dono de um dos negócios elencados pelo instrutor, precisa de um sistema de informação e contratou um terceiro para desenvolver o seu projeto, para isso voê possui um limite de orçamento.
 - Desafio: Crie um bloco de anotações detalhando as regras de negócio e numerando cada requisito funcional e não funcional que deseja que o sistema atenda.

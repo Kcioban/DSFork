@@ -1,84 +1,93 @@
-.PROJETOS
-------------
-- M”DULO ESPECÕFICO ñ UC1
-- UNIDADE CURRICULAR PROJETOS: 225 horas
-- Objetivo Geral: Projetos tÍm como objetivo proporcionar a aquisiÁ„o de capacidades tÈcnicas relativas ao planejamento, desenvolvimento e implantaÁ„o de sistemas computacionais com foco nas necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodolÛgicas adequadas a diferentes situaÁıes profissionais.
-------------
-.CompetÍncias EspecÌficas e de Gest„o
-.Capacidades TÈcnicas
-------------
-- 1. Definir a sequÍncia das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema (3)
-- 2. Definir a infraestrutura fÌsica a ser utilizada no desenvolvimento dos componentes (2)
+# PROJETOS
+
+|Objetivo Geral:|
+|-|
+|Projetos t√™m como objetivo proporcionar a aquisi√ß√£o de capacidades t√©cnicas relativas ao planejamento, desenvolvimento e implanta√ß√£o de sistemas computacionais com foco nas necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodol√≥gicas adequadas a diferentes situa√ß√µes profissionais.|
+
+- Carga Hor√°ria (M√≠nimo 75% de Frequ√™ncia)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|225 horas|
+
+- Notas (M√≠nimo 50 de 0 a 100)
+
+|Avalia√ß√£o|Peso|Nota|
+|-|-|-|
+|Pr√©-projeto|40|0 a 100|
+|Projeto|40|0 a 100|
+|Atividades|20|0 a 100|
+
+## Compet√™ncias Espec√≠ficas e de Gest√£o
+### Capacidades T√©cnicas
+- 1. Definir a sequ√™ncia das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema (3)
+- 2. Definir a infraestrutura f√≠sica a ser utilizada no desenvolvimento dos componentes (2)
 - 3. Projetar os componentes do sistema considerando as plataformas computacionais (3)
 - 4. Definir os recursos humanos e materiais para o desenvolvimento dos componentes (2)
-- 5. Elaborar cronograma das etapas sequenciadas do desenvolvimento dos componentes, considerando a integraÁ„o com outros profissionais envolvidos no projeto (2)
+- 5. Elaborar cronograma das etapas sequenciadas do desenvolvimento dos componentes, considerando a integra√ß√£o com outros profissionais envolvidos no projeto (2)
 - 6. Definir o custo estimado para o desenvolvimento dos componentes
 - 7. Definir os softwares a serem utilizados no desenvolvimento do sistema (2)
-- 8. Definir as dependÍncias de software considerando os componentes do sistema, para a sua implantaÁ„o
-- 9. Elaborar documentaÁ„o tÈcnica do sistema (2)
+- 8. Definir as depend√™ncias de software considerando os componentes do sistema, para a sua implanta√ß√£o
+- 9. Elaborar documenta√ß√£o t√©cnica do sistema (2)
 - 10. Implementar as funcionalidades de acordo com os requisitos definidos
-- 11. Apresentar tecnicamente ao cliente o sistema de software desenvolvido, sanando as possÌveis d˙vidas sobre o funcionamento do mesmo
-- 12. Pesquisar em diversas fontes de informaÁ„o tendo em vista as melhores pr·ticas de mercado considerando, inclusive, a performance e a qualidade de software (21)
+- 11. Apresentar tecnicamente ao cliente o sistema de software desenvolvido, sanando as poss√≠veis d√∫vidas sobre o funcionamento do mesmo
+- 12. Pesquisar em diversas fontes de informa√ß√£o tendo em vista as melhores pr√°ticas de mercado considerando, inclusive, a performance e a qualidade de software (21)
 
-.Capacidades Sociais, Organizativas e MetodolÛgicas
-------------
-- 1. Demonstra atenÁ„o a detalhes (27)
-- 2. Demonstrar capacidade de comunicaÁ„o com profissionais de diferentes ·reas e especialidades (7)
-- 3. Demonstrar capacidade de organizaÁ„o (4)
-- 4. Demonstrar raciocÌnio lÛgico na organizaÁ„o das informaÁıes (14)
-- 5. Demonstrar vis„o holÌstica
-- 6. Demonstrar vis„o sistÍmica (16)
+### Capacidades Sociais, Organizativas e Metodol√≥gicas
+- 1. Demonstra aten√ß√£o a detalhes (27)
+- 2. Demonstrar capacidade de comunica√ß√£o com profissionais de diferentes √°reas e especialidades (7)
+- 3. Demonstrar capacidade de organiza√ß√£o (4)
+- 4. Demonstrar racioc√≠nio l√≥gico na organiza√ß√£o das informa√ß√µes (14)
+- 5. Demonstrar vis√£o hol√≠stica
+- 6. Demonstrar vis√£o sist√™mica (16)
 - 7. Manter relacionamento interpessoal
-- 8. Seguir mÈtodo de trabalho (15)
+- 8. Seguir m√©todo de trabalho (15)
 - 9. Trabalhar em equipe (2)
 - 10. Comunicar-se com clareza
 
-.Conhecimentos
-------------
+## Conhecimentos
 - 1. Qualidade de software
-- 1.1. DefiniÁ„o
-- 1.2. Ferramentas
-- 1.3. Processos de trabalho
+    - 1.1. Defini√ß√£o
+    - 1.2. Ferramentas
+    - 1.3. Processos de trabalho
 - 2. Metodologias de desenvolvimento
-- 2.1. Cl·ssicas
-- 2.1.1. DefiniÁ„o
-- 2.1.2. CaracterÌsticas
-- 2.1.3. Aplicabilidade
-- 2.1.4. Fases de desenvolvimento
-- 2.2. ¡geis
-- 2.2.1. DefiniÁ„o
-- 2.2.2. CaracterÌsticas
-- 2.2.3. Aplicabilidade
-- 2.2.4. Fases de desenvolvimento
+    - 2.1. Cl√°ssicas
+        - 2.1.1. Defini√ß√£o
+        - 2.1.2. Caracter√≠sticas
+        - 2.1.3. Aplicabilidade
+    - 2.1.4. Fases de desenvolvimento
+    - 2.2. √Ågeis
+        - 2.2.1. Defini√ß√£o
+        - 2.2.2. Caracter√≠sticas
+        - 2.2.3. Aplicabilidade
+        - 2.2.4. Fases de desenvolvimento
 - 3. Metodologia de gerenciamento de projeto
-- 3.1. Escopo
-- 3.2. Revis„o dos objetivos
-- 3.3. An·lise de riscos
-- 3.4. Cronograma
-- 3.5. Recursos
-- 3.6. Custos
-- 3.7. DocumentaÁ„o
-- 3.8. AvaliaÁ„o do projeto
-- 3.8.1. An·lise do projeto
-- 3.8.2. DocumentaÁ„o de avaliaÁ„o
-- 4. ApresentaÁ„o do projeto
-- 4.1. DefiniÁ„o dos recursos necess·rios
-- 4.2. DefiniÁ„o da programaÁ„o
-- 4.2.1. Tempo
-- 4.2.2. Local
-- 4.2.3. P˙blico (participantes)
-- 4.3. TÈcnicas de apresentaÁ„o
-- 4.3.1. SeleÁ„o
-- 4.3.2. UtilizaÁ„o
+    - 3.1. Escopo
+    - 3.2. Revis√£o dos objetivos
+    - 3.3. An√°lise de riscos
+    - 3.4. Cronograma
+    - 3.5. Recursos
+    - 3.6. Custos
+    - 3.7. Documenta√ß√£o
+    - 3.8. Avalia√ß√£o do projeto
+        - 3.8.1. An√°lise do projeto
+        - 3.8.2. Documenta√ß√£o de avalia√ß√£o
+- 4. Apresenta√ß√£o do projeto
+    - 4.1. Defini√ß√£o dos recursos necess√°rios
+    - 4.2. Defini√ß√£o da programa√ß√£o
+        - 4.2.1. Tempo
+        - 4.2.2. Local
+    - 4.2.3. P√∫blico (participantes)
+    - 4.3. T√©cnicas de apresenta√ß√£o
+        - 4.3.1. Sele√ß√£o
+        - 4.3.2. Utiliza√ß√£o
 
-. ReferÍncias b·sicas
-------------
-- MACHADO, F. N. R. An·lise e gest„o de requisitos de software: Onde nascem os sistemas. S„o Paulo: …rica, 2014.
-- OLIVEIRA, J. F. Metodologia para desenvolvimento de projetos de sistemas: Guia pr·tico. S„o Paulo: Editora …rica Ltda., 2003.
-- TONSIG, S. L. Engenharia de software: An·lise e projeto de sistemas. Rio de Janeiro: CiÍncia Moderna Ltda., 2013.
+## Refer√™ncias b√°sicas
+- MACHADO, F. N. R. An√°lise e gest√£o de requisitos de software: Onde nascem os sistemas. S√£o Paulo: √ârica, 2014.
+- OLIVEIRA, J. F. Metodologia para desenvolvimento de projetos de sistemas: Guia pr√°tico. S√£o Paulo: Editora √ârica Ltda., 2003.
+- TONSIG, S. L. Engenharia de software: An√°lise e projeto de sistemas. Rio de Janeiro: Ci√™ncia Moderna Ltda., 2013.
 
-ReferÍncias complementares
-------------
-- GUEDES, Gilleanes T.A. UML 2 ñ Uma abordagem pr·tica. S„o Paulo: Novatec, 2011.
-- PMI, Project Management Institute. Um guia do conhecimento em gerenciamento de projetos (Guia PMBOK). S„o Paulo: Saraiva, 2014.
+## Refer√™ncias complementares
+- GUEDES, Gilleanes T.A. UML 2 ‚Äì Uma abordagem pr√°tica. S√£o Paulo: Novatec, 2011.
+- PMI, Project Management Institute. Um guia do conhecimento em gerenciamento de projetos (Guia PMBOK). S√£o Paulo: Saraiva, 2014.
 - Consumindo API com PHP https://www.youtube.com/watch?v=lc0VOosnlAc

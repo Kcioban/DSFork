@@ -20,3 +20,4 @@
     - Crie o quadro canvas
     - Transforme em PDF ou PNG e anexe no formulário: https://forms.gle/2r8pTPeosgFFxwuz7
 - Pelo menos dois modelos de negício por dulpa:
+- Entrega até 17/03/2023

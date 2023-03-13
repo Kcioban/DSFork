@@ -1,58 +1,75 @@
 # TESTES
-- Objetivo: Proporcionar a aquisiÁ„o de capacidades tÈcnicas relativas a elaboraÁ„o de roteiro de teste e execuÁ„o de cen·rios de testes que atenda ‡s necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodolÛgicas adequadas a diferentes situaÁıes profissionais.
 
-# FUNDAMENTOS T…CNICOS E CIENTÕFICOS
-- 1. Definir as tÈcnicas de testes a serem utilizadas no roteiro de testes do sistema
-- 2. Elaborar cen·rios de testes, considerando os pontos do sistema a serem testados e as tÈcnicas definidas
-- 3. Configurar o ambiente de teste de acordo com o cen·rio elaborado
-- 4. Executar os testes de acordo com o cen·rio proposto
-- 5. Validar os cen·rios estabelecidos de acordo com os resultados de testes
-- 6. Elaborar relatÛrio dos resultados da validaÁ„o do software
+|Objetivo:|
+|-|
+|Proporcionar a aquisi√ß√£o de capacidades t√©cnicas relativas a elabora√ß√£o de roteiro de teste e execu√ß√£o de cen√°rios de testes que atenda √†s necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodol√≥gicas adequadas a diferentes situa√ß√µes profissionais.|
 
-# CAPACIDADES SOCIAIS, ORGANIZATIVAS E METODOL”GICAS.
-- 1. Demonstrar atenÁ„o a detalhes (7)
-- 2. Demonstrar capacidade de comunicaÁ„o com profissionais de diferentes ·reas e especialidades
-- 3. Demonstrar raciocÌnio lÛgico na organizaÁ„o das informaÁıes (6)
-- 4. Demonstrar vis„o sistÍmica (3)
-- 5. Seguir mÈtodo de trabalho (3)
+- Carga Hor√°ria (M√≠nimo 75% de Frequ√™ncia)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|30 horas|
+
+- Notas (M√≠nimo 50 de 0 a 100)
+
+|Avalia√ß√£o|Peso|Nota|
+|-|-|-|
+|Pr√©-projeto|40|0 a 100|
+|Projeto|40|0 a 100|
+|Atividades|20|0 a 100|
+
+# FUNDAMENTOS T√âCNICOS E CIENT√çFICOS
+- 1. Definir as t√©cnicas de testes a serem utilizadas no roteiro de testes do sistema
+- 2. Elaborar cen√°rios de testes, considerando os pontos do sistema a serem testados e as t√©cnicas definidas
+- 3. Configurar o ambiente de teste de acordo com o cen√°rio elaborado
+- 4. Executar os testes de acordo com o cen√°rio proposto
+- 5. Validar os cen√°rios estabelecidos de acordo com os resultados de testes
+- 6. Elaborar relat√≥rio dos resultados da valida√ß√£o do software
+
+# CAPACIDADES SOCIAIS, ORGANIZATIVAS E METODOL√ìGICAS.
+- 1. Demonstrar aten√ß√£o a detalhes (7)
+- 2. Demonstrar capacidade de comunica√ß√£o com profissionais de diferentes √°reas e especialidades
+- 3. Demonstrar racioc√≠nio l√≥gico na organiza√ß√£o das informa√ß√µes (6)
+- 4. Demonstrar vis√£o sist√™mica (3)
+- 5. Seguir m√©todo de trabalho (3)
 
 # CONHECIMENTOS
 - 1. Testes
-	- 1.1.DefiniÁ„o
+	- 1.1.Defini√ß√£o
 	- 1.2.Tipos
 		- 1.2.1.Funcionais
-		- 1.2.2.N„o funcionais
-		- 1.3.NÌveis
-		- 1.3.1.Unit·rio
-		- 1.3.2.De integraÁ„o
+		- 1.2.2.N√£o funcionais
+		- 1.3.N√≠veis
+		- 1.3.1.Unit√°rio
+		- 1.3.2.De integra√ß√£o
 		- 1.3.3.De sistema
-		- 1.3.4.De aceitaÁ„o
-	- 1.4.TÈcnicas
-		- 1.4.1.Regress„o
+		- 1.3.4.De aceita√ß√£o
+	- 1.4.T√©cnicas
+		- 1.4.1.Regress√£o
 		- 1.4.2.Estresse
-		- 1.4.3.RecuperaÁ„o
+		- 1.4.3.Recupera√ß√£o
 		- 1.4.4.Performance
-		- 1.4.5.SeguranÁa
+		- 1.4.5.Seguran√ßa
 		- 1.4.6.Paralelo
 - 2. Planejamento de testes
-	- 2.1.An·lise de risco
+	- 2.1.An√°lise de risco
 	- 2.2.Plano de teste
-- 3. ExecuÁ„o de testes
+- 3. Execu√ß√£o de testes
 	- 3.1.Ambiente de teste
-		- 3.1.1.ConfiguraÁ„o
+		- 3.1.1.Configura√ß√£o
 	- 3.2.Equipe de testes
 	- 3.3.Casos de teste
 	- 3.4.Ferramentas
-		- 3.4.1.Gest„o de teste
-		- 3.4.2.Gest„o de defeitos
-	- 3.5.RelatÛrio de teste
-	- 3.6.NormalizaÁ„o
+		- 3.4.1.Gest√£o de teste
+		- 3.4.2.Gest√£o de defeitos
+	- 3.5.Relat√≥rio de teste
+	- 3.6.Normaliza√ß√£o
 
-# ReferÍncias b·sicas
-- RIOS, Emerson; BASTOS, Anderson; CRISTALLI, Ricardo; MOREIRA, Trayah˙; Base de conhecimento em teste de software. S„o Paulo: Martins Fontes, 2012.CRISTALLI, Ricardo. et al.
+# Refer√™ncias b√°sicas
+- RIOS, Emerson; BASTOS, Anderson; CRISTALLI, Ricardo; MOREIRA, Trayah√∫; Base de conhecimento em teste de software. S√£o Paulo: Martins Fontes, 2012.CRISTALLI, Ricardo. et al.
 - Gerenciando projetos de teste de software. Rio de Janeiro: Imagem Art Studio, 2011.MOLINARI, L.
-- Testes de software: Produzindo sistemas melhores e mais confi·veis. S„o Paulo: …rica, 2008.
-# ReferÍncias complementares
-- KOSCIANSKI, AndrÈ; SOARES, Michel dos Santos. Qualidade de software. S„o Paulo: Novatec, 2007.
-- ANICHE, Mauricio. Teste driven development. S„o Paulo: Editora Casa do CÛdigo, 2014.
-- MOLINARI, Leonardo. Testes de software ñ Produzindo sistemas melhores e mais confi·veis. S„o Paulo: Editora Erica, 2003.  
+- Testes de software: Produzindo sistemas melhores e mais confi√°veis. S√£o Paulo: √ârica, 2008.
+# Refer√™ncias complementares
+- KOSCIANSKI, Andr√©; SOARES, Michel dos Santos. Qualidade de software. S√£o Paulo: Novatec, 2007.
+- ANICHE, Mauricio. Teste driven development. S√£o Paulo: Editora Casa do C√≥digo, 2014.
+- MOLINARI, Leonardo. Testes de software ‚Äì Produzindo sistemas melhores e mais confi√°veis. S√£o Paulo: Editora Erica, 2003.  
