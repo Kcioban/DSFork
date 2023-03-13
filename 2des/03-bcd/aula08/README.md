@@ -82,9 +82,9 @@ HAVING valor NULL;
 |NÍVEIS DE DESEMPENHO|NÍVEIS|NOTA|
 |-|-|-|
 |Atingiu todos os critérios críticos e desejáveis|1|100|
-|Atingiu todos os critérios críticos e 3 desejáveis|2|90|
-|Atingiu todos os critérios críticos e 2 desejáveis|3|80|
-|Atingiu todos os critérios críticos e 1 desejáveis|4|65|
+|Atingiu todos os critérios críticos e 6 desejáveis|2|90|
+|Atingiu todos os critérios críticos e 5 desejáveis|3|80|
+|Atingiu todos os critérios críticos e 4 desejáveis|4|65|
 |Atingiu todos os critérios críticos |5|50|
 |Atingiu 3 critérios críticos e 3 desejáveis|6|40|
 |Atingiu 3 critérios críticos e 2 desejáveis|7|30|
