@@ -1,78 +1,94 @@
 # Requisitos e Modelagem de Software
-- Objetivo:
-	- Proporcionar a aquisiÁ„o de capacidades tÈcnicas relativas ao levantamento, an·lise e proposiÁ„o de soluÁıes para atender as necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodolÛgicas adequadas a diferentes situaÁıes profissionais.
-# FUNDAMENTOS T…CNICOS E CIENTÕFICOS
-- 1. Propor modelos de documentaÁ„o a serem utilizados no detalhamento dos requisitos funcionais e n„o funcionais, considerando a metodologia estabelecida (3)
-- 2. Aplicar tÈcnicas para levantamento de necessidades do cliente
+|Objetivo:|
+|-|
+|Proporcionar a aquisi√ß√£o de capacidades t√©cnicas relativas ao levantamento, an√°lise e proposi√ß√£o de solu√ß√µes para atender as necessidades do cliente, bem como o desenvolvimento de capacidades sociais, organizativas e metodol√≥gicas adequadas a diferentes situa√ß√µes profissionais.|
+
+- Carga Hor√°ria (M√≠nimo 75% de Frequ√™ncia)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|45 horas|
+
+- Notas (M√≠nimo 50 de 0 a 100)
+
+|Avalia√ß√£o|Peso|Nota|
+|-|-|-|
+|Pr√©-projeto|40|0 a 100|
+|Projeto|40|0 a 100|
+|Atividades|20|0 a 100|
+
+# FUNDAMENTOS T√âCNICOS E CIENT√çFICOS
+- 1. Propor modelos de documenta√ß√£o a serem utilizados no detalhamento dos requisitos funcionais e n√£o funcionais, considerando a metodologia estabelecida (3)
+- 2. Aplicar t√©cnicas para levantamento de necessidades do cliente
 - 3. Elaborar diagramas de casos de uso, com linguagem de modelagem, e suas narrativas
 - 4. Elaborar diagramas de classe utilizando linguagem de modelagem
-- 5. Elaborar documentaÁ„o tÈcnica dos requisitos funcionais e n„o funcionais, de acordo com as informaÁıes coletadas com o cliente (4)
+- 5. Elaborar documenta√ß√£o t√©cnica dos requisitos funcionais e n√£o funcionais, de acordo com as informa√ß√µes coletadas com o cliente (4)
 - 6. Homologar os requisitos funcionais junto ao cliente
 
-# CAPACIDADES SOCIAIS, ORGANIZATIVAS E METODOL”GICAS.
-- 1. Demonstrar capacidade de an·lise (2)
-- 2. Demonstrar capacidade de comunicaÁ„o com profissionais de diferentes ·reas e especialidades
-- 3. Demonstrar capacidade de organizaÁ„o das informaÁıes (4)
-- 4. Demonstrar objetividade na coleta de informaÁıes
-- 5. Demonstrar vis„o sistÍmica (9)
-- 6. Seguir mÈtodo de trabalho (3)
+# CAPACIDADES SOCIAIS, ORGANIZATIVAS E METODOL√ìGICAS.
+- 1. Demonstrar capacidade de an√°lise (2)
+- 2. Demonstrar capacidade de comunica√ß√£o com profissionais de diferentes √°reas e especialidades
+- 3. Demonstrar capacidade de organiza√ß√£o das informa√ß√µes (4)
+- 4. Demonstrar objetividade na coleta de informa√ß√µes
+- 5. Demonstrar vis√£o sist√™mica (9)
+- 6. Seguir m√©todo de trabalho (3)
 
 # CONHECIMENTOS
 - 1. Requisitos
-	- 1.1.DefiniÁ„o
-	- 1.2.Modelos de documentaÁ„o
+	- 1.1.Defini√ß√£o
+	- 1.2.Modelos de documenta√ß√£o
 		- 1.2.1.Requisitos
 		- 1.2.2.Modelagem de dados
-	- 1.3.Regras de NegÛcio
-	- 1.4.RestriÁıes
+	- 1.3.Regras de Neg√≥cio
+	- 1.4.Restri√ß√µes
 	- 1.5.Tipos
 		- 1.5.1.Funcionais
-		- 1.5.2.N„o funcionais
+		- 1.5.2.N√£o funcionais
 - 2. Levantamento de Requisitos
-	- 2.1.DefiniÁ„o
-	- 2.2.TÈcnicas
+	- 2.1.Defini√ß√£o
+	- 2.2.T√©cnicas
 		- 2.2.1.Levantamento orientado a pontos de vista
-		- 2.2.2.Etnografia (observaÁ„o)
-		- 2.2.3.MÈtodo AnalÌtico
+		- 2.2.2.Etnografia (observa√ß√£o)
+		- 2.2.3.M√©todo Anal√≠tico
 		- 2.2.4.Workshops
 		- 2.2.5.Prototipagem
 		- 2.2.6.Entrevistas
-		- 2.2.7.Question·rios
+		- 2.2.7.Question√°rios
 		- 2.2.8.Brainstorming
-		- 2.2.9.MÈtodos SistÍmicos (JAD - Joint Application Design)
+		- 2.2.9.M√©todos Sist√™micos (JAD - Joint Application Design)
 	- 2.3.Fases
 		- 2.3.1.Coleta
-		- 2.3.2.An·lise
+		- 2.3.2.An√°lise
 		- 2.3.3.Registros
 - 3. Gerenciamento de Requisitos
-	- 3.1.DefiniÁ„o
-	- 3.2.Gest„o de mudanÁas
+	- 3.1.Defini√ß√£o
+	- 3.2.Gest√£o de mudan√ßas
 	- 3.3.Rastreabilidade de requisitos
-	- 3.4.ValidaÁ„o de requisitos
+	- 3.4.Valida√ß√£o de requisitos
 - 4. UML (Unified Modeling Language)
-	- 4.1.DefiniÁ„o
+	- 4.1.Defini√ß√£o
 	- 4.2.Casos de Uso
 		- 4.2.1.Diagrama
 		- 4.2.2.Narrativa
 	- 4.3.Diagramas
 		- 4.3.1.Estados
-		- 4.3.2.SequÍncia
-		- 4.3.3.ColaboraÁ„o
+		- 4.3.2.Sequ√™ncia
+		- 4.3.3.Colabora√ß√£o
 		- 4.3.4.Atividades
 		- 4.3.5.Componentes
-		- 4.3.6.ImplantaÁ„o
-- 5. DocumentaÁ„o de Requisitos
-	- 5.1.Normas tÈcnicas
-	- 5.2.Estrutura padr„o (modelos de documentaÁ„o)
-	- 5.3.HomologaÁ„o
-		- 5.3.1.AplicaÁ„o
+		- 4.3.6.Implanta√ß√£o
+- 5. Documenta√ß√£o de Requisitos
+	- 5.1.Normas t√©cnicas
+	- 5.2.Estrutura padr√£o (modelos de documenta√ß√£o)
+	- 5.3.Homologa√ß√£o
+		- 5.3.1.Aplica√ß√£o
 		- 5.3.2.Registros
-	- 5.4.Controle de Versıes
+	- 5.4.Controle de Vers√µes
 
-# ReferÍncias b·sicas 
-- SOMERVILLE, Ian. Engenharia de software. S„o Paulo: Pearson Prentice Hall, 2011. 
-- FOWLER, M. UML Essencial: Um breve guia para a linguagem-padr„o de modelagem de objetos. Porto Alegre: Bookman, 2005.
-- TONSIG, S. L. Engenharia de software: An·lise e projeto de sistemas. Rio de Janeiro: CiÍncia Moderna, 2013.  
-# ReferÍncias complementares
-- GANE, C.; Sarson, T. An·lise estruturada de sistemas. Rio de Janeiro: Livros TÈcnicos e CientÌficos. Editora S.A., 1983.
-- VAZQUEZ, C. E.; Simıes, G. S.; Albert, R.M. An·lise de pontos de funÁ„o: mediÁ„o, estimativas e gerenciamento de projetos de software. S„o Paulo: …rica, 2013.   
+# Refer√™ncias b√°sicas 
+- SOMERVILLE, Ian. Engenharia de software. S√£o Paulo: Pearson Prentice Hall, 2011. 
+- FOWLER, M. UML Essencial: Um breve guia para a linguagem-padr√£o de modelagem de objetos. Porto Alegre: Bookman, 2005.
+- TONSIG, S. L. Engenharia de software: An√°lise e projeto de sistemas. Rio de Janeiro: Ci√™ncia Moderna, 2013.  
+# Refer√™ncias complementares
+- GANE, C.; Sarson, T. An√°lise estruturada de sistemas. Rio de Janeiro: Livros T√©cnicos e Cient√≠ficos. Editora S.A., 1983.
+- VAZQUEZ, C. E.; Sim√µes, G. S.; Albert, R.M. An√°lise de pontos de fun√ß√£o: medi√ß√£o, estimativas e gerenciamento de projetos de software. S√£o Paulo: √ârica, 2013.   
