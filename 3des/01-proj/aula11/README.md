@@ -46,10 +46,10 @@
 - Capítulo IV Orçamento
 - Capítulo V Documentação
     - MER DER
-    - Diagrama de Classes
+    - Diagrama de Classes (Back-End - Model/Schema)
 - Capítulo VI Execução
     - Front End (Print das Telas)
-    - Back End (Print das Telas)
+    - Mobile (Print das Telas)
 - Capítulo VII Controle
     - Plano de Testes (CheckList)
     - Relatório de testes
