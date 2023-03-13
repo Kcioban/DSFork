@@ -14,7 +14,7 @@
 ## Casos de uso
 
 ### Diagrama
-
+![DCU - Comprar Produto](uml-dcu-comprar-produto.png)
 ### Narrativa
 - Nome do caso de uso: **Comprar produto**
 - Ator principal: **Cliente**
@@ -36,5 +36,11 @@
     2. O cliente recebe um e-mail de confirmação da compra.
     3. O sistema atualiza o registro de vendas e estoque.
 
-|Este é um exemplo simples e genérico de uma narrativa de caso de uso, mas ela pode ser personalizada e aprimorada para se adequar às necessidades específicas do sistema e dos usuários envolvidos. A narrativa de caso de uso é uma descrição detalhada do que o sistema deve fazer em resposta a uma ação do usuário.|
+|Este é um exemplo simples e genérico de um diagrama de caso de uso e uma narrativa, mas ela pode ser personalizada e aprimorada para se adequar às necessidades específicas do sistema e dos usuários envolvidos. A narrativa de caso de uso é uma descrição detalhada do que o sistema deve fazer em resposta a uma ação do usuário.|
 |-|
+
+## Diagramas
+### Diagrama de Classes
+![Lousa](lousa.jpg)
+![Demonstrações](diagrama-de-classes.png)
+![Exemplo Vendas](vendas-dc.jpg)
