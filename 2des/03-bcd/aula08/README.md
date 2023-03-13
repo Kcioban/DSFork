@@ -78,3 +78,16 @@ HAVING valor NULL;
 |Entregas:|
 |-|
 |Em uma pasta disponibilize:<br>&ensp;- A planilha com as abas normalizadas<br>&ensp;- Um arquivo de imagem do DER<br>&ensp;- Um arquivo SQL com os scripts DDL e DML<br>&ensp;- Utilizando o desenhador do phpmyadmin tire um print do DER Lógico e salve a imagem<br> Ao final da aula o professor irá disponibilizar uma pasta na rede para que possa enviar seus arquivos|
+
+|NÍVEIS DE DESEMPENHO|NÍVEIS|NOTA|
+|-|-|-|
+|Atingiu todos os critérios críticos e desejáveis|1|100|
+|Atingiu todos os critérios críticos e 3 desejáveis|2|90|
+|Atingiu todos os critérios críticos e 2 desejáveis|3|80|
+|Atingiu todos os critérios críticos e 1 desejáveis|4|65|
+|Atingiu todos os critérios críticos |5|50|
+|Atingiu 3 critérios críticos e 3 desejáveis|6|40|
+|Atingiu 3 critérios críticos e 2 desejáveis|7|30|
+|Atingiu 1critério crítico|9|10|
+|**NÍVEL MÍNIMO DE DESEMPENHO ESPERADO**||**5**|
+

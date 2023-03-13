@@ -15,3 +15,4 @@
 - Filtro 3: Homens só doam sangue se pesarem 50kilos ou mais você deve preencher as células desta coluna com "Doador" ou "Inapto"
 - Filtro 4: Trans só doam sangue se pesarem 50kilos ou mais você deve preencher as células desta coluna com "Doador" ou "Inapto"
 - Resultado: Se em alguns dos filtros aparacer "Doador" ou "Doadora" e "Adulto" esta coluna deve ser preenchida como "Apto/a" senão "Inapto/a".
+![Resultado](resultado2.png)
