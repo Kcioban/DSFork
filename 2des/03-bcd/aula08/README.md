@@ -89,5 +89,5 @@ HAVING valor NULL;
 |Atingiu 3 critérios críticos e 3 desejáveis|6|40|
 |Atingiu 3 critérios críticos e 2 desejáveis|7|30|
 |Atingiu 1critério crítico|9|10|
-|**NÍVEL MÍNIMO DE DESEMPENHO ESPERADO**\||**5**|
+|**NÍVEL MÍNIMO DE DESEMPENHO ESPERADO**|**5**|
 
