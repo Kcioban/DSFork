@@ -1,4 +1,4 @@
-# Situação Problema:
+	# Situação Problema:
 
 ## Refatoração de código:
 - OBS: Este desafio pode ser utilizado como teste em um processo seletivo para contratação de programador Back-End ou FullStack
@@ -13,7 +13,7 @@
 
 |entregas:|
 |-|
-|A pasta /backend/docs possui o **script.sql**, o arquivo de testes insomnia **Clinica.json** e uma planilha chamada **"Lista de Erros.xlsx"**<br>- Faça download do projeto "Exercíco Clinica", <br>- Instale o banco de dados,<br>- Importe o arquivo de testes no Insomnia<br>- Instale o BackEnd (NodeJS) **npm i**<br>- Tente executar o projeto e encontre os errosM<br>- Preencha a **planilha** com os erros encontrados e a **solução** aplicada|
+|A pasta /backend/docs possui o **script.sql**, o arquivo de testes insomnia **Clinica.json** e uma planilha chamada **"Lista de Erros.xlsx"**<br>- Faça download do projeto "Exercíco Clinica", <br>- Instale o banco de dados,<br>- Importe o arquivo de testes no Insomnia<br>- Instale o BackEnd (NodeJS) **npm i**<br>- Tente executar o projeto e encontre os erros<br>- Preencha a **planilha** com os erros encontrados e a **solução** aplicada|
 ## Planilha de erros
 ![Entrega](planilha.png)
 ## Arquivo de testes (Insomnia)
