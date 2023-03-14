@@ -15,3 +15,10 @@
 ![Exercício 6](ex6.png)
 ### Exercício 7 - Função Hoje, cálculos com datas:
 ![Exercício 7](ex7.png)
+## Função SE()
+### Sintaxe SE(Teste Lógico; Se sim; Senão)
+||A|B|
+|-|-|-|
+|1|35|28|
+### Exemplo SE(A1 <= B1; "Grande"; "Pequeno")
+![Exemplo SE()](exemplo_se.png)
