@@ -1,4 +1,4 @@
-	# Situação Problema:
+# Situação Problema:
 
 ## Refatoração de código:
 - OBS: Este desafio pode ser utilizado como teste em um processo seletivo para contratação de programador Back-End ou FullStack
