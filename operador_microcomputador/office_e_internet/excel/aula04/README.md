@@ -33,7 +33,7 @@
 - **Total de Contas**: soma das contas de cada mês.
 - **Saldo**: Salário menos Total de Contas.
 - Acrescente uma linha **Aluguel** nas contas com R\$ 650,00 para cada mês
-- Acrescente mais uma fonte de renda chamada **Bico** some ao salário e recalcule o Saldo
+- Acrescente mais uma fonte de renda chamada **Bico** com valores de R\$ 400,00 mensais some ao salário e recalcule o Saldo
 
 ## Atividade 5: Finanças Empresariais Receitas x Despesas
 ![Exercício 1](atv5.png)
