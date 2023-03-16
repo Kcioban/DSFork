@@ -2,13 +2,13 @@
 ### Situação Problema
 |Contextualização:|
 |-|
-|O Sr. Adamastor Silva é dono de um estacionamento na cidade de Jaguariúna, possui um funcionário que anota em uma planilha do **Excel** os dados dos clientes e veículos estacionados, os horários de entrada e saída destes veículos. Contratou você para desenvolver um sistema que facilite o trabalho de seu funcionário|
+|O Sra. Simone Oliveira é dona de uma empresa de aluguel de veículos na cidade de Jaguariúna, o sistema de aluguel de veículos está em desenvolvimento, no entanto possui uma planilha em **Excel** dos históricos das **Manutenções** realizadas em seus veículos. Você foi incumbido/a de desenvolver um sistema que organize os dados/registros das manutenções|
 
 |Desafio:|
 |-|
-|Como primeiro passo para desenvolver este sistema, analise os dados brutos da planilha que o funcionário do sr. Adamastor criou e faça:<br>- A normalização destes dados<br>- O MER **DER**, modelo **conceitual**<br>- O Script DDL<br>- DML importando os dados, via arquivos CSV ou concatenação de dados no Excel|
+|Como primeiro passo para desenvolver este sistema, analise os dados brutos da planilha e faça:<br>- A normalização destes dados<br>- O MER **DER**, modelo **conceitual**<br>- O Script DDL<br>- E a importando os dados, via arquivos CSV ou concatenação de dados no Excel|
 
-- Anexo: **vps01.xlsx**
+- Anexo: **manutencoes.xlsx**
 
 |Entregas:|
 |-|
