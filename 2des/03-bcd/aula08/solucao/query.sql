@@ -3,7 +3,8 @@
 -- 1. Crie uma query que mostre todos os dados da tabela de estacionamentos e uma coluna que calcule o tempo_total em horas
 -- Salve o resultado desta consulta como um relatório/view chamado vw_estacionamento
 CREATE VIEW vw_estacionamento AS
-SELECT *, TIMESTAMPDIFF(HOUR, entrada, saida) AS tempo_total FROM estacionamento;
+SELECT *, CEILING(TIMESTAMPDIFF(MINUTE, entrada, saida)/60) AS tempo_total FROM estacionamento;
+-- A Função TIMESTAMPDIFF() Faz cálculos de diferença de horas e a CELLING() arredonda para cima
 
 -- 2. crie uma query altere o campo 'saída' do estacionamento id=168 para "2022-03-08 18:00:00"
 UPDATE estacionamento SET saida = "2022-03-08 18:00:00" WHERE id = 168;
@@ -28,3 +29,6 @@ ORDER BY v.saida DESC;
 
 SELECT * FROM vw_estacionamento;
 SELECT * FROM vw_estacionamento_full;
+
+-- Exportar o Relatório/View estacionamento_full para análise de dados
+SELECT * FROM vw_estacionamento_full INTO OUT FILE d:/relestacionamento.csv;
