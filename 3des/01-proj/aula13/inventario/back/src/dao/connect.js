@@ -1,6 +1,6 @@
-const CNTSTRING = process.env.CNTSTRING || { host: "localhost", database: "inventario", user: "root" }
+const MYSQLSTR = process.env.MYSQLSTR || { host: "localhost", database: "inventario", user: "root" }
 const mysql = require('mysql')
 
-const con = mysql.createConnection(CNTSTRING);
+const con = mysql.createConnection(MYSQLSTR);
 
 module.exports = con;

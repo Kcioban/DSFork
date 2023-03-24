@@ -17,3 +17,14 @@
     - C. Salve na pasta **"Abono"** com o nome de **"funcionarios"**
 - 4. Informe ao professor que terminou e aguarde instruções para concluir
     - Pois precisamos de um recibo deste para cada funcionário.
+
+## Exercício
+
+### Contextualização:
+- A empresa XPTO Cosméticos possui muitos clientes que não estão pagando suas contas, contratou você para cobrar estes clientes.
+
+### Desafio:
+- Escreva uma carta de cobrança para cada cliente oferecendo 2% de desconto para cada mês que o cliente esteja devendo.
+- Calcule os meses, desconto e total com os dados da planilha a seguir
+![planilha](devedores.png)
+- E crie a Mala Direta com a carta de cobrança.
