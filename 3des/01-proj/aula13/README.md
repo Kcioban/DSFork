@@ -3,58 +3,27 @@
 - Podemos implantar APIs ou Aplicações Back-End (NodeJS com o serviço de aplicativo da Azure, via VSCode)
 - Para isso precisamos de uma API (desenvolvida)
 - Abaixo segue um exemplo de uma aplicação integrada BackEnd + FrontEnd
+## Passo a passo
+- Para implantar uma aplicação Node.js e MySQL no Azure, você pode seguir os seguintes passos:
+- Crie uma conta no Azure e faça login no Portal do Azure.
+- Crie um grupo de recursos para a aplicação e defina uma região.
+- Crie um banco de dados MySQL no Azure.
+- Crie uma conta de armazenamento no Azure para hospedar o código e arquivos da aplicação.
+- Baixe e instale o Azure CLI em sua máquina.
+- Crie um diretório para sua aplicação e, em seguida, crie um arquivo de configuração package.json sando o comando npm init.
+- Adicione as dependências necessárias para o seu aplicativo Node.js ao arquivo package.json.
+- Crie o arquivo server.js para sua aplicação Node.js.
+- Conecte sua aplicação ao banco de dados MySQL.
+- Crie um arquivo de configuração config.js para armazenar as informações de conexão com o banco de dados.
+- Use o Azure CLI para criar um aplicativo Web do Azure.
+- Use o Azure CLI para implantar a aplicação Node.js no Azure.
+- Configure as variáveis de ambiente do aplicativo Web para se conectar ao banco de dados MySQL.
+- Configure a string de conexão com o banco de dados em sua aplicação Node.js para usar as variáveis de ambiente.
+- Inicie o aplicativo Web e teste-o no Azure.
 
-## Renderizar paginas html no nodejs
-- Para renderizar páginas HTML em uma aplicação Node.js, você pode seguir os seguintes passos:
-	- Instale o pacote "express" do Node.js usando o gerenciador de pacotes "npm". Você pode fazer isso digitando o seguinte comando no terminal:
-	```cmd
-		npm install express
-	```
-	- Crie um arquivo JavaScript e importe o pacote "express". Por exemplo:
-	```javascript
-		const express = require('express');
-		const app = express();
-	```
-	- Configure a pasta onde os arquivos HTML serão armazenados e definir o mecanismo de visualização que será usado para renderizar os arquivos HTML. Por exemplo:
-	```javascript
-		app.use(express.static('public'));
-		app.set('view engine', 'ejs');
-	```
-	- Neste exemplo, a pasta "public" é configurada como a pasta onde os arquivos HTML serão armazenados e o mecanismo de visualização "ejs" é definido para renderizar os arquivos HTML.
-	- Crie uma rota que renderize o arquivo HTML usando o mecanismo de visualização definido anteriormente. Por exemplo:
-	```javascript
-		app.get('/', (req, res) => {
-			res.render('index', { title: 'Minha página HTML' });
-		});
-	```
-	- Neste exemplo, a rota "/" renderiza o arquivo "index.ejs", que está localizado na pasta "public" e passa o título "Minha página HTML" como um objeto.
-	- Crie o arquivo HTML usando o mecanismo de visualização definido anteriormente. Por exemplo, para criar um arquivo "index.ejs":
-	```html
-		<!DOCTYPE html>
-		<html>
-		<head>
-		  <title><%= title %></title>
-		</head>
-		<body>
-		  <h1>Minha página HTML</h1>
-		</body>
-		</html>
-	```
-	- Neste exemplo, a tag "<%= title %>" é usada para exibir o título que é passado como um objeto na rota anterior.
-	- Inicie o servidor express. Por exemplo:
-	```javascript
-		app.listen(3000, () => {
-			console.log('Servidor está ouvindo na porta 3000');
-		});
-	```
-	- Execute o arquivo JavaScript digitando o seguinte comando no terminal:
-	```cmd
-		node app.js
-	```
-	- Neste exemplo, o arquivo JavaScript se chama "app.js". Depois de executar este comando, o servidor express estará em execução e você poderá acessar a página HTML digitando "http://localhost:3000" no seu navegador.
-	- Com esses passos, você deve ser capaz de renderizar páginas HTML em uma aplicação Node.js usando o pacote "express".
+|Esses são os passos gerais para implantar uma aplicação Node.js e MySQL no Azure. Existem várias ferramentas disponíveis no Azure que podem ajudá-lo a fazer isso, como o Azure App Service, o Azure Database for MySQL e o Azure Storage. Certifique-se de ler a documentação oficial do Azure para obter mais informações sobre como usar essas ferramentas para implantar sua aplicação.|
+|-|
 
-## Links de tutoriais
 ### Criar um aplicativo Web do Node.js no Azure
 - https://learn.microsoft.com/pt-br/azure/app-service/quickstart-nodejs?tabs=windows&pivots=development-environment-vscode#set-up-your-initial-environment
 ### Implantar o aplicativo Node.js no aplicativo Web do Azure usando o DevOps Starter para o GitHub Actions
