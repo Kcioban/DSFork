@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Switch } from 'react-native';
 
 import ButtonCadastrar from './src/components/button-cadastrar';
 
 export default function App() {
+  
   const [numero, setNumero] = new useState(0);
   const [nome, setNome] = new useState("");
 
