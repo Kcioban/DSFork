@@ -88,7 +88,16 @@ main form input{
 }
 
 @media screen and (max-width: 600px){
-    header form {
+    
+	header{
+		height: 20vh;
+	}
+	
+	main{
+		height: 75vh;
+	}
+	
+	header form {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
