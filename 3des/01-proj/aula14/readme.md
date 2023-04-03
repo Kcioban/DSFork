@@ -1,5 +1,11 @@
 ## Documentações
 
+#### Google Cloud Console
+- https://console.cloud.google.com/
+
+#### Chaves de Acesso
+- https://developers.google.com/maps/documentation/javascript/get-api-key?hl=pt-br
+
 #### Geolocalização JS
 - https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/longitude
 
