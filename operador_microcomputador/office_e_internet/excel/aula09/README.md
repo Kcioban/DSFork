@@ -1,4 +1,4 @@
-# Excel - AUla09
+# Excel - Aula09
 - PROCV(valor, tabela, coluna)
 - Dashboard
 - Dados
