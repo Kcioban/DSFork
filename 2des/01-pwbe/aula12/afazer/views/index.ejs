@@ -31,7 +31,19 @@
                 <% dados.forEach(t=>{%>
                     <tr>
                         <td>
+                            <%= t.id%>
+                        </td>
+                        <td>
                             <%= t.descricao%>
+                        </td>
+                        <td>
+                            <%= t.quando.toISOString()%>
+                        </td>
+                        <td>
+                            <button>[ * ]</button>
+                        </td>
+                        <td>
+                            <button>[ - ]</button>
                         </td>
                     </tr>
                     <% })%>
