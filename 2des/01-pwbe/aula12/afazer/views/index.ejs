@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,36 @@
     <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
     <title>Interface de Usuário</title>
 </head>
+
 <body>
     <header>
-        <h1><%= titulo%></h1>
+        <h1>
+            <%= titulo%>
+        </h1>
     </header>
     <main>
-        <p><%= JSON.stringify(dados)%></p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Descrição</td>
+                    <td>Quando</td>
+                    <td>Alterar</td>
+                    <td>Excluir</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% dados.forEach(t=>{%>
+                    <tr>
+                        <td>
+                            <%= t.descricao%>
+                        </td>
+                    </tr>
+                    <% })%>
+            </tbody>
+        </table>
     </main>
     <footer></footer>
 </body>
+
 </html>
