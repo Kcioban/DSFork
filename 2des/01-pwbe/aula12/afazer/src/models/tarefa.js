@@ -9,6 +9,10 @@ class Tarefa {
     read(){
         return `SELECT * FROM tarefas ORDER BY quando`
     }
+
+    del(){
+        return `DELETE FROM tarefas WHERE id=${this.id}`
+    }
 }
 
 module.exports = Tarefa
