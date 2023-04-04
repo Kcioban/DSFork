@@ -1,6 +1,8 @@
 # SAPES - Pesquisa
 - A Pesquisa de Acompanhamento de Egressos do SENAI tem como objetivo monitorar os indicadores de desempenho dos egressos no mercado de trabalho formal e informal, bem como identificar a satisfação das empresas com os ex-alunos do SENAI.
 - https://sapes.senai.br/questionario
+- https://pesquisasapes.sesisenaisp.org.br/ 
+- https://sapes.senai.br/ (Acompanhamento posterior ao curso)
 ## A pesquisa é divida em três fases:
 - Fase I – Aluno – Concluinte - aplicação da pesquisa com concluintes dos cursos do SENAI, ao término da fase escolar, 15 dias antes da conclusão do curso.
 
@@ -33,7 +35,3 @@
 - As escolas podem acompanhar a coleta de dados, por meio de seus interlocutores, com o acesso fornecido pela GSTI. 
 
 - Os resultados serão disponibilizados pelo Departamento Nacional e divulgados pela GED. 
-
-## Links
-- https://pesquisasapes.sesisenaisp.org.br/ 
-- https://sapes.senai.br/
