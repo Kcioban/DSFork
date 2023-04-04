@@ -7,7 +7,7 @@ class Tarefa {
     }
 
     read(){
-        return `SELECT * FROM tarefas ORDER BY quando`
+        return `SELECT * FROM tare ORDER BY quando`
     }
 }
 

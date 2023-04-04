@@ -6,7 +6,7 @@ const app = (req, res) => {
         if (err == null) {
             res.render('index', { titulo: "Tarefas a Fazer", dados: result })
         } else {
-            res.send("Erro:" + err).end();
+            res.render('erro',{err:err})
         }
     })
 }
