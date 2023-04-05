@@ -17,6 +17,17 @@
         </h1>
     </header>
     <main>
+        <div>
+            <form action="/create" method="POST">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"
+                    placeholder="Digite a descrição da sua tarefa"></textarea>
+                <label for="quando">Quando:</label>
+                <% hoje = new Date().toISOString().slice(0, 16).replace('T',' ')%>
+                <% console.log(hoje)%>
+                <input type="datetime-local" name="quando" id="quando" value="<%=hoje%>">
+            </form>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -38,7 +49,7 @@
                         </td>
                         <td>
                             <%= t.quando.toISOString('pt-BR').split('T')[0]%>
-                            <%= t.quando.toISOString('pt-BR').split('T')[1].slice(0,5)%>
+                                <%= t.quando.toISOString('pt-BR').split('T')[1].slice(0,5)%>
                         </td>
                         <td>
                             <button>[ * ]</button>
