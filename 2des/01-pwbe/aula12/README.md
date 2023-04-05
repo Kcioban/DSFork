@@ -14,3 +14,9 @@
 	nodemon
 ```
 - Abrir o navegador: http://localhost:3000
+
+### Exemplo de documentação
+![Lousa](lousa2.jpg)
+
+### Resultado final (Sem estilização CSS)
+![Lousa](ejs.png)
