@@ -31,6 +31,7 @@
 
 # Competências transversais
 - Acessar o portal EAD https://ead.sp.senai.br
+- Enviar **Print** dos certificados em: https://forms.gle/STMxikkU8qVfLuEb8
 - Tutorial de como acessar o Portal EAD a primeira vez https://ead.sp.senai.br/tutorial/comoacessar/
 - Verificar se está matriculado em algum dos cursos a seguir:
 	- Desvendando a Indústria 4.0
