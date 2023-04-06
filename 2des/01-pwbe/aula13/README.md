@@ -25,3 +25,13 @@
 |Karina Silva|2002-05-13|88|1,73|
 |Solange Nascimento|2005-12-01|95|1.58|
 |Marcos Pontes|2001-12-03|60|1.98|
+
+|Observações:|
+|-|
+|Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>
+- Podem ser calculados através de **visões**(Views) no SGBD e apenas exibidos os resultados,<br>
+- Podem ser calculados na API back-end através de métodos/funções:<br>
+    - Podem ser calculados quando os dados são listados um a um<br>
+    - Podem ser calculados quando os dados são todos de uma vez<br>
+    - Podem ser calculados quando os dados são cadastrados e armazenados no banco de dados<br>
+- Para cada problema devemos avaliar qual a melhor alternativa quanto a processamento e armazenamento|
