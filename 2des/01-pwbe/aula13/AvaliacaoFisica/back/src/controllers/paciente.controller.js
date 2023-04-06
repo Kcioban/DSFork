@@ -1,16 +1,14 @@
 const con = require('../dao/connect')
 const Paciente = require('../models/paciente.model')
 
-const modelos = (lista) => {
+//Método que recebe uma lista e aplica o modelo em todos os elementos
+const modelarLista = (lista) => {
     for(i = 0; i < lista.length; i++)
         lista[i] = new Paciente(lista[i])
     return lista
 }
 
-const teste = (req, res) => {
-    res.json("Avaliação Física Respondendo").end()
-}
-
+//Métodos CRUD
 const criar = (req, res) => {
     let paciente = new Paciente(req.body)
     con.query(paciente.create(), (err, result) => {
@@ -25,7 +23,7 @@ const listar = async (req, res) => {
     let paciente = new Paciente(req.params)
     con.query(paciente.read(), (err, result) => {
         if (err == null){
-            res.json(modelos(result)).end()
+            res.json(modelarLista(result)).end()
         }
     })
 }
@@ -48,6 +46,10 @@ const excluir = (req, res) => {
         else
             res.status(404).end()
     })
+}
+
+const teste = (req, res) => {
+    res.json("Avaliação Física Respondendo").end()
 }
 
 module.exports = {

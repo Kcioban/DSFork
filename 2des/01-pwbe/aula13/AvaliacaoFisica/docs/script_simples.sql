@@ -5,7 +5,7 @@ USE avaliacao;
 -- DDL Criação da estrutura da tabela
 CREATE TABLE pacientes(
     id integer not null primary key auto_increment,
-    nome_completo varchar(50) not null,
+    nome varchar(50) not null,
     nascimento date not null,
     peso float(5,2) not null,
     altura float(3,2) not null
