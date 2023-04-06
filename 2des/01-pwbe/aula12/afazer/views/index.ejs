@@ -20,10 +20,11 @@
         <div>
             <form action="/create" method="POST">
                 <label for="descricao">Descrição:</label>
-                <textarea name="descricao" id="descricao" cols="30" rows="10"
-                    placeholder="Digite a descrição da sua tarefa" required></textarea>
+                <textarea name="descricao" id="descricao" placeholder="Digite a descrição da sua tarefa"
+                    required></textarea>
                 <label for="quando">Quando:</label>
-                <% hoje = new Date().toISOString().slice(0, 16).replace('T',' ')%>
+                <% hoje=new Date().toISOString().slice(0,
+                    16).replace('T',' ')%>
                 <input type="datetime-local" name="quando" id="quando" value="<%=hoje%>">
                 <input type="submit" value="Novo">
             </form>
@@ -31,21 +32,23 @@
         <table>
             <thead>
                 <tr>
-                    <td>Id</td>
-                    <td>Descrição</td>
-                    <td>Quando</td>
-                    <td>Alterar</td>
+                    <td>
+                        <label>Id</label>
+                        <label>Descrição</label>
+                        <label>Quando</label>
+                        <label> Alterar</label>
+                    </td>
                     <td>Excluir</td>
                 </tr>
             </thead>
             <tbody>
                 <% dados.forEach(t=>{%>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="4">
                             <form action="/update?_method=PUT" method="POST">
                                 <input type="number" name = "id" value="<%=t.id%>" readonly>
-                                <input type="text" name = "descricao" value="<%=t.descricao%>" required>
-                                <input type="datetime-local" name = "quando" value="<%=t.quando.toISOString().slice(0, 16).replace('T',' ')%>" required>
+                                <textarea name = "descricao" required><%=t.descricao%></textarea>
+                                <input type="datetime-local" name = "quando" value="<%=t.quando.toISOString().slice(0, 16).replace(' T',' ')%>" required>
                                 <input type="submit" value="[ * ]">
                             </form>
                         </td>
