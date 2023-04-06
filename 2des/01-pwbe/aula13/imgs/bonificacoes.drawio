@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-06T11:52:05.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="Ke2OA_ychH2wmVGzLLSR" version="21.1.4" type="device">
+<mxfile host="app.diagrams.net" modified="2023-04-06T12:26:57.466Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="tomPVxGEMqHF9P8tMd5r" version="21.1.4" type="device">
   <diagram name="Página-1" id="FOCHv5X22cwILcz-DI4y">
     <mxGraphModel dx="1434" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -41,16 +41,16 @@
           <mxGeometry x="334" y="180" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mLqd1EPtuPogWMZHOjrz-22" value="Funcionario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="540" y="140" width="160" height="210" as="geometry" />
+          <mxGeometry x="540" y="140" width="160" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="mLqd1EPtuPogWMZHOjrz-23" value="+ matricula: int&lt;br&gt;+ nomeCompleto: String&lt;br&gt;+ admissao: Date&lt;br&gt;+ ano: int&lt;br&gt;+ desempenho: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="mLqd1EPtuPogWMZHOjrz-22" vertex="1">
-          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        <mxCell id="mLqd1EPtuPogWMZHOjrz-23" value="+ matricula: int&lt;br&gt;+ nomeCompleto: String&lt;br&gt;+ admissao: Date&lt;br&gt;+ salario: float&lt;br&gt;+ ano: int&lt;br&gt;+ desempenho: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="mLqd1EPtuPogWMZHOjrz-22" vertex="1">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
         </mxCell>
         <mxCell id="mLqd1EPtuPogWMZHOjrz-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="mLqd1EPtuPogWMZHOjrz-22" vertex="1">
-          <mxGeometry y="110" width="160" height="8" as="geometry" />
+          <mxGeometry y="130" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="mLqd1EPtuPogWMZHOjrz-25" value="+ construtor(objeto): void&lt;br&gt;+ create(): String&lt;br&gt;+ read(): String&lt;br&gt;+ update(): String&lt;br&gt;+ del(): String&lt;br&gt;+ calcBonificacao(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="mLqd1EPtuPogWMZHOjrz-22" vertex="1">
-          <mxGeometry y="118" width="160" height="92" as="geometry" />
+          <mxGeometry y="138" width="160" height="92" as="geometry" />
         </mxCell>
         <mxCell id="mLqd1EPtuPogWMZHOjrz-28" value="UML DC&lt;br&gt;(Diagrama de Classes)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="550" y="100" width="140" height="30" as="geometry" />
