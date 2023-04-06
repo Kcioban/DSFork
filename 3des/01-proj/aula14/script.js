@@ -10,6 +10,8 @@ function inicializarMapa() {
         center: { lat: -23.5329, lng: -46.3554 },
         zoom: defaultZoom,
     });
+
+    carregarLocalizacao();
 }
 
 function carregarLocalizacao() {
