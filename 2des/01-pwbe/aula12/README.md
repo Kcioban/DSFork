@@ -18,5 +18,5 @@
 ### Exemplo de documentação
 ![Lousa](lousa2.jpg)
 
-### Resultado final (Sem estilização CSS)
+### Resultado final (Com o mínimo de estilização CSS)
 ![Lousa](ejs.png)
