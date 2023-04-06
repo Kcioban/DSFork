@@ -29,7 +29,7 @@
 |Observações:|
 |-|
 |Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>- Podem ser calculados através de **visões**(Views) no SGBD e apenas exibidos os resultados,<br>- Podem ser calculados na API back-end através de métodos/funções:<br>&emsp;- Podem ser calculados quando os dados são listados um a um<br>&emsp;- Podem ser calculados quando os dados são todos de uma vez<br>&emsp;- Podem ser calculados quando os dados são cadastrados e armazenados no banco de dados<br>- Para cada problema devemos avaliar qual a melhor alternativa quanto a processamento e armazenamento<br>**- Neste caso o Analista decidiu que os resultados dos cálculos não devem ser armazenados então calcule nos métodos da API ou em forma de VIEW no BD**|
-## 1 - Controle de bonificações
+## 2 - Controle de bonificações
 
 |Contextualização:|
 |-|
@@ -59,6 +59,7 @@
 |-|
 |Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>- Porém, neste caso a empresa precisa registrar o histórico de pagamentos e em alguns casos pode haver diferença entre o valor calculado e o valor realmente recebido pelo funcionário/colaborador então **o resultado deve ser armazenado no banco de dados**|
 
+## Como entregar as atividades
 |Entregas:|
 |-|
 |O professor disponibilizará uma pasta na rede para entregar o projeto|
