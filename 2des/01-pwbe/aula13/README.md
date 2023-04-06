@@ -28,10 +28,4 @@
 
 |Observações:|
 |-|
-|Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>
-- Podem ser calculados através de **visões**(Views) no SGBD e apenas exibidos os resultados,<br>
-- Podem ser calculados na API back-end através de métodos/funções:<br>
-    - Podem ser calculados quando os dados são listados um a um<br>
-    - Podem ser calculados quando os dados são todos de uma vez<br>
-    - Podem ser calculados quando os dados são cadastrados e armazenados no banco de dados<br>
-- Para cada problema devemos avaliar qual a melhor alternativa quanto a processamento e armazenamento|
+|Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>- Podem ser calculados através de **visões**(Views) no SGBD e apenas exibidos os resultados,<br>- Podem ser calculados na API back-end através de métodos/funções:<br>&emsp;- Podem ser calculados quando os dados são listados um a um<br>&emsp;- Podem ser calculados quando os dados são todos de uma vez<br>&emsp;- Podem ser calculados quando os dados são cadastrados e armazenados no banco de dados<br>- Para cada problema devemos avaliar qual a melhor alternativa quanto a processamento e armazenamento|
