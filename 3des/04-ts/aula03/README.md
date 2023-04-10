@@ -11,35 +11,35 @@
 
 ### Classificações
 - Os testes são classificados de diferentes formas. Veja a seguir.
-    - **Teste de componentes:**** componentes do software são testados isoladamente.
-    - **Teste de montagem:**** componentes do software são testados em conjunto.
-    - **Teste de produto:**** o software é testado para confirmar que os requisitos funcionais estão presentes.
-    - **Teste de integridade de sistema:**** testa a robustez do software, ou seja, a resistência a falhas.
-    - **Teste de aceitação do utilizador:**** usuários finais utilizam casos e cenários para provar que o sistema se adequa à sua finalidade.
-    - **Teste de desempenho:**** o sistema é testado em relação à velocidade ou à eficácia, conforme definição nos requisitos não funcionais.
-    - **Teste de performance:**** avalia a capacidade de resposta, a disponibilidade, a confiabilidade e a robustez do software diante de determinada carga de trabalho, em condições específicas e por determinado tempo. O objetivo é verificar comportamentos diferentes que condições diversas podem gerar.
-    - **Teste de estresse:**** o sistema é testado até o ponto de ruptura para avaliar características de falhas.
-    - **Teste de integração:**** verifica se um ou mais componentes combinados funcionam de maneira satisfatória.
-    - **Teste de usabilidade:**** é realizado com foco na experiência do usuário, analisando a consistência da interface, o layout, o acesso a funcionalidades, a facilidade de utilização e a viabilidade da manipulação do sistema pelo usuário.
-    - **Teste de configuração ou instalação:**** verifica como o software se comporta ao ser instalado em diferentes configurações de software e hardware.
-    - **Teste de segurança:**** verifica se o sistema e os dados são acessados de forma segura somente por quem executa as ações.
-    - **Teste funcional:**** verifica os requisitos funcionais, as funções e os casos de uso, ou seja, analisa se a aplicação faz o que deveria fazer.
-    - **Teste de unidade:**** testa um componente de forma isolada.
-    - **Teste de volume:**** verifica o comportamento do sistema funcionando com o volume “normal” de dados e transações, envolvendo o banco de dados durante um longo período.
+    - **Teste de componentes:** componentes do software são testados isoladamente.
+    - **Teste de montagem:** componentes do software são testados em conjunto.
+    - **Teste de produto:** o software é testado para confirmar que os requisitos funcionais estão presentes.
+    - **Teste de integridade de sistema:** testa a robustez do software, ou seja, a resistência a falhas.
+    - **Teste de aceitação do utilizador:** usuários finais utilizam casos e cenários para provar que o sistema se adequa à sua finalidade.
+    - **Teste de desempenho:** o sistema é testado em relação à velocidade ou à eficácia, conforme definição nos requisitos não funcionais.
+    - **Teste de performance:** avalia a capacidade de resposta, a disponibilidade, a confiabilidade e a robustez do software diante de determinada carga de trabalho, em condições específicas e por determinado tempo. O objetivo é verificar comportamentos diferentes que condições diversas podem gerar.
+    - **Teste de estresse:** o sistema é testado até o ponto de ruptura para avaliar características de falhas.
+    - **Teste de integração:** verifica se um ou mais componentes combinados funcionam de maneira satisfatória.
+    - **Teste de usabilidade:** é realizado com foco na experiência do usuário, analisando a consistência da interface, o layout, o acesso a funcionalidades, a facilidade de utilização e a viabilidade da manipulação do sistema pelo usuário.
+    - **Teste de configuração ou instalação:** verifica como o software se comporta ao ser instalado em diferentes configurações de software e hardware.
+    - **Teste de segurança:** verifica se o sistema e os dados são acessados de forma segura somente por quem executa as ações.
+    - **Teste funcional:** verifica os requisitos funcionais, as funções e os casos de uso, ou seja, analisa se a aplicação faz o que deveria fazer.
+    - **Teste de unidade:** testa um componente de forma isolada.
+    - **Teste de volume:** verifica o comportamento do sistema funcionando com o volume “normal” de dados e transações, envolvendo o banco de dados durante um longo período.
 <br>![Dica](q2.png)
 
 ### Ferramentas
-- **qTest:**** ferramenta de teste de desempenho.
-- **Testlink:**** ferramenta open source de gerenciamento de testes de software que possibilita que equipes de teste trabalhem de forma sincronizada.
-- **Loadrunner:**** ferramenta de teste de software da Micro Focus utilizada para testar aplicativos, medir o comportamento do sistema e o desempenho sob a carga.
-- **Sublime:**** Ferramenta de testes de ponto a ponto.
+- **qTest:** ferramenta de teste de desempenho.
+- **Testlink:** ferramenta open source de gerenciamento de testes de software que possibilita que equipes de teste trabalhem de forma sincronizada.
+- **Loadrunner:** ferramenta de teste de software da Micro Focus utilizada para testar aplicativos, medir o comportamento do sistema e o desempenho sob a carga.
+- **Sublime:** Ferramenta de testes de ponto a ponto.
 
 ### Defeitos, Erros e Falhas
-- https:**//www.devmedia.com.br/testes-de-software-entendendo-defeitos-erros-e-falhas/22280
-- **Bug:**** trata-se do resultado de um erro de código. Uma anomalia é gerada no funcionamento do software por meio de uma instrução errada ou um comando incorreto.
-- **Erro:**** é decorrente da ação humana. Um resultado incorreto é produzido,
+- https://www.devmedia.com.br/testes-de-software-entendendo-defeitos-erros-e-falhas/22280
+- **Bug:** trata-se do resultado de um erro de código. Uma anomalia é gerada no funcionamento do software por meio de uma instrução errada ou um comando incorreto.
+- **Erro:** é decorrente da ação humana. Um resultado incorreto é produzido,
 como uma falha de escrita em um código-fonte.
-- **Falha:**** é o resultado da execução de um defeito gerado no código.
+- **Falha:** é o resultado da execução de um defeito gerado no código.
 <br>![Relação entre defeito e causas](q3.png)
 
 ### Qualidade
