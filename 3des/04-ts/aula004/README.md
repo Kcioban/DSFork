@@ -16,7 +16,7 @@
 ### Requisitos Funcionais
 <br>![Requisitos Funcionais](assets/requisitosfuncionais.png)
 
-## Roteiro
+## Roteiro - [Exemplo de roteiro segundo ChatGPT](./roteiro_segundo_chatgpt.md)
 - 2.2.Plano de teste
 	- Após a avaliação, elaborar o plano/roteiro de testes.
 - Ex (**CheckList**):
