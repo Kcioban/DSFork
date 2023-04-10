@@ -16,6 +16,10 @@
 ```
 ### Configurar o .ENV
 - Substituir usuario, senha, host(se necessario), porta(se necessario), database
+- Ex:
+  ```env
+    DATABASE_URL="mysql://root@localhost:3306/afazer?schema=public&timezone=UTC"
+  ```
 ### Criar os models
 ./prisma/schema.prisma
 ```javascript
