@@ -14,20 +14,20 @@
 	- **Legislações (No caso do Brasil temos a LGPD)**
 ### Exemplo de Plano/Roteiro de testes de (Sistema, Validação, Integração e Unidade):
 ### Requisitos Funcionais
-<br>![Requisitos Funcionais](assets/requisitosfuncionais.png)
+<br>![Requisitos Funcionais](assets/requisit.png)
 
 ## Roteiro - [Exemplo de roteiro segundo ChatGPT](./roteiro_segundo_chatgpt.md)
 - 2.2.Plano de teste
 	- Após a avaliação, elaborar o plano/roteiro de testes.
 - Ex (**CheckList**):
-<br>![Roteiro de Testes](assets/roteiro.png)	
+<br>![Roteiro de Testes](assets/roteir.png)	
 
 ## Relatório
 - 3. Execução de testes
 	- 3.1.Ambiente de teste
 		- 3.1.1.Configuração
 	
-<br>![Relatório de Testes](assets/relatorio.png)
+<br>![Relatório de Testes](assets/relat.png)
 - Concluído o relatório a equipe de desenvolvimento realiza as correções destacadas
 - E o processo se inicia novamente.
 
