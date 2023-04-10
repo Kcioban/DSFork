@@ -21,6 +21,13 @@
 - Defeito e Falha
 - Requisito x Teste
 
+## Tipos de testes
+![Tipos](tipos-de-teste.png)
+## Tipos de testes
+![Pirâmide](piramide.png)
+## Tipos de testes
+![Pirâmide](piramide-colorida.png)
+
 # Links Uteis
 - Link: https://engsoftmoderna.info/cap8.html
 - Selenium: https://www.selenium.dev/selenium-ide/
