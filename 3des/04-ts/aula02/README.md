@@ -1,36 +1,23 @@
-# Testes Aula02
-	- Roteiro de Testes (Plano de Testes)
-	- Relatório de Testes (Execução de Testes)
-## 2. Planejamento de testes
-- 2.1.Análise de risco
-	- Inicialmente Verificar os requisitos Funcionais e Não funcionais.
-	- Destacar possíveis vulnerabilidades de segurança, como:
-		- Exposição de dados sensíveis
-		- Exposição de senhas
-		- Fluxo de atividades (Login, tipo de perfil de acesso)
-		- Ambiente de implantação (Rede, Nuvem)
-		- Framework de implantação
-	- **Legislações (No caso do Brasil temos a LGPD)**
-- Ex:
-<br>![Requisitos Funcionais](assets/requisitosfuncionais.png)
-- 2.2.Plano de teste
-	- Após a avaliação, elaborar o plano/roteiro de testes.
-- Ex (**CheckList**):
-<br>![Roteiro de Testes](assets/roteiro.png)	
-## 3. Execução de testes
-- 3.1.Ambiente de teste
-	- 3.1.1.Configuração
-<br>![Relatório de Testes](assets/relatorio.png)
-- Concluído o relatório a equipe de desenvolvimento realiza as correções destacadas
-- E o processo se inicia novamente.
+# Testes (Definição, Tipos e Níveis) Aula 02
 
-## Atividade
-- Caso prático de testes:
-	- A partir do seu projeto FullStack "Loja"
-	- Criar uma lista de requisitos funcionais (Somente a descrição, não precisa de DCUs)
-	- Escolha um colega de turma e elebore um <b>Roteiro de Testes</b>
-	- Separar por testes Não Funcionais e Funcionais
-	- Separar os testes funcionais em (Unitário, Unitário + Integração, Unitário + Ponto a Ponto)
-	- Execute os testes no projeto de seu colega.
-	- Ao final elabore um Relatório com o checklist preenchido e os probemas encontrados
-- Demonstração e entrega dos três documentos prevista para "22/02/2023"
+## Conhecimentos conforme Plano de Curso
+- 1.3.Níveis
+	- 1.3.1.Unitário
+	- 1.3.2.De integração
+	- 1.3.3.De sistema
+	- 1.3.4.De aceitação
+
+## Tipos de testes
+![Tipos](tipos-de-teste.png)
+## Tipos de testes
+![Pirâmide](piramide.png)
+## Tipos de testes
+![Pirâmide](piramide-colorida.png)
+
+# Links Uteis
+- Link: https://engsoftmoderna.info/cap8.html
+- Selenium: https://www.selenium.dev/selenium-ide/
+- Youtube Sobre o Selenium: https://www.youtube.com/watch?v=Fw9YW5_MZRs&t=3s
+- Youtube Curso de Selenium: https://www.youtube.com/watch?v=YoV7Oa3vCIE&list=PLedtsFT8ymsgVCqgLvPiSrfYeGdujcqvv&index=1
+- Youtube: https://www.youtube.com/watch?v=fxL04i00jJw
+- youyube: JUNIT no VSCODE: https://www.youtube.com/watch?v=N_FWR1MJ37o

@@ -1,54 +1,45 @@
-# Testes (Segundo Roger PressMan)
-## Engenharia de Software: Uma Abordagem Profissional
+# Testes - Aula03
+## Conhecimentos conforme Plano de Curso
+- 1.2.Tipos
+    - 1.2.1.Funcionais
+    - 1.2.2.Não funcionais
+- 1.4.Técnicas
+	- 1.4.1.Regressão
+	- 1.4.2.Estresse
+	- 1.4.3.Recuperação
+	- 1.4.4.Performance
+	- 1.4.5.Segurança
+	- 1.4.6.Paralelo
+## Verificação e validação estáticas e dinâmicas
+Verificação e a validação incluem uma ampla gama de atividades de SQA (software quality assurance — garantia da qualidade de software): revisões técnicas, auditorias de qualidade e configuração, monitoramento de desempenho, simulação, estudo de viabilidade, revisão de documentação, revisão de base de dados, análise de algoritmo, teste de desenvolvimento, teste de usabilidade, teste de qualificação, teste de aceitação e teste de instalação.
 
-### Objetivos
-- Definir Testes de Software
-- Apontar causas de defeitos e o papel do analista de testes QA(Quality Analist)
-- Explicar a Qualidade de SOftware
+<br>![Quadro1](q1.png)
 
-### Plano de testes:**
-![Plano de testes](q1.png)
+## Teste de Caixa Preta
+também chamado de teste comportamental ou teste Verificação, validação e testes de software funcional, focaliza os requisitos funcionais do software. O teste caixa-preta tenta encontrar erros nas seguintes categorias:
+- 1. funções incorretas ou ausentes;
+- 2. erros de interface;
+- 3. erros em estruturas de dados ou acesso a bases de dados externas;
+- 4. erros de comportamento ou de desempenho;
+- 5. erros de inicialização e término.
+<br>![Quadro2](q2.png)
+## Teste de Caixa Branca
+Também chamado de teste da caixa-de-vidro ou teste estrutural, é uma filosofia de projeto de casos de teste que usa a estrutura de controle descrita como parte do projeto no nível de componentes para derivar casos de teste. Usando métodos de teste caixa-branca, o engenheiro de software pode criar casos de teste que:
 
-### Classificações
-- Os testes são classificados de diferentes formas. Veja a seguir.
-    - **Teste de componentes:** componentes do software são testados isoladamente.
-    - **Teste de montagem:** componentes do software são testados em conjunto.
-    - **Teste de produto:** o software é testado para confirmar que os requisitos funcionais estão presentes.
-    - **Teste de integridade de sistema:** testa a robustez do software, ou seja, a resistência a falhas.
-    - **Teste de aceitação do utilizador:** usuários finais utilizam casos e cenários para provar que o sistema se adequa à sua finalidade.
-    - **Teste de desempenho:** o sistema é testado em relação à velocidade ou à eficácia, conforme definição nos requisitos não funcionais.
-    - **Teste de performance:** avalia a capacidade de resposta, a disponibilidade, a confiabilidade e a robustez do software diante de determinada carga de trabalho, em condições específicas e por determinado tempo. O objetivo é verificar comportamentos diferentes que condições diversas podem gerar.
-    - **Teste de estresse:** o sistema é testado até o ponto de ruptura para avaliar características de falhas.
-    - **Teste de integração:** verifica se um ou mais componentes combinados funcionam de maneira satisfatória.
-    - **Teste de usabilidade:** é realizado com foco na experiência do usuário, analisando a consistência da interface, o layout, o acesso a funcionalidades, a facilidade de utilização e a viabilidade da manipulação do sistema pelo usuário.
-    - **Teste de configuração ou instalação:** verifica como o software se comporta ao ser instalado em diferentes configurações de software e hardware.
-    - **Teste de segurança:** verifica se o sistema e os dados são acessados de forma segura somente por quem executa as ações.
-    - **Teste funcional:** verifica os requisitos funcionais, as funções e os casos de uso, ou seja, analisa se a aplicação faz o que deveria fazer.
-    - **Teste de unidade:** testa um componente de forma isolada.
-    - **Teste de volume:** verifica o comportamento do sistema funcionando com o volume “normal” de dados e transações, envolvendo o banco de dados durante um longo período.
-<br>![Dica](q2.png)
+- 1. garantam que todos os caminhos independentes de um módulo foram exercitados pelo menos uma vez;
+- 2. exercitem todas as decisões lógicas nos seus estados verdadeiro e falso;
+- 3. executem todos os ciclos em seus limites e dentro de suas fronteiras operacionais;
+- 4. exercitem estruturas de dados internas para assegurar a sua validade.
+<br>![Quadro3](q3.png)
 
-### Ferramentas
-- **qTest:** ferramenta de teste de desempenho.
-- **Testlink:** ferramenta open source de gerenciamento de testes de software que possibilita que equipes de teste trabalhem de forma sincronizada.
-- **Loadrunner:** ferramenta de teste de software da Micro Focus utilizada para testar aplicativos, medir o comportamento do sistema e o desempenho sob a carga.
-- **Sublime:** Ferramenta de testes de ponto a ponto.
+## Tipos de testes de software
+Um teste pode ser visto como uma coleção de procedimentos e casos de teste. Um procedimento de teste é um conjunto detalhado de instruções para execução de testes. Um caso de teste é uma especificação das entradas, dos resultados previstos e das condições de execução para um  item a testar, em que um procedimento de teste pode ser invocado em vários casos de teste, de forma direta, ou por meio de outros procedimentos de teste.
 
-### Defeitos, Erros e Falhas
-- https://www.devmedia.com.br/testes-de-software-entendendo-defeitos-erros-e-falhas/22280
-- **Bug:** trata-se do resultado de um erro de código. Uma anomalia é gerada no funcionamento do software por meio de uma instrução errada ou um comando incorreto.
-- **Erro:** é decorrente da ação humana. Um resultado incorreto é produzido,
-como uma falha de escrita em um código-fonte.
-- **Falha:** é o resultado da execução de um defeito gerado no código.
-<br>![Relação entre defeito e causas](q3.png)
+### Dois objetivos distintos:
+- demonstrar ao desenvolvedor e ao cliente que o software atende a seus requisitos;
+- descobrir situações em que o software se comporta de maneira incorreta, indesejável ou de forma diferente das especificações.
+<br>![Quadro4](q4.png)
 
-### Qualidade
-- A seguir, veja os fatores definidos pela norma **ISO 9126 (2001)** para que o software tenha um nível de qualidade adequado:
-    - **Correção:** implica a capacidade de o software realizar as tarefas de forma precisa, ou seja, de acordo com os requisitos especificados pelo cliente.
-    - **Extensibilidade:** é a forma como se podem inserir modificações no software; ou seja, ele deve ser flexível o suficiente para que modificações sejam realizadas de forma fácil.
-    - **Reusabilidade:** é a facilidade com que os softwares podem ser reutilizados totalmente ou em partes para novas aplicações. Isso faz com que haja economia e níveis de qualidade satisfatórios durante a produção de novos softwares, pois ocorrerá menor esforço na escrita e menor risco de erros.
-    - **Robustez (confiabilidade):** essa capacidade mostra que o software funciona mesmo em condições não validadas nas especificações dos requisitos.
-    - **Compatibilidade:** refere-se à facilidade de combinar softwares com outros componentes. Ou seja, ao ser utilizado, o software deve funcionar plenamente sem interferir em outras aplicações. Dessa forma, não deve haver problemas devido à execução de dois ou mais tipos de softwares ao mesmo tempo. Como exemplo, considere a estrutura de dados padronizada, as interfaces homem-máquina padronizadas ou ainda a padronização de formatos de arquivos.
-    - **Portabilidade:** é a facilidade com que um software pode ser transposto de um ambiente para outro, de acordo com os subatributos:** adaptabilidade, facilidade de instalação,  conformidade e facilidade de substituição (PRESSMAN; MAXIM, 2016). É um dos fatores difíceis de se obter, pois nem sempre é possível alinhar o software às diferentes plataformas, sistemas operacionais e periféricos.
-    - **Eficiência:** esse fator está diretamente relacionado à utilização racional dos recursos de hardware e do sistema operacional em que o software será instalado. Entre esses recursos, estão:** memória, recursos gráficos, bibliotecas, entre outros.
-<br>![Dica](q4.png)
+### Classificação quanto ao papel:
+
+<br>![Quadro5](q5.png)
