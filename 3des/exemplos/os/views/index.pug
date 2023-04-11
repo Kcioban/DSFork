@@ -1,0 +1,14 @@
+head
+  meta(charset='utf-8')
+  title Ordens de Serviço
+  link(rel='stylesheet', href='style.css')
+  link(rel="shortcut icon" href="ico.png")
+  script(src="script.js")
+body
+  main
+    form(action="/login", method='POST')
+      label Matrícula:
+      input(type="text" name="matricula" required value="201")
+      label PIN:
+      input(type="password" name="pin" required value="1234")
+      input(type="submit" value="Entrar")
