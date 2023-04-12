@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #031634;
+}
+
+body {
+    background-color: #e8ddcb;
+    color: #033649;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 7vh;
+    width: 100%;
+    background-color: #033649;
+    box-shadow: 1px 1px 5px #033649;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    height: 93vh;
+    width: 100%;
+    max-width: 800px;
+    overflow-y: auto;
+    font-size: small;
+}
+
+h1,
+h2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: medium;
+    background-color: #033649;
+    color: #e8ddcb;
+}
+
+p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type=submit], button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #036564;
+    box-shadow: 1px 1px 5px #033649;
+    color: #e8ddcb;
+    cursor: pointer;
+}
+
+div{
+    margin: 5px;
+    box-shadow: 1px 1px 5px #033649;
+    padding: 5px;
+}
+
+.oculto {
+    display: none;
+}
+
+.novo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #e8ddcb;
+    color: #033649;
+    padding: 10px;
+}
+
+.novo p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.comentarios{
+    background-color: #e8ddcb;
+    color: #033649;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    align-self: center;
+}
+
+.comentarios p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.paleta {
+    color: #031634;
+    color: #033649;
+    color: #036564;
+    color: #cdb380;
+    color: #e8ddcb;
+}

@@ -1,19 +1,19 @@
 -- DML (Importação dos dados)
-LOAD DATA INFILE "C:/Users/wellington.martins/Desktop/github/senai2023/3des/01-proj/aula15/colaboradores.csv"
+LOAD DATA INFILE "D:/wellington/senai2023/3des/01-proj/aula15/colaboradores.csv"
 INTO TABLE colaborador
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE "C:/Users/wellington.martins/Desktop/github/senai2023/3des/01-proj/aula15/oss.csv"
+LOAD DATA INFILE "D:/wellington/senai2023/3des/01-proj/aula15/oss.csv"
 INTO TABLE os
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE "C:/Users/wellington.martins/Desktop/github/senai2023/3des/01-proj/aula15/comentarios.csv"
+LOAD DATA INFILE "D:/wellington/senai2023/3des/01-proj/aula15/comentarios.csv"
 INTO TABLE comentario
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
