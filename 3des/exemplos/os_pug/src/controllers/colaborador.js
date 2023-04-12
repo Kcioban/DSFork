@@ -1,5 +1,5 @@
 const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient();
+const prisma = new PrismaClient()
 
 const iniciar = async (req, res) => {
     res.render('index')
@@ -16,11 +16,24 @@ const login = async (req, res) => {
             cargo: true,
             setor: true,
             abertas: true,
-            executadas: true
+            executadas: {
+                where: {
+                    encerramento: null
+                }
+            }
         }
-    });
+    })
+    let executores = await prisma.colaborador.findMany({
+        where: {
+            setor: "Manutenção"
+        },
+        select: {
+            matricula: true,
+            nome: true
+        }
+    })
     if (colaborador.length > 0)
-        res.render('colaborador', { colaborador: colaborador[0] });
+        res.render('colaborador', { colaborador: colaborador[0], executores: executores });
     else {
         res.redirect('/')
     }

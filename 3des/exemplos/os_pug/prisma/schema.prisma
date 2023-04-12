@@ -40,5 +40,5 @@ model Comentario {
   data          DateTime    @default(now())
   comentario    String
   colaboradores Colaborador @relation(fields: [colaborador], references: [matricula])
-  oss           Os          @relation(fields: [os], references: [id])
+  oss           Os          @relation(fields: [os], references: [id], onDelete: Cascade)
 }
