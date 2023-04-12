@@ -15,29 +15,30 @@ const login = async (req, res) => {
             nome: true,
             cargo: true,
             setor: true,
+            pin: true,
             abertas: {
-                select:{
+                select: {
                     id: true,
                     descricao: true,
                     colaborador: true,
                     executor: true,
                     abertura: true,
                     encerramento: true,
-                    comentarios: true 
+                    comentarios: true
                 }
             },
             executadas: {
                 where: {
                     encerramento: null
                 },
-                select:{
+                select: {
                     id: true,
                     descricao: true,
                     colaborador: true,
                     executor: true,
                     abertura: true,
                     encerramento: true,
-                    comentarios: true 
+                    comentarios: true
                 }
             }
         }
