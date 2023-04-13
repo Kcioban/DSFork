@@ -11,6 +11,7 @@ function obtemAutenticacao() {
     if (user != undefined) {
         document.querySelector("#matricula").value = user.matricula
         document.querySelector("#pin").value = user.pin
+        document.querySelector("#btnEntrar").click()
     }
 }
 
