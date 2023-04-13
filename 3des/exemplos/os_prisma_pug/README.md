@@ -27,3 +27,10 @@ insert into colaborador values
     - ou nodemon
 7. Executar no caminho: http://localhost:3000
 ![Wireframe](../../01-proj/aula15/wireframe1.png)
+![Wireframe](../../01-proj/aula15/wireframe2.png)
+![Wireframe](../../01-proj/aula15/wireframe3.png)
+![Wireframe](../../01-proj/aula15/wireframe4.png)
+![Wireframe](../../01-proj/aula15/wireframe5.png)
+![Wireframe](../../01-proj/aula15/wireframe6.png)
+![Wireframe](../../01-proj/aula15/wireframe7.png)
+![Wireframe](../../01-proj/aula15/wireframe8.png)
