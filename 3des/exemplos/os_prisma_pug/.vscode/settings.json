@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/6d8d60d3-6a61-4830-a1ec-98808cb77d66/resourceGroups/appreceitas/providers/Microsoft.Web/sites/ospug",
-    "appService.deploySubpath": "."
-}
