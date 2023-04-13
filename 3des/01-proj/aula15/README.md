@@ -19,9 +19,23 @@
 - [RN008] Até o momento a gestão foi feita por planilhas que foram exportadas no formato CSV e devem ser importadas para o banco de dados.
 
 ### Wireframe
-![Wireframe](wireframe.png)
-
-### Dados para importação
+<br>Tela de login **[RN004]**
+<br>![Wireframe](wireframe1.png)
+<br>Tela principal colaborador que **não** é do setor de **Manutenção** **[RN003]**,**[RN005],[RN005.1],[RN005.2]**
+<br>![Wireframe](wireframe2.png)
+<br> Tela no formato Modal para abrir uma OS **[RN001]** e **[RN002]**
+<br>![Wireframe](wireframe7.png)
+<br> Detalhe de uma OS concluida **[RN005.3]**
+<br>![Wireframe](wireframe3.png)
+<br> Detalhe de uma OS aberta **[RN005.3]**
+<br>![Wireframe](wireframe4.png)
+<br>Tela principal colaborador do setor de **Manutenção** **[RN006]**
+<br>![Wireframe](wireframe5.png)
+<br>Tela principal colaborador do setor de **Manutenção** com OSs também abertas por ele próprio. **[RN001]**
+<br>![Wireframe](wireframe8.png)
+<br>Detalhe de uma OS em execução com opção de adicionar comentário **[RN005.3]** botão concluir **[RN006.1]**.
+<br>![Wireframe](wireframe6.png)
+### Dados para importação **[RN008]**
 - colaboradores.csv
 ```csv
 matricula;nome;cargo;setor;pin
