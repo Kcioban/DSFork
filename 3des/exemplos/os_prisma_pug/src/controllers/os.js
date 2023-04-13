@@ -10,7 +10,7 @@ const criar = async (req, res) => {
     let os = await prisma.os.create({
         data: format
     })
-    res.redirect('/?msg=Criado com sucesso!')
+    res.redirect('/?msg=OS criada com sucesso!')
 }
 
 const alterar = async (req, res) => {
@@ -25,17 +25,17 @@ const alterar = async (req, res) => {
             id: Number(req.body.id)
         }
     });
-    res.redirect('/?msg=Alterado com sucesso!')
+    res.redirect('/?msg=Os alterada!')
 }
 
 const concluir = async (req, res) => {
     let os = await prisma.os.update({
-        data: {encerramento:new Date()},
+        data: { encerramento: new Date() },
         where: {
             id: Number(req.params.id)
         }
     });
-    res.redirect('/?msg=Alterado com sucesso!')
+    res.redirect('/?msg=OS Concluída com sucesso!')
 }
 
 const excluir = async (req, res) => {
@@ -44,7 +44,7 @@ const excluir = async (req, res) => {
             id: Number(req.params.id)
         }
     });
-    res.redirect('/?msg=Excluído com sucesso!')
+    res.redirect('/?msg=OS excluída com sucesso!')
 }
 
 module.exports = {

@@ -13,6 +13,11 @@ function obtemAutenticacao() {
         document.querySelector("#pin").value = user.pin
         document.querySelector("#btnEntrar").click()
     }
+    let urlParams = new URLSearchParams(window.location.search);
+    let msg = urlParams.get("msg")
+    if (msg != undefined) {
+        alert(msg)
+    }
 }
 
 function sair() {

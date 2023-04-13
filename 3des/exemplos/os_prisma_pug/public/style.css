@@ -77,7 +77,7 @@ button {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: var(--medio);
+    background-color: var(--mediograve);
     box-shadow: 1px 1px 5px var(--grave);
     color: var(--medioagudo);
     cursor: pointer;

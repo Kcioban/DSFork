@@ -13,6 +13,6 @@ router.put('/os/update', os.alterar)
 router.put('/os/update/:id', os.concluir)
 router.delete('/os/del/:id', os.excluir)
 
-router.post('/comentarios/create', comentario.criar)
+router.post('/comentario/create', comentario.criar)
 
 module.exports = router

@@ -10,7 +10,7 @@ const criar = async (req, res) => {
     let os = await prisma.comentario.create({
         data: format
     })
-    res.redirect('/?msg=Criado com sucesso!')
+    res.redirect('/?msg=Comentário criado com sucesso!')
 }
 
 module.exports = {
