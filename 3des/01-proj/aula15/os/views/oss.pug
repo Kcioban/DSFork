@@ -4,7 +4,24 @@ head
   link(rel='stylesheet', href='style.css')
   link(rel="shortcut icon" href="ico.png")
   script(src="script.js")
-body
+body(onload=`armazenaAutenticacao('${colaborador.matricula}','${colaborador.pin}')`)
+  header
+    h1 Ordens de Serviço #{colaborador.nome}
+      button(onclick="novo.classList.remove('oculto')") Nova O.S.
+      button(onclick="sair()") Sair
+    div(class="sombra oculto" id="novo")
+      div(class="novo")
+        p Nova Ordem de Serviço
+          button(onclick="novo.classList.add('oculto')") X
+        form(action="/os/create", method="POST")
+          input(type="hidden", name="colaborador", value=colaborador.matricula)
+          p Descrição:
+            textarea(name="descricao", placeholder="Digite a descrição da Ordem de Serviço", required)
+          p Atribuído para executor:
+            select(name="executor")
+              each executor in executores
+                option(value=executor.matricula) #{executor.matricula} - #{executor.nome}
+          input(type="submit", value="Cadastrar")  
   main
     h1 Ordens de Serviço
     p=JSON.stringify(colaborador)
