@@ -2,9 +2,10 @@ head
   meta(charset='utf-8')
   title Ordens de Serviço
   link(rel='stylesheet', href='style.css')
-  link(rel="shortcut icon" href="../ico.png")
+  link(rel="shortcut icon" href="ico.png")
   script(src="script.js")
-body(onload=`armazenaAutenticacao('${colaborador.matricula}','${colaborador.pin}')`)
+body(onload=`salvaSessao('${colaborador}')`)
+  if colaborador == undefined
   header
     h1 Ordens de Serviço #{colaborador.nome}
       button(onclick="novo.classList.remove('oculto')") Nova O.S.
@@ -23,7 +24,7 @@ body(onload=`armazenaAutenticacao('${colaborador.matricula}','${colaborador.pin}
                 option(value=executor.matricula) #{executor.matricula} - #{executor.nome}
           input(type="submit", value="Cadastrar")  
   main
-    if colaborador.setor == "Manutenção"
+    if colaborador.setor == "Manutencao"
       h2 Para Trabalhar
       each os in colaborador.executadas
         if os.encerramento == undefined

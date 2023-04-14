@@ -2,25 +2,25 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 const criar = async (req, res) => {
-    let format = {
+    let parse = {
         descricao: req.body.descricao,
         colaborador: Number(req.body.colaborador),
         executor: Number(req.body.executor)
     }
     let os = await prisma.os.create({
-        data: format
+        data: parse
     })
     res.redirect('/?msg=OS criada com sucesso!')
 }
 
 const alterar = async (req, res) => {
-    let format = {
+    let parse = {
         id: Number(req.body.id),
         descricao: req.body.descricao,
         executor: Number(req.body.executor)
     }
     let os = await prisma.os.update({
-        data: format,
+        data: parse,
         where: {
             id: Number(req.body.id)
         }

@@ -23,7 +23,7 @@ body(onload=`armazenaAutenticacao('${colaborador.matricula}','${colaborador.pin}
                 option(value=executor.matricula) #{executor.matricula} - #{executor.nome}
           input(type="submit", value="Cadastrar")  
   main
-    if colaborador.setor == "Manutenção"
+    if colaborador.setor == "Manutencao"
       h2 Para Trabalhar
       each os in colaborador.executadas
         if os.encerramento == undefined

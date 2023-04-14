@@ -44,22 +44,24 @@ const login = async (req, res) => {
                 }
             }
         })
+
         let executores = await prisma.colaborador.findMany({
             where: {
-                setor: "Manutenção"
+                setor: "Manutencao"
             },
             select: {
                 matricula: true,
                 nome: true
             }
         })
+
         if (colaborador.length > 0)
             res.render('oss', { colaborador: colaborador[0], executores: executores });
         else {
-            res.redirect('/?msg=Matrícula ou PIN incorretos!')
+            res.redirect('/?erro=Matrícula ou PIN incorretos!')
         }
     } else {
-        res.redirect('/?msg=Matrícula ou PIN incorretos!')
+        res.redirect('/?erro=Matrícula ou PIN incorretos!')
     }
 }
 
