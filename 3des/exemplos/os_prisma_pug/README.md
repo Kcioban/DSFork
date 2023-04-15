@@ -60,8 +60,8 @@ insert into comentario values
 ![Wireframe](../../01-proj/aula15/wireframe7.png)<br>
 ![Wireframe](../../01-proj/aula15/wireframe8.png)<br>
 ## MER, DER
-![Conceitual](../../01-proj/aula15/docs/der-conceitual.png)<br>
-![Lógico](.../../01-proj/aula15/docs/der-logico.png)<br>
+![Conceitual](../../01-proj/aula15/os/docs/der-conceitual.png)<br>
+![Lógico](.../../01-proj/aula15/os/docs/der-logico.png)<br>
 ## UMA - Diagrama de Atividades
 ### Colaborador da manutenção concluíndo uma O.S.
-![Atividades](../../01-proj/aula15/docs/uml-atividades.png)<br>
+![Atividades](../../01-proj/aula15/os/docs/uml-atividades.png)<br>
