@@ -10,62 +10,76 @@ const login = async (req, res) => {
         let colaborador = await prisma.colaborador.findMany({
             where: {
                 AND: [{ matricula: Number(req.body.matricula) }, { pin: Number(req.body.pin) }]
-            },
-            select: {
-                matricula: true,
-                nome: true,
-                cargo: true,
-                setor: true,
-                pin: true,
-                abertas: {
-                    select: {
-                        id: true,
-                        descricao: true,
-                        colaborador: true,
-                        executor: true,
-                        abertura: true,
-                        encerramento: true,
-                        comentarios: true
-                    }
-                },
-                executadas: {
-                    where: {
-                        encerramento: null
-                    },
-                    select: {
-                        id: true,
-                        descricao: true,
-                        colaborador: true,
-                        executor: true,
-                        abertura: true,
-                        encerramento: true,
-                        comentarios: true
-                    }
-                }
             }
         })
-
-        let executores = await prisma.colaborador.findMany({
-            where: {
-                setor: "Manutencao"
-            },
-            select: {
-                matricula: true,
-                nome: true
-            }
-        })
-
-        if (colaborador.length > 0)
-            res.render('oss', { colaborador: colaborador[0], executores: executores });
-        else {
-            res.redirect('/?erro=Matrícula ou PIN incorretos!')
+        if (colaborador.length > 0) {
+            let dados = await read(req.body.matricula)
+            res.render('oss', dados)
+        } else {
+            res.redirect('/?msg=Matrícula ou PIN incorretos!')
         }
     } else {
-        res.redirect('/?erro=Matrícula ou PIN incorretos!')
+        res.redirect('/?msg=Matrícula ou PIN incorretos!')
     }
+}
+
+const recarrega = async (req, res) => {
+    let dados = await read(req.query.matricula)
+    res.render('oss', dados)
+}
+
+const read = async (matricula) => {
+    let colaborador = await prisma.colaborador.findMany({
+        where: {
+            matricula: Number(matricula)
+        },
+        select: {
+            matricula: true,
+            nome: true,
+            cargo: true,
+            setor: true,
+            pin: true,
+            abertas: {
+                select: {
+                    id: true,
+                    descricao: true,
+                    colaborador: true,
+                    executor: true,
+                    abertura: true,
+                    encerramento: true,
+                    comentarios: true
+                }
+            },
+            executadas: {
+                where: {
+                    encerramento: null
+                },
+                select: {
+                    id: true,
+                    descricao: true,
+                    colaborador: true,
+                    executor: true,
+                    abertura: true,
+                    encerramento: true,
+                    comentarios: true
+                }
+            }
+        }
+    })
+    let executores = await prisma.colaborador.findMany({
+        where: {
+            setor: "Manutencao"
+        },
+        select: {
+            matricula: true,
+            nome: true
+        }
+    })
+    return { colaborador: colaborador[0], executores: executores }
 }
 
 module.exports = {
     iniciar,
-    login
+    login,
+    recarrega
 }

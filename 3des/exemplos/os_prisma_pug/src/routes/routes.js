@@ -6,6 +6,7 @@ const os = require('../controllers/os')
 const comentario = require('../controllers/comentario')
 
 router.get('/', colaborador.iniciar)
+router.get('/login', colaborador.recarrega)
 router.post('/login', colaborador.login)
 
 router.post('/os/create', os.criar)

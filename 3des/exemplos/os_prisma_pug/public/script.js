@@ -1,8 +1,5 @@
-function salvaSessao(user) {
-    window.localStorage.setItem("user", JSON.stringify(user))
-}
-
-function sair() {
-    window.localStorage.removeItem("user")
-    window.location.href = '/'
+const urlParams = new URLSearchParams(window.location.search);
+let msg = urlParams.get("msg")
+if (msg != undefined) {
+    alert(msg)
 }

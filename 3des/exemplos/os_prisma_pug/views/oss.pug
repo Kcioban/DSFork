@@ -3,13 +3,11 @@ head
   title Ordens de Serviço
   link(rel='stylesheet', href='style.css')
   link(rel="shortcut icon" href="ico.png")
-  script(src="script.js")
-body(onload=`salvaSessao('${colaborador}')`)
-  if colaborador == undefined
+body
   header
     h1 Ordens de Serviço #{colaborador.nome}
       button(onclick="novo.classList.remove('oculto')") Nova O.S.
-      button(onclick="sair()") Sair
+      button(onclick="window.location.href='http://localhost:3000'") Sair
     div(class="sombra oculto" id="novo")
       div(class="novo")
         p Nova Ordem de Serviço
@@ -51,7 +49,7 @@ body(onload=`salvaSessao('${colaborador}')`)
                     p Id do Colaborador: #{comentario.colaborador}  
                     p Data do comentario: #{comentario.data.toISOString().split('T')[0]}, #{comentario.data.toISOString().split('T')[1].slice(0,5)}                  
                 form(action=`/os/update/${os.id}?_method=PUT`, method='POST')
-                  input(type="hidden", name="id", value=os.id)
+                  input(type="hidden", name="matricula", value=colaborador.matricula)
                   input(type="submit", value="Concluir")
     h2 Abertas por mim
     each os in colaborador.abertas
@@ -60,6 +58,7 @@ body(onload=`salvaSessao('${colaborador}')`)
           h2 OS #{os.id}
           form(action=`/os/update?_method=PUT`, method='POST')
             input(type="hidden", name="id", value=os.id)
+            input(type="hidden", name="matricula", value=colaborador.matricula)
             p Descrição:
               textarea(name="descricao")=os.descricao
             p Aberto por matrícula #{os.colaborador}
@@ -72,6 +71,7 @@ body(onload=`salvaSessao('${colaborador}')`)
           div(class="botoes")
             form(action=`/os/del/${os.id}?_method=DELETE`, method='POST')
               input(type="hidden", name="id", value=os.id)
+              input(type="hidden", name="matricula", value=colaborador.matricula)
               input(type="submit", value="Excluir")
             button(onclick=`coments${os.id}.classList.remove('oculto')`) Detalhes
           div(class="sombra oculto", id=`coments${os.id}`)

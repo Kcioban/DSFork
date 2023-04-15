@@ -10,7 +10,7 @@ const criar = async (req, res) => {
     let os = await prisma.os.create({
         data: parse
     })
-    res.redirect('/?msg=OS criada com sucesso!')
+    res.redirect('/login?matricula='+req.body.colaborador)
 }
 
 const alterar = async (req, res) => {
@@ -25,7 +25,7 @@ const alterar = async (req, res) => {
             id: Number(req.body.id)
         }
     });
-    res.redirect('/?msg=Os alterada!')
+    res.redirect('/login?matricula='+req.body.matricula)
 }
 
 const concluir = async (req, res) => {
@@ -35,7 +35,7 @@ const concluir = async (req, res) => {
             id: Number(req.params.id)
         }
     });
-    res.redirect('/?msg=OS Concluída com sucesso!')
+    res.redirect('/login?matricula='+req.body.matricula)
 }
 
 const excluir = async (req, res) => {
@@ -44,7 +44,7 @@ const excluir = async (req, res) => {
             id: Number(req.params.id)
         }
     });
-    res.redirect('/?msg=OS excluída com sucesso!')
+    res.redirect('/login?matricula='+req.body.matricula)
 }
 
 module.exports = {
