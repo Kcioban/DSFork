@@ -16,7 +16,7 @@
 
 |Desafio-1:|
 |-|
-|Você foi contratado como Programador Full-Stack, por isso deve desenvolver o Back-end a aplicação web com as funcionalidades documentadas, utilize os dados a seguir para testar sua aplicação e desenvolva o Front-End integrado conforme WireFrame|
+|Você foi contratado como Programador Full-Stack, por isso deve desenvolver o Back-end e a Aplicação Web com as funcionalidades documentadas, utilize os dados abaixo para testar sua aplicação e desenvolva o Front-End integrado conforme WireFrames a seguir, crie um diagrama de Atividades com o intúito de treinar a usuária nas funcionalidades da aplicação|
 
 |Nome|Nascimento|Peso|Altura|
 |-|-|-|-|
