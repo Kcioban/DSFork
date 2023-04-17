@@ -54,7 +54,7 @@
 
 |Desafio:|
 |-|
-|Você foi contratado como Programador Back-End, por isso deve desenvolver a API com as funcionalidades documentadas, **A bonificação é 2% do salário multiplicado pelo total de anos de trabalho vezes a nota do desempenho (de 0 a 10)** Ex: um funcionário que recebe 1000.00 de salário, trabalhou 3 anos e obteve 10 de desempenho receberá 600.00 de **bonificação**, utilize os dados a seguir para testar sua aplicação através da ferramenta **Insomnia**|
+|Você foi contratado como Programador Full-Stack, por isso deve desenvolver um aplicativo Web responsivo com funcionalidades documentadas, **A bonificação é 2% do salário multiplicado pelo total de anos de trabalho vezes a nota do desempenho (de 0 a 10)** Ex: um funcionário que recebe 1000.00 de salário, trabalhou 3 anos e obteve 10 de desempenho receberá 600.00 de **bonificação**, utilize os dados a seguir para testar sua aplicação, ao concluir crie também um UML Diagrama de Atividades para treinar o funcionário do RH na utilização das funcionalidades básicas do sistema.|
 
 |Nome|Admissão|Salario|Data do Pagamento|Desempenho|Bonificacao|
 |-|-|-|-|-|-|
@@ -73,4 +73,4 @@
 |-|
 |O professor disponibilizará uma pasta na rede para entregar o projeto|
 |Crie uma pasta com seu nome contendo:|
-|Uma pasta para cada projeto dividida em:<br>- Subpasta: **back** com os códigos<br>- Subpasta: **docs** com o script.sql e o arquivo do insomnia<br>- Não esqueça de excluir a pasta **node_modules** antes de entregar|
+|Uma pasta para cada projeto dividida em:<br>- Subpasta: **webapp** com os códigos fullstack ejs/pug<br>- Subpasta: **docs** com o script.sql e o arquivo do insomnia<br>- Não esqueça de excluir a pasta **node_modules** antes de entregar|
