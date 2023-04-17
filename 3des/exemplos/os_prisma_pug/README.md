@@ -63,5 +63,5 @@ insert into comentario values
 ![Conceitual](../../01-proj/aula15/os/docs/der-conceitual.png)<br>
 ![Lógico](.../../01-proj/aula15/os/docs/der-logico.png)<br>
 ## UMA - Diagrama de Atividades
-### Colaborador da manutenção concluíndo uma O.S.
+### Passo que um colaborador precisa dar para concluir uma O.S.
 ![Atividades](../../01-proj/aula15/os/docs/uml-atividades.png)<br>

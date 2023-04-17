@@ -14,8 +14,11 @@
     <header>
         <h1>Avaliação Física</h1>
         <button onclick="modal1.classList.remove('oculto')">Novo Paciente</button>
-        <div id="modal1" class="oculto">
+        <div id="modal1" class="modal1 oculto">
             <form id="novo">
+                <header style="grid-column-end: span 2;">
+                    <h1>Cadastro de Pacientes</h1>
+                </header>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite o nome do paciente" required>
                 <label for="nascimento">Data de nascimento:</label>

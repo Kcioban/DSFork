@@ -27,4 +27,5 @@ npm start
 - Testar com Insomnia, Postman ou qualquer (API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs)
     - Caso use o insomnia pode importar o script:
     ./docs/Insomnia_2023-04-06.json
--   
+- Abrir a pasta ./front
+- Executar o arquivo inxes.html via Live Server ou servidor que preferir

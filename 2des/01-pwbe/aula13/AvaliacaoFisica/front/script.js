@@ -19,13 +19,17 @@ function preencherTabela() {
         let linha = document.createElement("tr")
         linha.setAttribute('id', 'linha' + e.id)
         let td = []
-        for (let i = 0; i < 10; i++)
+        for (let i = 0; i < 10; i++) {
             td.push(document.createElement("td"))
+            //Adicionar o atributo data-label para responsividade css
+            if (i < 8) td[i].setAttribute("data-label", Object.keys(e)[i].charAt(0).toUpperCase() + Object.keys(e)[i].substr(1)+":")
+            else if (i == 8) td[i].setAttribute("data-label", "Alterar:")
+            else td[i].setAttribute("data-label", "Excluir:")
+        }
         td[0].innerHTML = e.id
         td[1].innerHTML = e.nome
         td[1].setAttribute("contenteditable", "true")
         td[2].innerHTML = `<input type="date" value="${e.nascimento.split("T")[0]}">`
-        td[2].setAttribute("contenteditable", "true")
         td[3].innerHTML = e.peso
         td[3].setAttribute("contenteditable", "true")
         td[4].innerHTML = e.altura
