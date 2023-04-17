@@ -19,7 +19,7 @@ const criar = (req, res) => {
     })
 }
 
-const listar = async (req, res) => {
+const listar = (req, res) => {
     let paciente = new Paciente(req.params)
     con.query(paciente.read(), (err, result) => {
         if (err == null){
