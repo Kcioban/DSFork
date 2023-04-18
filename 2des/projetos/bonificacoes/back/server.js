@@ -2,7 +2,7 @@
 const express = require('express')
 const cors = require('cors')
 
-const router = require('./src/routes/bonificacao.route')
+const router = require('./src/routes/funcionario.route')
 
 const app = express()
 app.use(express.json())

@@ -1,17 +1,17 @@
 const con = require('../dao/connect')
-const Bonificacao = require('../models/bonificacao.model')
+const Funcionario = require('../models/funcionario.model')
 
 //Método que recebe uma lista e aplica o modelo em todos os elementos
 const modelarLista = (lista) => {
     for(i = 0; i < lista.length; i++)
-        lista[i] = new Bonificacao(lista[i])
+        lista[i] = new Funcionario(lista[i])
     return lista
 }
 
 //Métodos CRUD
 const criar = (req, res) => {
-    let bonificacao = new Bonificacao(req.body)
-    con.query(bonificacao.create(), (err, result) => {
+    let funcionario = new Funcionario(req.body)
+    con.query(funcionario.create(), (err, result) => {
         if (err == null)
             res.status(201).end()
         else
@@ -20,8 +20,8 @@ const criar = (req, res) => {
 }
 
 const listar = (req, res) => {
-    let bonificacao = new Bonificacao(req.params)
-    con.query(bonificacao.read(), (err, result) => {
+    let funcionario = new Funcionario(req.params)
+    con.query(funcionario.read(), (err, result) => {
         if (err == null){
             res.json(modelarLista(result)).end()
         }
@@ -29,8 +29,8 @@ const listar = (req, res) => {
 }
 
 const alterar = (req, res) => {
-    let bonificacao = new Bonificacao(req.body)
-    con.query(bonificacao.update(), (err, result) => {
+    let funcionario = new Funcionario(req.body)
+    con.query(funcionario.update(), (err, result) => {
         if (result.affectedRows > 0)
             res.status(202).end()
         else
@@ -39,8 +39,8 @@ const alterar = (req, res) => {
 }
 
 const excluir = (req, res) => {
-    let bonificacao = new Bonificacao(req.params)
-    con.query(bonificacao.delete(), (err, result) => {
+    let funcionario = new Funcionario(req.params)
+    con.query(funcionario.delete(), (err, result) => {
         if (result.affectedRows > 0)
             res.status(204).end()
         else

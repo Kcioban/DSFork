@@ -1,4 +1,4 @@
-class Bonificacao {
+class Funcionario {
 
     constructor(i) {
         this.matricula = i.matricula
@@ -11,22 +11,22 @@ class Bonificacao {
     }
     //Métodos CRUD
     create() {
-        return `INSERT INTO Bonificacoes VALUE(default,'${this.nome}','${this.admissao}',${this.salario},CURDATE(),${this.desempenho},${this.bonificacao})`
+        return `INSERT INTO funcionarios VALUE(default,'${this.nome}','${this.admissao}',${this.salario},CURDATE(),${this.desempenho},${this.bonificacao})`
     }
 
     read() {
         if (this.matricula == undefined)
-            return `SELECT * FROM bonificacoes`
+            return `SELECT * FROM funcionarios`
         else
-            return `SELECT * FROM bonificacoes WHERE matricula = ${this.matricula}`
+            return `SELECT * FROM funcionarios WHERE matricula = ${this.matricula}`
     }
 
     update() {
-        return `UPDATE bonificacoes SET nome = '${this.nome}', admissao = '${this.admissao}', salario = ${this.salario}, pagamento = '${this.pagamento}', desempenho=${this.desempenho} WHERE matricula = ${this.matricula}`
+        return `UPDATE funcionarios SET nome = '${this.nome}', admissao = '${this.admissao}', salario = ${this.salario}, pagamento = '${this.pagamento}', desempenho=${this.desempenho} WHERE matricula = ${this.matricula}`
     }
 
     delete() {
-        return `DELETE FROM bonificacoes WHERE matricula = ${this.matricula}`
+        return `DELETE FROM funcionarios WHERE matricula = ${this.matricula}`
     }
 
     //Métodos de cálculo
@@ -43,4 +43,4 @@ class Bonificacao {
     }
 }
 
-module.exports = Bonificacao 
+module.exports = Funcionario 
