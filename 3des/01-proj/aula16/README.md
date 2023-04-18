@@ -64,6 +64,15 @@
 |Solange Oliveira|2020-12-11|5500.00|CURDATE()|8.5|NULL|
 |Mariana Pontes|2021-12-13|2350.00|CURDATE()|6|NULL|
 
+### WireFrame
+
+|Descrição|Tela|
+|-|:-:|
+|Tela CRUD|![WireFrame 01](./imgs/wireframe1b.png)|
+|Modal de Cadastro|![WireFrame 02](./imgs/wireframe2b.png)|
+|Responsividade da Tabela|![WireFrame 03](./imgs/wireframe3b.png)|
+|Alteração com linhas editávejs da tabela|![WireFrame 04](./imgs/wireframe4b.png)|
+
 |Observações:|
 |-|
 |Dados calculados nem sempre precisam ser armazenados em bancos de dados:<br>- Porém, neste caso a empresa precisa registrar o histórico de pagamentos e em alguns casos pode haver diferença entre o valor calculado e o valor realmente recebido pelo funcionário/colaborador então **o resultado deve ser armazenado no banco de dados**|
