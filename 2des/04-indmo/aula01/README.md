@@ -1,6 +1,8 @@
 # Interface para Dispositivos Móveis - Aula01
 Exemplo inicial de uma aplicação web.
 - ./app
+## Documentação Oficial
+- https://reactnative.dev/
 
 ## Iniciando um projeto mobile
 - Certificar-se de ter instalado em seu computador:
