@@ -5,3 +5,7 @@
 - Listar vendas feitas (data, quantidade, nome do vendedor e do produto)
 - Alterar venda existente
 - Lançar nova venda (selecionar o vendedor e o produto)
+
+### Link formulário
+
+- https://forms.gle/tPj9TeQP5Soo3fKn8
