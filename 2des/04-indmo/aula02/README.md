@@ -1,5 +1,9 @@
 # Componentes Básicos - Aulao2
--./lampada - App exemplo com botão que altera uma imagem.
+
+|Subpasta|Descrição|
+|-|-|
+|./lampada|App exemplo com botão que altera uma imagem.|
+
 ## Conhecimentos
 - 1. Dispositivos móveis
 	- 1.1. Definição

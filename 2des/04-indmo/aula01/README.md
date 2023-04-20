@@ -46,6 +46,7 @@ cd my-app
 <br>![Print1](./imgs/print5.png)
 - 6. Expandir a pasta do seu projeto no explorador e clicar no arquivo App.js
 <br>![Print1](./imgs/print6.png)
+    - O inicio/coração do código é no arquivo **App.js**
 - 7. Executar seu projeto pela primeira vez.
 ```cmd
 expo start
@@ -61,7 +62,8 @@ expo start
     ```
 - 9. Para testar o aplicativo no seu próprio celular, basta instalar o app “ExpoGo” em seu dispositivo, e se estiver na mesma rede wifi LAN que seu computador, leia o QRcode, se estiver via internet 4G, 5G clique em “Tunel” e leia o QRcode.
 
-- 10. Poderá ser informado que deve instalar duas dependências: react-native-web, react-dom
+### Obss:
+- Poderá ser informado que deve instalar duas dependências: react-native-web, react-dom
 ```cmd
 npm install react-native-web --force
 npm install react-dom –force

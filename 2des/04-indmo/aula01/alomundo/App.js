@@ -13,6 +13,12 @@ export default function App() {
         style={styles.logo}
         source={require('./assets/adaptive-icon.png')}
       />
+      <Image
+        style={styles.logo}
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+      />
       <StatusBar style="auto" />
     </View>
   );
