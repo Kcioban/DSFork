@@ -1,10 +1,25 @@
 # Interface para Dispositivos Móveis - Aula01
-Exemplo inicial de uma aplicação web.
-- ./app
-## Documentação Oficial
+
+|Subpastas|Descrição|
+|-|-|
+|./alomundo|Alô mundo|
+|./app|Exemplo de uma aplicação básica.|
+
+## React Nave - Documentação Oficial
 - https://reactnative.dev/
 
-## Iniciando um projeto mobile
+## Conhecimentos
+- 1. Dispositivos móveis
+	- 1.1. Definição
+	- 1.2. Histórico
+	- 1.3. Características
+	- 1.4. Arquitetura
+	- 1.5. Ambiente de desenvolvimento
+		- 1.5.1.Instalação e configuração
+		- 1.5.2.Gerenciamento de dependências
+		- 1.5.3.Recursos e interfaces
+
+## Tutorial: Iniciando um projeto mobile com React Native
 - Certificar-se de ter instalado em seu computador:
     - Node JS - versão LTS
     - VSCode
@@ -51,14 +66,3 @@ expo start
 npm install react-native-web --force
 npm install react-dom –force
 ```
-
-## Conhecimentos
-- 1. Dispositivos móveis
-	- 1.1. Definição
-	- 1.2. Histórico
-	- 1.3. Características
-	- 1.4. Arquitetura
-	- 1.5. Ambiente de desenvolvimento
-		- 1.5.1.Instalação e configuração
-		- 1.5.2.Gerenciamento de dependências
-		- 1.5.3.Recursos e interfaces
