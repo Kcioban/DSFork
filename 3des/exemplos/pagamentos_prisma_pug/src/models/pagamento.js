@@ -4,7 +4,7 @@ class Pagamento {
             this.matricula = Number(i.matricula)
             this.nomeCompleto = i.nomeCompleto
             this.salarioMensal = Number(i.salarioMensal)
-            this.data = i.data
+            this.data = new Date(i.data)
             this.inssPorcento = Number(this.inssPorcento())
             this.inssValor = Number(this.inssValor())
             this.irrfPorcento = Number(this.irrfPorcento())
@@ -16,8 +16,10 @@ class Pagamento {
             this.salarioMensal = Number(i.salarioMensal)
         }
         if (motivo == "alterar") {
+            this.matricula = Number(i.matricula)
             this.nomeCompleto = i.nomeCompleto
             this.salarioMensal = Number(i.salarioMensal)
+            this.data = new Date(i.data)
         }
     }
 

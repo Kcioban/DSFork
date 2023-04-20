@@ -56,6 +56,17 @@ use os;
 |207|Mariana Vieira|6200.00|CURDATE()|
 |208|Suzana Oliveira|9200.00|CURDATE()|
 
+Estes dados fictícios são apenas para teste, pode utilizar os de sua preferência.
+
+|WireFrames|
+|:-:|
+|![Wireframe 1](./docs/wireframe1.png)|
+|Wireframe 1 : Tela principal CRUD Folha de Pagamento|
+|![Wireframe 2](./docs/wireframe2.png)|
+|Wireframe 2 : Tela de cadastro de Novo de Pagamento|
+
+As telas são meramente ilustrativas, estilze com cores e formas de sua preferência.
+
 |Entregas|
 |-|
 |Crie um repositório público do github com o código fonte e as instruções de execução, passe o enderço do repositório ao seu instrutor|

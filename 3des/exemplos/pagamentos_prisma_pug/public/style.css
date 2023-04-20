@@ -1,7 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
     color: var(--p1);
 }
 
@@ -21,8 +22,7 @@ body {
     align-items: center;
 }
 
-header,
-footer {
+header {
     width: 100%;
     height: 8vh;
     background-color: var(--p1);
@@ -32,15 +32,40 @@ footer {
     justify-content: space-around;
 }
 
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--p1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+footer div form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 h1,
 h2,
-h3 {
+h3,
+p {
     color: var(--p5);
 }
 
 main {
     width: 100%;
-    height: 84vh;
+    height: 79vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +88,7 @@ td {
     border: 0px;
 }
 
-td[contenteditable="true"]{
+td[contenteditable="true"] {
     font-weight: bold;
     cursor: pointer;
 }
@@ -80,11 +105,13 @@ input {
     margin: 5px;
 }
 
-input{
+input {
     background-color: var(--p5);
 }
 
-button, input[type="submit"], input[type="reset"]{
+button,
+input[type="submit"],
+input[type="reset"] {
     background-color: var(--p3);
     border: none;
     box-shadow: 1px 1px 3px var(--p1);
@@ -95,6 +122,11 @@ button, input[type="submit"], input[type="reset"]{
     font-size: large;
     font-weight: bold;
     cursor: pointer;
+}
+
+input[type="number"]{
+    max-width: 120px;
+    text-align: center;
 }
 
 #novo {
@@ -147,5 +179,15 @@ button, input[type="submit"], input[type="reset"]{
 
     #novo {
         width: 100vw;
+    }
+    main{
+        height: 70vh;
+    }
+    footer{
+        height: 20vh;
+    }
+    footer div form{
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -4,13 +4,13 @@ const Pagamento = require('../models/pagamento')
 
 const modelarLista = (lista) => {
     for (i = 0; i < lista.length; i++)
-        lista[i] = new Pagamento(lista[i],"ler")
+        lista[i] = new Pagamento(lista[i], "ler")
     return lista
 }
 
 const criar = async (req, res) => {
     let pagamento = await prisma.pagamento.create({
-        data: new Pagamento(req.body,"criar")
+        data: new Pagamento(req.body, "criar")
     })
     res.redirect('/')
 }
@@ -22,7 +22,7 @@ const listar = async (req, res) => {
 
 const alterar = async (req, res) => {
     let pagamento = await prisma.pagamento.update({
-        data: new Pagamento(req.body,"alterar"),
+        data: new Pagamento(req.body, "alterar"),
         where: {
             matricula: Number(req.body.matricula)
         }
@@ -39,9 +39,19 @@ const excluir = async (req, res) => {
     res.redirect('/')
 }
 
+const filtroData = async (req, res) => {
+    let pagamentos = await prisma.pagamento.findMany({
+        where: {
+            data: new Date(req.query.data)
+        }
+    });
+    res.render('index', { pagamentos: modelarLista(pagamentos) })
+}
+
 module.exports = {
     criar,
     listar,
     alterar,
-    excluir
+    excluir,
+    filtroData
 }
