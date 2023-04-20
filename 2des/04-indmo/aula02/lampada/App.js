@@ -12,20 +12,20 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Image 
+      <Image
         source={icon}
         style={styles.icon}
       />
-      <Switch 
+      <Switch
         value={habilitado}
         onValueChange={habilitar}
       />
 
-      <Image 
+      <Image
         source={{
-          uri : (habilitado) 
-                ? "https://cdn-icons-png.flaticon.com/512/702/702797.png" 
-                : "https://cdn-icons-png.flaticon.com/512/702/702814.png"
+          uri: (habilitado)
+            ? "https://cdn-icons-png.flaticon.com/512/702/702797.png"
+            : "https://cdn-icons-png.flaticon.com/512/702/702814.png"
         }}
         style={styles.lampada}
       />
