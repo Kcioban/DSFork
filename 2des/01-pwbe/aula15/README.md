@@ -19,7 +19,7 @@
 |Descrição|Diagrama de Classes|
 |-|-|
 |Modele com JavaScript as classes conforme o diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar|![Atividade 1](atv1-aluguel-veiculo.png)|
-|
+
 Dados para testar:
 
 #### Veículos
