@@ -65,3 +65,8 @@
 |O professor disponibilizará uma pasta na rede para entregar o projeto|
 |Crie uma pasta com seu nome contendo:|
 |Uma pasta para cada projeto dividida em:<br>- Subpasta: **back** com os códigos<br>- Subpasta: **docs** com o script.sql e o arquivo do insomnia<br>- Não esqueça de excluir a pasta **node_modules** antes de entregar|
+
+## Atividade 3
+|Desafio EAD|
+|-|
+|Desenvolva o front-end de cada uma das aplicações conforme exemplo nesta **mesma pasta** e na pasta de **projetos** utilize seu tempo EAD (Educação a Distância) para concluir, utilize sua criatividade ao estilizar a página|
