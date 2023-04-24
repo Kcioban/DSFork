@@ -70,3 +70,12 @@ Dados para testar:
 |12|4|17/05/2023|null|**calcular**|**calcular**|
 |13|4|17/06/2023|null|**calcular**|**calcular**|
 |14|4|17/07/2023|null|**calcular**|**calcular**|
+
+### Atividade 3
+|A partir da atividade 1 Locação de Veículos, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|-|
+|![Atividade 1](atv3-aluguel-veiculo.png)|
+### Atividade 4
+|A partir da atividade 2 Parcelas de Compras, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|-|
+|![Atividade 1](atv4-parcela-compra.png)|
