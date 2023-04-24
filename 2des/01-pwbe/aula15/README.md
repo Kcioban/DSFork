@@ -38,3 +38,9 @@ Dados para testar:
 |1|PBC-5A58|2023-04-02|2023-04-07|**calcular**|
 |1|CCB-2F19|2023-04-07|2023-04-16|**calcular**|
 |1|JHK-2518|2023-04-08|2023-04-16|**calcular**|
+
+### Atividade 2
+|Descrição|Diagrama de Classes|
+|-|-|
+|Modele com JavaScript as classes conforme o diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar|![Atividade 1](atv2-parcela-compra.png)|
+
