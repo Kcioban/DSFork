@@ -1,106 +1,135 @@
-# Builder (Exemplo ChatGPT)
+# Builder
 O padrão de projeto Builder é usado para separar a construção de um objeto complexo de sua representação final, permitindo que o mesmo processo de construção possa criar diferentes representações. Aqui está um exemplo de como usar o padrão Builder em JavaScript:
 
+|Exemplo|
+|-|
+|**Problema**: Criar um produto com várias partes como alguns kits de ferramentas|
+
 ```javascript
-class Product {
-  constructor() {
-    this.parts = [];
-  }
+//Classe Produto composta por uma lista de partes
+class Produto {
+    constructor(nome) {
+        this.nome = nome
+        this.partes = []
+    }
 
-  addPart(part) {
-    this.parts.push(part);
-  }
+    addPart(part) {
+        this.partes.push(part)
+    }
 
-  listParts() {
-    console.log(`Partes do produto: ${this.parts.join(', ')}`);
-  }
+    listarPartes() {
+        console.log(`Partes do ${this.nome}: ${this.partes.join(', ')}`)
+    }
 }
 
-class Builder {
-  buildPart1() {}
-  buildPart2() {}
-  buildPart3() {}
+//Interface (Composta apenas pelas assinaturas dos métodos que serão construtores)
+class InterfaceBuilder {
+    criaParte1() { }
+    criaParte2() { }
+    criaParte3() { }
 }
 
-class ConcreteBuilder1 extends Builder {
-  constructor() {
-    super();
-    this.product = new Product();
-  }
+//Implemantação do primeiro construtor com apenas uma ferramenta
+class Kit1Parte extends InterfaceBuilder {
+    constructor(nome) {
+        super()
+        this.produto = new Produto(nome)
+    }
 
-  buildPart1() {
-    this.product.addPart('Parte 1 do produto construída pelo Construtor 1');
-  }
+    criaParte1() {
+        this.produto.addPart('Furadeira')
+    }
 
-  buildPart2() {
-    this.product.addPart('Parte 2 do produto construída pelo Construtor 1');
-  }
-
-  buildPart3() {
-    this.product.addPart('Parte 3 do produto construída pelo Construtor 1');
-  }
-
-  getProduct() {
-    return this.product;
-  }
+    getProduto() {
+        return this.produto
+    }
 }
 
-class ConcreteBuilder2 extends Builder {
-  constructor() {
-    super();
-    this.product = new Product();
-  }
+//Implemantação do segundo construtor com duas ferramenta
+class Kit2Partes extends InterfaceBuilder {
+    constructor(nome) {
+        super()
+        this.produto = new Produto(nome)
+    }
 
-  buildPart1() {
-    this.product.addPart('Parte 1 do produto construída pelo Construtor 2');
-  }
+    criaParte1() {
+        this.produto.addPart('Furadeira')
+    }
 
-  buildPart2() {
-    this.product.addPart('Parte 2 do produto construída pelo Construtor 2');
-  }
+    criaParte2() {
+        this.produto.addPart('Alicate')
+    }
 
-  buildPart3() {
-    this.product.addPart('Parte 3 do produto construída pelo Construtor 2');
-  }
-
-  getProduct() {
-    return this.product;
-  }
+    getProduto() {
+        return this.produto
+    }
 }
 
-class Director {
-  constructor() {
-    this.builder = null;
-  }
+//Implemantação do terceiro construtor com três ferramenta
+class Kit3Partes extends InterfaceBuilder {
+    constructor(nome) {
+        super()
+        this.produto = new Produto(nome)
+    }
 
-  setBuilder(builder) {
-    this.builder = builder;
-  }
+    criaParte1() { this.produto.addPart('Furadeira') }
 
-  buildMinimalProduct() {
-    this.builder.buildPart1();
-  }
+    criaParte2() {
+        this.produto.addPart('Alicate')
+    }
 
-  buildFullProduct() {
-    this.builder.buildPart1();
-    this.builder.buildPart2();
-    this.builder.buildPart3();
-  }
+    criaParte3() {
+        this.produto.addPart('Martelo')
+    }
+
+    getProduto() {
+        return this.produto
+    }
 }
 
-// Exemplo de uso:
+//Classe que efetiva o Pattern Builder
+class Construtor {
+    constructor() {
+        this.builder = null
+    }
 
-const director = new Director();
-const builder1 = new ConcreteBuilder1();
-const builder2 = new ConcreteBuilder2();
+    setBuilder(builder) {
+        this.builder = builder
+    }
 
-director.setBuilder(builder1);
-director.buildFullProduct();
-const product1 = builder1.getProduct();
-product1.listParts();
+    constroiUmaParte() {
+        this.builder.criaParte1()
+    }
 
-director.setBuilder(builder2);
-director.buildMinimalProduct();
-const product2 = builder2.getProduct();
-product2.listParts();
+    constroiTodasAsPartes() {
+        this.builder.criaParte1()
+        this.builder.criaParte2()
+        this.builder.criaParte3()
+    }
+}
+
+// Exemplo de uso
+// Criar o objeto construtor e nomear cada um dos três Kits
+const construtor = new Construtor()
+const builder1 = new Kit1Parte("Kit Simples")
+const builder2 = new Kit2Partes("Kit Básico")
+const builder3 = new Kit3Partes("Kit Completo")
+
+//Construir os três Kites
+construtor.setBuilder(builder1)
+construtor.constroiUmaParte()
+const produto1 = builder1.getProduto()
+
+construtor.setBuilder(builder2)
+construtor.constroiTodasAsPartes()
+const produto2 = builder2.getProduto()
+
+construtor.setBuilder(builder3)
+construtor.constroiTodasAsPartes()
+const produto3 = builder3.getProduto()
+
+//Ver resultados
+produto1.listarPartes()
+produto2.listarPartes()
+produto3.listarPartes()
 ```
