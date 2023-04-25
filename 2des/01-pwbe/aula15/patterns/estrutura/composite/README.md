@@ -2,85 +2,75 @@
 O padrão de projeto Builder é usado para separar a construção de um objeto complexo de sua representação final, permitindo que o mesmo processo de construção possa criar diferentes representações. Aqui está um exemplo de como usar o padrão Builder em JavaScript:
 
 ```javascript
-class Component {
-  // define a interface para todos os componentes da árvore
-  constructor(name) {
-    this.name = name;
-  }
-
-  add(component) {}
-  remove(component) {}
-  getChild(index) {}
-  getName() {}
-  print() {}
+// define a interface para todos os componentees da árvore
+class Componente {
+    constructor(obj) {
+        this.obj = obj;
+    }
+    add(componente) { }
+    remove(componente) { }
+    getfilho(index) { }
+    getObj() { }
+    print() { }
 }
 
-class Leaf extends Component {
-  // representa os objetos folha na árvore
-  constructor(name) {
-    super(name);
-  }
-
-  getName() {
-    return this.name;
-  }
-
-  print() {
-    console.log(this.name);
-  }
+// representa os objetos folha na árvore
+class Folha extends Componente {
+    constructor(obj) {
+        super(obj);
+    }
+    getObj() {
+        return this.obj;
+    }
+    print() {
+        console.log(this.obj);
+    }
 }
 
-class Composite extends Component {
-  // representa os objetos compostos na árvore
-  constructor(name) {
-    super(name);
-    this.children = [];
-  }
-
-  add(component) {
-    this.children.push(component);
-  }
-
-  remove(component) {
-    const index = this.children.indexOf(component);
-    this.children.splice(index, 1);
-  }
-
-  getChild(index) {
-    return this.children[index];
-  }
-
-  getName() {
-    return this.name;
-  }
-
-  print() {
-    console.log(this.name);
-    this.children.forEach(child => {
-      child.print();
-    });
-  }
+// representa os objetos compostos na árvore
+class Composite extends Componente {
+    constructor(obj) {
+        super(obj);
+        this.filhos = [];
+    }
+    add(componente) {
+        this.filhos.push(componente);
+    }
+    remove(componente) {raiz
+        const index = this.filhos.indexOf(componente);
+        this.filhos.splice(index, 1);
+    }
+    getfilho(index) {
+        return this.filhos[index];
+    }
+    getObj() {
+        return this.obj;
+    }
+    print() {
+        console.log(this.obj);
+        this.filhos.forEach(filho => {
+            filho.print();
+        });
+    }
 }
 
-// Exemplo de uso:
+// Exemplo de uso
+const raiz = new Composite('Objeto raiz');
+raiz.add(new Folha('folha raiz A'));
+raiz.add(new Folha('folha raiz B'));
 
-const root = new Composite('root');
-root.add(new Leaf('folha A'));
-root.add(new Leaf('folha B'));
+const comp = new Composite('SubObjeto');
+comp.add(new Folha('folha Sub A'));
+comp.add(new Folha('folha Sub B'));
 
-const comp = new Composite('composto X');
-comp.add(new Leaf('folha XA'));
-comp.add(new Leaf('folha XB'));
+raiz.add(comp);
+raiz.add(new Folha('folha raiz C'));
 
-root.add(comp);
+const folha = new Folha('folha raiz D');
+raiz.add(folha);
+raiz.remove(folha);
 
-root.add(new Leaf('folha C'));
-
-const leaf = new Leaf('folha D');
-root.add(leaf);
-root.remove(leaf);
-
-root.print();
+raiz.print();
 ```
 
-Neste exemplo, **Component** define a interface para todos os componentes da árvore, **Leaf** representa os objetos folha na árvore e **Composite** representa os objetos compostos na árvore. O Composite pode ter filhos, que podem ser Leaf ou Composite. O método **print()** percorre a árvore inteira e imprime todos os componentes na hierarquia.
+Neste exemplo, **Componente** define a interface para todos os componentes da árvore, **Folha** representa os objetos folha na árvore e **Composite** representa os objetos compostos na árvore. O Composite pode ter filhos, que podem ser Folha ou outro Composite. O método **print()** percorre a árvore inteira e imprime todos os componentes na hierarquia.
