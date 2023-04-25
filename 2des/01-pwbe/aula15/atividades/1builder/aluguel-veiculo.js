@@ -56,6 +56,3 @@ const alugueis = [
 ]
 
 console.log(alugueis)
-
-
-
