@@ -15,7 +15,7 @@ class Aluguel {
         this.veiculo = veiculo
         this.dataRetirada = new Date(dataRetirada)
         this.dataDevolucao = new Date(dataDevolucao)
-        this.valorAluguel = (new Date(dataDevolucao) - new Date(dataRetirada)) / (1000 * 60 * 60 * 24) * veiculo.diaria
+        this.valorAluguel = Number(((new Date(dataDevolucao) - new Date(dataRetirada)) / (1000 * 60 * 60 * 24) * veiculo.diaria).toFixed(2))
     }
 }
 
