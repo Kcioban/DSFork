@@ -133,3 +133,7 @@ produto1.listarPartes()
 produto2.listarPartes()
 produto3.listarPartes()
 ```
+
+Neste exemplo, **Produto** representa o objeto complexo que será construído, **InterfaceBuilder** define a interface para a construção de diferentes partes do objeto complexo, **kit1Parte, kit2Partes, kit3Partes** implementam a interface de **InterfaceBuilder** e constroem diferentes partes do objeto complexo, **Construtor** controla o processo de construção e cria diferentes representações do objeto complexo, dependendo do Builder selecionado.
+
+Para usar o padrão Builder, primeiro um **Construtor** deve ser criado e configurado com o Builder desejado. Em seguida, o **Construtor** usa o Builder para construir diferentes partes do objeto complexo, chamando os métodos de construção necessários. Quando a construção estiver concluída, o Builder retorna o objeto complexo final usando o método **getProduto()**.
