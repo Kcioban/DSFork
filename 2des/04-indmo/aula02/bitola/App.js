@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Image } from 'react-native';
 
 export default function App() {
   const [distancia, setDistancia] = new useState(0)
   const [corrente, setCorrente] = new useState(0)
+  const [bitola110, setBitola110] = new useState(0)
+  const [bitola220, setBitola220] = new useState(0)
   const calcular = () => {
-    console.log('Pressionou')
+    setBitola110(((2 * (distancia * corrente)) / 294.64).toFixed(2))
+    setBitola220(((1.73 * (distancia * corrente)) / 510.4).toFixed(2))
   }
   return (
     <View style={styles.container}>
@@ -17,7 +20,12 @@ export default function App() {
         value={distancia}
         onChangeText={(val) => { setDistancia(Number(val)) }}
       />
-      <Text style={styles.textos}>Valor da corrente:</Text>
+      <Text style={styles.textos}>Corrente em Amper:
+      <Image
+        style={styles.amper}
+        source={require('./assets/amper.png')}
+      />
+      </Text>
       <TextInput
         style={styles.inputs}
         value={corrente}
@@ -28,6 +36,12 @@ export default function App() {
         color='#000033'
         onPress={calcular}
       />
+      <Image
+        style={styles.formula}
+        source={require('./assets/formula.jpg')}
+      />
+      <Text style={styles.textos}>Resultado 110V: {bitola110}</Text>
+      <Text style={styles.textos}>Resultado 220V: {bitola220}</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -52,9 +66,17 @@ const styles = StyleSheet.create({
   inputs: {
     borderBottomColor: '#ccc',
     borderBottomWidth: '1px',
-    width: '100%',
+    width: '90%',
     padding: '10px',
     color: '#fcc',
     fontSize: '16px',
+  },
+  formula:{
+    width:'250px',
+    height:'180px',
+  },
+  amper:{
+    width:'30px',
+    height:'20px',
   }
 });
