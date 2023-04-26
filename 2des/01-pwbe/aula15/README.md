@@ -1,12 +1,16 @@
 # 2. Padrão de desenvolvimento MVC
-- 2.1. Definição
-- 2.2. Aplicabilidade
-- 2.3. Design patterns
+Alguns programadores consideram o MVC (Model, View, Controller) um Design Pattern (Solução Clássica) outros não, pois não faz parte das soluções dlivro GOF  (Gang Of Four)
+- 2.1. Definição (Padrão de projetos e frameworks dividido em pelo menos três camadas)
+- 2.2. Aplicabilidade (NodeJS, React, Angular, Spring e outros Frameworks)
+- 2.3. Design patterns (Gang Of Four - 24 Soluções)
 # Design Patterns - GOF
 - Criação
 - Estrutura
 - Comportamento
 <br>![Patterns](patterns.png)
+### Pattens GOF
+ Estes 24 pattens estão no livro GOF (Gang Of Four) escrito por quatro programadores documentando soluções clássicas com P.O.O. (Programação Orientadas a Objeto, por isso vamos estudar um pouco dos conceitos de P.O.O.
+<br>![Lousa](lousa.jpg)
 
 ## Links importantes
 - (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
