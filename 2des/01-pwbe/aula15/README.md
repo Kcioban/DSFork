@@ -33,10 +33,10 @@
 |id|veículo|dataRetirada|dataDevolucao|valorAluguel|
 |-|-|-|-|:-:|
 |1|JHK-2518|2023-04-01|2023-04-06|**calcular**|
-|1|PBC-5A58|2023-04-01|2023-04-08|**calcular**|
-|1|PBC-5A58|2023-04-02|2023-04-07|**calcular**|
-|1|CCB-2F19|2023-04-07|2023-04-16|**calcular**|
-|1|JHK-2518|2023-04-08|2023-04-16|**calcular**|
+|2|PBC-5A58|2023-04-01|2023-04-08|**calcular**|
+|3|PBC-5A58|2023-04-02|2023-04-07|**calcular**|
+|4|CCB-2F19|2023-04-07|2023-04-16|**calcular**|
+|5|JHK-2518|2023-04-08|2023-04-16|**calcular**|
 
 ### Atividade 2
 |Modele com JavaScript as classes conforme o Diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar, calcule juros de 1% do valor da parcela por dia de atraso|
