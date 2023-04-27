@@ -18,53 +18,22 @@
 		- 1.5.1.Instalação e configuração
 		- 1.5.2.Gerenciamento de dependências
 		- 1.5.3.Recursos e interfaces
+## React Navive
+#### Interface para dispositivos móveis com React Native e Expo
 
-## Tutorial: Iniciando um projeto mobile com React Native
-- Certificar-se de ter instalado em seu computador:
-    - Node JS - versão LTS
-    - VSCode
-- 1. Criar uma pasta para seu projeto
-- 2. Abrir com o vscode
-<br>![Print1](./imgs/print1.png)
-– 3. Abrir um terminal, preferencialmente “CMD”
-<br>![Print1](./imgs/print2.png)
-- 4. Instalar o Expo **globalmente** utilizando o gerenciador de pacotes “NPM”
-```cmd
-npm install -g expo
-```
-- 5. Iniciar um novo projeto
-```cmd
-expo init
-```
-<br>![Print1](./imgs/print3.png)
-- 5.1. Escolher um nome para o projeto ou pressionando “Enter” para nomear como “my-app” e também “Enter” para os outros parâmetros, caso solicite.
-<br>![Print1](./imgs/print4.png)
-- 5.2. Acessar a pasta do seu projeto:
-```cmd
-cd my-app
-```
-<br>![Print1](./imgs/print5.png)
-- 6. Expandir a pasta do seu projeto no explorador e clicar no arquivo App.js
-<br>![Print1](./imgs/print6.png)
-    - O inicio/coração do código é no arquivo **App.js**
-- 7. Executar seu projeto pela primeira vez.
-```cmd
-expo start
-```
-- 8. Pressione **w** para executar no Navegador Webb
-    - Ou digite: http://localhost:19006
-    - 8.1. Ao abrir abra o **Inspecionar**, F12 (Google Chrome)
-<br>![Print](./app/assets/print1.png)
+### Definição
+React Native é uma biblioteca de desenvolvimento de aplicativos móveis que permite escrever código em JavaScript e produzir aplicativos nativos para iOS e Android. O React Native foi **criado pelo Facebook** e é uma extensão da biblioteca **React**, utilizada para criar interfaces de usuário em páginas da web. Com React Native, os desenvolvedores podem criar aplicativos nativos para dispositivos móveis, com alto desempenho e visual atraente, utilizando uma abordagem de programação declarativa e componentizada.
 
-    - 8.2 Ou executar com o seguinte comando:
-    ```cmd
-    expo start –web
-    ```
-- 9. Para testar o aplicativo no seu próprio celular, basta instalar o app “ExpoGo” em seu dispositivo, e se estiver na mesma rede wifi LAN que seu computador, leia o QRcode, se estiver via internet 4G, 5G clique em “Tunel” e leia o QRcode.
+### Componentes
+Componentes são os **blocos de construção básicos** de um aplicativo React Native. Eles representam uma parte da interface do usuário, que pode ser reutilizada em várias partes do aplicativo. Um componente pode ser considerado como uma função JavaScript que retorna uma interface de usuário. Os componentes podem receber parâmetros, chamados de **"props"** (propriedades), que definem o comportamento e a aparência do componente.
 
-### Obss:
-- Poderá ser informado que deve instalar duas dependências: react-native-web, react-dom
-```cmd
-npm install react-native-web --force
-npm install react-dom –force
-```
+### Telas
+Telas são os elementos visuais que aparecem no aplicativo móvel. Eles podem incluir elementos como botões, campos de entrada, imagens e texto. As telas geralmente são compostas de vários componentes, que juntos formam a interface do usuário do aplicativo. Por exemplo, uma tela de login pode incluir um campo de entrada para o nome de usuário, um campo de entrada para a senha e um botão de login, cada um desses elementos sendo um componente separado.
+
+### Expo
+O Expo é uma plataforma de desenvolvimento de aplicativos móveis baseada em React Native. Ele inclui um conjunto de ferramentas e serviços que permitem aos desenvolvedores criar aplicativos móveis de alta qualidade com facilidade e rapidez. O Expo fornece um ambiente de desenvolvimento completo, que inclui ferramentas para criar e testar aplicativos, bem como serviços para gerenciamento de projetos e publicação de aplicativos na App Store e na Google Play Store.
+
+## Resumo
+Em resumo, **React Native** é uma biblioteca para criação de aplicativos móveis nativos utilizando **JavaScript**, com uma abordagem de programação declarativa e componentizada. O **Expo** é uma plataforma de desenvolvimento de aplicativos móveis **baseada em React Native**, que fornece ferramentas e serviços para facilitar o processo de desenvolvimento. As **telas e componentes** são os principais elementos que compõem a interface do usuário do aplicativo.
+
+[Tutorial: como Iniciar um novo App](./tutorial1.md)
