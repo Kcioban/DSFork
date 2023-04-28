@@ -3,8 +3,8 @@ import { View, TextInput, Button, StyleSheet } from 'react-native';
 import user from '../mocks/userMock';
 
 const Login = ({ navigation }) => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('admin');
+    const [password, setPassword] = useState('1234');
 
     const handleLogin = () => {
         // Verificando as credenciais fornecidas com as credenciais armazenadas
