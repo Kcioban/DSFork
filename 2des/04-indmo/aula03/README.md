@@ -21,8 +21,13 @@ const user = {
 export default user;
 ```
 ## Navigation (Telas e Componentes)
-Para uma aplicação navegar entre telas de forma simples podemos utilizar o componente **Navigation**, para isso instalamos as seguintes dependências.
+Uma das maneiras mais simples de navegar entre telas de um App é utilizando o componente **Navigation**, para isso instalamos as seguintes dependências.
 ```cmd
 npm install @react-navigation/native
-npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
+```
+ou via yarn
+```cmd
+yarn add @react-navigation/native
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
 ```

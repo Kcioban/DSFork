@@ -7,8 +7,7 @@ const Main = ({ navigation }) => {
         <View style={styles.item}>
             <Text style={styles.titulo}>{item.id}</Text>
             <Text style={styles.texto}>{item.nome}</Text>
-            <Image style={styles.miniatura} source={require(item.img)}
-            />
+            <Image style={styles.miniatura} source={require(item.img)} />
             <Text style={styles.preco}>{item.preco}</Text>
         </View>
     );
