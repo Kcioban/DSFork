@@ -6,15 +6,12 @@
 - REGEX
   - MaskInput
 ## Navigator (Telas)
-Uma das maneiras mais simples de navegar entre telas de um App é utilizando o componente **Navigation**, para isso instalamos as seguintes dependências.
+Uma das maneiras mais simples de navegar entre telas de um App é utilizando o componente **Navigator**, para isso instalamos as seguintes dependências.
 
-## REGEX
-Padrão para identificar string ou numeros e formatar de acordo com o necessario
-
-### Dependencias:
+### Iniciar um projeto com Navigator:
 - 1. Iniciar com "npx expo init"
 
-- 2. Instalar as dependencias
+- 2. Instalar as **dependencias:**
 ```cmd
     yarn add @react-navigation/native
     yarn add react-native-safe-area-context
@@ -24,7 +21,7 @@ Padrão para identificar string ou numeros e formatar de acordo com o necessario
     yarn add react-native-mask-input
 ```
 
-- 3. Criar duas pastas
+- 3. Criar pastas para as telas e componentes
     - screens
     - components
 
@@ -52,10 +49,14 @@ Padrão para identificar string ou numeros e formatar de acordo com o necessario
         </NavigationContainer>
     )
     ```
-### Exemplo:
+
+## REGEX
+Padrão para identificar string ou numeros e formatar de acordo com o necessario
+
+## Exemplo:
 [my-app](./my-app/)
 
-### EXERCICIO
+## EXERCICIO
 Desenvolva um App com tela de login que direciona a tela que calcula Empréstimos
 - A. Criar a tela de juros
 - B. Criar o componente de calculo de juros
@@ -63,9 +64,9 @@ Desenvolva um App com tela de login que direciona a tela que calcula Empréstimo
 - D. Validar o login
 - E. Ir para pagina de juros
 
-#### OBS: usar maskinput no componente de calculo de juros
+### OBS: usar maskinput no componente de calculo de juros
 
-##### Formula do juros composto
+#### Formula do juros composto
 - M = C * (1 + i)^t
 - M = montante
 - C = capital
