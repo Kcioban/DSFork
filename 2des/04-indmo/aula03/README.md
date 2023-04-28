@@ -52,6 +52,16 @@ Uma das maneiras mais simples de navegar entre telas de um App é utilizando o c
 
 ## REGEX
 Padrão para identificar string ou numeros e formatar de acordo com o necessario
+```javascript
+ <MaskInput
+     mask={[/\d/, /\d/, /\d/, '.', /\d/]}
+     style={styles.textInput}
+     onChangeText={(masked, unmasked) => setPeso(masked)}
+     value={peso}
+     placeholder="Digite seu peso"
+     keyboardType="numeric"
+ />
+```
 
 ## Exemplo:
 [my-app](./my-app/)
