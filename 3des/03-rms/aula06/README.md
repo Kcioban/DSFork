@@ -2,7 +2,7 @@
 
 
 ## Atividades Objetivas
-- 1. Acesse o link a seguit e faça o teste sem conculta
+- 1. Acesse o link a seguir e faça o teste sem conculta
 
 |Assunto|Questões|Link|
 |-|:-:|-|
