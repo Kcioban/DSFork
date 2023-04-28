@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cardapiologin",
-    "slug": "cardapiologin",
+    "name": "cardapio",
+    "slug": "cardapio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

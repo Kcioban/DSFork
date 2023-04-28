@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 import user from '../mocks/userMock';
 
-const Login = ({ navigation }) => {
+const LoginScreen = ({ navigation }) => {
     const [username, setUsername] = useState('admin');
     const [password, setPassword] = useState('1234');
 
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Login;
+export default LoginScreen;

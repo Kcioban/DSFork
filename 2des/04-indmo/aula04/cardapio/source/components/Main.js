@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
 import produtos from '../mocks/produtosMock'; // importando os dados do produtos
 
-const Main = ({ navigation }) => {
+const MainScreen = ({ navigation }) => {
     const renderItem = ({ item }) => (
         <View style={styles.item}>
             <Text style={styles.titulo}>{item.id}</Text>
             <Text style={styles.texto}>{item.nome}</Text>
-            <Image style={styles.miniatura} source={require(item.img)}/>
+            <Text style={styles.texto}>{item.img}</Text>
             <Text style={styles.preco}>{item.preco}</Text>
         </View>
     );
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Main;
+export default MainScreen;
