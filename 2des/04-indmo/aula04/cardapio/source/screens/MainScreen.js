@@ -1,12 +1,31 @@
-import MainScreen from "../components/Main"
-import { View } from "react-native";
+import React from 'react';
+import { View, FlatList, StyleSheet } from 'react-native';
+import produtos from '../mocks/produtosMock'; // importando os dados do produtos
+import Produto from '../components/Produto';
 
-export default function ScreenMain() {
-
-    return(
-        <View>
-            <Text>Componente Formulario de Main</Text>
-            <MainScreen />
+const MainScreen = ({ navigation }) => {
+    return (
+        <View style={styles.container}>
+            <FlatList
+                data={produtos}
+                renderItem={({ item }) => <Produto prop={item} />}
+                keyExtractor={(item) => item.id}
+                style={styles.list}
+            />
         </View>
-    )
-}
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    list: {
+        width: '100%',
+        paddingHorizontal: 20,
+    },
+});
+
+export default MainScreen;

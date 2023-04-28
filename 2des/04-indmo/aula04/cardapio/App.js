@@ -1,34 +1,26 @@
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import MainScreen from './source/components/Main';
-import LoginScreen from './source/components/Login';
-
+import LoginScreen from './source/screens/LoginScreen';
+import MainScreen from './source/screens/MainScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    // Provider
     <NavigationContainer>
-
-      {/* Container de navegaçao */}
       <Stack.Navigator>
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          options={{ title: 'Tela de Login' }} />
 
-        {/* Telas */}
         <Stack.Screen
-            name="LoginScreen"
-            component={LoginScreen}
-            options={{ title: 'Tela de Login' }} />
-            
-        <Stack.Screen
-            name="MainScreen"
-            component={MainScreen}
-            options={{ title: 'Tela Principal' }}
+          name="MainScreen"
+          component={MainScreen}
+          options={{ title: 'Tela Principal' }}
         />
-
       </Stack.Navigator>
-
     </NavigationContainer>
   );
 }
