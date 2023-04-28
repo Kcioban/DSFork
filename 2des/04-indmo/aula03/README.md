@@ -28,13 +28,13 @@ Padrão para identificar string ou numeros e formatar de acordo com o necessario
     - screens
     - components
 
-- 4. Importar no topo do arquivo app.js os arquivos
+- 4. Importar no topo do arquivo App.js os arquivos
     ```javascript
     import { createNativeStackNavigator } from '@react-navigation/native-stack';
     import { NavigationContainer } from '@react-navigation/native';
     ```
 
-- 5. Adicionar no seu return
+- 5. Adicionar no seu return a estrutura Stack.Navigator conforme estrutura a seguir: uma Stack.Screen para cada página do seu projeto
     ```javascript
     return (
         <NavigationContainer>
