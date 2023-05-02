@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, FlatList, StyleSheet } from 'react-native';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
 import clientes from '../mocks/clientesMock'
 
-export default clientesScreen = ({ navigation }) =>{
+export default function ClientesScreen ({ navigation }){
     return(
         <View style={styles.container}>
             <Text style={styles.text}>Lista de Clientes</Text>
