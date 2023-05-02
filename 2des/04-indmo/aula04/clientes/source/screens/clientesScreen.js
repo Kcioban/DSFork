@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import Clientes from '../mocks/clientesMock'
-import ItemLista from '../components/ItemLista'
+import ItemList from '../components/ItemList'
 
 export default function ClientesScreen({ navigation }) {
     return (
@@ -9,7 +9,7 @@ export default function ClientesScreen({ navigation }) {
             <FlatList
                 data={Clientes}
                 style={styles.list}
-                renderItem={({ item }) => <ItemLista props={item} />}
+                renderItem={({ item, index }) => <ItemList dados={item} indice={index} />}
             />
         </View >);
 };
