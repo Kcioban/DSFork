@@ -1,4 +1,3 @@
-import cli1 from '../../assets/avatares/cli1.png'
 import cli1 from '../../assets/avatares/cli1.png';
 import cli2 from '../../assets/avatares/cli2.png';
 import cli3 from '../../assets/avatares/cli3.png';
