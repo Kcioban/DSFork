@@ -5,8 +5,9 @@
 |./alomundo|Alô mundo|
 |./app|Exemplo de uma aplicação básica.|
 
-## React Nave - Documentação Oficial
+## Documentação Oficial React Native e Expo
 - https://reactnative.dev/
+- https://expo.dev/
 
 ## Conhecimentos
 - 1. Dispositivos móveis
