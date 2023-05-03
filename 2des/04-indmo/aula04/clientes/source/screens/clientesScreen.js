@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, StyleSheet } from 'react-native';
+import { View, FlatList, StyleSheet, Text } from 'react-native';
 import Clientes from '../mocks/clientesMock'
 
 export default function ClientesScreen({ navigation }) {
@@ -8,11 +8,11 @@ export default function ClientesScreen({ navigation }) {
             <FlatList
                 data={Clientes}
                 style={styles.list}
-                renderItem={({ item }) => <>
+                renderItem={({ item }) => <View>
                     <Text>CPF: {item.cpf}</Text>
                     <Text>Nome: {item.nome} {item.sobrenome}</Text>
                     <Text>E-mail: {item.email} {item.sobrenome}</Text>
-                </>}
+                </View>}
             />
         </View >);
 };
