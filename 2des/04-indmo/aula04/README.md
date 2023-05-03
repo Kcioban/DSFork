@@ -21,3 +21,6 @@ export default user;
 Componente que exibe uma lista de outros componentes na tela, ideal para listar objetos JSON oriundos de uma API
 
 - Segue o tutorial de como criar um aplicativo com estes recursos: [Tutorial](./tutorial.md)
+- Esta aula possui mais dois Apps de exemplo com FlatList, Componentes e Mockups
+  - ./clientes
+  - ./produtos
