@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import Clientes from '../mocks/clientesMock'
-import ItemList from '../components/ItemList'
 
 export default function ClientesScreen({ navigation }) {
     return (
