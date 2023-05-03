@@ -9,7 +9,11 @@ export default function ClientesScreen({ navigation }) {
             <FlatList
                 data={Clientes}
                 style={styles.list}
-                renderItem={({ item, index }) => <ItemList dados={item} indice={index} />}
+                renderItem={({ item }) => <>
+                    <Text>CPF: {item.cpf}</Text>
+                    <Text>Nome: {item.nome} {item.sobrenome}</Text>
+                    <Text>E-mail: {item.email} {item.sobrenome}</Text>
+                </>}
             />
         </View >);
 };
