@@ -1,21 +1,26 @@
 import React from 'react';
-import { View, FlatList, StyleSheet, Text, Image } from 'react-native';
+import { View, FlatList, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import Clientes from '../mocks/clientesMock'
 
 export default function ClientesScreen({ navigation }) {
+
+    const abrirDetalhes = (dados) => {
+        navigation.navigate('Detalhes', { dados });
+    }
+
     return (
         <View style={styles.container}>
             <FlatList
                 data={Clientes}
                 style={styles.list}
-                renderItem={({ item }) => <View style={styles.item}>
+                renderItem={({ item }) => <TouchableOpacity style={styles.item}>
                     <Image style={styles.img} source={item.avatar} />
                     <View>
                         <Text style={styles.text}>CPF: {item.cpf}</Text>
                         <Text style={styles.text}>Nome: {item.nome} {item.sobrenome}</Text>
                         <Text style={styles.text}>E-mail: {item.email}</Text>
                     </View>
-                </View>}
+                </TouchableOpacity>}
             />
         </View >);
 };
