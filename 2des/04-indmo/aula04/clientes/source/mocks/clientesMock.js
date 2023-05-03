@@ -12,7 +12,7 @@ const clientes = [
         cpf: '440.026.449-10',
         nome: 'Jennifer',
         sobrenome: 'da Silva',
-        email: 'yago@silva.com',
+        email: 'jennifer@silva.com',
         telefone: '19-18816-2077',
         avatar: cli1,
         cep: '134567-456',

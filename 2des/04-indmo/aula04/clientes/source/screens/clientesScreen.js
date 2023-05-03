@@ -13,7 +13,10 @@ export default function ClientesScreen({ navigation }) {
             <FlatList
                 data={Clientes}
                 style={styles.list}
-                renderItem={({ item }) => <TouchableOpacity style={styles.item}>
+                renderItem={({ item }) => <TouchableOpacity
+                    style={styles.item}
+                    onPress={() => abrirDetalhes(item)}
+                >
                     <Image style={styles.img} source={item.avatar} />
                     <View>
                         <Text style={styles.text}>CPF: {item.cpf}</Text>
