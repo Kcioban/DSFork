@@ -6,7 +6,7 @@ O formato de arquivo padrão usado ao criar aplicativos Android com o EAS Build 
 - Certifique-se de ter uma conta no site oficial do [Expo](https://expo.dev/)
 - [Tutorial oficial para ANdroid e iOS](https://docs.expo.dev/build/setup/)
 - Certifique-se de que o seu projeto está configurado corretamente com o Expo. Você pode seguir as instruções no site oficial do [Expo](https://expo.dev/) para criar um novo projeto ou adaptar um projeto existente.
-
+- Segue um aplicativo de exemplo criado na segunda aula **./bitola**
 - Caso o Expo CLI não esteja instalado em sua máquina com o seguinte comando:
 ```cmd
 npm install -g expo-cli
