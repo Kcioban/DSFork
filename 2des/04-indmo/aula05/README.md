@@ -54,13 +54,13 @@ Para gerar um **.apk **, modifique o **eas.json** para o código a seguir:
 ```
 - Agora você pode executar sua compilação com o seguinte comando:
 ```cmd
-    eas build -p android
-    ou
-    npx eas build -p android
-	ou
 	eas build -p android --profile preview
-	ou
+	  ou
 	npx eas build -p android --profile preview
+    ou
+  eas build -p android
+    ou
+  npx eas build -p android
 ```
 - Aguarde enquanto o Expo compila seu aplicativo. Isso pode levar alguns minutos.
 
