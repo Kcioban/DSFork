@@ -1,0 +1,82 @@
+import coxinha from '../../assets/imgs/coxinha.png'
+import risole from '../../assets/imgs/risole.png'
+import pqueijo from '../../assets/imgs/pqueijo.png'
+import pbatata from '../../assets/imgs/pbatata.png'
+import hamburgao from '../../assets/imgs/hamburgao.png'
+import empada from '../../assets/imgs/empada.png'
+import palmito from '../../assets/imgs/palmito.png'
+import croissant from '../../assets/imgs/croissant.png'
+import bioleve from '../../assets/imgs/bioleve.png'
+import refri220 from '../../assets/imgs/refri220.png'
+import refri350 from '../../assets/imgs/refri350.png'
+
+const produtos = [
+    {
+        id: 1,
+        nome: 'Coxinha',
+        img: coxinha,
+        preco: 7
+    },
+    {
+        id: 2,
+        nome: 'Pão de Queijo',
+        img: pqueijo,
+        preco: 4.5
+    },
+    {
+        id: 3,
+        nome: 'Pão de Batata',
+        img: pbatata,
+        preco: 7
+    },
+    {
+        id: 4,
+        nome: 'Hamburguer',
+        img: hamburgao,
+        preco: 7
+    },
+    {
+        id: 5,
+        nome: 'Empada',
+        img: empada,
+        preco: 7
+    },
+    {
+        id: 6,
+        nome: 'Assado de Palmito',
+        img: palmito,
+        preco: 7
+    },
+    {
+        id: 7,
+        nome: 'Risole de Carne',
+        img: risole,
+        preco: 7
+    },
+    {
+        id: 8,
+        nome: 'Croissant',
+        img: croissant,
+        preco: 7
+    },
+    {
+        id: 9,
+        nome: 'Suco Bioleve',
+        img: bioleve,
+        preco: 3.5
+    },
+    {
+        id: 10,
+        nome: 'Refrigerante 220ml',
+        img: refri220,
+        preco: 5
+    },
+    {
+        id: 11,
+        nome: 'Refrigerante 350ml',
+        img: refri350,
+        preco: 6
+    }
+];
+
+export default produtos;
