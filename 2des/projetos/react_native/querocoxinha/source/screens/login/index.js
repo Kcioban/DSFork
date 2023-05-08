@@ -12,7 +12,7 @@ export default function Login({ navigation }) {
 
     useEffect(() => {
         if (localStorage.getItem('user')) {
-            navigation.navigate('Produtos');
+            navigation.navigate('Pedidos');
         }
     }, []);
 
@@ -21,7 +21,7 @@ export default function Login({ navigation }) {
             if (username === user.username) {
                 if (password === user.password) {
                     localStorage.setItem('user', JSON.stringify(user));
-                    navigation.navigate('Produtos');
+                    navigation.navigate('Pedidos');
                 } else {
                     alert('Senha incorreta!');
                 }
