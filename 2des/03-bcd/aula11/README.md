@@ -1,7 +1,14 @@
 # Aula 11
 ## DQL - Queries
-
-- SELECT * FROM
+### SELECT * FROM
+#### QUESTS (Missões) (BD Pizzaria)
+- Pelo Shell (mysql -u root)
+- 1. Quantas tabelas ele possui
+- 2. Quantos Clientes cadastrados
+- 3. Quantas pizzas Cadastradas
+- 4. Quantas pizzas o pedido nº 3 possui
+- 5. Qual nome do cliente que fez o pedido nº 3
+- 6. Quais os nomes das pizzas do pedido nº 3
 
 |Descrição|Link|
 |-|-|
