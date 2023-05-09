@@ -1,65 +1,66 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { View, FlatList, TouchableOpacity, Text } from 'react-native';
 import styles from './styles';
-import ProdutoLista from '../../components/ProdutoLista'
+import ItemPedidoLista from '../../components/ItemPedidoLista'
 
 export default function Pedidos({ navigation, route }) {
-    const dados = route.params;
-    const [pedidos, setPedidos] = new useState([]);
-    const [total, setTotal] = new useState(0);
+    const pedido = route.params;
+    let acumula = 0;
+    let pedidos = [];
 
-    if (dados) {
-        let produto = dados.produto;
-        let indice = dados.indice;
+    const total = () => {
+        acumula = 0;
+        pedidos.forEach(e => {
+            acumula += e.preco * e.quantidade;
+        });
+    }
 
+    if (localStorage.getItem('pedidos')) {
+        pedidos = JSON.parse(localStorage.getItem('pedidos'));
+        total();
+    }
+
+    if (pedido) {
+        let produto = route.params.produto;
+        let indice = route.params.indice;
+        let encontrado = false;
         if (produto) {
-            let lista = pedidos;
-            lista.push(produto);
-            setPedidos(lista);
+            produto.quantidade = 1;
+            pedidos.forEach(e => {
+                if (e.id === produto.id) {
+                    e.quantidade++;
+                    encontrado = true;
+                }
+            });
+            if (!encontrado) pedidos.push(produto);
+            localStorage.setItem('pedidos', JSON.stringify(pedidos));
         }
-
         if (indice) {
             indice--;
-            let lista = pedidos;
-            lista.splice(indice, 1);
-            setPedidos(lista);
+            pedidos.splice(indice, 1);
+            localStorage.setItem('pedidos', JSON.stringify(pedidos));
         }
+        total();
     }
 
-    useEffect(() => {
-        if (localStorage.getItem('pedidos')) {
-            let lista = JSON.parse(localStorage.getItem('pedidos'));
-            setPedidos(lista);
-        }
-    }, []);
-
-    useEffect(() => {
-        let acumulador = 0;
-        pedidos.forEach(e => {
-            acumulador += e.preco;
-        });
-        setTotal(acumulador)
-        if (pedidos.length > 0) localStorage.setItem('pedidos', JSON.stringify(pedidos));
-    }, []);
-    
     const enviar = () => {
-        // if (pedidos.length > 0) {
-        //     const pedido = {
-        //         user: JSON.parse(localStorage.getItem('user')).username,
-        //         produtos: pedidos,
-        //     }
-        //     console.log(JSON.stringify(pedido));
-        //     alert('Seu pedido está sendo processado.');
-        //     localStorage.removeItem('pedidos');
-        //     navigation.navigate('Pedidos');
-        // } else {
-        //     alert('Seu pedido está vazio.');
-        // }
+        if (pedidos.length > 0) {
+            const pedido = {
+                user: JSON.parse(localStorage.getItem('user')).username,
+                produtos: pedidos,
+            }
+            console.log(JSON.stringify(pedido));
+            alert('Seu pedido está sendo processado.');
+            localStorage.removeItem('pedidos');
+            navigation.navigate('Pedidos');
+        } else {
+            alert('Seu pedido está vazio.');
+        }
     }
-    
+
     const cancelar = () => {
         localStorage.removeItem('pedidos');
-        setPedidos([]);
+        navigation.navigate('Pedidos', { pedido: false });
     }
 
     const sair = () => {
@@ -84,10 +85,10 @@ export default function Pedidos({ navigation, route }) {
                 data={pedidos}
                 style={styles.list}
                 renderItem={({ item, index }) => <TouchableOpacity style={styles.item} onPress={() => abrirDetalhes(item, index)}>
-                    <ProdutoLista prod={item} />
+                    <ItemPedidoLista item={item} />
                 </TouchableOpacity>}
             />
-            <Text style={styles.textTotal}>Total do Pedido: R$ {total.toFixed(2)}</Text>
+            <Text style={styles.textTotal}>Total do Pedido: R$ {acumula.toFixed(2)}</Text>
             <TouchableOpacity style={styles.button} onPress={enviar}>
                 <Text style={styles.textButton}>Enviar Pedido</Text>
             </TouchableOpacity>
