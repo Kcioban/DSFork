@@ -8,3 +8,4 @@ SELECT p.*, c.nome  FROM pedidos p INNER JOIN clientes c
 ON p.cliente_id = c.cliente_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos1;
+-- DESAFIO (Relatório que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas)
