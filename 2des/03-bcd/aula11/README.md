@@ -1,14 +1,22 @@
-# DQL - DDL
+# Aula 11
+## DQL - Queries
+
+- SELECT * FROM
+
+|Descrição|Link|
+|-|-|
+|MySQL tipos de JOIN|https://www.pinterest.dk/pin/671740100648793472/|
+## DDL - Índices
 - 2.2. SQL (structured query language) (DQL)
 - 2.4.7. CREATE INDEX (DDL)
 - 2.4.8. DROP INDEX (DDL)
-# Indices
+## Índices
 	- São colunas de tabelas semelhantes a cheves primárias porém não servem para relacionamentos
 	- Servem para melorar o desempenho de consultas
-# Programação em Banco de dados
+## Programação em Banco de dados
 - 2.15. STORED PROCEDURE
 - 2.17. TRIGGERS
-# Exercícios
+## Exercícios
 - Crie a procedure set_total_pedido() e cadastre os seguintes pedidos:
 	- 1. "Thamires de Campos Luz" quer uma pizza Vienense
 	- 2. "Everton Jose de Souza" que duas Toscana
