@@ -6,8 +6,8 @@ import users from '../../mocks/users';
 
 export default function Login({ navigation }) {
 
-    const [username, setUsername] = useState('user1');
-    const [password, setPassword] = useState('1234');
+    const [username, setUsername] = new useState('');
+    const [password, setPassword] = new useState('');
 
     useEffect(() => {
         if (localStorage.getItem('user')) {

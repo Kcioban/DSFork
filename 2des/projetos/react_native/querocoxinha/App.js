@@ -18,12 +18,12 @@ export default function App() {
         <Stack.Screen
           name="Pedidos"
           component={Pedidos}
-          options={{ title: 'Acompanhe ou faça seu Pedido' }}
+          options={{ title: 'Faça seu Pedido e Acopanhe' }}
         />
         <Stack.Screen
           name="Produtos"
           component={Produtos}
-          options={{ title: 'Escolha seu produto' }}
+          options={{ title: 'Escolha o Produto' }}
         />        
         <Stack.Screen
           name="Detalhes"
