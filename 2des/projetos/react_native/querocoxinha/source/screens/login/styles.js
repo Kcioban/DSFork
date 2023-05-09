@@ -26,7 +26,7 @@ export default StyleSheet.create({
     button: {
         width: '80%',
         padding: 10,
-        backgroundColor: '#666',
+        backgroundColor: '#fa3',
         alignItems: 'center',
         color: '#fff',
         borderRadius: 5,
@@ -39,5 +39,8 @@ export default StyleSheet.create({
         fontSize: 16,
         color: '#fff',
         fontWeight: 'bold',
+        textShadowRadius: 1,
+        textShadowColor: '#333',
+        textShadowOffset: { width: 1, height: 2 },
     }
 });

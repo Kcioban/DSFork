@@ -17,5 +17,23 @@ export default StyleSheet.create({
     text:{
         fontSize: 16,
         margin: 5,
+    },
+    button: {
+        width: '100%',
+        padding: 10,
+        backgroundColor: '#fa3',
+        alignItems: 'center',
+        color: '#fff',
+        shadowOpacity: 0.5,
+        shadowRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+    },
+    textButton: {
+        fontSize: 18,
+        color: '#fff',
+        textShadowRadius: 1,
+        textShadowColor: '#333',
+        textShadowOffset: { width: 1, height: 1 },
     }
 });

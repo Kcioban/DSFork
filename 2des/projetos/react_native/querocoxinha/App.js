@@ -28,7 +28,7 @@ export default function App() {
         <Stack.Screen
           name="Detalhes"
           component={Detalhes}
-          options={{ title: 'Escolha seu produto' }}
+          options={{ title: 'Que delícia!' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

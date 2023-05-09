@@ -19,7 +19,7 @@ const produtos = [
     },
     {
         id: 4,
-        nome: 'Hamburguer',
+        nome: 'Hamburgão de Bacon ou Cheddar',
         img: 'https://raw.githubusercontent.com/wellifabio/senai2023/main/2des/projetos/assets/cantina/hamburgao.png',
         preco: 7
     },

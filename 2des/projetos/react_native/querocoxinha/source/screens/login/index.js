@@ -6,7 +6,6 @@ import users from '../../mocks/users';
 
 export default function Login({ navigation }) {
 
-
     const [username, setUsername] = useState('user1');
     const [password, setPassword] = useState('1234');
 
