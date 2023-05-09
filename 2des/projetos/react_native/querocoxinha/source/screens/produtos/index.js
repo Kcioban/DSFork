@@ -6,11 +6,6 @@ import ProdutoLista from '../../components/ProdutoLista'
 
 export default function Produtos({ navigation }) {
 
-    const sair = () => {
-        localStorage.removeItem('user');
-        navigation.navigate('Login');
-    }
-
     const abrirDetalhes = (dados) => {
         navigation.navigate('Detalhes', { dados });
     }
@@ -24,8 +19,5 @@ export default function Produtos({ navigation }) {
                     <ProdutoLista prod={item} />
                 </TouchableOpacity>}
             />
-            <TouchableOpacity style={styles.button} onPress={sair}>
-                <Text style={styles.textButton}>Sair</Text>
-            </TouchableOpacity>
         </View >);
 };

@@ -5,42 +5,38 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    imageBackground: {
-        flex: 1,
+    list: {
         width: '100%',
-        height: '100%',
-        flexDirection: 'column',
-        backgroundColor: '#fff'
+        height: '80%',
+        paddingHorizontal: 20,
     },
-    input: {
-        width: '80%',
-        padding: 10,
-        marginVertical: 10,
-        borderWidth: 1,
-        borderColor: '#ccc',
-        borderRadius: 5,
-    },
-    text: {
-        fontSize: 16,
+    item: {
+        flex: 1,
+        flexDirection: 'row',
     },
     button: {
-        width: '80%',
+        width: '100%',
         padding: 10,
         backgroundColor: '#fa3',
         alignItems: 'center',
         color: '#fff',
-        borderRadius: 5,
-        shadowOpacity: 0.3,
+        shadowOpacity: 0.5,
         shadowRadius: 5,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
     },
     textButton: {
-        fontSize: 16,
+        fontSize: 18,
         color: '#fff',
-        fontWeight: 'bold',
         textShadowRadius: 1,
         textShadowColor: '#333',
-        textShadowOffset: { width: 1, height: 2 },
-    }
+        textShadowOffset: { width: 1, height: 1 },
+    },
+    textTotal: {
+        fontSize: 22,
+        color: '#333',
+        textShadowRadius: 1,
+        textShadowColor: '#333',
+        textShadowOffset: { width: 1, height: 1 },
+    },
 });

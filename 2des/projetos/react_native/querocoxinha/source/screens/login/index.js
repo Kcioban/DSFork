@@ -6,13 +6,12 @@ import users from '../../mocks/users';
 
 export default function Login({ navigation }) {
 
-
-    const [username, setUsername] = useState('user1');
-    const [password, setPassword] = useState('1234');
+    const [username, setUsername] = new useState('');
+    const [password, setPassword] = new useState('');
 
     useEffect(() => {
         if (localStorage.getItem('user')) {
-            navigation.navigate('Produtos');
+            navigation.navigate('Pedidos');
         }
     }, []);
 
@@ -21,7 +20,7 @@ export default function Login({ navigation }) {
             if (username === user.username) {
                 if (password === user.password) {
                     localStorage.setItem('user', JSON.stringify(user));
-                    navigation.navigate('Produtos');
+                    navigation.navigate('Pedidos');
                 } else {
                     alert('Senha incorreta!');
                 }
