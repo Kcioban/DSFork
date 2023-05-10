@@ -56,3 +56,15 @@ SELECT * FROM pedidos WHERE pedido_id = 27;
 
 -- Para ver quais procedimentos um Banco de dados possui armazenado.
 SHOW PROCEDURE STATUS;
+-- Missão 2: A Cliente Sara Luzia de Melo quer 2 pizzas Napolitanas
+-- Registre este pedido:
+SELECT * FROM clientes;
+SELECT * FROM pizzas;
+INSERT INTO pedidos VALUES (default, 91, CURDATE(), NOW(), null);
+INSERT INTO itens_pedido VALUES (28,28, 2,(SELECT valor FROM pizzas WHERE pizza_id = 28));
+SELECT * FROM pedidos WHERE pedido_id = 28;
+CALL atulizaValorPedido(28);
+SELECT * FROM pedidos WHERE pedido_id = 28;
+-- DESAFIO: Crie um Procedimento Armazenado que receba três parâmetros
+-- cliente_id, pizza_id e quantidade e registre um pedido de um item
+-- calculando o total ex: pedidoDeUmItem(cli_id int, piz_id int, qtd int)
