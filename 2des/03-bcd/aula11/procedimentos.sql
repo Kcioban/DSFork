@@ -1,3 +1,4 @@
+-- Iniciaremos com uma QUEST / MISSÃO
 -- O cliente Walter Paulo Costenaro quer 1 pizza de Atum e 2 napolitanas.
 -- cliente_id 98
 -- pizza_id 5, valor 32.29
@@ -17,3 +18,41 @@ INSERT INTO itens_pedido VALUES
 (27,28,2,(SELECT valor FROM pizzas WHERE pizza_id = 28));
 
 SELECT * FROM itens_pedido WHERE pedido_id = 27;
+
+-- Calcular o valor do pedido e atualizar
+SELECT sum(valor * quantidade) FROM itens_pedido WHERE pedido_id = 27;
+
+UPDATE pedidos
+    SET valor = (SELECT sum(valor * quantidade) FROM itens_pedido WHERE pedido_id = 27)
+    WHERE pedido_id = 27;
+
+SELECT * FROM pedidos WHERE pedido_id = 27;
+
+-- Vamos criar uma PROCEDURE que calcule o valor total do pedido
+DELIMITER $
+CREATE PROCEDURE atulizaValorPedido(id int)
+    BEGIN
+        UPDATE pedidos
+        SET valor = (SELECT sum(valor * quantidade) FROM itens_pedido WHERE pedido_id = id)
+        WHERE pedido_id = id;
+    END $
+DELIMITER ;
+
+-- Excluir e criar denovo a mesma PROCEDURE sem alterar os delimitadores
+DROP PROCEDURE IF EXISTS atulizaValorPedido;
+CREATE PROCEDURE atulizaValorPedido(id int)
+UPDATE pedidos
+    SET valor = (SELECT sum(valor * quantidade) FROM itens_pedido WHERE pedido_id = id)
+    WHERE pedido_id = id;
+
+-- Para testar
+SELECT * FROM pedidos WHERE pedido_id = 27;
+-- Alterar o valor para nulo
+UPDATE pedidos SET valor = null WHERE pedido_id = 27;
+SELECT * FROM pedidos WHERE pedido_id = 27;
+-- Utilizar o Procedimento para alterar
+CALL atulizaValorPedido(27);
+SELECT * FROM pedidos WHERE pedido_id = 27;
+
+-- Para ver quais procedimentos um Banco de dados possui armazenado.
+SHOW PROCEDURE STATUS;
