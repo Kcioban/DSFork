@@ -44,3 +44,4 @@ SELECT * FROM vw_pedidos_full;
 -- Agrupe os pedidos e calcule o valor total
 SELECT *, sum(subtotal) as Total FROM vw_pedidos_full GROUP BY pedido_id;
 -- Agrupe os pedidos e conte quantas pizzas cada pedido possui
+SELECT *, sum(quantidade) as total_pizzas FROM vw_pedidos_full GROUP BY pedido_id;
