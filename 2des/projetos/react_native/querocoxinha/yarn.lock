@@ -3802,9 +3802,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.388"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.388.tgz#ec0d1be823d5b14da56d91ec5c57e84b4624ea45"
-  integrity sha512-xZ0y4zjWZgp65okzwwt00f2rYibkFPHUv9qBz+Vzn8cB9UXIo9Zc6Dw81LJYhhNt0G/vR1OJEfStZ49NKl0YxQ==
+  version "1.4.389"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.389.tgz#ad70b94514f633ee2d12bdd8d7db5e8b13b7816a"
+  integrity sha512-WDgWUOK8ROR7sDFyYmxCUOoDc50lPgYAHAHwnnD1iN3SKO/mpqftb9iIPiEkMKmqYdkrR0j3N/O+YB/U7lSxwg==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -7222,6 +7222,11 @@ react-native-gradle-plugin@^0.71.17:
   version "0.71.18"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.18.tgz#20ef199bc85be32e45bb6cc069ec2e7dcb1a74a6"
   integrity sha512-7F6bD7B8Xsn3JllxcwHhFcsl9aHIig47+3eN4IHFNqfLhZr++3ElDrcqfMzugM+niWbaMi7bJ0kAkAL8eCpdWg==
+
+react-native-safe-area-context@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.5.2.tgz#38438c7a52ce2a6a05fc4de6cd3ee47f78a9366e"
+  integrity sha512-oH4/Dm7/PWOOZtFRiA4HE08lsfA948BRq8Fn7TEndYjoDXFoNdbjQRahXzCV8JGP/tv3qrVNeaDE8rmdRRUOlA==
 
 react-native-web@~0.18.10:
   version "0.18.12"
