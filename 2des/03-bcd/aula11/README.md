@@ -63,10 +63,10 @@ SELECT * FROM clientes WHERE nome LIKE 'Ana%';
 ## Programação em Banco de dados
 - 2.15. STORED PROCEDURE
 - 2.17. TRIGGERS
-## DESAFIOs
+- [Demonstrações e soluções](./procedimentos.sql)
+## DESAFIOS
 - Crie um Procedimento Armazenado que receba três parâmetros (cliente_id, pizza_id e quantidade) e registre um pedido de um item calculando o total ex: pedidoDeUmItem(cli_id int, piz_id int, qtd int)
 - Cadastre os seguintes pedidos para testar:
 	- 1. "Thamires de Campos Luz" quer uma pizza Vienense
 	- 2. "Everton Jose de Souza" que duas Toscana
 	- 3. "Silvia Roberta de Jesus Garcia" que uma Canadense e 2	Cubanas
-- [Demonstrações e soluções](./procedimentos.sql)
