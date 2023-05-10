@@ -42,3 +42,5 @@ ON i.pizza_id = pi.pizza_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos_full;
 -- Agrupe os pedidos e calcule o valor total
+SELECT *, sum(subtotal) as Total FROM vw_pedidos_full GROUP BY pedido_id;
+-- Agrupe os pedidos e conte quantas pizzas cada pedido possui
