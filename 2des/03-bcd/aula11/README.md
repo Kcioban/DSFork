@@ -28,7 +28,11 @@ ON p.cliente_id = c.cliente_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos1;
 ```
-- **DESAFIO:** Crie um **relatório** que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
+#### DESAFIO:
+- 1. Crie um **relatório** que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
+- 2. Acrescente uma coluna chamada subtotal que seja o calculo do preco unitário da pizza vezes a quantidade
+- 3. Agrupe os pedidos e calcule o valor total
+- [Soluções](./visoes.sql)
 ## DDL - Índices
 - 2.2. SQL (structured query language) (DQL)
 - 2.4.7. CREATE INDEX (DDL)
