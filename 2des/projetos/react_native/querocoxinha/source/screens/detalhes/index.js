@@ -7,11 +7,11 @@ export default function DetalhesScreen({ navigation, route }) {
     const indice = route.params.index;
 
     const comprar = () => {
-        navigation.navigate("Pedidos", { produto: produto })
+        navigation.navigate("Carrinho", { produto: produto })
     }
 
     const remover = () => {
-        navigation.navigate("Pedidos", { indice: indice + 1 })
+        navigation.navigate("Carrinho", { indice: indice + 1 })
     }
 
     if (indice >= 0) {
