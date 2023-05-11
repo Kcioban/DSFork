@@ -1,24 +1,51 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, FlatList, TouchableOpacity, Text } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './styles';
 import PedidoLista from '../../components/PedidoLista'
 
 export default function Pedidos({ navigation, route }) {
     const pedido = JSON.parse(route.params.pedido);
     let pedidos = [];
+    
+    useEffect(() => {
+        const checarPedidos = async () => {
+            try {
+                const stPedidos = await AsyncStorage.getItem('pedidos');
+                if (stPedidos !== null) {
+                    pedidos = JSON.parse(stPedidos);
+                }
+            } catch (error) {
+                console.log('Erro ao checar pedidos:', error);
+            }
+        }
+        checarPedidos();
+    }, []);
 
-    if (localStorage.getItem('pedidos')) {
-        pedidos = JSON.parse(localStorage.getItem('pedidos'));
+    const salvarPedido = async () => {
+        try {
+            await AsyncStorage.setItem('pedidos', JSON.stringify(pedidos));
+        } catch (error) {
+            console.log('Erro ao salvar pedidos:', error);
+        }
+    }
+
+    const removerPedidos = async () => {
+        try {
+            await AsyncStorage.removeItem('pedidos');
+        } catch (error) {
+            console.log('Erro ao remover pedidos:', error);
+        }
     }
 
     if (pedido) {
         pedido.id = pedidos.length + 1;
         pedidos.push(pedido);
-        localStorage.setItem('pedidos', JSON.stringify(pedidos));
+        salvarPedido();
     }
-    
+
     const limpar = () => {
-        localStorage.removeItem('pedidos');
+        removerPedidos();
         navigation.navigate('Pedidos', { pedido: false });
     }
 

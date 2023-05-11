@@ -1,22 +1,11 @@
-## Dependências
+### Dependências
 ```cmd
 yarn add @react-navigation/native
 yarn add @react-navigation/native-stack
+yarn add  @react-native-async-storage/async-storage
 yarn add react-native-safe-area-context
-
+yarn add react-native-screens
+yarn add react-native-svg
 ```
-
-./babel.config.js
-```javascript
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ['babel-preset-expo'],
-    env: {
-      production: {
-        plugins: ['react-native-paper/babel'],
-      },
-    },
-  };
-};
-```
+### APK
+[APK](https://expo.dev/artifacts/eas/2vmzFHJU6ZztNdcfWPjsqn.apk)

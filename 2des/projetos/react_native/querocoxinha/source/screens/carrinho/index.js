@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, FlatList, TouchableOpacity, Text } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './styles';
 import CarrinhoLista from '../../components/CarrinhoLista'
 
 export default function Carrinho({ navigation, route }) {
     const item = route.params;
+    const [itens, setItens] = useState([]);
     let acumula = 0;
-    let itens = [];
+    let user = '';
 
     const total = () => {
         acumula = 0;
@@ -15,45 +17,90 @@ export default function Carrinho({ navigation, route }) {
         });
     }
 
-    if (localStorage.getItem('itens')) {
-        itens = JSON.parse(localStorage.getItem('itens'));
-        total();
+    const salvarItens = async () => {
+        try {
+            await AsyncStorage.setItem('itens', JSON.stringify(itens));
+        } catch (error) {
+            console.log('Erro ao salvar itens:', error);
+        }
     }
 
     if (item) {
+        let its = [...itens];
         let produto = route.params.produto;
         let indice = route.params.indice;
         let encontrado = false;
         if (produto) {
             produto.quantidade = 1;
-            itens.forEach(e => {
+            its.forEach(e => {
                 if (e.id === produto.id) {
                     e.quantidade++;
                     encontrado = true;
                 }
             });
-            if (!encontrado) itens.push(produto);
-            localStorage.setItem('itens', JSON.stringify(itens));
+            if (!encontrado) {
+                its.push(produto);
+            }
+            setItens(its);
+            salvarItens();
         }
         if (indice) {
             indice--;
-            itens.splice(indice, 1);
-            localStorage.setItem('itens', JSON.stringify(itens));
+            let its = [...itens];
+            its.splice(indice, 1);
+            setItens(its);
+            salvarItens();
         }
         total();
+    } else {
+        useEffect(() => {
+            const checarStorage = async () => {
+                try {
+                    const stItens = await AsyncStorage.getItem('itens');
+                    const stUser = await AsyncStorage.getItem('user');
+                    if (stItens !== null) {
+                        setItens(JSON.parse(stItens));
+                        total();
+                    }
+                    if (stUser !== null) {
+                        user = JSON.parse(stUser).username;
+                    }
+                } catch (error) {
+                    console.log('Erro ao carregar Storage:', error);
+                }
+            }
+            checarStorage();
+        }, []);
+    }
+    
+    const removeItens = async () => {
+        try {
+            await AsyncStorage.removeItem('itens');
+            setItens([]);
+        } catch (error) {
+            console.log('Erro ao remover itens:', error);
+        }
+    }
+
+    const removeUser = async () => {
+        try {
+            await AsyncStorage.removeItem('user');
+        } catch (error) {
+            console.log('Erro ao remover itens:', error);
+        }
     }
 
     const enviar = () => {
         if (itens.length > 0) {
             const pedido = {
-                user: JSON.parse(localStorage.getItem('user')).username,
+                user: user,
                 valor: acumula,
                 data: new Date(),
                 produtos: itens,
             }
             navigation.navigate('Pedidos', { pedido: JSON.stringify(pedido) });
-            localStorage.removeItem('itens');
-            itens=[];
+            removeItens();
+            setItens([]);
         } else {
             alert('Pedido vazio, acrescente novos itens.');
             navigation.navigate('Carrinho', { pedido: false });
@@ -61,12 +108,12 @@ export default function Carrinho({ navigation, route }) {
     }
 
     const cancelar = () => {
-        localStorage.removeItem('itens');
+        removeItens();
         navigation.navigate('Carrinho', { pedido: false });
     }
 
     const sair = () => {
-        localStorage.removeItem('user');
+        removeUser();
         navigation.navigate('Login');
     }
 
@@ -85,7 +132,7 @@ export default function Carrinho({ navigation, route }) {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.button} onPress={listarProdutos}>
-                <Text style={styles.textButton}>O que vai querer hoje?<br />Escolha seu lanchinho:</Text>
+                <Text style={styles.textButton}>O que vai querer hoje?{'\n'}Escolha seu lanchinho:</Text>
             </TouchableOpacity>
             <FlatList
                 data={itens}

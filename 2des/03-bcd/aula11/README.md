@@ -28,7 +28,12 @@ ON p.cliente_id = c.cliente_id;
 -- Para ver o resultado
 SELECT * FROM vw_pedidos1;
 ```
-- **DESAFIO:** Crie um **relatório** que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
+#### DESAFIO:
+- 1. Crie um **relatório** que mostre todos os pedidos, itens, nome dos clientes e nome das pizzas.
+- 2. Acrescente uma coluna chamada subtotal que seja o calculo do preco unitário da pizza vezes a quantidade
+- 3. Agrupe os pedidos e calcule o valor total
+- 4. Agrupe os pedidos e conte quantas pizzas cada pedido possui
+- [Soluções](./visoes.sql)
 ## DDL - Índices
 - 2.2. SQL (structured query language) (DQL)
 - 2.4.7. CREATE INDEX (DDL)
@@ -58,9 +63,10 @@ SELECT * FROM clientes WHERE nome LIKE 'Ana%';
 ## Programação em Banco de dados
 - 2.15. STORED PROCEDURE
 - 2.17. TRIGGERS
-## Exercícios
-- Crie a procedure set_total_pedido() e cadastre os seguintes pedidos:
+- [Demonstrações e soluções](./procedimentos.sql)
+## DESAFIOS
+- Crie um Procedimento Armazenado que receba três parâmetros (cliente_id, pizza_id e quantidade) e registre um pedido de um item calculando o total ex: pedidoDeUmItem(cli_id int, piz_id int, qtd int)
+- Cadastre os seguintes pedidos para testar:
 	- 1. "Thamires de Campos Luz" quer uma pizza Vienense
 	- 2. "Everton Jose de Souza" que duas Toscana
 	- 3. "Silvia Roberta de Jesus Garcia" que uma Canadense e 2	Cubanas
-- Crie uma procedure que receba como parâmetros cliente_id, pizza_id e quantidade e gere um pedido com um item, coloque o nome de "new_pedido_1item()"
