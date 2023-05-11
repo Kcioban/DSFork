@@ -32,15 +32,18 @@ export default function Pedidos({ navigation }) {
         let total = 0;
         pedidos.forEach(e => {
             e.produtos.forEach(p => {
-                msg += `${p.nome} - ${p.quantidade} x ${p.preco}\n`;
+                msg += `${p.quantidade} ${p.nome} de R$ ${p.preco.toFixed(2)}\n`;
             });
-            msg += `Subtotal = ${e.valor}\n`;
+            msg += `Subtotal = ${e.valor.toFixed(2)}\n`;
             total += e.valor;
         });
-        msg += `Total: ${total}`;
+        msg += `Total: R$ ${total.toFixed(2)}`;
         msg = encodeURI(msg);
         const url = `whatsapp://send?text=${msg}`;
-        await Linking.openURL(url);
+        if (pedidos.length > 0)
+            await Linking.openURL(url);
+        else
+            alert('Não há pedidos para enviar!');
     }
 
     useEffect(() => {
