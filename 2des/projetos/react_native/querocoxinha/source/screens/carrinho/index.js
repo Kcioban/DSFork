@@ -7,14 +7,37 @@ import CarrinhoLista from '../../components/CarrinhoLista'
 export default function Carrinho({ navigation, route }) {
     const item = route.params;
     const [itens, setItens] = useState([]);
-    let acumula = 0;
+    const [total, setTotal] = useState(0);
     let user = '';
 
-    const total = () => {
-        acumula = 0;
+    const calcTotal = () => {
+        let acumula = 0;
         itens.forEach(e => {
             acumula += e.preco * e.quantidade;
         });
+        setTotal(acumula);
+    }
+
+    const abrirItens = async () => {
+        try {
+            const stItens = await AsyncStorage.getItem('itens');
+            if (stItens !== null) {
+                setItens(JSON.parse(stItens));
+            }
+        } catch (error) {
+            console.log('Erro ao carregar Storage:', error);
+        }
+    }
+
+    const abrirUser = async () => {
+        try {
+            const stUser = await AsyncStorage.getItem('user');
+            if (stUser !== null) {
+                user = JSON.parse(stUser).username;
+            }
+        } catch (error) {
+            console.log('Erro ao carregar Storage:', error);
+        }
     }
 
     const salvarItens = async () => {
@@ -25,54 +48,43 @@ export default function Carrinho({ navigation, route }) {
         }
     }
 
-    if (item) {
-        let its = [...itens];
-        let produto = route.params.produto;
-        let indice = route.params.indice;
+    const addItem = (produto) => {
+        let its = itens;
         let encontrado = false;
-        if (produto) {
+        its.forEach(e => {
+            if (e.id === produto.id) {
+                e.quantidade++;
+                encontrado = true;
+            }
+        });
+        if (!encontrado) {
             produto.quantidade = 1;
-            its.forEach(e => {
-                if (e.id === produto.id) {
-                    e.quantidade++;
-                    encontrado = true;
-                }
-            });
-            if (!encontrado) {
-                its.push(produto);
-            }
-            setItens(its);
-            salvarItens();
+            its.push(produto);
         }
-        if (indice) {
-            indice--;
-            let its = [...itens];
-            its.splice(indice, 1);
-            setItens(its);
-            salvarItens();
-        }
-        total();
-    } else {
-        useEffect(() => {
-            const checarStorage = async () => {
-                try {
-                    const stItens = await AsyncStorage.getItem('itens');
-                    const stUser = await AsyncStorage.getItem('user');
-                    if (stItens !== null) {
-                        setItens(JSON.parse(stItens));
-                        total();
-                    }
-                    if (stUser !== null) {
-                        user = JSON.parse(stUser).username;
-                    }
-                } catch (error) {
-                    console.log('Erro ao carregar Storage:', error);
-                }
-            }
-            checarStorage();
-        }, []);
+        setItens(its);
     }
-    
+
+    const removeIten = (indice) => {
+        let its = itens;
+        indice--;
+        its.splice(indice, 1);
+        setItens(its);
+    }
+
+    useEffect(() => {
+        if (item) {
+            let produto = route.params.produto;
+            let indice = route.params.indice;
+            if (produto) addItem(produto);
+            if (indice) removeIten(indice);
+            salvarItens();
+        } else {
+            abrirItens();
+            abrirUser();
+        }
+        calcTotal();
+    }, [item]);
+
     const removeItens = async () => {
         try {
             await AsyncStorage.removeItem('itens');
@@ -90,26 +102,58 @@ export default function Carrinho({ navigation, route }) {
         }
     }
 
-    const enviar = () => {
-        if (itens.length > 0) {
-            const pedido = {
-                user: user,
-                valor: acumula,
-                data: new Date(),
-                produtos: itens,
+    const abrirPedidos = async () => {
+        try {
+            const stPedidos = await AsyncStorage.getItem('pedidos');
+            if (stPedidos !== null) {
+                return JSON.parse(stPedidos);
             }
-            navigation.navigate('Pedidos', { pedido: JSON.stringify(pedido) });
-            removeItens();
-            setItens([]);
-        } else {
-            alert('Pedido vazio, acrescente novos itens.');
-            navigation.navigate('Carrinho', { pedido: false });
+        } catch (error) {
+            console.log('Erro ao checar pedidos:', error);
         }
     }
 
-    const cancelar = () => {
+    const salvarPedido = async (pedidos) => {
+        try {
+            await AsyncStorage.setItem('pedidos', JSON.stringify(pedidos));
+        } catch (error) {
+            console.log('Erro ao salvar pedidos:', error);
+        }
+    }
+
+    const enviarPedido = async () => {
+        if (itens.length > 0) {
+            let pedidos = await abrirPedidos() || [];
+            const pedido = {
+                id: pedidos.length + 1,
+                user: user,
+                valor: total,
+                data: new Date(),
+                produtos: itens,
+            }
+            pedidos.push(pedido);
+            await salvarPedido(pedidos);
+            removeItens();
+            navigation.navigate('Pedidos');
+        } else {
+            alert('Pedido vazio, acrescente novos itens.');
+        }
+    }
+
+    const cancelarCarrinho = () => {
         removeItens();
-        navigation.navigate('Carrinho', { pedido: false });
+    }
+
+    const irParaDetalhes = (dados, index) => {
+        navigation.navigate('Detalhes', { dados, index });
+    }
+
+    const irParaProdutos = () => {
+        navigation.navigate('Produtos');
+    }
+
+    const irParaPedidos = () => {
+        navigation.navigate('Pedidos');
     }
 
     const sair = () => {
@@ -117,38 +161,26 @@ export default function Carrinho({ navigation, route }) {
         navigation.navigate('Login');
     }
 
-    const listarProdutos = () => {
-        navigation.navigate('Produtos');
-    }
-
-    const abrirDetalhes = (dados, index) => {
-        navigation.navigate('Detalhes', { dados, index });
-    }
-
-    const pedidos = () => {
-        navigation.navigate('Pedidos', { pedido: false });
-    }
-
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={listarProdutos}>
+            <TouchableOpacity style={styles.button} onPress={irParaProdutos}>
                 <Text style={styles.textButton}>O que vai querer hoje?{'\n'}Escolha seu lanchinho:</Text>
             </TouchableOpacity>
             <FlatList
                 data={itens}
                 style={styles.list}
-                renderItem={({ item, index }) => <TouchableOpacity style={styles.item} onPress={() => abrirDetalhes(item, index)}>
+                renderItem={({ item, index }) => <TouchableOpacity style={styles.item} onPress={() => irParaDetalhes(item, index)}>
                     <CarrinhoLista item={item} />
                 </TouchableOpacity>}
             />
-            <Text style={styles.textTotal}>Total do Pedido: R$ {acumula.toFixed(2)}</Text>
-            <TouchableOpacity style={styles.button} onPress={enviar}>
+            <Text style={styles.textTotal}>Total do Pedido: R$ {total.toFixed(2)}</Text>
+            <TouchableOpacity style={styles.button} onPress={enviarPedido}>
                 <Text style={styles.textButton}>Enviar Pedido</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={cancelar}>
+            <TouchableOpacity style={styles.button} onPress={cancelarCarrinho}>
                 <Text style={styles.textButton}>Cancelar Pedido</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={pedidos}>
+            <TouchableOpacity style={styles.button} onPress={irParaPedidos}>
                 <Text style={styles.textButton}>Acompanhar Pedidos</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={sair}>

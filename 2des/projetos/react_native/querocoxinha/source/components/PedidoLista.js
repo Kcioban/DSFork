@@ -7,12 +7,12 @@ export default function PedidoLista({ pedido }) {
             <Text style={styles.text}>Id: {pedido.id}</Text>
             <Text style={styles.text}>Usuário: {pedido.user}</Text>
             <Text style={styles.text}>Data: {pedido.data}</Text>
-            <Text style={[styles.text,styles.center]}>Valor: R$ {pedido.valor.toFixed(2)}</Text>
             <FlatList
                 data={pedido.produtos}
                 style={styles.list}
                 renderItem={({ item }) => <CarrinhoLista item={item} />}
             />
+            <Text style={[styles.text, styles.center]}>Valor: R$ {pedido.valor.toFixed(2)}</Text>
             <Text style={styles.textStatus}>Aguardando retirada no local</Text>
         </View>
     );
