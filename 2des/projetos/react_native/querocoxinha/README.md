@@ -8,4 +8,4 @@ yarn add react-native-screens
 yarn add react-native-svg
 ```
 ### APK
-[APK](https://expo.dev/artifacts/eas/2vmzFHJU6ZztNdcfWPjsqn.apk)
+[APK](https://expo.dev/artifacts/eas/mZepJUj3Pkcn2LuL63v5eG.apk)
