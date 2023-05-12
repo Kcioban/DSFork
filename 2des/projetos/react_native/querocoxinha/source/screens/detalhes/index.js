@@ -20,7 +20,7 @@ export default function DetalhesScreen({ navigation, route }) {
                 <Image style={styles.img} source={{ uri: `${produto.img}` }}></Image>
                 <View style={styles.textos}>
                     <Text style={styles.text}>Nome: {produto.nome}</Text>
-                    <Text style={styles.text}>Complemento: {produto.preco}</Text>
+                    <Text style={styles.text}>Preco R$: {produto.preco.toFixed(2)}</Text>
                 </View>
                 <TouchableOpacity style={styles.button} onPress={remover}>
                     <Text style={styles.textButton}>Remover ítem</Text>
@@ -33,7 +33,7 @@ export default function DetalhesScreen({ navigation, route }) {
                 <Image style={styles.img} source={{ uri: `${produto.img}` }}></Image>
                 <View style={styles.textos}>
                     <Text style={styles.text}>Nome: {produto.nome}</Text>
-                    <Text style={styles.text}>Complemento: {produto.preco}</Text>
+                    <Text style={styles.text}>Preco R$: {produto.preco.toFixed(2)}</Text>
                 </View>
                 <TouchableOpacity style={styles.button} onPress={comprar}>
                     <Text style={styles.textButton}>Quero um deste!</Text>

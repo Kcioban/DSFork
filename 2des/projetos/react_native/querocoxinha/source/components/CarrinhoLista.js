@@ -9,7 +9,7 @@ export default function CarrinhoLista({ item }) {
                 <Text style={styles.text}>Nome: {item.nome}</Text>
                 <Text style={styles.text}>Preço: R$ {item.preco.toFixed(2)}</Text>
             </View>
-            <Text style={[styles.text,styles.center]}>Qtdade:<br />{item.quantidade}</Text>
+            <Text style={[styles.text,styles.center]}>Qtdade:{'\n'+item.quantidade}</Text>
         </View>
     )
 }

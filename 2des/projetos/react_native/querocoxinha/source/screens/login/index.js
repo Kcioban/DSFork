@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { ImageBackground, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './styles';
 import users from '../../mocks/users';
 
@@ -10,23 +11,40 @@ export default function Login({ navigation }) {
     const [password, setPassword] = new useState('');
 
     useEffect(() => {
-        if (localStorage.getItem('user')) {
-            navigation.navigate('Carrinho');
+        async function carregarUser() {
+            try {
+                const user = await AsyncStorage.getItem('user')
+                if (user !== null) {
+                    navigation.navigate('Carrinho');
+                }
+            } catch (error) {
+                console.error(error);
+            }
         }
+        carregarUser();
     }, []);
+    
+    async function saveUser() {
+        try {
+            const user = { username: username }
+            await AsyncStorage.setItem('user', JSON.stringify(user));
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     const handleLogin = () => {
         users.forEach(user => {
             if (username === user.username) {
                 if (password === user.password) {
-                    localStorage.setItem('user', JSON.stringify(user));
+                    saveUser();
                     navigation.navigate('Carrinho');
                 } else {
                     alert('Senha incorreta!');
                 }
             }
         })
-    };
+    }
 
     return (
         <ImageBackground source={require('../../../assets/splash.png')} style={styles.imageBackground}>
