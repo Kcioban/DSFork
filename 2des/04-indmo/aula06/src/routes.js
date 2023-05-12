@@ -1,84 +1,83 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-const Tab = createBottomTabNavigator();
-import Salvos from './screen/salvos';
-import Destaques from './screen/destaques';
-import { Ionicons } from '@expo/vector-icons'
+
 import { Platform } from 'react-native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-export default function Routes() {
+import Destaques from './screens/Destaques'
+import Profile from './screens/Profile'
+import Favorites from './screens/Favorites'
 
-    return (
-        <Tab.Navigator
-            screenOptions={{
-                tabBarActiveTintColor: 'orange',
-                tabBarShowLabel: false,
-                tabBarStyle: {
-                    position: 'absolute',
-                    backgroundColor: '#ccc',
-                    borderTopWidth: 0,
+import { Ionicons } from '@expo/vector-icons'
 
-                    bottom: Platform.OS === 'android' ? 14 : 28,
-                    left: 14,
-                    right: 14,
-                    borderRadius: 4,
-                    height: 60,
+const Tab = createBottomTabNavigator();
 
-                },
-            }}
-        >
+function Routes() {
+  return(
+    <Tab.Navigator
+      screenOptions={{
+        tabBarActiveTintColor: 'red',
+        tabBarShowLabel: false,
 
-            {/* Cada tab.screen é uma screen */}
-            <Tab.Screen
+        tabBarStyle:{
+          position: 'absolute',
+          backgroundColor: '#fff',
+          borderTopWidth: 0,
 
-                name="Destaques"
-                component={Destaques}
-                options={{
-                    headerShown: false,
-                    tabBarIcon: ({ focused, size, color }) => {
-                        if (focused) {
-                            return <Ionicons
-                                name="home"
-                                color={color}
-                                size={size} />
-                        }
-                        else {
-                            return <Ionicons
-                                name='home-outline'
-                                color={color}
-                                size={size}
-                            />
-                        }
-                    }
-                }}
-            />
-            <Tab.Screen
-                name="Salvos"
-                component={Salvos}
-                options={{
-                    headerShown: false,
-                    tabBarIcon: ({focused, color, size}) => {
-                        if(focused){
-                            return (
-                                <Ionicons 
-                                    name='bookmark'
-                                    size={size}
-                                    color={color}
-                                />
-                            )
-                        }
-                        else {
-                            return (
-                                <Ionicons
-                                    name='bookmark-outline'
-                                    size={size}
-                                    color={color}
-                                />
-                            )
-                        }
-                    }
-                }}
-            />
+          bottom: Platform.OS === 'android' ? 14 : 28,
+          left: 14,
+          right: 14,
+          elevation:0,
+          borderRadius: 4,
+          height: 60,
+          paddingBottom: 0, // Apenas no iOS para zerar o padding do IOS
+        }
+      }}    
+    >
+      <Tab.Screen
+        name="Destaques"
+        component={Destaques}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+              if(focused){
+                return <Ionicons name="home" size={size} color={color} />
+              }
 
-        </Tab.Navigator>
-    )
+              return <Ionicons name="home-outline" size={size} color={color} />
+          }
+        }}
+      />
+
+      <Tab.Screen
+        name="Favorites"
+        component={Favorites}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+              if(focused){
+                return <Ionicons name="bookmark" size={size} color={color} />
+              }
+
+              return <Ionicons name="bookmark-outline" size={size} color={color} />
+          }
+        }}
+      />
+
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ color, size, focused }) => {
+              if(focused){
+                return <Ionicons name="person" size={size} color={color} />
+              }
+
+              return <Ionicons name="person-outline" size={size} color={color} />
+          }
+        }}
+      />
+    </Tab.Navigator>
+  )
 }
+
+export default Routes;
