@@ -163,3 +163,7 @@ Ao final da sua atividade você precisa entregar ao instrutor:
     - No diretório **./dados** os 4 arquivos **.csv** com os dados a serem importados para a base de dados que você precisará construir.
 
 ## Bom trabalho!
+
+|Entregas|
+|-|
+|Crie um repositório público github com a seguinte organização:<br>- pasta_projeto<br>- documentacao<br>- README.md (Explicando como executar)<br> Envie o endereço do repositório neste [Formulário](https://forms.gle/7c55mBYnb37RUrg8A)||
