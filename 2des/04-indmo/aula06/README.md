@@ -2,7 +2,7 @@
 
   A navegação por abas é um padrão de interface comum em aplicativos móveis, ela permite que você organize o conteúdo do seu aplicativo em diferentes guias, facilitando a navegação entre as seções principais do aplicativo.
 
-  [![Funcionamento]](https://reactnavigation.org/assets/navigators/tabs/bottom-tabs-demo.mov)
+  [Funcionamento](https://reactnavigation.org/assets/navigators/tabs/bottom-tabs-demo.mov)
 
 ## Bibliotecas
   - https://reactnavigation.org/docs/tab-based-navigation/
