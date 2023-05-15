@@ -74,3 +74,21 @@ async function pedidos(){
 }
 pedidos();
 ```
+
+|Exercício|
+|-|
+|Conforme exemplo anterior crie um programa que calcule o **montante** de vários aportes de um investimento conforme os dados a seguir:<br>O programa deverá calcular e mostrar na tela o acúmulo investido e aguardar o tempo de meio segundo entre oe meses|
+```javascript
+aportes = [
+    { mes: 'Janeiro', aporte:500, rentabilidade: 0.001 },
+    { mes: 'Fevereiro', aporte:300, rentabilidade: 0.003 },
+    { mes: 'Março', aporte:250, rentabilidade: 0.005 },
+    { mes: 'Abril', aporte:300, rentabilidade: 0.01 },
+    { mes: 'Maio', aporte:100, rentabilidade: 0.007 },
+    { mes: 'Junho', aporte:0, rentabilidade: 0.005 },
+    { mes: 'Julho', aporte:0, rentabilidade: 0.003 },
+    { mes: 'Agosto', aporte:300, rentabilidade: 0.008 },
+    { mes: 'Setembro', aporte:400, rentabilidade: 0.011 },
+    { mes: 'Outubro', aporte:200, rentabilidade: 0.01 },
+]
+```
