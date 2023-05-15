@@ -77,7 +77,7 @@ pedidos();
 
 |Exercício|
 |-|
-|Conforme exemplo anterior crie um programa que calcule o **montante** de vários aportes de um investimento conforme os dados a seguir:<br>O programa deverá calcular e mostrar na tela o acúmulo investido e aguardar o tempo de meio segundo entre oe meses|
+|Conforme exemplo anterior crie um programa que calcule o **montante** de vários aportes de um investimento conforme os dados a seguir:<br>O programa deverá calcular e mostrar na tela o acúmulo investido e aguardar o tempo de meio segundo entre os meses|
 ```javascript
 aportes = [
     { mes: 'Janeiro', aporte:500, juros: 0.001 },
