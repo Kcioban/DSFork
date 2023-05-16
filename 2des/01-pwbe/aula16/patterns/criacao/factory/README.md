@@ -1,7 +1,10 @@
 ## Criação - Factory
 
 O padrão de projeto **Factory** é usado para encapsular a lógica de criação de objetos em uma fábrica, permitindo a criação de diferentes tipos de objetos sem expor a lógica de criação diretamente. Aqui está um exemplo de como usar o padrão Factory em **JavaScript**:
-
+|Problema|
+|-|
+|Criar produtos de tipos diferentes e padronizados|
+|![UML](./uml_dc_fabrica_de_produto.png)|
 ```javascript
 class Produto {
   constructor(nome, preco) {
