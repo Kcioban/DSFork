@@ -1,5 +1,5 @@
 ## Estrutura - Composite
-O padrão de projeto Builder é usado para separar a construção de um objeto complexo de sua representação final, permitindo que o mesmo processo de construção possa criar diferentes representações. Aqui está um exemplo de como usar o padrão Builder em JavaScript:
+O padrão de projeto Composite é usado para juntar partes de objetos complexos, criando deversas estruturas para estes objetos. Aqui está um exemplo de como usar o padrão Composite em JavaScript:
 
 ```javascript
 // define a interface para todos os componentees da árvore
