@@ -7,10 +7,10 @@ Alguns programadores consideram o MVC (Model, View, Controller) um Design Patter
 - Criação
 - Estrutura
 - Comportamento
-<br>![Patterns](patterns.png)
+<br>![Patterns](./imgs/patterns.png)
 ### Pattens GOF
  Estes 24 pattens estão no livro GOF (Gang Of Four) escrito por quatro programadores documentando soluções clássicas com P.O.O. (Programação Orientadas a Objeto, por isso vamos estudar um pouco dos conceitos de P.O.O.
-<br>![Lousa](lousa.jpg)
+<br>![Lousa](./imgs/lousa.jpg)
 
 ## Links importantes
 - (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
@@ -22,7 +22,7 @@ Alguns programadores consideram o MVC (Model, View, Controller) um Design Patter
 ### Atividade 1
 |Modele com JavaScript as classes conforme o Diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar|
 |-|
-|![Atividade 1](atv1-aluguel-veiculo.png)|
+|![Atividade 1](./imgs/atv1-aluguel-veiculo.png)|
 
 #### Dados para testar:
 
@@ -45,7 +45,7 @@ Alguns programadores consideram o MVC (Model, View, Controller) um Design Patter
 ### Atividade 2
 |Modele com JavaScript as classes conforme o Diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar, calcule juros de 1% do valor da parcela por dia de atraso|
 |-|
-|![Atividade 1](atv2-parcela-compra.png)|
+|![Atividade 1](./imgs/atv2-parcela-compra.png)|
 
 #### Dados para testar:
 
@@ -78,8 +78,8 @@ Alguns programadores consideram o MVC (Model, View, Controller) um Design Patter
 ### Atividade 3
 |A partir dos dados da atividade 1 Locação de Veículos, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
 |-|
-|![Atividade 1](atv3-aluguel-veiculo.png)|
+|![Atividade 1](./imgs/atv3-aluguel-veiculo.png)|
 ### Atividade 4
 |A partir dos dados da da atividade 2 Parcelas de Compras, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
 |-|
-|![Atividade 1](atv4-parcela-compra.png)|
+|![Atividade 1](./imgs/atv4-parcela-compra.png)|

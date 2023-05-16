@@ -1,5 +1,5 @@
 ## Estrutura - Composite
-O padrão de projeto Composite é usado para juntar partes de objetos complexos, criando deversas estruturas para estes objetos. Aqui está um exemplo de como usar o padrão Composite em JavaScript:
+O padrão de projeto **Composite** é usado para compor objetos em estruturas de árvore para representar hierarquias de partes-todo. O objetivo é tratar objetos individuais e composições de objetos de maneira uniforme. Aqui está um exemplo de como usar o padrão Composite em **JavaScript**:
 
 ```javascript
 // define a interface para todos os componentees da árvore
