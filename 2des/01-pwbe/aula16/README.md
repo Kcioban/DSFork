@@ -47,7 +47,7 @@ Alguns programadores consideram o MVC (Model, View, Controller) um Design Patter
 |-|
 |![Atividade 1](atv2-parcela-compra.png)|
 
-Dados para testar:
+#### Dados para testar:
 
 #### Compras
 
@@ -76,10 +76,10 @@ Dados para testar:
 |14|4|17/07/2023|null|**calcular**|**calcular**|
 
 ### Atividade 3
-|A partir da atividade 1 Locação de Veículos, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|A partir dos dados da atividade 1 Locação de Veículos, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
 |-|
 |![Atividade 1](atv3-aluguel-veiculo.png)|
 ### Atividade 4
-|A partir da atividade 2 Parcelas de Compras, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|A partir dos dados da da atividade 2 Parcelas de Compras, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
 |-|
 |![Atividade 1](atv4-parcela-compra.png)|
