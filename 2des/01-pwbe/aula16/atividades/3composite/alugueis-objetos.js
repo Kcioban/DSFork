@@ -18,16 +18,6 @@ class Composite extends Componente {
     add(componente) {
         this.alugueis.push(componente);
     }
-    remove(componente) {
-        const index = this.alugueis.indexOf(componente);
-        this.alugueis.splice(index, 1);
-    }
-    getfilho(index) {
-        return this.alugueis[index];
-    }
-    getObj() {
-        return this.obj;
-    }
 }
 
 // Classe folha da árvore (Classe que calcula o valor do aluguel)
