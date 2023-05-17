@@ -61,9 +61,9 @@ const pedidos = [
     { id: 3, cliente: 3, data: "28/Abril" },
     { id: 4, cliente: 2, data: "03/Maio" }];
 
-const raiz = new Composite(clientes[0]);
-raiz.add(new Folha(pedidos[0]));
-raiz.add(new Folha(pedidos[1]));
+const responsavel = new Composite(clientes[0]);
+responsavel.add(new Folha(pedidos[0]));
+responsavel.add(new Folha(pedidos[1]));
 
 const esposa = new Composite(clientes[1]);
 esposa.add(new Folha(pedidos[3]));

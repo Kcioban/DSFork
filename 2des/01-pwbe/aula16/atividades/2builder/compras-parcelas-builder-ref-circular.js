@@ -2,12 +2,15 @@
 class Parcela {
     constructor(id, compra, dataVencimento, dataPagamento) {
         this.id = id
+        this.compra = compra
         this.dataVencimento = new Date(dataVencimento)
         this.dataPagamento = dataPagamento != undefined ? new Date(dataPagamento) : undefined
-        this.valorParcela = compra.total / compra.totalParcelas
+        this.valorParcela = this.getValorParcela()
         this.Juros = this.getJuros()
     }
-
+    getValorParcela() {
+        return this.compra.total / this.compra.totalParcelas
+    }
     getDiasAtraso() {
         if (this.dataPagamento == undefined || this.dataPagamento == null)
             return 0
