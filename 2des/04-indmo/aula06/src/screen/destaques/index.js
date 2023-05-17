@@ -19,11 +19,9 @@ const gerarPrecoAleatorio = () => {
 }
 
 export default function Destaques() {
-
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollView}>
-
                 <FlatList
                     data={array}
                     keyExtractor={item => item.toString()}

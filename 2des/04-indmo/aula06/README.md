@@ -16,6 +16,7 @@
 
   - Executar `yarn start` ou `npm run start`
 
-
+## Tutorial sobre Navegações entre telas
+- https://oieduardorabelo.medium.com/react-native-navega%C3%A7%C3%B5es-complexas-com-react-navigation-583a8f5a4a7
 
   
