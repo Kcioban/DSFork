@@ -33,7 +33,6 @@ class Composite extends Componente {
         this.filhos.push(componente);
     }
     remove(componente) {
-        raiz
         const index = this.filhos.indexOf(componente);
         this.filhos.splice(index, 1);
     }

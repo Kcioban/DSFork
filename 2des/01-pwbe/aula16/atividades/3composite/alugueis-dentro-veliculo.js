@@ -13,20 +13,15 @@ class Componente {
 class Composite extends Componente {
     constructor(obj) {
         super(obj);
-        this.alugueis = [];
     }
     add(componente) {
-        this.alugueis.push(componente);
-    }
-    remove(componente) {
-        const index = this.alugueis.indexOf(componente);
-        this.alugueis.splice(index, 1);
+        this.veiculo.alugueis.push(componente);
     }
     getfilho(index) {
-        return this.alugueis[index];
+        return this.veiculo.alugueis[index];
     }
     getObj() {
-        return this.obj;
+        return this.veiculo;
     }
 }
 
@@ -42,9 +37,9 @@ class Aluguel {
 
 //Objetos raízes da árvore
 const veiculos = [
-    { placa: 'JHK-2518', modelo: 'Uno', marca: 'Fiat', ano: 2015, diaria: 75.9 },
-    { placa: 'PBC-5A58', modelo: 'Gol', marca: 'VW', ano: 2018, diaria: 99.9 },
-    { placa: 'CCB-2F19', modelo: 'Celta', marca: 'Chevrolet', ano: 2007, diaria: 49.9 }
+    { placa: 'JHK-2518', modelo: 'Uno', marca: 'Fiat', ano: 2015, diaria: 75.9, alugueis:[] },
+    { placa: 'PBC-5A58', modelo: 'Gol', marca: 'VW', ano: 2018, diaria: 99.9, alugueis:[] },
+    { placa: 'CCB-2F19', modelo: 'Celta', marca: 'Chevrolet', ano: 2007, diaria: 49.9, alugueis:[] }
 ]
 
 //Objetos folhas na árvore
@@ -69,5 +64,10 @@ const composicao3 = new Composite(veiculos[2]);
 composicao3.add(alugueis[3]);
 
 console.log(composicao1);
+console.log(composicao1.getfilho(0));
+console.log(composicao1.getfilho(1));
 console.log(composicao2);
+console.log(composicao2.getfilho(0));
+console.log(composicao2.getfilho(1));
 console.log(composicao3);
+console.log(composicao3.getfilho(0));

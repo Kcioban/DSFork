@@ -41,7 +41,6 @@ class Composite extends Componente {
         this.alugueis.push(componente);
     }
     remove(componente) {
-        raiz
         const index = this.alugueis.indexOf(componente);
         this.alugueis.splice(index, 1);
     }
