@@ -47,8 +47,10 @@ export default function Pedidos({ navigation }) {
     }
 
     useEffect(() => {
-        abrirPedidos();
-    }, []);
+        navigation.addListener('focus', () => {
+            abrirPedidos();
+        });
+    }, [navigation]);
 
     return (
         <View style={styles.container}>

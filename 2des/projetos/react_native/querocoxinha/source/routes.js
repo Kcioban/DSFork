@@ -1,5 +1,5 @@
 import { Platform } from 'react-native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'
 
 import Carrinho from './screens/carrinho';
@@ -14,7 +14,6 @@ export default function Routes() {
             screenOptions={{
                 tabBarActiveTintColor: 'red',
                 tabBarShowLabel: false,
-
                 tabBarStyle: {
                     position: 'absolute',
                     backgroundColor: '#fff',

@@ -109,7 +109,7 @@ export default function Carrinho({ navigation, route }) {
 
     const enviarPedido = async () => {
         if (itens.length > 0) {
-            let pedidos = await abrirPedidos() || [];
+            const pedidos = await abrirPedidos() || [];
             const pedido = {
                 id: pedidos.length + 1,
                 user: user,

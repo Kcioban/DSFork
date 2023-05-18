@@ -42,6 +42,10 @@ export default StyleSheet.create({
         shadowRadius: 5,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
+        borderTopRightRadius: 25,
+        borderBottomEndRadius: 25,
+        margin: 1,
+        marginEnd: 10,
     },
     textButton: {
         fontSize: 18,
