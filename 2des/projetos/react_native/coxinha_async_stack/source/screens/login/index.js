@@ -7,15 +7,15 @@ import users from '../../mocks/users';
 
 export default function Login({ navigation }) {
 
-    const [username, setUsername] = new useState('cliente1');
-    const [password, setPassword] = new useState('1234');
+    const [username, setUsername] = new useState('');
+    const [password, setPassword] = new useState('');
 
     useEffect(() => {
         async function carregarUser() {
             try {
                 const user = await AsyncStorage.getItem('user')
                 if (user !== null) {
-                    navigation.navigate('Routes');
+                    navigation.navigate('Carrinho');
                 }
             } catch (error) {
                 console.error(error);
@@ -23,7 +23,7 @@ export default function Login({ navigation }) {
         }
         carregarUser();
     }, []);
-
+    
     async function saveUser() {
         try {
             const user = { username: username }
@@ -38,7 +38,7 @@ export default function Login({ navigation }) {
             if (username === user.username) {
                 if (password === user.password) {
                     saveUser();
-                    navigation.navigate('Routes');
+                    navigation.navigate('Carrinho');
                 } else {
                     alert('Senha incorreta!');
                 }
@@ -47,10 +47,9 @@ export default function Login({ navigation }) {
     }
 
     return (
-        <View style={styles.container}>
-            <ImageBackground source={require('../../../assets/splash.png')} style={styles.imageBackground}>
-            </ImageBackground>
+        <ImageBackground source={require('../../../assets/splash.png')} style={styles.imageBackground}>
             <View style={styles.container}>
+
                 <Text style={styles.text}>Entre com seu login</Text>
                 <TextInput
                     style={styles.input}
@@ -69,8 +68,8 @@ export default function Login({ navigation }) {
                 <TouchableOpacity style={styles.button} onPress={handleLogin}>
                     <Text style={styles.textButton}>Entrar</Text>
                 </TouchableOpacity>
-            </View>
-        </View >
 
+            </View >
+        </ImageBackground>
     );
 }

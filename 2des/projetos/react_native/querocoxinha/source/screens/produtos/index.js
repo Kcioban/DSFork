@@ -12,6 +12,7 @@ export default function Produtos({ navigation }) {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.titulo}>O que vai querer hoje?</Text>
             <FlatList
                 data={Prods}
                 style={styles.list}

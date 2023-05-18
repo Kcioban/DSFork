@@ -1,16 +1,12 @@
 const users = [
     {
-        username: 'aluno',
+        username: 'cliente1',
         password: '1234',
     },
     {
-        username: 'prof',
+        username: 'cliente2',
         password: '1234',
     },
-    {
-        username: 'admin',
-        password: '1234',
-    }
 ];
 
 export default users;

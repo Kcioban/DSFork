@@ -4,7 +4,6 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingBottom: 80,
     },
     list: {
         width: '100%',

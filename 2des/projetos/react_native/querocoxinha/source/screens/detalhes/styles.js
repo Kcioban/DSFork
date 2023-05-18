@@ -5,6 +5,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         margin: 20,
+        paddingBottom: 80,
     },
     img: {
         width: '100%',

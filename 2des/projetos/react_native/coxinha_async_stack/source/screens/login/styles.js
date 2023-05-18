@@ -4,17 +4,13 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        width: '100%',
-        height: '100%',
-        position:'absolute',
-        top:0,
     },
     imageBackground: {
         flex: 1,
         width: '100%',
         height: '100%',
         flexDirection: 'column',
-        opacity: 0.3,
+        backgroundColor: '#fff'
     },
     input: {
         width: '80%',

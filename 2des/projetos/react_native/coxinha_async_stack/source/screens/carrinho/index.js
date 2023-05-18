@@ -71,6 +71,20 @@ export default function Carrinho({ navigation, route }) {
         setItens(its);
     }
 
+    useEffect(() => {
+        if (item) {
+            let produto = route.params.produto;
+            let indice = route.params.indice;
+            if (produto) addItem(produto);
+            if (indice) removeIten(indice);
+            salvarItens();
+        } else {
+            abrirItens();
+            abrirUser();
+        }
+        calcTotal();
+    }, [item]);
+
     const removeItens = async () => {
         try {
             await AsyncStorage.removeItem('itens');
@@ -134,31 +148,24 @@ export default function Carrinho({ navigation, route }) {
         navigation.navigate('Detalhes', { dados, index });
     }
 
+    const irParaProdutos = () => {
+        navigation.navigate('Produtos');
+    }
+
+    const irParaPedidos = () => {
+        navigation.navigate('Pedidos');
+    }
+
     const sair = () => {
         removeUser();
         navigation.navigate('Login');
     }
 
-    useEffect(() => {
-        if (item) {
-            let produto = route.params.produto;
-            let indice = route.params.indice;
-            if (produto) addItem(produto);
-            if (indice) removeIten(indice);
-            salvarItens();
-        } else {
-            abrirItens();
-            abrirUser();
-        }
-        calcTotal();
-    }, [item]);
-
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={enviarPedido}>
-                <Text style={styles.textButton}>Enviar Pedido</Text>
+            <TouchableOpacity style={styles.button} onPress={irParaProdutos}>
+                <Text style={styles.textButton}>O que vai querer hoje?{'\n'}Escolha seu lanchinho:</Text>
             </TouchableOpacity>
-            <Text style={styles.textTotal}>Total do Pedido: R$ {total.toFixed(2)}</Text>
             <FlatList
                 data={itens}
                 style={styles.list}
@@ -166,8 +173,15 @@ export default function Carrinho({ navigation, route }) {
                     <CarrinhoLista item={item} />
                 </TouchableOpacity>}
             />
-                        <TouchableOpacity style={styles.button} onPress={cancelarCarrinho}>
+            <Text style={styles.textTotal}>Total do Pedido: R$ {total.toFixed(2)}</Text>
+            <TouchableOpacity style={styles.button} onPress={enviarPedido}>
+                <Text style={styles.textButton}>Enviar Pedido</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={cancelarCarrinho}>
                 <Text style={styles.textButton}>Cancelar Pedido</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={irParaPedidos}>
+                <Text style={styles.textButton}>Acompanhar Pedidos</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={sair}>
                 <Text style={styles.textButton}>Sair</Text>

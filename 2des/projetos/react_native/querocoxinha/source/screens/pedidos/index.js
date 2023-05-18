@@ -52,16 +52,17 @@ export default function Pedidos({ navigation }) {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.titulo}>Pedidos</Text>
             <FlatList
                 data={pedidos}
                 style={styles.list}
                 renderItem={({ item }) => <PedidoLista pedido={item} />}
             />
-            <TouchableOpacity style={styles.button} onPress={removerTodos}>
-                <Text style={styles.textButton}>Limpar Pedidos</Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.buttonWhats} onPress={enviarPorWhatsApp}>
                 <Text style={styles.textButton}>Enviar por WhatsApp</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={removerTodos}>
+                <Text style={styles.textButton}>Limpar Pedidos</Text>
             </TouchableOpacity>
         </View >);
 };

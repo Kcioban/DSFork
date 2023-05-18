@@ -1,11 +1,21 @@
+# App - Carrinho de compras
+## Exemplo com recuros, AsyncStorage, Stack e Tab Navigation
+
 ### Dependências
 ```cmd
 yarn add @react-navigation/native
 yarn add @react-navigation/native-stack
-yarn add  @react-native-async-storage/async-storage
+yarn add @react-navigation/bottom-tabs
+yarn add @react-native-async-storage/async-storage
+yarn add @expo/vector-icons
 yarn add react-native-safe-area-context
 yarn add react-native-screens
-yarn add react-native-svg
+yarn add react-native-reanimated
 ```
-### APK
-[APK](https://expo.dev/artifacts/eas/mZepJUj3Pkcn2LuL63v5eG.apk)
+- Certifique-se de que no arquivo babel.config.js esteja inserido:
+```javascript
+plugins: [
+    '@babel/plugin-proposal-export-namespace-from',
+    'react-native-reanimated/plugin'
+]
+```
