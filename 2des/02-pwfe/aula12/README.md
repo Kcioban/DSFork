@@ -8,7 +8,7 @@ Situação problema:
 
 |Desafio|
 |-|
-|Desenvolver uma interface de carrinho de compras onde o cliente escole os produtos e monta seu pedido. A seguir seguem os dados em formato **JSON** para montar o cardápio de pizzas e um **modelo de pedido**, a interface deve ter:<br>- Uma tela principal **"carrinho.html"** onde os produtos selecionados serão listados e possua um botão para **Enviar o pedido**<br>- Uma tela com os produtos **cardapio.html**<br>- Uma tela ou modal que mostre os detalhes do produto e possua um botão para **Adicionar ao Carrinho**<br>- Uma tela quem mostre os pedidos enviados **pedidos.html** com um status fictício: **Pedido no forno**.<br>**Obs:** Utilize **localsorage** para enviar os dados entre as telas|
+|Desenvolver uma interface de carrinho de compras onde o cliente escolhe os produtos e monta seu pedido. A seguir seguem os dados em formato **JSON** para montar o cardápio de pizzas e um **modelo de pedido**, a interface deve ter:<br>- Uma tela principal **"carrinho.html"** onde os produtos selecionados serão listados e possua um botão para **Enviar o pedido**<br>- Uma tela com os produtos **cardapio.html**<br>- Uma tela ou modal que mostre os detalhes do produto e possua um botão para **Adicionar ao Carrinho**<br>- Uma tela quem mostre os pedidos enviados **pedidos.html** com um status fictício: **Pedido no forno**.<br>**Obs:** Utilize **localsorage** para enviar os dados entre as telas|
 |**WireFrame:** representação meramente ilustrativa, desenvolva a interface utilizando sua criatividade.<br>![Wireframe](./carrinho.png)|
 
 ## Mokups
