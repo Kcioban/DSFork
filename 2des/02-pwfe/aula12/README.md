@@ -3,6 +3,7 @@
 ### Conhecimentos
 - Display (Tela com Modais)
 - Armazenamento local (localStorage)
+- Listas de dados / Mokups
 
 ### Situação problema:
 
