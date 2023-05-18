@@ -1,6 +1,10 @@
 # Front-End - Aula12
 
-Situação problema:
+### Conhecimentos
+- Display (Tela com Modais)
+- Armazenamento local (localStorage)
+
+### Situação problema:
 
 |Contextualização|
 |-|
