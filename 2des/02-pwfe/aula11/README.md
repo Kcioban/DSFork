@@ -11,4 +11,4 @@
 
 |Entregas|
 |-|
-| No mesmo repositório git do Back-End ou se preferir crie outro e envie o link para:<br>https://forms.gle/tPj9TeQP5Soo3fKn8|
+|No mesmo repositório git do Back-End ou se preferir crie outro e envie o link para:<br>https://forms.gle/tPj9TeQP5Soo3fKn8|
