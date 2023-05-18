@@ -19,3 +19,6 @@ plugins: [
     'react-native-reanimated/plugin'
 ]
 ```
+|Download para testar em colular Android|
+|:-:|
+|[APK](https://expo.dev/artifacts/eas/ePWUt7mLpG84tbC1YT4Lpc.apk)|
