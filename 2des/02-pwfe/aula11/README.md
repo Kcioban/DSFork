@@ -12,3 +12,11 @@
 |Entregas|
 |-|
 |No mesmo repositório git do Back-End ou se preferir crie outro e envie o link para:<br>https://forms.gle/tPj9TeQP5Soo3fKn8|
+
+|Exemplos de entregas satisfatórias|
+|-|
+|Vinícius:https://github.com/ViniSouza001/avaliacao-vendas|
+|Matheus:https://github.com/matheusdess/avaliacao|
+|João Angeloni: https://github.com/jaoangeloni/PROJETO-LOJINHA|
+|Lucas Camacho: https://github.com/LcsCamacho/loja|
+|Larissa: https://github.com/LarissaCarrara/prova|
