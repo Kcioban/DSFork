@@ -20,3 +20,4 @@
 |João Angeloni: https://github.com/jaoangeloni/PROJETO-LOJINHA|
 |Lucas Camacho: https://github.com/LcsCamacho/loja|
 |Larissa: https://github.com/LarissaCarrara/prova|
+|Karen: https://github.com/Izzzye/Prova-Backend|
