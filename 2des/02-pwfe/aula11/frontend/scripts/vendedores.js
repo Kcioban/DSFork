@@ -1,11 +1,11 @@
 const lista = document.querySelector(".lista-vendedores");
 
 api.get('/vendedores')
-.then(resp => {
-    resp.data.forEach(element => {
-        lista.appendChild(createCard(element));
-    });
-})
+    .then(resp => {
+        resp.data.forEach(element => {
+            lista.appendChild(createCard(element));
+        });
+    })
 
 function createCard(data) {
     const card = document.querySelector(".card-vendedor").cloneNode(true);
@@ -16,7 +16,6 @@ function createCard(data) {
     card.querySelector("#matricula").innerHTML = data.matricula;
 
     card.querySelector(".icon").addEventListener("click", () => {
-        console.log(data);
         showModal(data);
     });
 
