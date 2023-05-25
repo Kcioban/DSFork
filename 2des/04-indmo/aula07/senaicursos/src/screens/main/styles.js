@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     img: {
-        marginTop: 40,
+        maxWidth: 250,
         width: '80%',
         height: 100,
         resizeMode: 'contain',
@@ -31,6 +31,18 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
+    },
+    link:{
+        marginTop: 40,
+        padding: 10,
+        width: "80%",
+        alignSelf: "center",
+        backgroundColor: "#fff",
+        borderTopLeftRadius:20,
+        borderBottomEndRadius:20,
+        borderBottomWidth: 2,
+        borderLeftWidth: 2,
+        borderStartColor: "#999",       
     },
 });
 
