@@ -42,19 +42,23 @@ insert into cliente(nome, telefone) VALUES
 ("Marcelo",null);
 
 Insert into venda VALUES
-(default, null, null, default, 100.00),
-(default, 1, null, default, 200.00),
-(default, 3, 4, default, 150.00),
-(default, null, null, default, 79.90),
-(default, 1, null, default, 79.90),
-(default, 2, 2, default, 89.90),
-(default, 1, 2, default, 99.90),
-(default, 3, null, default, 179.90),
-(default, null, null, default, 119.90),
-(default, 2, null, default, 69.90),
-(default, null, null, default, 29.90);
+(default, null, null, TIMESTAMPADD(MINUTE,-1440,now()), 100.00),
+(default, 1, null, TIMESTAMPADD(MINUTE,-1400,now()), 200.00),
+(default, 3, 4, TIMESTAMPADD(MINUTE,-1345,now()), 150.00),
+(default, null, null, TIMESTAMPADD(MINUTE,-1305,now()), 79.90),
+(default, 1, null, TIMESTAMPADD(MINUTE,-1250,now()), 79.90),
+(default, 2, 2, TIMESTAMPADD(MINUTE,-1180,now()), 89.90),
+(default, 1, 2, TIMESTAMPADD(MINUTE,-1040,now()), 99.90),
+(default, 3, null, TIMESTAMPADD(MINUTE,-1000,now()), 179.90),
+(default, 1, 2, TIMESTAMPADD(MINUTE,-60,now()), 119.90),
+(default, 2, 3, TIMESTAMPADD(MINUTE,-45,now()), 69.90),
+(default, 3, 4, TIMESTAMPADD(MINUTE,-30,now()), 29.90),
+(default, 3, null, TIMESTAMPADD(MINUTE,-20,now()), 29.90),
+(default, null, null, TIMESTAMPADD(MINUTE,-10,now()), 29.90);
 ```
 
 |Desafios|
 |-|
-|1|
+|1. Crie uma consulta que mostre somente as vendas da vendedora "Maria";<br>2. Crie uma consulta que mostre todas as compras do cliente "Marcelo";<br>3. Crie um relatorio que mostre todas as vendas com os seguintes campos: id da venda, nome do vendedor, nome do cliente, data e valor em ordem de data decrescente; Salve com o nome de **vw_vendas_gerais**; OBS: vendas em que id_vendedor ou id_cliente sejão nulos não devem aparecer;<br>4. Crie um relatório com os mesmos campos do relatório anterior porem contendo também os campos nulos(id_vendedor, id_cliente); Salve com o nome de **vw_vendas_nao_nulas**;<br>5. Crie um relatorio com os dados do relatório anterior vw_vendas_nao_nulas que **agrupe** os vendedores e mostre quantas vendas, faça a soma do valor total e calcule uma comissão de 10% sobre o total; Salve como **vw_vendas_comissao**;<br>6. Crie um relatorio de vendas com os mesmos campos do item 3, vw_vendas_gerais porem que mostre somente as vendas em que o campo id_vendedor é nulo: Salve como vw_vendas_balcao;<br>7. Crie uma consulta que mostre somente as vendas de hoje;|
+|**Entregas**|
+|Mostre ao professor ou salve seu sript e envie como o professor solicitar, pasta na rede local, github ...|
