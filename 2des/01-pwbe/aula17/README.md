@@ -16,3 +16,15 @@
 |Entregas|
 |-|
 |Apresente ao instrutor o software em execução com as funcionalidades adicionadas|
+
+|Desafio Nivel 2|
+|-|
+|Para um melhor controle das tarefas e uma análise de desempenho dos executivos posteriormente, as terefas não devem mais ser excluídas ao serem concluídas mas sim um campo no banco de dados chamado status deve ser adicionado e deixado como nulo ao inserir uma nova tarefa, quando a tarefa for concluída a data e hora deve ser inserida e a tela deve ser alterada conforme imagem a seguir|
+|![wireframe](./wireframe3.png)|
+|Com estas alterações feitas será possível analizar as tarefas que estão em andamento, que foram concluídas com atraso e concluídas em dia ou OK|
+|Crie então uma nova página com uma tabela e um gráfico que mostre todas as tarefas conforme wireframe a seguir|
+|![wireframe](./wireframe4.png)|
+
+|Entregas Nível2|
+|-|
+|Apresente ao instrutor o software em execução com as funcionalidades adicionadas|
