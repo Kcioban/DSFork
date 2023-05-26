@@ -10,6 +10,8 @@
 - (15/06/2023) Entrega do documento do projeto versão final (PDF)
 
 ## Estrutura do documento do projeto
+___
+
 ### Formatação ABNT para Monografia ou TCC
 
 - Capa
@@ -80,3 +82,23 @@
     - ./back (API ou BackEnd MVC)
     - ./front (Interface Web)
 ---
+
+### Critérios de avaliação
+
+|Trabalho|Capacidades|Critérios|
+|-|-|-|
+|Prático(Básico)|Definir a sequência das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema|Apresentou o problema e a solução|
+|Prático(Básico)|Implementar as funcionalidades de acordo com os requisitos definidos (Essencial, Importante, Desejável)|Implementou todos os requsitos essenciais|
+|Prático(Básico)|Apresentar tecnicamente ao cliente o sistema de software desenvolvido, sanando as possíveis dúvidas sobre o funcionamento do mesmo|Os alunos, professores e pessoas interessadas entenderam o problema e solução|
+|Prático(Desejável)|Pesquisar em diversas fontes de informação tendo em vista as melhores práticas de mercado considerando, inclusive, a performance e a qualidade de software|Apresentou algo além do exercitado nas aulas|
+|Prático(Básico)|Demonstrar capacidade de organização|Integração Front x Back x Mobile|
+|Prático(Desejável)|Seguir método de trabalho|Agil + Scrum + Seguir cronograma + Resolve o problema|
+|Prático(Desejável)|Trabalhar em equipe|Todos participaram de maneira harmônica?|
+|Prático(Desejável)|Comunicar-se com clareza|Postura profissional durante a apresentação, tom de vóz|
+|Documento(Básico)|Definir os recursos humanos e materiais para o desenvolvimento dos componentes|Cronograma Gráfico de Gantt|
+|Documento(Básico)|Elaborar cronograma das etapas sequenciadas do desenvolvimento dos componentes, considerando a integração com outros profissionais envolvidos no projeto|Cronograma Gráfico de Gantt|
+|Documento(Básico)|Elaborar documentação técnica do sistema|Entregou o documento do projeto no formato ABNT|
+|Documento(Desejável)|Demonstra atenção a detalhes|Os diagramas fazem referência a solução prática apresentada|
+|Documento(Desejável)|Manter relacionamento interpessoal|Postura profissional ética no texto|
+|Documento(Desejável)|Demonstrar capacidade de comunicação com profissionais de diferentes áreas e especialidades|O documento é claro quanto ao problema e a solução|
+|Documento(Desejável)|Demonstrar visão sistêmica|Como seu projeto pode ser implantado em uma empresa/orgão real|
