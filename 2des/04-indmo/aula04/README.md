@@ -21,10 +21,12 @@ export default user;
 ## FlatList
 Componente que exibe uma lista de outros componentes na tela, ideal para listar objetos JSON oriundos de uma API
 
-- Segue o tutorial de como criar um aplicativo com estes recursos: [Tutorial](./tutorial.md)
-- Esta aula possui mais dois Apps de exemplo com FlatList, Componentes e Mockups
-  - ./clientes
-  - ./produtos
+- Nesta aula construimos dois Apps com FlatList, Mockups e Componentes 
+  - ./01-produtos (Lista e Detalhes sem Mokups)
+  - ./02-clientes (ista e Detalhes com Mockups)
+- Tutorial de como criar um aplicativo com estes recursos: [Tutorial](./tutorial.md)
+  - ./03-cardapio (Login e Lista)
+  
 
 # Atividades
 Com os conhecimentos adquiridos nas demonstrações desta aula e neste repositório, desenvolva individualmente ou em duplas o seguinte senário da **Situação Problema**.
