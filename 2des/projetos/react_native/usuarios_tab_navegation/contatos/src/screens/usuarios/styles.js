@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    list:{
+        width:'100%',
+    },
 });
 
 export default styles;

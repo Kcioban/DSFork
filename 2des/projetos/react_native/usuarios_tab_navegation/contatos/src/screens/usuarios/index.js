@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { View, FlatList } from 'react-native';
 import styles from './styles';
+import users from '../../../mocks/usuarios';
+import ItemList from '../../components/item';
 
 export default function Usuarios() {
   return (
     <View style={styles.container}>
-      <Text>Aqui listarei os usuários</Text>
-      <StatusBar style="auto" />
+      <FlatList
+        data={users}
+        style={styles.list}
+        renderItem={({ item }) => ItemList(item)}
+      >
+      </FlatList>
     </View>
   );
 }
