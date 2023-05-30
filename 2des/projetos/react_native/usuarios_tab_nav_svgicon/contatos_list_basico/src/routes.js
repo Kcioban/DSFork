@@ -7,7 +7,7 @@ import Detalhes from './screens/detalhes';
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
-  console.log(Platform.OS)
+  console.log(Platform.OS);
   return (<Tab.Navigator>
     <Tab.Screen
       name="Usuarios"
