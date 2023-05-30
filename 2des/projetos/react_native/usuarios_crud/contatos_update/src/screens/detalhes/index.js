@@ -15,9 +15,14 @@ export default function Detalhes({ navigation, route }) {
     usuario.email = route.params.usuario.email;
     usuario.foto = route.params.usuario.foto;
     usuario.nascimento = route.params.usuario.nascimento;
+    usuario.indice = route.params.usuario.indice;
   }
   function alterar() {
     navigation.navigate('Alterar', { usuario });
+  }
+  function excluir() {
+    usuario.del = true;
+    navigation.navigate('Usuarios', { usuario });
   }
   return (
     <View style={styles.container}>
@@ -32,7 +37,10 @@ export default function Detalhes({ navigation, route }) {
         <Text style={styles.text}>Nascimento: {usuario.nascimento}</Text>
       </View>
       <TouchableOpacity style={styles.button} onPress={alterar}>
-        <Text style={styles.textb}>Alterar</Text>
+        <Text style={styles.textb}>{usuario.indice==undefined?'Criar Novo':'Alterar'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={excluir}>
+        <Text style={styles.textb}>Excluir</Text>
       </TouchableOpacity>
     </View>
   );
