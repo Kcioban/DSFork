@@ -1,7 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
-export default function Detalhes({ navigation, route }) {
+export default function Alterar({ navigation, route }) {
   const usuario = {
     id: 0,
     nome: '',
@@ -16,9 +16,6 @@ export default function Detalhes({ navigation, route }) {
     usuario.foto = route.params.usuario.foto;
     usuario.nascimento = route.params.usuario.nascimento;
   }
-  function alterar() {
-    navigation.navigate('Alterar');
-  }
   return (
     <View style={styles.container}>
       <Image
@@ -31,7 +28,7 @@ export default function Detalhes({ navigation, route }) {
         <Text style={styles.text}>Email: {usuario.email}</Text>
         <Text style={styles.text}>Nascimento: {usuario.nascimento}</Text>
       </View>
-      <TouchableOpacity style={styles.button} onPress={alterar}>
+      <TouchableOpacity style={styles.button}>
         <Text style={styles.textb}>Alterar</Text>
       </TouchableOpacity>
     </View>
