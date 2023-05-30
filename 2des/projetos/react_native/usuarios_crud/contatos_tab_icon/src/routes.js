@@ -24,7 +24,7 @@ export default function Routes() {
         headerStyle: styles.title,
         tabBarIcon: ({ color, size, focused }) => {
           if (focused) {
-            return <Ionicons name="home" size={size} color={color} />
+            return <Ionicons name="home" size={35} color={color} />
           }
           return <Ionicons name="home-outline" size={size} color={color} />
         }
@@ -37,7 +37,7 @@ export default function Routes() {
         headerStyle: styles.title,
         tabBarIcon: ({ color, size, focused }) => {
           if (focused) {
-            return <Ionicons name="person" size={size} color={color} />
+            return <Ionicons name="person" size={35} color={color} />
           }
           return <Ionicons name="person-outline" size={size} color={color} />
         }
