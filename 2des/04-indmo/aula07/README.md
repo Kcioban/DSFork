@@ -15,7 +15,6 @@ yarn add react-native-safe-area-context
 yarn add react-native-screens
 yarn add react-native-reanimated
 ```
-
 #### Mockups: usuarios.js
 ```javascript
 const usuarios = [
@@ -64,3 +63,5 @@ const usuarios = [
 ]
 export default usuarios;
 ```
+
+[Código da solução](../../projetos/react_native/usuarios_crud);
