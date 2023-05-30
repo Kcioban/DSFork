@@ -17,7 +17,7 @@ export default function Detalhes({ navigation, route }) {
     usuario.nascimento = route.params.usuario.nascimento;
   }
   function alterar() {
-    navigation.navigate('Alterar');
+    navigation.navigate('Alterar', { usuario });
   }
   return (
     <View style={styles.container}>

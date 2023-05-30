@@ -40,6 +40,13 @@ const styles = StyleSheet.create({
         color: '#fff',
         textShadowColor: '#333',
         textShadowOffset: { width: -1, height: 1 },
+    },
+    input:{
+        fontFamily: 'Arial',
+        fontSize: 18,
+        margin: 10,
+        padding: 10,
+        borderRadius: 10,
     }
 });
 

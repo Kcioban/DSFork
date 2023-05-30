@@ -3,7 +3,10 @@ import styles from './styles';
 import users from '../../../mocks/usuarios';
 import ItemList from '../../components/item';
 
-export default function Usuarios({ navigation }) {
+export default function Usuarios({ navigation, route }) {
+  if(route.params != undefined){
+    console.log(route.params.usuario);
+  }
   function abrirDetalhes(usuario) {
     navigation.navigate('Detalhes', { usuario })
   }
