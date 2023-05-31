@@ -28,7 +28,7 @@ export default function Detalhes({ navigation, route }) {
     <View style={styles.container}>
       <Image
         style={styles.img}
-        source={usuario.foto}
+        source={{ uri: `${usuario.foto}` }}
       />
       <View style={styles.texts}>
         <Text style={styles.text}>Id: {usuario.id}</Text>

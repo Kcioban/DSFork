@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
         shadowOffset: { width: -1, height: 1 },
     },
     textb: {
-        fontFamily: 'Arial',
         fontSize: 18,
         fontWeight: 'bold',
         color: '#fff',

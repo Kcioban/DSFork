@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     text: {
-        fontFamily: 'Arial',
         fontSize: 18,
         margin: 10,
     },
@@ -32,9 +31,9 @@ const styles = StyleSheet.create({
         padding: 10,
         shadowColor: '#999',
         shadowOffset: { width: -1, height: 1 },
+        margin:5,
     },
     textb: {
-        fontFamily: 'Arial',
         fontSize: 18,
         fontWeight: 'bold',
         color: '#fff',

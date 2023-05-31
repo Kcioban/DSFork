@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     text: {
-        fontFamily: 'Arial',
         fontSize: 18,
         margin: 10,
     },
@@ -34,7 +33,6 @@ const styles = StyleSheet.create({
         shadowOffset: { width: -1, height: 1 },
     },
     textb: {
-        fontFamily: 'Arial',
         fontSize: 18,
         fontWeight: 'bold',
         color: '#fff',
@@ -42,7 +40,6 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: -1, height: 1 },
     },
     input:{
-        fontFamily: 'Arial',
         fontSize: 18,
         margin: 10,
         padding: 10,

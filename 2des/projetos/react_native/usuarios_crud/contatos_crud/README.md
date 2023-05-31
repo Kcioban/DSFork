@@ -29,12 +29,19 @@ yarn web
 yarn add @react-navigation/native
 yarn add @react-navigation/bottom-tabs
 yarn add @react-navigation/native-stack
-yarn add @react-navigation/drawer
 yarn add @expo/vector-icons
 yarn add react-native-safe-area-context
 yarn add react-native-screens
 yarn add react-native-reanimated
+npm install --save-dev @babel/plugin-proposal-export-namespace-from
 ```
+- Certifique-se de que no arquivo **babel.config.js** esteja inserido:
+```javascript
+    plugins: [
+      '@babel/plugin-proposal-export-namespace-from',
+      'react-native-reanimated/plugin'
+    ]
+ ```
 
 #Expo Ícones
 ![Pesquisar ícones](https://icons.expo.fyi/)

@@ -5,7 +5,7 @@ export default function ItemList(usuario) {
     return <View style={styles.item}>
         <Image
             style={styles.img}
-            source={usuario.foto}
+            source={{ uri: `${usuario.foto}` }}
         />
         <Text>{usuario.nome}</Text>
     </View>

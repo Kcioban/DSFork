@@ -26,7 +26,7 @@ export default function Usuarios({ navigation, route }) {
     if (route.params != undefined) {
       if (route.params.usuario.indice != undefined) {
         if (route.params.usuario.del) {
-          //Se vier marcado com del == true remove da lista
+          //Se vier marcado com del == true e possuir indice remove da lista
           users.splice(route.params.usuario.indice, 1);
           setListaLocal([...users]);
         } else {
@@ -35,9 +35,11 @@ export default function Usuarios({ navigation, route }) {
           setListaLocal([...users]);
         }
       } else {
-        //Senão tiver indice é um novo usuário
-        users.push(idAutoIncrement(route.params.usuario))
-        setListaLocal([...users]);
+        //Se não possuir indice e não estiver marcado com del=true: é um novo usuário
+        if (!route.params.usuario.del) {
+          users.push(idAutoIncrement(route.params.usuario))
+          setListaLocal([...users]);
+        }
       }
     }
   }, [route.params]);
