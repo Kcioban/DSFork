@@ -1,5 +1,10 @@
 # Aula13 - Segurança
 - Navegação entre páginas, tela de login
+    - [Exemplo 1](./acesso1)
+    - [Exemplo 2](./acesso2)
+- Segurança
+    - [HASH](./hash.md)
+    - [MD5](./md5.md)
 ## Atividade
 |Contextualização|
 |-|
@@ -33,9 +38,9 @@
 |-|-|
 |![wireframe](wireframe1.png)|![wireframe](wireframe2.png)|
 
-|Obs:|
+|Obs:Criptografia|
 |:-|
-|Para maior segurança, a senha deve ser criptografada com algoritmo md5|
+|Para alguma segurança, a senha deve ser criptografada com algoritmo md5(mesmo ultrapassado, usaremos para aprendizado)|
 
 |Entregas|
 |-|
