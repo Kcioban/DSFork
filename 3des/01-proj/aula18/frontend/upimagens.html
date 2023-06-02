@@ -8,23 +8,26 @@
     <title>Upload de Imagens</title>
 </head>
 <style>
-    body{
+    body {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    header{
+
+    header {
         height: 100px;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    img{
+
+    img {
         width: 100%;
         max-width: 400px;
         box-shadow: 1px 1px 5px #000;
     }
 </style>
+
 <body>
     <header>
         <form id="form" enctype="multipart/form-data">
@@ -62,6 +65,7 @@
                 .then(resp => resp.status)
                 .then(resp => {
                     if (resp === 200) {
+                        alert('Erro ao enviar arquivo!');
                         window.location.href = "?img=" + container + arquivo.name;
                     } else
                         alert('Erro ao enviar arquivo!')
