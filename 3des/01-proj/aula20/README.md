@@ -6,5 +6,5 @@
 
 ### Instruções
 - [Prova](./prova1.pdf)
-- [Planta](./Planta1.png)
+- [Planta](./planta1.png)
 - [Dados](./dados)
