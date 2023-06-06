@@ -16,9 +16,9 @@
     <main>
         <form id="acesso">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" value="passos@email.com">
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha">
+            <input type="password" name="senha" id="senha" value="Zaq1@wsx">
             <button type="submit">Entrar</button>
         </form>
     </main>
@@ -36,7 +36,7 @@
         return hash;
     }
     const acesso = document.getElementById('acesso');
-    acesso.addEventListener('submit', function(evento) {
+    acesso.addEventListener('submit', function (evento) {
         evento.preventDefault();
         const email = acesso.email.value;
         const senha = acesso.senha.value;
@@ -69,4 +69,5 @@
         }
     });
 </script>
+
 </html>
