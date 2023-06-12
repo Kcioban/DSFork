@@ -19,8 +19,7 @@
 
 ## Competências Específicas e de Gestão
 ### Capacidades Técnicas
-- 1. Instalar e configurar ambientes de desenvolvimento de
-- aplicativos para dispositivos móveis.
+- 1. Instalar e configurar ambientes de desenvolvimento de aplicativos para dispositivos móveis.
 - 2. Criar Widgets.
 - 3. Criar aplicação com múltiplas telas.
 - 4. Construir animação simples com a utilização de imagens.
