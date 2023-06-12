@@ -2,6 +2,8 @@
 
 ## Desafio
 
+**IMPORTANTE:** Trocar os nomes que estão em **NEGRITO** para os que forem exigidos no seu **laboratório**
+
 ## ****Tarefa 1: crie uma instância para o projeto jumphost****
 
 Criar uma VM
@@ -12,26 +14,28 @@ Criar uma VM
 
 ## ****Tarefa 2: crie um cluster de serviço do Kubernetes****
 
-• criar um cluster na zona us-east1-b para hospedar o serviço;
+• criar um cluster na zona **us-east1-b** para hospedar o serviço;
 
-gcloud config set compute/zone **us-east1-b**
-
-gcloud container clusters create **cluster1**
+```bash
+    gcloud config set compute/zone **us-east1-b**
+    gcloud container clusters create **cluster1**
+```
 
 • usar o contêiner "hello-app" do Docker (`gcr.io/google-samples/hello-app:2.0`) como um marcador de posição que será substituído pelo trabalho da equipe mais tarde;
 
-gcloud container clusters get-credentials **cluster1** 
-
-kubectl create deployment hello-server --image=[gcr.io/google-samples/hello-app:2.0](http://gcr.io/google-samples/hello-app:2.0)
+```bash
+    gcloud container clusters get-credentials **cluster1** 
+    kubectl create deployment hello-server --image=[gcr.io/google-samples/hello-app:2.0](http://gcr.io/google-samples/hello-app:2.0)
+```
 
 • expor o app na porta **XXXX**.
 
-kubectl expose deployment hello-server --type=LoadBalancer --port **8083**
-
+```bash
+    kubectl expose deployment hello-server --type=LoadBalancer --port **8083**
+```
 ## ****Tarefa 3: configure um balanceador de carga HTTP****
 
-- Rodar Script do começo dessa etapa
-    
+- Rodar **Script do começo dessa etapa**:
     
 - Crie um modelo de instância.
     
