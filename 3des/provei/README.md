@@ -1,6 +1,7 @@
 # PROVEI - Avaliação Objetiva
 
-- [Link de acesso](proveisenai.trieduconline.com.br)
+- [Link de acesso](https://proveisenai.trieduconline.com.br/)
+- [Instruções](Instrucoes.pdf)
 
 |Nome|Login|
 |-|-|
