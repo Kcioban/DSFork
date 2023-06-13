@@ -61,6 +61,12 @@ Criar uma VM
     gcloud compute http-health-checks create http-basic-check
     ```
 - Crie um grupo de instâncias gerenciadas.
+```jsx
+gcloud compute instance-groups managed \
+          set-named-ports web-server-group \
+          --named-ports http:80 \
+          --region us-east1
+```
 - Crie um serviço de back-end e anexe o grupo gerenciado de instâncias à porta chamada (http:80).
     
     ```jsx
