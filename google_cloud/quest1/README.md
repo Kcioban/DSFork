@@ -31,7 +31,7 @@ Criar uma VM
 • expor o app na porta **XXXX**.
 
 ```bash
-    kubectl expose deployment hello-server --type=LoadBalancer --port **8083**
+    kubectl expose deployment hello-server --type=LoadBalancer --port 8083
 ```
 ## ****Tarefa 3: configure um balanceador de carga HTTP****
 
