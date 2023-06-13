@@ -2,7 +2,7 @@
 
 ## Desafio
 
-**IMPORTANTE:** Trocar os nomes que estão em **NEGRITO** para os que forem exigidos no seu **laboratório**
+**IMPORTANTE:** Trocar os nomes que estão em **NEGRITO** para os que forem exigidos no seu **laboratório**, alterar também a região e zona conforme seu **laboratõrio**.
 
 ## ****Tarefa 1: crie uma instância para o projeto jumphost****
 
