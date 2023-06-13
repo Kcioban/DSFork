@@ -17,15 +17,15 @@ Criar uma VM
 • criar um cluster na zona **us-east1-b** para hospedar o serviço;
 
 ```bash
-    gcloud config set compute/zone **us-east1-b**
-    gcloud container clusters create **cluster1**
+    gcloud config set compute/zone us-east1-b
+    gcloud container clusters create cluster1
 ```
 
 • usar o contêiner "hello-app" do Docker (`gcr.io/google-samples/hello-app:2.0`) como um marcador de posição que será substituído pelo trabalho da equipe mais tarde;
 
 ```bash
-    gcloud container clusters get-credentials **cluster1** 
-    kubectl create deployment hello-server --image=[gcr.io/google-samples/hello-app:2.0](http://gcr.io/google-samples/hello-app:2.0)
+    gcloud container clusters get-credentials cluster1
+    kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:2.0
 ```
 
 • expor o app na porta **XXXX**.
