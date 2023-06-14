@@ -1,4 +1,19 @@
 # Projeto QUIZ
+
+|Contextualização|
+|-|
+|Os professores do SENAI jaguarúna percebendo que seus alunos utilizam muito o celular então solicitaram para a turma de desenvolvimento de sistemas aplicativos com perguntas e respostas (quiz) para testar o conhecimento dos alunos e incentivar a estudar|
+
+|Desafio|
+|-|
+|Desenvolva um aplicativo com um dos temas apresentados na imagem a seguir, três telas e preencha o mockup com de 5 a 10 perguntas|
+
+![Lousa](./lousa.jpg)
+
+|Entrega|
+|-|
+|Apresente seu app ao instrutor|
+
 ## Para executar o projeto de exemplo e testar
 - Clonar este repositório
 - Abrir com VsCode
