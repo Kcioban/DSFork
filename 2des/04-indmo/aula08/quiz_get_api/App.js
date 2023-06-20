@@ -13,17 +13,17 @@ export default function App() {
         <Stack.Screen
           name="MainScreen"
           component={MainScreen}
-          options={{ title: 'SENAI Jaguariúna' }}
+          options={{ title: 'Teste seu Inglês' }}
         />
         <Stack.Screen
           name="PerguntasScreen"
           component={PerguntasScreen}
-          options={{ title: 'CURSOS' }}
+          options={{ title: 'Quiz' }}
         />
         <Stack.Screen
           name="ResultadosScreen"
           component={ResultadosScreen}
-          options={{ title: 'DETALHES' }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
