@@ -1,4 +1,4 @@
-# Quizes - Consumindo dados de API
+# Quizes - Consumindo dados de Mockups
 ## Executar o código e testar via web ou Android virtual
 
 - Clonar este repositório
