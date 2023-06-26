@@ -33,8 +33,8 @@ const perguntas = [
         pergunta: "______ they from Brazil?",
         img: "https://cdn-icons-png.flaticon.com/512/8224/8224645.png",
         respostas: [
-            { resposta: "Are", status: true },
             { resposta: "Is", status: false },
+            { resposta: "Are", status: true },
             { resposta: "Am", status: false },
             { resposta: "Be", status: false },
         ]
