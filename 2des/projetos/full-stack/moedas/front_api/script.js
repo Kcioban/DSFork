@@ -25,7 +25,7 @@ function montartabela() {
         const edit = document.createElement('td');
         edit.innerHTML = `<button onclick='update(${moeda.id},this)'>*</button>`;
         const del = document.createElement('td');
-        del.innerHTML = `<button onclick='del(${moeda.id})'>x</button>`;
+        del.innerHTML = `<button onclick='del(${moeda.id})'>-</button>`;
         tr.appendChild(edit);
         tr.appendChild(del);
         corpo.appendChild(tr);
@@ -89,7 +89,7 @@ function update(id, e) {
             .catch(err => console.error(err));
     }
     else {
-        e.innerHTML = 'Enviar';
+        e.innerHTML = 'v';
         controle = true;
         tr.children[0].setAttribute('contenteditable', true);
         tr.children[1].setAttribute('contenteditable', true);
