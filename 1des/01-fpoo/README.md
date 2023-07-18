@@ -8,6 +8,24 @@ Fundamentos De Programação Orientada A Objeto: 150 horas
 
 - Objetivo Geral: Fundamentos de Programação tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a lógica de programação, como ferramenta para desenvolvimento de aplicações, utilizando linguagem orientada a objetos, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 
+# Avaliações
+
+- Carga Horária (**Mínimo 75%** de Frequência)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|150 horas|
+|Remoto|25 horas|
+|**totais**|**175 horas**|
+
+- Notas (**Mínimo 50** de 0 a 100)
+
+|Avaliação|Peso|Nota|
+|-|:-:|:-:|
+|VPS01|35|0 a 100|
+|VPS02|35|0 a 100|
+|Atividades|30|0 a 100|
+
 # Fundamentos Técnicos e Científicos
 1. Identificar as características e tipos de linguagem de programação
 2. Utilizar lógica de programação para a resolução de problemas (7)

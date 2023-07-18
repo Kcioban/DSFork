@@ -2,6 +2,20 @@
 ------------------
 - Objetivo Geral: Sistemas Operacionais tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a estrutura, funcionamento, instalação, configuração e operação de sistemas operacionais de código aberto e fechado, considerando interface gráfica e linha de comando, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 ------------------
+# Avaliações
+- Carga Horária (**Mínimo 75%** de Frequência)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|75 horas|
+
+- Notas (**Mínimo 50** de 0 a 100)
+
+|Avaliação|Peso|Nota|
+|-|:-:|:-:|
+|VPS01|40|0 a 100|
+|VPS02|40|0 a 100|
+|Trabalhos|20|0 a 100|
 # Competências Básicas e de Gestão (gerais)
 # Fundamentos Técnicos e Científicos
 1. Identificar as características técnicas dos sistemas de arquivo, tendo em vista a utilização de sistemas operacionais (3)

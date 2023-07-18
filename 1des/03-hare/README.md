@@ -7,6 +7,21 @@
 
 - Objetivo Geral: Hardware e Redes têm como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a preparação do ambiente de hardware e dos requisitos para funcionamento de redes de computadores, necessários para o funcionamento de sistemas computacionais, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 
+# Avaliações
+- Carga Horária (**Mínimo 75%** de Frequência)
+
+|Modalidade|Horas|
+|-|-|
+|Presencial|75 horas|
+
+- Notas (**Mínimo 50** de 0 a 100)
+
+|Avaliação|Peso|Nota|
+|-|:-:|:-:|
+|VPS01|40|0 a 100|
+|VPS02|40|0 a 100|
+|Trabalhos|20|0 a 100|
+
 # Fundamentos Técnicos e Científicos
 
 - Hardware
