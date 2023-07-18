@@ -14,8 +14,8 @@
 |Avaliação|Peso|Nota|
 |-|-|-|
 |Pré-projeto|40|0 a 100|
-|Projeto|40|0 a 100|
-|Atividades|20|0 a 100|
+|Avaliacao Prática|40|0 a 100|
+|Avaliacao Objetiva|20|0 a 100|
 
 ## Competências Específicas e de Gestão
 ### Capacidades Técnicas

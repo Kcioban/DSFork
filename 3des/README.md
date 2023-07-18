@@ -30,14 +30,16 @@
 	- Consumo de RESTfull web service
 	- APIs: CEP, Mapa, localização, Sensores
 ## RMS - Requisitos e Modelagem de Software
+- Escopo
+	- Levantamento de requisitos
 - UML (Unified Modeling Language)
 	- DC (Diagramas de Classes)
 	- DCU (Diagrama de Casos de Uso)
 	- Diagrama de Atividades
 - DER
-	- Modelo Lonceitual
+	- Modelo Conceitual
 	- Modelo Lógico
-- Dicionário de Dados
+	- Dicionário de Dados
 
 ## TS - Testes de Software
 - Tipos de Testes

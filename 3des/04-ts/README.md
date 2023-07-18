@@ -15,8 +15,8 @@
 |Avaliação|Peso|Nota|
 |-|-|-|
 |Pré-projeto|40|0 a 100|
-|Projeto|40|0 a 100|
-|Atividades|20|0 a 100|
+|Avaliação Prática|40|0 a 100|
+|Avaliação Objetiva|20|0 a 100|
 
 # FUNDAMENTOS TÉCNICOS E CIENTÍFICOS
 - 1. Definir as técnicas de testes a serem utilizadas no roteiro de testes do sistema
