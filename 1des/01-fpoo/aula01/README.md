@@ -32,17 +32,17 @@ print("Alô mundo");
         - 1.3.1. Compilada
 
 #### 1.1. Princípios e 1.2. Caraterísticas
-Linguagem humana de alto médio a alto nível (C, C++, C#, Java, Python ...)
+Linguagem humana de médio a alto nível (C, C++, C#, Java, Python ...)
 Todas servem para criar aplicativos e sistemas, porém cada uma atende melhor a um determinado propósito ou stack:
-- Desktop
-- Web Front End
-- Web Back End
-- Mobile
-- Iot
-- AI
-- Comercial
-- Científica
-- Games
+- **Desktop** (Programas de computador, como Word, Excel, SAP)
+- **Web Front End** (Páginas de internet)
+- **Web Back End** (Intermediário seguro, API para páginas web ou apps de celulares)
+- **Mobile** (Apps para celular, smartTV e outros)
+- **Iot** (Dispositivos embarcados que podem ser ligados a internet)
+- **AI** (Inteligência artificial, aprendizagem de máquina)
+- **Comercial** (Programas, Apps utilizados por empresas, indústrias, para gestão)
+- **Científica** (Programas, Apps utilizados por pesquisadores a fim de fazer descobertas)
+- **Games** (Jogos de computador)
 #### 1.3. Tipos
 - 1.3.1. Compilada (O código fonte se transforma em linguagem de máquina e é exclusiva do sistema operacional onde foi compilada)
 - Um programa compilado normalmente é:
