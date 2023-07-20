@@ -45,17 +45,17 @@ Todas servem para criar aplicativos e sistemas, porém cada uma atende melhor a 
 - **Científica** (Programas, Apps utilizados por pesquisadores a fim de fazer descobertas)
 - **Games** (Jogos de computador)
 #### 1.3. Tipos
-- 1.3.1. Compilada (O código fonte se transforma em linguagem de máquina e é exclusiva do sistema operacional onde foi compilada)
+- 1.3.1. **Compilada** (O código fonte se transforma em linguagem de máquina e é exclusiva do sistema operacional onde foi compilada)
 - Um programa compilado normalmente é:
     - mais rápido, pois possui parte do SO anexo.
     - é adequado a um tipo de hardware.
     - Exclusivo do sistema operacional onde foi compilado
     - Ex: C, C#
-- 1.3.2. Interpretada (O código fonte é executado diretamente por um servidor de aplicação ou o próprio navegador)
+- 1.3.2. **Interpretada** (O código fonte é executado diretamente por um servidor de aplicação ou o próprio navegador)
     - Não tão rápida como a compilada, pois é decodificada em tempo real
     - Necessita de menos recursos do Sistema Operacional ou nenhum
     - Ex: HTML, CSS, JavaScript
-- Hibrida ou VM (Geralmente utiliza recursos do sistema operacional ou máquinas virtuais)
+- **Hibrida** ou VM (Geralmente utiliza recursos do sistema operacional ou máquinas virtuais)
     - Semi compilada
     - Necessita de uma máquina virtual
     - Ex: Java
