@@ -31,6 +31,12 @@ print("Alô mundo");
     - 1.3. Tipos
         - 1.3.1. Compilada
         - 1.3.2. Interpretada
+### Algoritmo x fluxograma:
+- Desafio: **Trocar uma Lâmpada**
+
+|Algoritmo (Portugol)|Fluxograma|
+|-|-|
+|01. Inicio;<br> 02. Lâmpada não acende;<br>03. Se existe lâmpada reserva;<br>04. Posicionar e subir na escada;<br>05. Retirar a lâmpada queimada;<br>06. Colocar a lâmpada reserva;<br>07. Descer da escada e testar;<br>08. Senão;<br>09. Comprar uma nova lâmpada;<br>10. Voltar para o passo 04;<br>11. Se acender;<br>12. Fim;<br>13. Senão;<br>14.Chamar um eletricista;|![Fluxograma](./fluxograma_lampada.png)|
 
 #### 1.1. Princípios e 1.2. Caraterísticas
 Linguagem humana de médio a alto nível (C, C++, C#, Java, Python ...)
