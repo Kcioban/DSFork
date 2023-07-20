@@ -30,6 +30,7 @@ print("Alô mundo");
     - 1.2. Caraterísticas
     - 1.3. Tipos
         - 1.3.1. Compilada
+        - 1.3.2. Interpretada
 
 #### 1.1. Princípios e 1.2. Caraterísticas
 Linguagem humana de médio a alto nível (C, C++, C#, Java, Python ...)
