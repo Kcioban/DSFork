@@ -1,12 +1,15 @@
 # Aula01 - Programação para dispositivos móveis
 
-## Início de um projeto exemplo (Pedidos em um Restaurante)
-
-![Lousa1](./lousa1.jpg)
-![Lousa1](./lousa2.jpg)
+## Projeto Restaurante XPTO
 
 ### Contextualização
 O restaurante XPTO será inaugurado em breve em jaguariúna e precisa de uma sistema para fazer a gestão dos seus pedidos, o restaurante trabalha com refeições no local e serviço de entregas. O sistema precisa gerar dados de BI(Busines Inteligence) para seus investidores.
+
+## Dados iníciais do projeto exemplo (Pedidos em um Restaurante)
+
+![Lousa1](./lousa1.jpg)
+![Lousa2](./lousa2.jpg)
+![Lousa3](./lousa3.jpg)
 
 ### Desafios
 Criar um sistema que atenda aos seguintes requisitos e regras de negócio:
@@ -22,7 +25,7 @@ Criar um sistema que atenda aos seguintes requisitos e regras de negócio:
 - 5. Desenvolver um aplicativo para o os entregadores que liste os pedidos, endereços e cliente e que contenha um botão que finalize a entrega.
 - **OBS:** não necessária mente nesta ordem.
 
-### Decompor o Problema (RN, RF, NF)
+### Passo 1 - Decompor o Problema (RN, RF, NF)
 #### RN (Regras de negócio) //Foco no Problema
 - RN01 Gestão de pedidos
 - RN01.1 CRUD de pedidos
@@ -48,3 +51,6 @@ Criar um sistema que atenda aos seguintes requisitos e regras de negócio:
 - NF03 Front-End - HTML + CSS + JavaScript
 - NF04 Mobile - React Native + Expo, JavaScript
 - NF05 Modelagem dos dados DER e documentação do projeto
+
+# Tarefas
+- 1. Modelar o DER
