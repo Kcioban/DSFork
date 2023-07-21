@@ -27,11 +27,15 @@
 - Implantação de serviços de Inteligêcia Artificical em Núvem - Google Cloud AI oundations (40 Horas)
 ## OBS
 - Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano de 2023
-- Consulte também o repositório senai2022 que está repleto de materiais do ano passado.
+- Consulte também o repositório senai2022 que está repleto de materiais do ano pasvsado.
 
+## Componentes e Dias da Semana
 |Turmas: Técnico em Desenvolvimento de Sistemas|
 |-|
 |![Dias](./des_2sem.png)|
+
+##Calendário
+![Calendario](./outros/calendario/2sem.png)
 
 ## Competências transversais
 - Acessar o portal EAD https://ead.sp.senai.br
