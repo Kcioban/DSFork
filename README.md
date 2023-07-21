@@ -50,7 +50,7 @@
 	- https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
 
 ## GitHub dos professores
-https://github.com/remajag
-https://github.com/ReenyeLima
-https://github.com/MatheusPignata
-https://github.com/wellifabio
+- [Renato](https://github.com/remajag)
+- [Reenye](https://github.com/ReenyeLima)
+- [Matheus](https://github.com/MatheusPignata)
+- [Wellington](https://github.com/wellifabio)
