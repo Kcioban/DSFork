@@ -52,3 +52,17 @@ int main(){
 ## Desafios
 
 - 1. Faça um programa em C com duas variáveis atribuídas com valores inteiros quaisquer, **some** as variáveis e armazene o valor em uma terceira variável. Exiba na tela o resultado. (Nome do arquivo ex1.c)
+
+- solução 1:
+```c
+#include <stdio.h>
+int main(){
+	int x = 10;
+	int y = 5;
+	int z = x + y;
+	printf("X = %d \n",x);
+	printf("Y = %d \n",y);
+	printf("X + Y = %d",z);
+	return 0;
+}
+```
