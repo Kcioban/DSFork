@@ -1,7 +1,31 @@
 # Aula02 - Tipos de variáveis e constantes
 ![Lousa](./lousa1.jpg)
 
-- Exemplos de manipulação de variáveis:
+## Conhecimentos
+- 2.3. Algoritmo
+- 2.3.1. Entrada, processamento e saída
+- 2.3.2. Variáveis
+- 2.3.3. Constantes
+- 2.3.4. Operadores lógicos
+- 2.3.5. Operadores aritméticos
+
+### Tipos de dados
+- **int** (Números inteiros)
+- **char** (Letras e números) (ASCII - 0 à 255)
+- **bool** (Booleano) true or false (0 ou 1)
+
+## Operadores
+
+| Aritiméticos    | Lógicos                      |
+| --------------- | ---------------------------- |
+| + adição        | == comparação de igualdade   |
+| - subtração     | != comparação de diferença   |
+| * multiplicação | < comparação Menor           |
+| / divisão       | > comparação Maior           |
+|                 | <= Comparação Menor ou Igual |
+|                 | >= Comparação Maior ou Igual |
+
+## Exemplos de manipulação de variáveis e tipos de dados:
 - tipos1.c
 ```c
 #include <stdio.h>
@@ -90,7 +114,7 @@ int main(){
 }
 ```
 
-## Exemplo de Comparação e Atribuição
+## Exemplos de Comparação e Atribuição
 ```c
 #include <stdio.h>
 #include <stdbool.h>
@@ -130,7 +154,7 @@ int main(){
 }
 ```
 
-## Entradas de dados (scanf)
+## Exemplos de Entradas de dados a partir do teclado (scanf)
 ```c
 #include <stdio.h>
 /* Entrada -> Processamento -> Saída*/
@@ -161,7 +185,8 @@ int main(){
 	printf("O quadrado do código ASCII digitado é %d",quadrado);
 }
 ```
-## Desafios 2
+![Fluxograma](./fluxograma.png)
+## Desafios 2 (Lista de exercícios EAD - Tempo: 5 horas)
 - 1. Desenvolva um programa que leia três variáveis (a, b, c) e resolva a expressão: ( a + b ) / c.
 - 2. Desenvolva um programa que leia a velocidade de um carro (km/h) e a distância a ser percorrida (km) por ele. Calcule e apresente na tela, quanto tempo (horas) será necessário para o carro percorrer a distância informada.
 - 3. Desenvolva um programa que leia o nome e o salário de uma pessoa, depois leia o valor do índice percentual (%) de reajuste do salário. Calcule e apresente na tela, o valor do novo salário e o nome da pessoa.
