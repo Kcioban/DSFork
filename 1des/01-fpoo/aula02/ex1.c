@@ -2,8 +2,7 @@
 int main(){
 	int x = 10;
 	int y = 5;
-	printf("X = %d \n",x);
-	printf("Y = %d \n",y);
-	printf("X + Y = %d",x + y);
+	int z = x + y;
+	printf("x = %d \ny = %d \nx + y = %d", x, y, z);
 	return 0;
 }

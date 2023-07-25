@@ -66,7 +66,7 @@ int main(){
 	return 0;
 }
 ```
-- Exemplo de processamento na saída
+- Solução 2: Exemplo de processamento na saída
 ```c
 #include <stdio.h>
 int main(){
@@ -78,3 +78,13 @@ int main(){
 	return 0;
 }
 ```
+- Solução 3: Exemplo de várias saídas na mesma linha
+```c
+#include <stdio.h>
+int main(){
+	int x = 10;
+	int y = 5;
+	int z = x + y;
+	printf("x = %d \ny = %d \nx + y = %d", x, y, z);
+	return 0;
+}```
