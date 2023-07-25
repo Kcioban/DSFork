@@ -1,7 +1,8 @@
 # Aula02 - Tipos de variáveis e constantes
 ![Lousa](./lousa1.jpg)
 
-- Exemplos de manipulação de variáveis
+- Exemplos de manipulação de variáveis:
+- tipos1.c
 ```c
 #include <stdio.h>
 int main(){
@@ -12,6 +13,7 @@ int main(){
 }
 
 ```
+- tipos2.c
 ```c
 #include <stdio.h>
 int main(){
@@ -22,6 +24,7 @@ int main(){
 }
 
 ```
+- tipos3.c
 ```c
 #include <stdio.h>
 int main(){
@@ -31,6 +34,7 @@ int main(){
 }
 
 ```
+- tipos4.c
 ```c
 #include <stdio.h>
 int main(){
@@ -44,3 +48,7 @@ int main(){
 }
 
 ```
+
+## Desafios
+
+- 1. Faça um programa em C com duas variáveis atribuídas com valores inteiros quaisquer, **some** as variáveis e armazene o valor em uma terceira variável. Exiba na tela o resultado. (Nome do arquivo ex1.c)
