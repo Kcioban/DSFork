@@ -49,7 +49,7 @@ int main(){
 
 ```
 
-## Desafios
+## Desafios 1
 
 - 1. Faça um programa em C com duas variáveis atribuídas com valores inteiros quaisquer, **some** as variáveis e armazene o valor em uma terceira variável. Exiba na tela o resultado. (Nome do arquivo ex1.c)
 
@@ -89,3 +89,44 @@ int main(){
 	return 0;
 }
 ```
+
+## Exemplo de Comparação e Atribuição
+```c
+#include <stdio.h>
+#include <stdbool.h>
+/*
+	Este é um exemplo da diferença
+	entre atribuição e comparação
+*/
+int main(){
+	int x  = 10; //Declaração e atribuição
+	int y = x;
+	bool z = true;
+	printf("O valor de z = %d\n",z);
+	z = false;
+	printf("O valor de z = %d\n",z);
+}
+```
+```c
+#include <stdio.h>
+/*
+	Este é um exemplo da diferença
+	entre atribuição e comparação
+*/
+int main(){
+	int x  = 10; //Declaração e atribuição
+	int y = 15;
+	int z = x == y; //Comparação igualdade
+	printf("O valor de z = %d\n",z);
+	int z = x != y; //Comparação diferença
+	printf("O valor de z = %d\n",z);
+	int z = x > y; //Comparação Maior
+	printf("O valor de z = %d\n",z);
+	int z = x < y; //Comparação Maior
+	printf("O valor de z = %d\n",z);
+	int z = x <= y; //Comparação Menor ou igual
+	printf("O valor de z = %d\n",z);
+	int z = x >= y; //Comparação Maior ou igual
+}
+```
+## Desafios 2
