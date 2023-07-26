@@ -1,6 +1,6 @@
 # Aula01 - Arquitetura dos sistemas operacionais
 ### Lousa
-![Lousa](./lousa1.png)
+![Lousa](./lousa1.jpg)
 ## Conhecimentos:
 - 1. Arquitetura dos sistemas operacionais
 - 1.1. Definição
