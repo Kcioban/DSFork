@@ -13,7 +13,10 @@
   npm i -g prisma
   prisma init --datasource-provider mysql
 ```
-- Neste caso estamos utilizando o prisma com o SGBD mysql
+- Neste caso estamos utilizando o prisma com o SGBD mysql.
+- Caso não inicie o seu projeto, reinstale a última versão LTS do nodejs
+- Feche o VsCode e abra novemante, reinstalando o prisma e iniciando o projeto.
+- OBS: Abrir o XAMPP Control Panel e iniciar o Apache e o MySQL (Start) 
 
 ### Configurar o .ENV
 - Substituir usuario, senha, host(se necessario), porta(se necessario), database
