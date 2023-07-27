@@ -22,7 +22,7 @@
 - Substituir usuario, senha, host(se necessario), porta(se necessario), database
 - Ex:
   ```env
-    DATABASE_URL="mysql://root@localhost:3306/afazer?schema=public&timezone=UTC"
+    DATABASE_URL="mysql://root@localhost:3306/restaurante?schema=public&timezone=UTC"
     # DATABASE_URL="mysql://user:senha@servidor:3306/dbname?schema=public&timezone=UTC"
   ```
 ### Criar os models
