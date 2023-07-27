@@ -19,6 +19,10 @@
 	- Edição de Textos
 	- Planilhas eletrônicas
 	- Desenvolvimento de Apresentações
+- Web designer – Front-End (180 horas)
+	- HTML
+	- CSS
+	- JavaScript
 - Excel Básico (40 Horas)
 - Excel Avaçado + VBA (40 Horas)
 - Implantação e Análise de Dados em Núvem - Microsoft DP900 (40 Horas)
