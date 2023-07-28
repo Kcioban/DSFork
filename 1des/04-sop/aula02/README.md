@@ -33,6 +33,17 @@
     git config --global user.name "nuvemarturnogueira"
     git config --global user.email "nuvemarturnogueira@gmail.com"
 ``` 
-- Abra o painel de controle > **Contas de usuário > Gerenciar Credenciais do Windows** e remova a conta **github.com** que estiver lá.
+ 7º Abra o painel de controle > **Contas de usuário > Gerenciar Credenciais do Windows** e remova a conta **github.com** que estiver lá.
 - ![Git Bash](./img03.png)
 - ![Git Bash](./img04.png)
+- ![Git Bash](./img05.png)
+- 8º Desenvolva seus códigos, exercícios, projetos, etc, não esqueça do arquivo **.gitignore** com os executáveis, bibliotecas e acessos.
+- 9º Volte ao git bash, acesse a pasta/repositorio local e execute os comandos para enviar os novos códigos:
+```bash
+cd atividades
+git add .
+git commit -m "Novas atividades"
+git push
+
+```
+Se for a primeira vez que faz **push** neste computador vai solicitar que continue com seu navegador e autentique, senão pronto, seus arquivos estão na **nuvem**.
