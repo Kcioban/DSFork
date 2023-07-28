@@ -16,3 +16,6 @@ Arquivos para o primeiro semestre de Desenvolvimento de Sistemas 2023
 	- https://www.youtube.com/watch?v=oUPaJxk6TZ0
 - Como eu aprendi Inglês? E entendendo "padrões"!
 	- https://www.youtube.com/watch?v=OkboNGQ9LU0
+- Como procurar um estágio ou vaga de programador Júnior: Código fonte TV
+	- https://www.youtube.com/watch?v=a8gK_w4v7QU
+	- https://www.youtube.com/watch?v=ucLhseRz0lA
