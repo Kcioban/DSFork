@@ -33,3 +33,6 @@
     git config --global user.name "nuvemarturnogueira"
     git config --global user.email "nuvemarturnogueira@gmail.com"
 ``` 
+- Abra o painel de controle > **Contas de usuário > Gerenciar Credenciais do Windows** e remova a conta **github.com** que estiver lá.
+- ![Git Bash](./img03.png)
+- ![Git Bash](./img04.png)
