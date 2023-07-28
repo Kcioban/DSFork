@@ -14,7 +14,7 @@
 - Instruções binária 1011.1100.11010 (Exemplo de uma instrução de quatro bits)
 - Endereço, Dado e Controle
 - Exemplo de insrução em linguagem humana A = 10 (A <= Endereço, 10 <= Dado, = <= Controle tipo Atribuição)
-
+![Lousa](./lousa2.jpg)
 ![Fluxograma](./softwares_basicos.png)
 ## Links
 - Vídeo youtube (Manual do Mundo) https://www.youtube.com/watch?v=xajcV4lwY3Q

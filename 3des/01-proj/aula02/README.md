@@ -1,10 +1,10 @@
 # Recursos Avançados - ORM Prisma
 ## Projeto Exemplo
 ### Sistema de Gestão de pediso em um Restaurante
-- [Lousa1](lousa1.jpg)
-- [Lousa1](lousa2.jpg)
+- ![Lousa1](lousa1.jpg)
 
 ## Passo a passo para um novo projeto com Prisma
+- ![Lousa1](lousa2.jpg)
 ### Abrir o VSCode
 ### Abrir um terminal: CTRL + "
 - Navegar até a pasta do seu projeto API.
