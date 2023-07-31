@@ -1,9 +1,7 @@
 # Aula02 - Manipulação de Arquivos e Pastas
-
 ## Shell, CMD
-
 - Interpretadores de linha de comando
-
+![Lousa](./lousa.jpg)
 ## Git
 - Git (Ferramenta)
     - git bash (Linha de comando)
