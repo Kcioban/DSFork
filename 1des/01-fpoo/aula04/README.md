@@ -54,10 +54,51 @@
 </table>
 
 # Exemplos
-- ex1.c
+- exp1.c
+```c
+#include <stdio.h>
+int main(){
+	if(1) printf("Verdadeiro\n");
+	if(0) printf("Falso");
+	return 0;
+}
+```
+- Caso queiramos utilizar as palavras reservadas **true** ou **false** ou variáveis do tipo **bool** precisamos da biblioteca <stdbool.h>
+```c
+#include <stdio.h>
+#include <stdbool.h>
+int main(){
+	if(true) printf("Verdadeiro\n");
+	if(false) printf("Falso");
+	return 0;
+}
+```
+- Os dois exemplos acima mostram **"Verdadeiro"**
+- exp2.c
+```c
+#include <stdio.h>
+/*Programa que lê um número "a" e informa se é par ou impar*/
+int main(){
+	//Declaração de variáveis
+	int a, b;
+	//Etrada de dados
+	printf("Digite um número inteiro:");
+	scanf("%d", &a);
+	//Processamento (resto da divisão inteira)
+	b = a % 2;
+	//Saída com condicional SE o resto for 1 é impar, senão é par
+	if(b) printf("Impar");
+	else printf("Par");
+	//Fim
+	return 0;
+}
+```
+- exp3.c
 ```c
 
 ```
+
+
 ## Atividades - Lista02
 - 1 Desenvolva um programa que leia o preço de um produto e se o preço for maior do que 1000 reais aplique um desconto de 8%. Mostre o preço final.
 - 2 Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. Apresente o salário final. 
