@@ -165,9 +165,52 @@ int main(){
 	return 0;
 }
 ```
+exp5.c
+```c
 
+#include <stdio.h>
+/*Programa que avalia médias com critérios
+"Aprovado" >= 50 E Frequência >= 75 %
+Porém receberá como entrada três notas,
+total de aulas dadas e
+total de presenças
+*/
+int main(){
+	//Declaração de variáveis
+	int nota1, nota2, nota3, media;
+	float aulas, presencas, frequencia;
+	//Entradas
+	printf("Digite as três notas separadas por espaços: ");
+	scanf("%d %d %d", &nota1, &nota2, &nota3);
+	printf("Digite o total de aulas dadas: ");
+	scanf("%d",&aulas);
+	printf("Digite o total de precenças: ");
+	scanf("%d",&presencas);
+	
+	//Processamento
+	media = (nota1 + nota2 + nota3) / 3;
+	frequencia = presencas / aulas;
+	
+	//Saídas parciais
+	printf("Média = %d\n", media);
+	printf("Frequência = %.2f\t ou %.0f%%\n", frequencia, frequencia * 100);
 
-## Atividades - Lista02
+	//Processamento e saída com condicional
+	if(media >= 50 && frequencia >= 0.75)
+		printf("Aprovado");
+	else
+		printf("Reprovado");
+	//Fim
+	return 0;
+}
+```
+## Atividades práticas
+- Desenvolva os programas a seguir conforme os **Fluxogramas**
+- 1 ![Fluxograma](./fluxo01.png)
+- 2 ![Fluxograma](./fluxo02.png)
+- 3 ![Fluxograma](./fluxo03.png)
+
+## Atividades EAD - Lista02
 - 1 Desenvolva um programa que leia o preço de um produto e se o preço for maior do que 1000 reais aplique um desconto de 8%. Mostre o preço final.
 - 2 Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. Apresente o salário final. 
 - 3 Desenvolva um programa que calcule desconto de INSS de um funcionário, se o salário for menor ou igual a do que R$ 1212,00 reais será de 7,5%, se estiver entre R$ 1212,01 e 2427,35 será de 9%, se estiver entre R$ 2427,36 e R$ 3641,03 o desconto é 12%, se estiver entre R$ 3641,04 a R$ 7087,22 será de 14% e se for maior do que 7087,22 o teto que é o máximo cobrado 14% de 7087,22. Mostre o desconto e o valor do salário final.
