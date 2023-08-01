@@ -112,6 +112,59 @@ int main(){
 	return 0;
 }
 ```
+-exp4.c
+```c
+#include <stdio.h>
+/*Programa que avalia médias com três critérios
+"Aprovado" >= 50
+"Reprovado" < 20
+"Recuperação" entre 20 e 49
+*/
+int main(){
+	//Declaração de variáveis
+	int media;
+	//Etrada de dados
+	printf("Digite a média final do aluno de 0 a 100:");
+	scanf("%d", &media);
+	//Processamento e saída com condicional
+	if(media >= 50)
+		printf("Aprovado");
+	else{
+		if(media < 20)
+			printf("Reprovado");
+		else
+			printf("Recuperação");
+	}
+		
+	//Fim
+	return 0;
+}
+```
+```c
+#include <stdio.h>
+/*Programa que avalia médias com três critérios
+"Aprovado" >= 50
+"Reprovado" < 20
+"Recuperação" entre 20 e 49
+Utilizando o esle if
+*/
+int main(){
+	//Declaração de variáveis
+	int media;
+	//Etrada de dados
+	printf("Digite a média final do aluno de 0 a 100:");
+	scanf("%d", &media);
+	//Processamento e saída com condicional
+	if(media >= 50)
+		printf("Aprovado");
+	else if(media < 20)
+		printf("Reprovado");
+	else
+		printf("Recuperação");	
+	//Fim
+	return 0;
+}
+```
 
 
 ## Atividades - Lista02
