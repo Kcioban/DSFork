@@ -171,8 +171,6 @@ exp5.c
 #include <stdio.h>
 /*Programa que avalia médias com critérios
 "Aprovado" >= 50 E Frequência >= 75 %
-Porém receberá como entrada três notas,
-total de aulas dadas e
 total de presenças
 */
 int main(){
