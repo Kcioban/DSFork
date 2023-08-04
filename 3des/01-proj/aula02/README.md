@@ -1,4 +1,4 @@
-# Recursos Avançados - ORM Prisma
+# Aula02 - Recursos Avançados - ORM Prisma
 ## Projeto Exemplo
 ### Sistema de Gestão de pediso em um Restaurante
 - ![Lousa1](lousa1.jpg)
