@@ -1,6 +1,6 @@
 # Aula02 - Recursos Avançados - ORM Prisma
 ## Projeto Exemplo
-### Sistema de Gestão de pediso em um Restaurante
+### Sistema de Gestão de pedidos em um Restaurante
 - ![Lousa1](lousa1.jpg)
 
 ## Passo a passo para um novo projeto com Prisma
