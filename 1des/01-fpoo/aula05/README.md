@@ -154,3 +154,27 @@ int main(){
 	return 0;
 }
 ```
+- Testando este programa com a **árvore binária**
+```cmd
+Digite seu salário:1000
+O desconto de INSS = 75.00
+O salßrio líquido serß de = 925.00
+
+Digite seu salário:2000
+O desconto de INSS = 180.00
+O salßrio líquido serß de = 1820.00
+
+Digite seu salário:3000
+O desconto de INSS = 360.00
+O salßrio líquido serß de = 2640.00
+
+Digite seu salário:5000
+O desconto de INSS = 700.00
+O salßrio líquido serß de = 4300.00
+
+Digite seu salário:10000
+O desconto de INSS = 1051.02
+O salßrio líquido serß de = 8948.98
+```
+-![Excel1](./teste1.png)
+-![Excel2](./teste2.png)
