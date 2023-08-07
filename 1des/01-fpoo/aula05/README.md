@@ -47,3 +47,4 @@ int main(){
 	return 0;
 }
 ```
+- Caso o usuário se identifique com um gênero diferente crie uma terceira classificação.
