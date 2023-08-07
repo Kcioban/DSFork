@@ -115,9 +115,9 @@ int main(){
 			if(i<=10) printf("Criança");
 			else if(i<=15) printf("Adolescente");
 			else if(i<=20) printf("Jovem");
-			else if(i<=35) printf("Adulte");
+			else if(i<=35) printf("Adulta(o)");
 			else if(i<=55) printf("Meia idade");
-			else printf("Idose");
+			else printf("Idosa(o)");
 			break;
 		default:
 			printf("Opção inválida");
