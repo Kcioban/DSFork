@@ -12,11 +12,11 @@ int main ()
   printf ("*c is: 0x%x\n", *c);
   if (*c == 0x10)
   {
-    printf ("Underlying architecture is little endian. \n");
+    printf ("A arquitetura do Computador é little endian. \n");
   }
   else
   {
-     printf ("Underlying architecture is big endian. \n");
+     printf ("A arquitetura do Computador é big endian. \n");
   }
  
   return 0;
