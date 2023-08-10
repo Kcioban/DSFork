@@ -1,5 +1,10 @@
 # Aula03 - Projeto Restaurante
 ## Metodologia Ágil Scrum
+- Papéis e responsabilidades em um time Scrum
+    - Product Owner
+    - Scrum Master
+    - Time de Desenvolvimento
+![Lousa1](./lousa1.jpg)
 ### Backlog do Projeto
 - Planejamento
     - Listar regras de negócio
@@ -27,4 +32,8 @@
         - Testes unitários
         - Testes de Integração
         - Testes de Ponto a Ponto
-- Entregas
+## Repositório do projeto exemplo
+- https://github.com/wellifabio/restaurante3des
+
+## Lousa
+- ![Lousa2](./lousa2.jpg)
