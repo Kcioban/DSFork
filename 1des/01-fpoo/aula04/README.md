@@ -218,6 +218,10 @@ int main(){
 - 6 Desenvolva um programa que leia 6 números inteiros e exiba na tela ao final, o maior número que foi digitado pelo usuáriou. 
 - 7 Escreva um programa que leia 5 números inteiros em qualquer ordem e exiba na tela ao final, os cinco números em ordem crescente. 
 - 8 Escreva um programa que leia dois números inteiros e determine qual é o maior e o menor.
-- 9 Desenvolva um algortimo que faço o cálculo do reajuste salarial do funcionário, baseado nos seguintes parâmetros: 15% de aumento : 1.500,00 <= salario Atual < 1.750,00 12% de aumento : 1.750,00 <= salario Atual < 2.000,00 9% de aumento : 2.000,00 <= salario Atual < 3.000,00 6% de aumento : salario Atual >= 3.000,00
+- 9 Desenvolva um algortimo que faço o cálculo do reajuste salarial do funcionário, baseado nos seguintes parâmetros:
+	- 15% de aumento : 1.500,00 <= salario Atual < 1.750,00
+	- 12% de aumento : 1.750,00 <= salario Atual < 2.000,00
+	- 9% de aumento : 2.000,00 <= salario Atual < 3.000,00
+	- 6% de aumento : salario Atual >= 3.000,00
 - 10 Crie um programa que calcule a média de 3 notas do aluno e informe sua situação: (nota maior ou igual a 6 : aprovado), (nota inferior a 6 e maior ou igual a 4 : recuperação), (nota menor que 4 : reprovado). 
 - 11 Uma loja está fazendo uma promoção e precisa de ajuda no momento da venda, para liberar os descontos. Baseado na peça, calcule o desconto e exiba o valor final da venda. (camisa - 20% de desconto, bermuda - 10% de desconto, calça - 15% de desconto). 
