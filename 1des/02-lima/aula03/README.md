@@ -93,12 +93,12 @@
 
 ### Exercício 01
 
-!![ex1](./ex01.jpg)
+!![ex1](./exp01.jpg)
 
 ### Exercício 02
 
-!![ex2](./ex02.jpg)
+!![ex2](./exp02.jpg)
 
 ### Exercício 01
 
-!![ex3](./ex03.jpg)
+!![ex3](./exp03.jpg)
