@@ -209,7 +209,7 @@ int main(){
 - 2 ![Fluxograma](./fluxo02.png)
 - 3 ![Fluxograma](./fluxo03.png)
 
-## Atividades EAD - Lista02
+## Lista 02 (Lista de exercícios EAD - Tempo: 5 horas)
 - 1 Desenvolva um programa que leia o preço de um produto e se o preço for maior do que 1000 reais aplique um desconto de 8%. Mostre o preço final.
 - 2 Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. Apresente o salário final. 
 - 3 Desenvolva um programa que calcule desconto de INSS de um funcionário, se o salário for menor ou igual a do que R$ 1212,00 reais será de 7,5%, se estiver entre R$ 1212,01 e 2427,35 será de 9%, se estiver entre R$ 2427,36 e R$ 3641,03 o desconto é 12%, se estiver entre R$ 3641,04 a R$ 7087,22 será de 14% e se for maior do que 7087,22 o teto que é o máximo cobrado 14% de 7087,22. Mostre o desconto e o valor do salário final.
@@ -225,3 +225,8 @@ int main(){
 	- 6% de aumento : salario Atual >= 3.000,00
 - 10 Crie um programa que calcule a média de 3 notas do aluno e informe sua situação: (nota maior ou igual a 6 : aprovado), (nota inferior a 6 e maior ou igual a 4 : recuperação), (nota menor que 4 : reprovado). 
 - 11 Uma loja está fazendo uma promoção e precisa de ajuda no momento da venda, para liberar os descontos. Baseado na peça, calcule o desconto e exiba o valor final da venda. (camisa - 20% de desconto, bermuda - 10% de desconto, calça - 15% de desconto). 
+
+## Entrega:
+Criar um repositório público no seu GitHub e compartilhar o link em:
+- https://forms.gle/LZiabLsoKjDyv88x6
+- Data de entrega: 18/08/2020

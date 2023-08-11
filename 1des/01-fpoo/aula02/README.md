@@ -186,7 +186,7 @@ int main(){
 }
 ```
 ![Fluxograma](./fluxograma.png)
-## Desafios 2 (Lista de exercícios EAD - Tempo: 5 horas)
+## Lista 01 (Lista de exercícios EAD - Tempo: 5 horas)
 - 1. Desenvolva um programa que leia três variáveis (a, b, c) e resolva a expressão: ( a + b ) / c.
 - 2. Desenvolva um programa que leia a velocidade de um carro (km/h) e a distância a ser percorrida (km) por ele. Calcule e apresente na tela, quanto tempo (horas) será necessário para o carro percorrer a distância informada.
 - 3. Desenvolva um programa que leia o nome e o salário de uma pessoa, depois leia o valor do índice percentual (%) de reajuste do salário. Calcule e apresente na tela, o valor do novo salário e o nome da pessoa.
@@ -199,6 +199,7 @@ int main(){
 - 10. Desenvolva um programa que leia o nome de uma cidade, o número total de eleitores e o número total de votos apurados na última eleição. O programa deverá calcular e exibir a porcentagem de participação dos eleitores desta cidade na última eleição.
 - Obs: Todas as entradas serão consideradas como valores inteiros e positivos, portanto o programa não precisará testá-las.
 
-## Entrega
+## Entrega:
 Criar um repositório público no seu GitHub e compartilhar o link em:
 - https://forms.gle/c2B2z6ntAeJJymLp8
+- Data de entrega: 11/08/2020
