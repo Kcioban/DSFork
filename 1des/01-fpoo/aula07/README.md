@@ -24,3 +24,21 @@ Durante o desafio em dupla, o instrutor pedirá que as duplas alternem no teclad
 - Resolução de problemas
 - Atenção a detalhes
 - Entre outras
+
+## Situação 2 - Calculadora de IMC para Consultório Médico
+
+Um consultório médico necessita de um programa de computador para calcular o Índice de Massa Corporal (IMC) de seus pacientes de forma rápida e precisa. O IMC é uma medida utilizada para avaliar a relação entre o peso e a altura de uma pessoa, sendo um indicativo importante para avaliar a saúde e o estado nutricional.
+
+#### O programa deve receber as seguintes informações do paciente:
+
+- Nome completo
+- Peso (em quilogramas)
+- Altura (em metros)
+
+#### O programa deverá realizar os seguintes passos:
+
+- Solicitar ao usuário que insira seu nome completo, peso e altura.
+
+- Calcular o IMC utilizando a fórmula
+
+- Classificar o resultado de acordo com a tabela de classificação do IMC:
