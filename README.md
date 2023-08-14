@@ -1,5 +1,5 @@
-# senai2023
-## Conteúdos dos cursos ministrados no SENAI:
+# OSi
+## Conteúdos do curso:
 - Técnico em Desenvolvimento de Sistemas (1200 horas)
 	- FPOO (Fundamentos de Programação Orientada a Objetos)
 	- SOP (Fundamentos e Administração de Sistemas Operacionais)
@@ -13,45 +13,29 @@
 	- RMS (Requisitos de Modelagem de Software - Ingenharia de Software (UML (DC, DCU, Diagrama de Atividades)))
 	- TESTES (Fundamentos de Testes de Software, Testes automatizados, boas práticas)
 	- Projetos (Metodologias de Desenvolvimento de Sistemas (Clássicas, Ágeis(XP, SCRUM))
+
 - Operador de Microcomputador (160)
 	- Conceitos fundamentais da computação
 	- Gestão do Sistema Operacional
 	- Edição de Textos
 	- Planilhas eletrônicas
 	- Desenvolvimento de Apresentações
+
 - Web designer – Front-End (180 horas)
 	- HTML
 	- CSS
 	- JavaScript
+
 - Excel Básico (40 Horas)
 - Excel Avaçado + VBA (40 Horas)
 - Implantação e Análise de Dados em Núvem - Microsoft DP900 (40 Horas)
 - Implantação de serviços de Inteligêcia Artificical em Núvem - Microsoft AI900 40 Horas)
 - Implantação de serviços em Núvem - Google Cloud Foundations (40 Horas)
 - Implantação de serviços de Inteligêcia Artificical em Núvem - Google Cloud AI oundations (40 Horas)
+
 ## OBS
 - Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano de 2023
-- Consulte também o repositório senai2022 que está repleto de materiais do ano pasvsado.
-
-## Componentes e Dias da Semana
-|Turmas: Técnico em Desenvolvimento de Sistemas|
-|-|
-|![Dias](./des_2sem.png)|
-
-## Calendário
-![Calendario](./outros/calendario/2sem.png)
-
-## Competências transversais
-- Acessar o portal EAD https://ead.sp.senai.br
-- Enviar **Print** dos certificados em: https://forms.gle/STMxikkU8qVfLuEb8
-- Tutorial de como acessar o Portal EAD a primeira vez https://ead.sp.senai.br/tutorial/comoacessar/
-- Verificar se está matriculado em algum dos cursos a seguir:
-	- Desvendando a Indústria 4.0
-	- Desvendando a BlockChain
-	- Economia circular
-	- Outro se estiver matriculado
-- Caso deseje fazer mais cursos gratuitors acessar o site do senai:
-	- https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
+- Consulte também o repositório senai2022 que está repleto de materiais do ano passado.
 
 ## GitHub dos professores
 - [Renato](https://github.com/remajag)
