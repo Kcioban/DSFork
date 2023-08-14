@@ -35,7 +35,7 @@
 
 ## OBS
 - Os códigos fonte, exemplos e materiais didáticos serão adicionados a este repositório ao longo do ano de 2023
-- Consulte também o repositório senai2022 que está repleto de materiais do ano passado.
+- Consulte também o repositório 2022 que está repleto de materiais do ano passado.
 
 ## GitHub dos professores
 - [Renato](https://github.com/remajag)
